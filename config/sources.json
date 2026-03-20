@@ -75,7 +75,9 @@
         {
       "id": "focus-news",
       "name": "重点新闻",
-      "description": "对经济金融有重大影响的长期焦点事件"
+      "description": "对经济金融有重大影响的长期焦点事件",
+      "lens": "看多方信源交叉验证的重大事件和政策信号",
+      "sources": ["wallstreetcn-quick", "cls-telegraph", "bbc-world", "guardian-world", "zaobao"]
     },
     {
       "id": "china-macro",
