@@ -72,6 +72,11 @@
     "decrypt": { "type": "rss", "label": "Decrypt", "home": "https://decrypt.co", "url": "https://decrypt.co/feed" }
   },
   "categories": [
+        {
+      "id": "focus-news",
+      "name": "重点新闻",
+      "description": "对经济金融有重大影响的长期焦点事件"
+    },
     {
       "id": "china-macro",
       "name": "中国宏观",
