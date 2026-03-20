@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>说明 / 部署 | Daily News Insight</title>
+    <title>关于 · 小程的财经日报</title>
     <meta
       name="description"
-      content="Daily News Insight 的部署说明，包括 OpenAI Key、GitHub Actions 和 GitHub Pages 配置。"
+      content="关于小程的财经日报 · Zuko，以及联系方式。"
     />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,79 +21,89 @@
     <div class="app-shell">
       <aside class="app-sidebar">
         <div class="sidebar-brand">
-          <p class="eyebrow">Project Notes</p>
-          <h1>Daily News Insight</h1>
-          <p class="sidebar-copy">这里整理 Key、仓库、GitHub Actions 和 GitHub Pages 的接法。</p>
+          <p class="eyebrow">AI 财经简报</p>
+          <h1>小程的财经日报</h1>
+          <p class="sidebar-copy">每日精选全球财经要闻，AI 深度解读，洞察市场脉搏，助你在信息洪流中把握先机。</p>
         </div>
-
         <nav class="page-nav" aria-label="站点菜单">
           <a class="page-link" href="./index.html">
             <span class="page-link-title">智能深度简报</span>
-            <span class="page-link-copy">回到摘要页查看十板块日报</span>
+            <span class="page-link-copy">摘要、利多利空、分析师观点、角色评论</span>
           </a>
           <a class="page-link" href="./monitor.html">
             <span class="page-link-title">原始数据监控</span>
-            <span class="page-link-copy">检查原始抓取结果与 source 覆盖</span>
+            <span class="page-link-copy">查看每个板块抓到的源站和标题原文</span>
           </a>
           <a class="page-link is-active" href="./about.html">
-            <span class="page-link-title">说明 / 部署</span>
-            <span class="page-link-copy">OpenAI Key、GitHub 仓库与自动化部署</span>
+            <span class="page-link-title">关于 · 联系</span>
+            <span class="page-link-copy">关于本站与联系方式</span>
           </a>
         </nav>
       </aside>
-
       <main class="app-main">
-        <div class="update-banner">建议先完成 GitHub 登录和仓库创建，再配置 Actions Secret，这样可以一次把自动更新也接好。</div>
-
         <header class="main-header">
           <div>
-            <p class="eyebrow">Setup Guide</p>
-            <h2 class="main-title">说明 / 部署</h2>
+            <p class="eyebrow">About</p>
+            <h2 class="main-title">关于本站</h2>
           </div>
         </header>
 
-        <section class="panel-card">
+        <section class="summary-card">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Architecture</p>
-              <h3>整体模式</h3>
+              <p class="eyebrow">Concept</p>
+              <h3>创建初心</h3>
             </div>
           </div>
-          <div class="about-copy">
-            <p>这个站点采用“脚本定时生成 JSON，GitHub Pages 直接展示静态页面”的模式。</p>
-            <p>因此你不需要单独买服务器，也不需要维护数据库。内容更新全部由 GitHub Actions 完成。</p>
+          <div class="summary-body">
+            <p class="summary-lead">每天的财经资讯如海浪滚滚，真正有价値的信息却一临即逝。小程的财经日报就是想解决这个问题——让 AI 替你过滤噪声，每天一份精准简报送到手中。没有广告，没有点击误导，只有真正有用的市场信号。</p>
           </div>
         </section>
 
-        <section class="panel-card">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow">OpenAI Key</p>
-              <h3>OpenAI Key 怎么接</h3>
-            </div>
-          </div>
-          <ol class="step-list">
-            <li>在 OpenAI 后台创建项目级 API Key，不要把 Key 写进仓库文件。</li>
-            <li>本地调试时用环境变量 `OPENAI_API_KEY`。</li>
-            <li>GitHub 上运行时，把同一个 Key 配到仓库的 Actions Secret 里。</li>
-            <li>可选再加一个 `OPENAI_MODEL`，默认当前项目会用 `gpt-5-mini`。</li>
-          </ol>
+        <section class="signal-grid">
+          <article class="signal-card bullish-card">
+            <p class="signal-label">每日自动更新</p>
+            <p class="signal-copy">GitHub Actions 定时拉取全球财经新闻，每天 07:05 准时发布最新简报。</p>
+          </article>
+          <article class="signal-card watch-card">
+            <p class="signal-label">AI 深度解读</p>
+            <p class="signal-copy">利用 OpenAI 对新闻进行摘要、利多利空分析、经济师点评与 25 个角色全方位解读。</p>
+          </article>
+          <article class="signal-card bearish-card">
+            <p class="signal-label">完全免费</p>
+            <p class="signal-copy">托管在 GitHub Pages，静态页面，永久免费，所有历史版本均可回溯查阅。</p>
+          </article>
         </section>
 
-        <section class="panel-card">
+        <section class="analyst-card">
           <div class="section-head">
             <div>
-              <p class="eyebrow">GitHub</p>
-              <h3>GitHub Actions 和 Pages</h3>
+              <p class="eyebrow">Contact</p>
+              <h3>联系作者</h3>
             </div>
           </div>
-          <ol class="step-list">
-            <li>仓库里已有工作流文件 `.github/workflows/daily-digest.yml`。</li>
-            <li>Pages 选择 `main` 分支的 `docs` 目录。</li>
-            <li>Actions Secret 里至少配置 `OPENAI_API_KEY`。</li>
-            <li>手动触发一次工作流后，站点就会有第一版正式数据。</li>
-          </ol>
+          <div class="summary-body">
+            <p class="summary-lead">Hi，我是 Zuko，小程的财经日报的创建者。如果你对内容有任何想法、建议或关注意愿，欢迎随时联系我。</p>
+            <div class="summary-meta-grid">
+              <div class="metric-card">
+                <span class="metric-label">📧 邮符1</span>
+                <strong>3119268060@qq.com</strong>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">💬 微信</span>
+                <strong>cfu800</strong>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">📊 更新频率</span>
+                <strong>每日 07:05</strong>
+              </div>
+            </div>
+          </div>
         </section>
+
+        <footer style="text-align:center;padding:2rem;color:#888;font-size:0.85rem;">
+          &copy; 2026 小程的财经日报 · Zuko &nbsp;|&nbsp; 由 AI 驱动，每天更新
+        </footer>
       </main>
     </div>
   </body>
