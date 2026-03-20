@@ -2,8 +2,8 @@ name: Daily Digest
 
 on:
   schedule:
-        - cron: "0 23 * * *"  # 北京时间 每天 07:00
-            - cron: "30 4 * * *"  # 北京时间 每天 12:30
+    - cron: "0 23 * * *"  # 北京时间 每天 07:00
+    - cron: "30 4 * * *"  # 北京时间 每天 12:30
   workflow_dispatch:
 
 permissions:
