@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daily News Insight</title>
+    <meta
+      name="description"
+      content="每天自动汇总 10 个板块新闻，给出 AI 摘要、利多利空判断、经济分析师点评与 25 个角色评论。"
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=IBM+Plex+Sans+SC:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/app.css" />
+    <script src="./assets/app.js" defer></script>
+  </head>
+  <body data-page="digest">
+    <div class="app-shell">
+      <aside class="app-sidebar">
+        <div class="sidebar-brand">
+          <p class="eyebrow">AI Powered Briefing</p>
+          <h1>Daily News Insight</h1>
+          <p class="sidebar-copy">参考 daily-news-ai 的思路，升级成更适合十板块日报的静态站。</p>
+        </div>
+
+        <nav class="page-nav" aria-label="站点菜单">
+          <a class="page-link is-active" href="./index.html">
+            <span class="page-link-title">智能深度简报</span>
+            <span class="page-link-copy">摘要、利多利空、分析师观点、角色评论</span>
+          </a>
+          <a class="page-link" href="./monitor.html">
+            <span class="page-link-title">原始数据监控</span>
+            <span class="page-link-copy">查看每个板块抓到的源站和标题原文</span>
+          </a>
+          <a class="page-link" href="./about.html">
+            <span class="page-link-title">说明 / 部署</span>
+            <span class="page-link-copy">如何接 Key、配置 GitHub Actions 与 Pages</span>
+          </a>
+        </nav>
+
+        <section class="sidebar-note">
+          <p class="sidebar-note-title">当前站点模式</p>
+          <p class="sidebar-note-copy">静态页面只读 `docs/data`。内容由 GitHub Actions 定时生成并归档。</p>
+        </section>
+      </aside>
+
+      <main class="app-main">
+        <div class="update-banner">
+          每天 07:05 自动更新 AI 简报，历史版本保留在 GitHub 仓库里；未配置 Key 时会自动退回模板模式。
+        </div>
+
+        <header class="main-header">
+          <div>
+            <p class="eyebrow" id="hero-kicker">AI 全网简报</p>
+            <h2 class="main-title" id="hero-title">载入中</h2>
+          </div>
+          <div class="header-actions">
+            <button class="ghost-button" id="history-open" type="button">历史时光机</button>
+            <div class="status-pill" id="edition-summary">载入中...</div>
+            <div class="latest-pill" id="latest-indicator">Latest</div>
+          </div>
+        </header>
+
+        <section class="tab-strip" id="category-tabs" aria-label="板块切换"></section>
+
+        <section class="summary-card">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Core Summary</p>
+              <h3>AI 核心综述</h3>
+            </div>
+            <button class="toggle-button" id="summary-toggle" type="button">收起</button>
+          </div>
+          <div class="summary-body" id="summary-body">
+            <p class="summary-lead" id="hero-lead"></p>
+            <div class="summary-meta-grid">
+              <div class="metric-card">
+                <span class="metric-label">生成时间</span>
+                <strong id="metric-generated">-</strong>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">更新模式</span>
+                <strong id="metric-mode">-</strong>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">新闻条数</span>
+                <strong id="metric-stories">-</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="signal-grid">
+          <article class="signal-card bullish-card">
+            <p class="signal-label">利多抓手</p>
+            <p class="signal-copy" id="bullish-copy"></p>
+          </article>
+          <article class="signal-card bearish-card">
+            <p class="signal-label">利空压力</p>
+            <p class="signal-copy" id="bearish-copy"></p>
+          </article>
+          <article class="signal-card watch-card">
+            <p class="signal-label">继续观察</p>
+            <p class="signal-copy" id="watch-copy"></p>
+          </article>
+        </section>
+
+        <section class="analyst-card">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Economist View</p>
+              <h3>经济分析师点评</h3>
+            </div>
+            <p class="lens-copy" id="lens-copy"></p>
+          </div>
+          <p class="analyst-copy" id="analyst-copy"></p>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel-card">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Top Stories</p>
+                <h3>AI 提取重点新闻</h3>
+              </div>
+              <p class="section-hint">按当前板块展示 10 条重点新闻，并标注利多、利空或继续观察。</p>
+            </div>
+            <div id="stories-list" class="stories-list"></div>
+          </article>
+
+          <article class="panel-card">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Persona Wall</p>
+                <h3>25 个角色评论</h3>
+              </div>
+              <p class="section-hint">同一批新闻，换不同人设重新看一遍。</p>
+            </div>
+            <div id="comments-list" class="comments-list"></div>
+          </article>
+        </section>
+
+        <section class="panel-card">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Source Mix</p>
+              <h3>当前板块使用来源</h3>
+            </div>
+            <p class="section-hint">中文聚合源 + 国际专业媒体 RSS</p>
+          </div>
+          <div id="source-list" class="source-list"></div>
+          <div class="raw-links">
+            <a href="./data/latest/digest.json" target="_blank" rel="noreferrer">查看最新 digest.json</a>
+            <a href="./data/raw/latest.json" target="_blank" rel="noreferrer">查看原始 raw.json</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="history-modal hidden" id="history-modal" aria-hidden="true">
+      <div class="history-backdrop" id="history-close"></div>
+      <div class="history-dialog">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Archive</p>
+            <h3>历史时光机</h3>
+          </div>
+          <button class="ghost-button" id="history-close-button" type="button">关闭</button>
+        </div>
+        <div class="history-list" id="history-list"></div>
+      </div>
+    </div>
+  </body>
+</html>

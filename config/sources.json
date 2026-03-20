@@ -1,0 +1,147 @@
+{
+  "site": {
+    "title": "Daily News Insight",
+    "subtitle": "十板块 AI 早报",
+    "timezone": "Asia/Shanghai",
+    "edition_time": "07:05"
+  },
+  "persona_count": 25,
+  "personas": [
+    { "role": "宏观策略师", "handle": "周期里找锚", "style": "政策节奏、流动性和预期差" },
+    { "role": "外贸老板", "handle": "柜子还在海上", "style": "订单、汇率和关税传导" },
+    { "role": "退休银行行长", "handle": "稳字当头", "style": "信用扩张、风险偏好和监管信号" },
+    { "role": "创业者", "handle": "现金流第一", "style": "增长空间、融资窗口和执行速度" },
+    { "role": "新能源研究员", "handle": "电池边上的人", "style": "产业链景气度、产能和价格" },
+    { "role": "地产从业者", "handle": "案场观察员", "style": "政策落地、居民信心和销售修复" },
+    { "role": "A股老股民", "handle": "老韭偏要抄底", "style": "板块轮动、情绪修复和筹码结构" },
+    { "role": "港股交易员", "handle": "南向资金雷达", "style": "估值、南向资金和事件驱动" },
+    { "role": "美股散户", "handle": "盘前不睡觉", "style": "财报预期、风险资产和叙事切换" },
+    { "role": "大厂产品经理", "handle": "需求池爆了", "style": "用户增长、平台策略和商业化" },
+    { "role": "AI 工程师", "handle": "今晚还在调参", "style": "模型能力、推理成本和工程落地" },
+    { "role": "芯片销售", "handle": "先看交期", "style": "供应链、库存和客户下单意愿" },
+    { "role": "大学生", "handle": "今天也在赶 ddl", "style": "就业机会、行业风口和体感变化" },
+    { "role": "宝妈", "handle": "先看生活成本", "style": "家庭消费、教育医疗和安全感" },
+    { "role": "出租车师傅", "handle": "路口见世面", "style": "真实收入、城市温度和普通人感受" },
+    { "role": "自媒体博主", "handle": "标题先起了", "style": "传播性、话题度和平台情绪" },
+    { "role": "律师", "handle": "先看合规边界", "style": "监管风险、规则变化和责任归属" },
+    { "role": "医生", "handle": "先讲证据", "style": "数据可靠性、公共风险和执行细节" },
+    { "role": "公务员", "handle": "按流程推进", "style": "政策执行、地方协同和社会预期" },
+    { "role": "制造业厂长", "handle": "工位灯还亮着", "style": "成本、订单和设备开工率" },
+    { "role": "00后打工人", "handle": "别给我画饼", "style": "工资、机会和情绪真实度" },
+    { "role": "海外留学生", "handle": "时差还没倒", "style": "国际比较、全球舆论和跨市场联动" },
+    { "role": "电商运营", "handle": "转化率说话", "style": "流量成本、消费意愿和活动节奏" },
+    { "role": "喜剧吐槽号", "handle": "这也能上热搜", "style": "荒诞感、反差和大众情绪" },
+    { "role": "长线投资者", "handle": "只看五年", "style": "护城河、现金流和长期复利" }
+  ],
+  "sources": {
+    "wallstreetcn-quick": { "type": "newsnow", "label": "华尔街见闻快讯", "home": "https://wallstreetcn.com" },
+    "wallstreetcn-news": { "type": "newsnow", "label": "华尔街见闻最新", "home": "https://wallstreetcn.com" },
+    "wallstreetcn-hot": { "type": "newsnow", "label": "华尔街见闻热门", "home": "https://wallstreetcn.com" },
+    "cls-telegraph": { "type": "newsnow", "label": "财联社电报", "home": "https://www.cls.cn" },
+    "cls-depth": { "type": "newsnow", "label": "财联社深度", "home": "https://www.cls.cn" },
+    "cls-hot": { "type": "newsnow", "label": "财联社热门", "home": "https://www.cls.cn" },
+    "mktnews-flash": { "type": "newsnow", "label": "MKTNews 快讯", "home": "https://mktnews.net" },
+    "xueqiu-hotstock": { "type": "newsnow", "label": "雪球热股", "home": "https://xueqiu.com" },
+    "gelonghui": { "type": "newsnow", "label": "格隆汇事件", "home": "https://www.gelonghui.com" },
+    "fastbull-express": { "type": "newsnow", "label": "FastBull 快讯", "home": "https://www.fastbull.cn" },
+    "fastbull-news": { "type": "newsnow", "label": "FastBull 头条", "home": "https://www.fastbull.cn" },
+    "jin10": { "type": "newsnow", "label": "金十数据", "home": "https://www.jin10.com" },
+    "36kr-quick": { "type": "newsnow", "label": "36Kr 快讯", "home": "https://36kr.com" },
+    "36kr-renqi": { "type": "newsnow", "label": "36Kr 人气榜", "home": "https://36kr.com" },
+    "ithome": { "type": "newsnow", "label": "IT之家", "home": "https://www.ithome.com" },
+    "zaobao": { "type": "newsnow", "label": "联合早报", "home": "https://www.zaobao.com" },
+    "sputniknewscn": { "type": "newsnow", "label": "俄罗斯卫星通讯社中文网", "home": "https://sputniknews.cn" },
+    "cankaoxiaoxi": { "type": "newsnow", "label": "参考消息", "home": "https://china.cankaoxiaoxi.com" },
+    "thepaper": { "type": "newsnow", "label": "澎湃新闻热榜", "home": "https://www.thepaper.cn" },
+    "weibo": { "type": "newsnow", "label": "微博热搜", "home": "https://weibo.com" },
+    "zhihu": { "type": "newsnow", "label": "知乎热榜", "home": "https://www.zhihu.com" },
+    "toutiao": { "type": "newsnow", "label": "今日头条", "home": "https://www.toutiao.com" },
+    "bilibili-hot-search": { "type": "newsnow", "label": "B站热搜", "home": "https://www.bilibili.com" },
+    "hackernews": { "type": "newsnow", "label": "Hacker News", "home": "https://news.ycombinator.com" },
+    "producthunt": { "type": "newsnow", "label": "Product Hunt", "home": "https://www.producthunt.com" },
+    "github-trending-today": { "type": "newsnow", "label": "GitHub Trending", "home": "https://github.com/trending" },
+    "bbc-world": { "type": "rss", "label": "BBC World", "home": "https://www.bbc.com/news", "url": "https://feeds.bbci.co.uk/news/world/rss.xml" },
+    "bbc-business": { "type": "rss", "label": "BBC Business", "home": "https://www.bbc.com/news/business", "url": "https://feeds.bbci.co.uk/news/business/rss.xml" },
+    "guardian-world": { "type": "rss", "label": "The Guardian World", "home": "https://www.theguardian.com/world", "url": "https://www.theguardian.com/world/rss" },
+    "guardian-business": { "type": "rss", "label": "The Guardian Business", "home": "https://www.theguardian.com/business", "url": "https://www.theguardian.com/business/rss" },
+    "cnbc-us-top": { "type": "rss", "label": "CNBC US Top News", "home": "https://www.cnbc.com/world", "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html" },
+    "cnbc-business": { "type": "rss", "label": "CNBC Business", "home": "https://www.cnbc.com/business", "url": "https://www.cnbc.com/id/10001147/device/rss/rss.html" },
+    "cnbc-tech": { "type": "rss", "label": "CNBC Tech", "home": "https://www.cnbc.com/technology", "url": "https://www.cnbc.com/id/19854910/device/rss/rss.html" },
+    "techcrunch-ai": { "type": "rss", "label": "TechCrunch AI", "home": "https://techcrunch.com/category/artificial-intelligence/", "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
+    "cointelegraph": { "type": "rss", "label": "Cointelegraph", "home": "https://cointelegraph.com", "url": "https://cointelegraph.com/rss" },
+    "decrypt": { "type": "rss", "label": "Decrypt", "home": "https://decrypt.co", "url": "https://decrypt.co/feed" }
+  },
+  "categories": [
+    {
+      "id": "china-macro",
+      "name": "中国宏观",
+      "description": "政策、监管、金融条件与经济预期",
+      "lens": "看政策落地速度、信用扩张和对实体需求的传导",
+      "sources": ["wallstreetcn-quick", "cls-telegraph", "mktnews-flash", "zaobao", "bbc-business"]
+    },
+    {
+      "id": "china-markets",
+      "name": "中国市场",
+      "description": "A 股、港股、热门板块与交易情绪",
+      "lens": "看资金偏好、板块轮动和风险定价节奏",
+      "sources": ["wallstreetcn-hot", "cls-hot", "xueqiu-hotstock", "gelonghui", "fastbull-express"]
+    },
+    {
+      "id": "global-macro",
+      "name": "全球宏观",
+      "description": "海外经济、利率、通胀与跨市场联动",
+      "lens": "看美元、利率路径和全球风险资产的再定价",
+      "sources": ["bbc-business", "guardian-business", "cnbc-business", "cnbc-us-top", "zaobao"]
+    },
+    {
+      "id": "geopolitics",
+      "name": "地缘政治",
+      "description": "战争冲突、外交博弈和国际关系",
+      "lens": "看事件如何传导到能源、航运、汇率和市场风险偏好",
+      "sources": ["bbc-world", "guardian-world", "zaobao", "sputniknewscn", "cankaoxiaoxi"]
+    },
+    {
+      "id": "ai-models",
+      "name": "AI 大模型",
+      "description": "模型发布、Agent、应用落地和开发者生态",
+      "lens": "看模型能力、推理成本和商业化路径是否继续改善",
+      "sources": ["techcrunch-ai", "36kr-quick", "ithome", "hackernews", "producthunt"]
+    },
+    {
+      "id": "chips-devices",
+      "name": "芯片与硬件",
+      "description": "半导体、终端设备、智能汽车与算力基础设施",
+      "lens": "看供需缺口、交期、资本开支和产业链订单验证",
+      "sources": ["ithome", "36kr-renqi", "cnbc-tech", "wallstreetcn-news", "cls-depth"]
+    },
+    {
+      "id": "energy-commodities",
+      "name": "能源与大宗",
+      "description": "原油、金属、煤炭、电力与商品链变化",
+      "lens": "看供应扰动、库存周期和价格信号对通胀的反馈",
+      "sources": ["jin10", "fastbull-news", "wallstreetcn-news", "guardian-business", "cnbc-business"]
+    },
+    {
+      "id": "crypto-web3",
+      "name": "加密与 Web3",
+      "description": "BTC、ETH、监管、交易所和链上创新",
+      "lens": "看流动性、监管态度和风险偏好是否重新抬升",
+      "sources": ["cointelegraph", "decrypt", "cnbc-tech", "cnbc-business", "techcrunch-ai"]
+    },
+    {
+      "id": "industry-consumer",
+      "name": "产业与消费",
+      "description": "平台公司、品牌、消费趋势与产业事件",
+      "lens": "看订单修复、消费意愿与平台竞争格局变化",
+      "sources": ["thepaper", "36kr-renqi", "cnbc-business", "guardian-business", "toutiao"]
+    },
+    {
+      "id": "social-trends",
+      "name": "社会热点",
+      "description": "热搜、民生、舆情和社交平台风向",
+      "lens": "看大众情绪、社会议题与平台传播结构的变化",
+      "sources": ["weibo", "zhihu", "bilibili-hot-search", "thepaper", "toutiao"]
+    }
+  ]
+}
+

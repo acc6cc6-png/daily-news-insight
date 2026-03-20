@@ -1,0 +1,3189 @@
+{
+  "site": {
+    "title": "Daily News Insight",
+    "subtitle": "十板块 AI 早报"
+  },
+  "edition": {
+    "generatedAt": "2026-03-20 20:13",
+    "dateLabel": "2026-03-20",
+    "timeLabel": "20:13",
+    "timezone": "Asia/Shanghai",
+    "mode": "template"
+  },
+  "stats": {
+    "categoryCount": 10,
+    "storyCount": 100,
+    "sourceCount": 19,
+    "personaCount": 25
+  },
+  "categories": [
+    {
+      "id": "china-macro",
+      "name": "中国宏观",
+      "description": "政策、监管、金融条件与经济预期",
+      "lens": "看政策落地速度、信用扩张和对实体需求的传导",
+      "lead": "中国宏观 今天的主线围绕 有何隐情？5家券商研究所所长由分析…、交通运输部召开党组会：扩大交通运输…、上海银行业绩快报：2025年净利润… 展开。从 看政策落地速度、信用扩张和对实体需求的传导 的角度看，短线更值得关注的是消息能否从标题热度继续传导到真实订单、资金方向和后续政策动作。",
+      "bullish": "利多抓手先看《上海银行业绩快报：2025年净利润241.93亿元，同…》。这类消息通常会先影响风险偏好，再决定资金是否愿意追价，关键是后续有没有连续验证。",
+      "bearish": "利空压力来自《有何隐情？5家券商研究所所长由分析师调整为“一般证券业…》。它更像风险定价事件，短线会先打情绪和估值，真正要不要扩大影响，还得看第二波数据。",
+      "watch": "继续观察《有何隐情？5家券商研究所所长由分析师调整为“一般证券业…》。这条新闻现在还处在预期形成阶段，比起立刻下结论，更重要的是跟踪兑现节奏。",
+      "economistTake": "经济分析师视角下，中国宏观 目前呈现出“情绪偏暖、等待确认”的结构。领头事件是《有何隐情？5家券商研究所所长由分析师调整为“一般证…》，但真正影响定价的不是单条标题本身，而是它能否沿着 看政策落地速度、信用扩张和对实体需求的传导 这条链路继续扩散。如果接下来政策、订单或资金流没有接力，那今天的热度更可能停留在交易层面；如果连续出现验证，板块就有机会从情绪修复转向趋势定价。",
+      "stories": [
+        {
+          "index": 1,
+          "title": "有何隐情？5家券商研究所所长由分析师调整为“一般证券业务人员”",
+          "summary": "这条新闻把市场焦点重新拉回到政策、监管、金融条件与经济预期。《有何隐情？5家券商研究所所长由分析师调整为“一般证券业务人…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 中国宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://wallstreetcn.com/livenews/3074128",
+          "sourceId": "wallstreetcn-quick",
+          "source": "华尔街见闻快讯",
+          "publishedAt": "2026-03-20 19:55"
+        },
+        {
+          "index": 2,
+          "title": "交通运输部召开党组会：扩大交通运输有效投资，提高国家重大战略服务保障能力",
+          "summary": "资金今天关注的核心变量之一是政策、监管、金融条件与经济预期。《交通运输部召开党组会：扩大交通运输有效投资，提高国家重大战…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 中国宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://wallstreetcn.com/livenews/3074123",
+          "sourceId": "wallstreetcn-quick",
+          "source": "华尔街见闻快讯",
+          "publishedAt": "2026-03-20 19:48"
+        },
+        {
+          "index": 3,
+          "title": "上海银行业绩快报：2025年净利润241.93亿元，同比增长2.69%。",
+          "summary": "从板块主线看，这条信息对应的是政策、监管、金融条件与经济预期。《上海银行业绩快报：2025年净利润241.93亿元，同比增…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利多，因为它容易改善 中国宏观 的风险偏好，并给后续资金接力留下理由。",
+          "signal": "bullish",
+          "signalLabel": "利多",
+          "url": "https://wallstreetcn.com/livenews/3074121",
+          "sourceId": "wallstreetcn-quick",
+          "source": "华尔街见闻快讯",
+          "publishedAt": "2026-03-20 19:44"
+        },
+        {
+          "index": 4,
+          "title": "湘财股份：2025年净利润4.64亿元，同比增长325.15%。",
+          "summary": "如果把它放回全天节奏里看，真正重要的是政策、监管、金融条件与经济预期。《湘财股份：2025年净利润4.64亿元，同比增长325.1…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利多，因为它容易改善 中国宏观 的风险偏好，并给后续资金接力留下理由。",
+          "signal": "bullish",
+          "signalLabel": "利多",
+          "url": "https://wallstreetcn.com/livenews/3074119",
+          "sourceId": "wallstreetcn-quick",
+          "source": "华尔街见闻快讯",
+          "publishedAt": "2026-03-20 19:43"
+        },
+        {
+          "index": 5,
+          "title": "司法部：2025年规范涉企行政执法专项行动为企业挽损289.7亿元",
+          "summary": "这条新闻把市场焦点重新拉回到政策、监管、金融条件与经济预期。《司法部：2025年规范涉企行政执法专项行动为企业挽损289…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 中国宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://wallstreetcn.com/livenews/3074116",
+          "sourceId": "wallstreetcn-quick",
+          "source": "华尔街见闻快讯",
+          "publishedAt": "2026-03-20 19:38"
+        },
+        {
+          "index": 6,
+          "title": "李云泽会见香港特区政府财政司司长陈茂波",
+          "summary": "资金今天关注的核心变量之一是政策、监管、金融条件与经济预期。《李云泽会见香港特区政府财政司司长陈茂波》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 中国宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://wallstreetcn.com/livenews/3074115",
+          "sourceId": "wallstreetcn-quick",
+          "source": "华尔街见闻快讯",
+          "publishedAt": "2026-03-20 19:34"
+        },
+        {
+          "index": 7,
+          "title": "特朗普据报考虑占领或封锁哈尔克岛",
+          "summary": "从板块主线看，这条信息对应的是政策、监管、金融条件与经济预期。《特朗普据报考虑占领或封锁哈尔克岛》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 中国宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://wallstreetcn.com/livenews/3074114",
+          "sourceId": "wallstreetcn-quick",
+          "source": "华尔街见闻快讯",
+          "publishedAt": "2026-03-20 19:31"
+        },
+        {
+          "index": 8,
+          "title": "宇树：计划在3年内发布“通用人形机器人具身基础模型”",
+          "summary": "如果把它放回全天节奏里看，真正重要的是政策、监管、金融条件与经济预期。《宇树：计划在3年内发布“通用人形机器人具身基础模型”》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利多，因为它容易改善 中国宏观 的风险偏好，并给后续资金接力留下理由。",
+          "signal": "bullish",
+          "signalLabel": "利多",
+          "url": "https://wallstreetcn.com/livenews/3074112",
+          "sourceId": "wallstreetcn-quick",
+          "source": "华尔街见闻快讯",
+          "publishedAt": "2026-03-20 19:28"
+        },
+        {
+          "index": 9,
+          "title": "交通运输部：加快建设统一开放的交通运输市场 培育发展交通运输领域新质生产力",
+          "summary": "这条新闻把市场焦点重新拉回到政策、监管、金融条件与经济预期。《交通运输部：加快建设统一开放的交通运输市场 培育发展交通运…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 中国宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.cls.cn/detail/2319885",
+          "sourceId": "cls-telegraph",
+          "source": "财联社电报",
+          "publishedAt": "2026-03-20 19:50"
+        },
+        {
+          "index": 10,
+          "title": "财联社3月20日电，商务部公示2026年尼加拉瓜食糖进口关税配额拟分配企业名单。",
+          "summary": "资金今天关注的核心变量之一是政策、监管、金融条件与经济预期。《财联社3月20日电，商务部公示2026年尼加拉瓜食糖进口关…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 中国宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.cls.cn/detail/2319883",
+          "sourceId": "cls-telegraph",
+          "source": "财联社电报",
+          "publishedAt": "2026-03-20 19:48"
+        }
+      ],
+      "personaComments": [
+        {
+          "role": "宏观策略师",
+          "name": "周期里找锚",
+          "emotion": "继续观察",
+          "content": "《有何隐情？5家券商研究所所长由分析师调整为“一般证…》先别急着站队，我会继续盯后续细节。对 政策节奏、流动性和预期差 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "外贸老板",
+          "name": "柜子还在海上",
+          "emotion": "继续观察",
+          "content": "这条《交通运输部召开党组会：扩大交通运输有效投资，提高国…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "退休银行行长",
+          "name": "稳字当头",
+          "emotion": "偏乐观",
+          "content": "我更在意《上海银行业绩快报：2025年净利润241.93亿元…》后面的二阶影响。要是真往下传导，中国宏观 不是一天行情。"
+        },
+        {
+          "role": "创业者",
+          "name": "现金流第一",
+          "emotion": "偏乐观",
+          "content": "站在 创业者 的角度，这条《湘财股份：2025年净利润4.64亿元，同比增长3…》我先记一笔偏多。只要后面真的能兑现，增长空间、融资窗口和执行速度 这条线就还有想象空间。"
+        },
+        {
+          "role": "新能源研究员",
+          "name": "电池边上的人",
+          "emotion": "继续观察",
+          "content": "这条《司法部：2025年规范涉企行政执法专项行动为企业挽…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "地产从业者",
+          "name": "案场观察员",
+          "emotion": "继续观察",
+          "content": "先看后手。李云泽会见香港特区政府财政司司长陈茂波 这类消息真正值钱的地方，在于它会不会把 中国宏观 的主线继续推下去。"
+        },
+        {
+          "role": "A股老股民",
+          "name": "老韭偏要抄底",
+          "emotion": "继续观察",
+          "content": "《特朗普据报考虑占领或封锁哈尔克岛》先别急着站队，我会继续盯后续细节。对 板块轮动、情绪修复和筹码结构 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "港股交易员",
+          "name": "南向资金雷达",
+          "emotion": "偏乐观",
+          "content": "《宇树：计划在3年内发布“通用人形机器人具身基础模型”》这种消息最怕看标题就上头，但如果兑现速度跟上，估值、南向资金和事件驱动 这块会先受益。"
+        },
+        {
+          "role": "美股散户",
+          "name": "盘前不睡觉",
+          "emotion": "继续观察",
+          "content": "先看后手。交通运输部：加快建设统一开放的交通运输市场 培育发… 这类消息真正值钱的地方，在于它会不会把 中国宏观 的主线继续推下去。"
+        },
+        {
+          "role": "大厂产品经理",
+          "name": "需求池爆了",
+          "emotion": "继续观察",
+          "content": "《财联社3月20日电，商务部公示2026年尼加拉瓜食…》先别急着站队，我会继续盯后续细节。对 用户增长、平台策略和商业化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "AI 工程师",
+          "name": "今晚还在调参",
+          "emotion": "继续观察",
+          "content": "这条《有何隐情？5家券商研究所所长由分析师调整为“一般证…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "芯片销售",
+          "name": "先看交期",
+          "emotion": "继续观察",
+          "content": "先看后手。交通运输部召开党组会：扩大交通运输有效投资，提高国… 这类消息真正值钱的地方，在于它会不会把 中国宏观 的主线继续推下去。"
+        },
+        {
+          "role": "大学生",
+          "name": "今天也在赶 ddl",
+          "emotion": "偏乐观",
+          "content": "站在 大学生 的角度，这条《上海银行业绩快报：2025年净利润241.93亿元…》我先记一笔偏多。只要后面真的能兑现，就业机会、行业风口和体感变化 这条线就还有想象空间。"
+        },
+        {
+          "role": "宝妈",
+          "name": "先看生活成本",
+          "emotion": "偏乐观",
+          "content": "《湘财股份：2025年净利润4.64亿元，同比增长3…》这种消息最怕看标题就上头，但如果兑现速度跟上，家庭消费、教育医疗和安全感 这块会先受益。"
+        },
+        {
+          "role": "出租车师傅",
+          "name": "路口见世面",
+          "emotion": "继续观察",
+          "content": "先看后手。司法部：2025年规范涉企行政执法专项行动为企业挽… 这类消息真正值钱的地方，在于它会不会把 中国宏观 的主线继续推下去。"
+        },
+        {
+          "role": "自媒体博主",
+          "name": "标题先起了",
+          "emotion": "继续观察",
+          "content": "《李云泽会见香港特区政府财政司司长陈茂波》先别急着站队，我会继续盯后续细节。对 传播性、话题度和平台情绪 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "律师",
+          "name": "先看合规边界",
+          "emotion": "继续观察",
+          "content": "这条《特朗普据报考虑占领或封锁哈尔克岛》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "医生",
+          "name": "先讲证据",
+          "emotion": "偏乐观",
+          "content": "我更在意《宇树：计划在3年内发布“通用人形机器人具身基础模型”》后面的二阶影响。要是真往下传导，中国宏观 不是一天行情。"
+        },
+        {
+          "role": "公务员",
+          "name": "按流程推进",
+          "emotion": "继续观察",
+          "content": "《交通运输部：加快建设统一开放的交通运输市场 培育发…》先别急着站队，我会继续盯后续细节。对 政策执行、地方协同和社会预期 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "制造业厂长",
+          "name": "工位灯还亮着",
+          "emotion": "继续观察",
+          "content": "这条《财联社3月20日电，商务部公示2026年尼加拉瓜食…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "00后打工人",
+          "name": "别给我画饼",
+          "emotion": "继续观察",
+          "content": "先看后手。有何隐情？5家券商研究所所长由分析师调整为“一般证… 这类消息真正值钱的地方，在于它会不会把 中国宏观 的主线继续推下去。"
+        },
+        {
+          "role": "海外留学生",
+          "name": "时差还没倒",
+          "emotion": "继续观察",
+          "content": "《交通运输部召开党组会：扩大交通运输有效投资，提高国…》先别急着站队，我会继续盯后续细节。对 国际比较、全球舆论和跨市场联动 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "电商运营",
+          "name": "转化率说话",
+          "emotion": "偏乐观",
+          "content": "《上海银行业绩快报：2025年净利润241.93亿元…》这种消息最怕看标题就上头，但如果兑现速度跟上，流量成本、消费意愿和活动节奏 这块会先受益。"
+        },
+        {
+          "role": "喜剧吐槽号",
+          "name": "这也能上热搜",
+          "emotion": "偏乐观",
+          "content": "我更在意《湘财股份：2025年净利润4.64亿元，同比增长3…》后面的二阶影响。要是真往下传导，中国宏观 不是一天行情。"
+        },
+        {
+          "role": "长线投资者",
+          "name": "只看五年",
+          "emotion": "继续观察",
+          "content": "《司法部：2025年规范涉企行政执法专项行动为企业挽…》先别急着站队，我会继续盯后续细节。对 护城河、现金流和长期复利 来说，节奏比态度更重要。"
+        }
+      ],
+      "sourcesUsed": [
+        {
+          "id": "wallstreetcn-quick",
+          "label": "华尔街见闻快讯"
+        },
+        {
+          "id": "cls-telegraph",
+          "label": "财联社电报"
+        }
+      ]
+    },
+    {
+      "id": "china-markets",
+      "name": "中国市场",
+      "description": "A 股、港股、热门板块与交易情绪",
+      "lens": "看资金偏好、板块轮动和风险定价节奏",
+      "lead": "中国市场 今天的主线围绕 贝森特：已允许伊朗石油继续从海湾地…、响应特朗普呼声，以色列总理称将暂停…、伊朗称若基础设施再遭袭将不再克制、… 展开。从 看资金偏好、板块轮动和风险定价节奏 的角度看，短线更值得关注的是消息能否从标题热度继续传导到真实订单、资金方向和后续政策动作。",
+      "bullish": "利多抓手先看《阿里电话会：未来五年，云和AI年收入突破1000亿美元…》。这类消息通常会先影响风险偏好，再决定资金是否愿意追价，关键是后续有没有连续验证。",
+      "bearish": "利空压力来自《贝森特：已允许伊朗石油继续从海湾地区流出，或解除对海上…》。它更像风险定价事件，短线会先打情绪和估值，真正要不要扩大影响，还得看第二波数据。",
+      "watch": "继续观察《响应特朗普呼声，以色列总理称将暂停空袭伊朗能源设施，卡…》。这条新闻现在还处在预期形成阶段，比起立刻下结论，更重要的是跟踪兑现节奏。",
+      "economistTake": "经济分析师视角下，中国市场 目前呈现出“情绪更谨慎、等待确认”的结构。领头事件是《贝森特：已允许伊朗石油继续从海湾地区流出，或解除对…》，但真正影响定价的不是单条标题本身，而是它能否沿着 看资金偏好、板块轮动和风险定价节奏 这条链路继续扩散。如果接下来政策、订单或资金流没有接力，那今天的热度更可能停留在交易层面；如果连续出现验证，板块就有机会从情绪修复转向趋势定价。",
+      "stories": [
+        {
+          "index": 1,
+          "title": "贝森特：已允许伊朗石油继续从海湾地区流出，或解除对海上伊朗石油的制裁",
+          "summary": "这条新闻把市场焦点重新拉回到A 股、港股、热门板块与交易情绪。《贝森特：已允许伊朗石油继续从海湾地区流出，或解除对海上伊朗…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利空，因为它会先压制预期和估值，市场往往会提前计入不确定性。",
+          "signal": "bearish",
+          "signalLabel": "利空",
+          "url": "https://wallstreetcn.com/articles/3767941",
+          "sourceId": "wallstreetcn-hot",
+          "source": "华尔街见闻热门",
+          "publishedAt": null
+        },
+        {
+          "index": 2,
+          "title": "响应特朗普呼声，以色列总理称将暂停空袭伊朗能源设施，卡塔尔称伊袭破坏17%LNG产能",
+          "summary": "资金今天关注的核心变量之一是A 股、港股、热门板块与交易情绪。《响应特朗普呼声，以色列总理称将暂停空袭伊朗能源设施，卡塔尔…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 中国市场 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://wallstreetcn.com/articles/3767948",
+          "sourceId": "wallstreetcn-hot",
+          "source": "华尔街见闻热门",
+          "publishedAt": null
+        },
+        {
+          "index": 3,
+          "title": "伊朗称若基础设施再遭袭将不再克制、击中美F-35战机，美军或夺岛迫使伊开放霍尔木兹",
+          "summary": "从板块主线看，这条信息对应的是A 股、港股、热门板块与交易情绪。《伊朗称若基础设施再遭袭将不再克制、击中美F-35战机，美军…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 中国市场 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://wallstreetcn.com/articles/3767953",
+          "sourceId": "wallstreetcn-hot",
+          "source": "华尔街见闻热门",
+          "publishedAt": null
+        },
+        {
+          "index": 4,
+          "title": "油价动荡主导市场，美股美债企稳，全球央行\"鹰派按兵不动\"，黄金一度暴跌6%",
+          "summary": "如果把它放回全天节奏里看，真正重要的是A 股、港股、热门板块与交易情绪。《油价动荡主导市场，美股美债企稳，全球央行\"鹰派按兵不动\"，…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利空，因为它会先压制预期和估值，市场往往会提前计入不确定性。",
+          "signal": "bearish",
+          "signalLabel": "利空",
+          "url": "https://wallstreetcn.com/articles/3767876",
+          "sourceId": "wallstreetcn-hot",
+          "source": "华尔街见闻热门",
+          "publishedAt": null
+        },
+        {
+          "index": 5,
+          "title": "黄金白银为何暴跌？",
+          "summary": "这条新闻把市场焦点重新拉回到A 股、港股、热门板块与交易情绪。《黄金白银为何暴跌？》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利空，因为它会先压制预期和估值，市场往往会提前计入不确定性。",
+          "signal": "bearish",
+          "signalLabel": "利空",
+          "url": "https://wallstreetcn.com/articles/3767962",
+          "sourceId": "wallstreetcn-hot",
+          "source": "华尔街见闻热门",
+          "publishedAt": null
+        },
+        {
+          "index": 6,
+          "title": "阿里电话会：未来五年，云和AI年收入突破1000亿美元，MaaS将是阿里云最大收入产品",
+          "summary": "资金今天关注的核心变量之一是A 股、港股、热门板块与交易情绪。《阿里电话会：未来五年，云和AI年收入突破1000亿美元，M…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利多，因为它容易改善 中国市场 的风险偏好，并给后续资金接力留下理由。",
+          "signal": "bullish",
+          "signalLabel": "利多",
+          "url": "https://wallstreetcn.com/articles/3767932",
+          "sourceId": "wallstreetcn-hot",
+          "source": "华尔街见闻热门",
+          "publishedAt": null
+        },
+        {
+          "index": 7,
+          "title": "华尔街见闻早餐FM-Radio | 2026年3月20日",
+          "summary": "从板块主线看，这条信息对应的是A 股、港股、热门板块与交易情绪。《华尔街见闻早餐FM-Radio | 2026年3月20日》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 中国市场 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://wallstreetcn.com/articles/3767961",
+          "sourceId": "wallstreetcn-hot",
+          "source": "华尔街见闻热门",
+          "publishedAt": null
+        },
+        {
+          "index": 8,
+          "title": "隔夜市场关键转折点！内塔尼亚胡：暂停空袭伊朗能源设施，战争或“比预期更早”结束",
+          "summary": "如果把它放回全天节奏里看，真正重要的是A 股、港股、热门板块与交易情绪。《隔夜市场关键转折点！内塔尼亚胡：暂停空袭伊朗能源设施，战争…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 中国市场 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://wallstreetcn.com/articles/3767966",
+          "sourceId": "wallstreetcn-hot",
+          "source": "华尔街见闻热门",
+          "publishedAt": null
+        },
+        {
+          "index": 9,
+          "title": "也门胡塞武装：可能封锁曼德海峡",
+          "summary": "这条新闻把市场焦点重新拉回到A 股、港股、热门板块与交易情绪。《也门胡塞武装：可能封锁曼德海峡》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 中国市场 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.cls.cn/detail/2319206",
+          "sourceId": "cls-hot",
+          "source": "财联社热门",
+          "publishedAt": null
+        },
+        {
+          "index": 10,
+          "title": "下周国内成品油价或全面涨至“9元时代”",
+          "summary": "资金今天关注的核心变量之一是A 股、港股、热门板块与交易情绪。《下周国内成品油价或全面涨至“9元时代”》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 中国市场 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.cls.cn/detail/2319278",
+          "sourceId": "cls-hot",
+          "source": "财联社热门",
+          "publishedAt": null
+        }
+      ],
+      "personaComments": [
+        {
+          "role": "宏观策略师",
+          "name": "周期里找锚",
+          "emotion": "偏谨慎",
+          "content": "《贝森特：已允许伊朗石油继续从海湾地区流出，或解除对…》这条我会先当风险项处理。标题热度是一回事，真正麻烦的是它会不会继续伤到 政策节奏、流动性和预期差。"
+        },
+        {
+          "role": "外贸老板",
+          "name": "柜子还在海上",
+          "emotion": "继续观察",
+          "content": "这条《响应特朗普呼声，以色列总理称将暂停空袭伊朗能源设施…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "退休银行行长",
+          "name": "稳字当头",
+          "emotion": "继续观察",
+          "content": "先看后手。伊朗称若基础设施再遭袭将不再克制、击中美F-35战… 这类消息真正值钱的地方，在于它会不会把 中国市场 的主线继续推下去。"
+        },
+        {
+          "role": "创业者",
+          "name": "现金流第一",
+          "emotion": "偏谨慎",
+          "content": "《油价动荡主导市场，美股美债企稳，全球央行\"鹰派按兵…》这条我会先当风险项处理。标题热度是一回事，真正麻烦的是它会不会继续伤到 增长空间、融资窗口和执行速度。"
+        },
+        {
+          "role": "新能源研究员",
+          "name": "电池边上的人",
+          "emotion": "偏谨慎",
+          "content": "别看现在评论区闹得凶，真正的压力在兑现层。黄金白银为何暴跌？ 这种消息，最容易先打掉市场耐心。"
+        },
+        {
+          "role": "地产从业者",
+          "name": "案场观察员",
+          "emotion": "偏乐观",
+          "content": "我更在意《阿里电话会：未来五年，云和AI年收入突破1000亿…》后面的二阶影响。要是真往下传导，中国市场 不是一天行情。"
+        },
+        {
+          "role": "A股老股民",
+          "name": "老韭偏要抄底",
+          "emotion": "继续观察",
+          "content": "《华尔街见闻早餐FM-Radio | 2026年3月…》先别急着站队，我会继续盯后续细节。对 板块轮动、情绪修复和筹码结构 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "港股交易员",
+          "name": "南向资金雷达",
+          "emotion": "继续观察",
+          "content": "这条《隔夜市场关键转折点！内塔尼亚胡：暂停空袭伊朗能源设…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "美股散户",
+          "name": "盘前不睡觉",
+          "emotion": "继续观察",
+          "content": "先看后手。也门胡塞武装：可能封锁曼德海峡 这类消息真正值钱的地方，在于它会不会把 中国市场 的主线继续推下去。"
+        },
+        {
+          "role": "大厂产品经理",
+          "name": "需求池爆了",
+          "emotion": "继续观察",
+          "content": "《下周国内成品油价或全面涨至“9元时代”》先别急着站队，我会继续盯后续细节。对 用户增长、平台策略和商业化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "AI 工程师",
+          "name": "今晚还在调参",
+          "emotion": "偏谨慎",
+          "content": "别看现在评论区闹得凶，真正的压力在兑现层。贝森特：已允许伊朗石油继续从海湾地区流出，或解除对… 这种消息，最容易先打掉市场耐心。"
+        },
+        {
+          "role": "芯片销售",
+          "name": "先看交期",
+          "emotion": "继续观察",
+          "content": "先看后手。响应特朗普呼声，以色列总理称将暂停空袭伊朗能源设施… 这类消息真正值钱的地方，在于它会不会把 中国市场 的主线继续推下去。"
+        },
+        {
+          "role": "大学生",
+          "name": "今天也在赶 ddl",
+          "emotion": "继续观察",
+          "content": "《伊朗称若基础设施再遭袭将不再克制、击中美F-35战…》先别急着站队，我会继续盯后续细节。对 就业机会、行业风口和体感变化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "宝妈",
+          "name": "先看生活成本",
+          "emotion": "偏谨慎",
+          "content": "别看现在评论区闹得凶，真正的压力在兑现层。油价动荡主导市场，美股美债企稳，全球央行\"鹰派按兵… 这种消息，最容易先打掉市场耐心。"
+        },
+        {
+          "role": "出租车师傅",
+          "name": "路口见世面",
+          "emotion": "偏谨慎",
+          "content": "我对《黄金白银为何暴跌？》会偏谨慎。要是后面没有修复动作，中国市场 这条线就得重新估值。"
+        },
+        {
+          "role": "自媒体博主",
+          "name": "标题先起了",
+          "emotion": "偏乐观",
+          "content": "站在 自媒体博主 的角度，这条《阿里电话会：未来五年，云和AI年收入突破1000亿…》我先记一笔偏多。只要后面真的能兑现，传播性、话题度和平台情绪 这条线就还有想象空间。"
+        },
+        {
+          "role": "律师",
+          "name": "先看合规边界",
+          "emotion": "继续观察",
+          "content": "这条《华尔街见闻早餐FM-Radio | 2026年3月…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "医生",
+          "name": "先讲证据",
+          "emotion": "继续观察",
+          "content": "先看后手。隔夜市场关键转折点！内塔尼亚胡：暂停空袭伊朗能源设… 这类消息真正值钱的地方，在于它会不会把 中国市场 的主线继续推下去。"
+        },
+        {
+          "role": "公务员",
+          "name": "按流程推进",
+          "emotion": "继续观察",
+          "content": "《也门胡塞武装：可能封锁曼德海峡》先别急着站队，我会继续盯后续细节。对 政策执行、地方协同和社会预期 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "制造业厂长",
+          "name": "工位灯还亮着",
+          "emotion": "继续观察",
+          "content": "这条《下周国内成品油价或全面涨至“9元时代”》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "00后打工人",
+          "name": "别给我画饼",
+          "emotion": "偏谨慎",
+          "content": "我对《贝森特：已允许伊朗石油继续从海湾地区流出，或解除对…》会偏谨慎。要是后面没有修复动作，中国市场 这条线就得重新估值。"
+        },
+        {
+          "role": "海外留学生",
+          "name": "时差还没倒",
+          "emotion": "继续观察",
+          "content": "《响应特朗普呼声，以色列总理称将暂停空袭伊朗能源设施…》先别急着站队，我会继续盯后续细节。对 国际比较、全球舆论和跨市场联动 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "电商运营",
+          "name": "转化率说话",
+          "emotion": "继续观察",
+          "content": "这条《伊朗称若基础设施再遭袭将不再克制、击中美F-35战…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "喜剧吐槽号",
+          "name": "这也能上热搜",
+          "emotion": "偏谨慎",
+          "content": "我对《油价动荡主导市场，美股美债企稳，全球央行\"鹰派按兵…》会偏谨慎。要是后面没有修复动作，中国市场 这条线就得重新估值。"
+        },
+        {
+          "role": "长线投资者",
+          "name": "只看五年",
+          "emotion": "偏谨慎",
+          "content": "《黄金白银为何暴跌？》这条我会先当风险项处理。标题热度是一回事，真正麻烦的是它会不会继续伤到 护城河、现金流和长期复利。"
+        }
+      ],
+      "sourcesUsed": [
+        {
+          "id": "wallstreetcn-hot",
+          "label": "华尔街见闻热门"
+        },
+        {
+          "id": "cls-hot",
+          "label": "财联社热门"
+        }
+      ]
+    },
+    {
+      "id": "global-macro",
+      "name": "全球宏观",
+      "description": "海外经济、利率、通胀与跨市场联动",
+      "lens": "看美元、利率路径和全球风险资产的再定价",
+      "lead": "全球宏观 今天的主线围绕 Typical energy bi…、How the Iran war …、IT failure leaves… 展开。从 看美元、利率路径和全球风险资产的再定价 的角度看，短线更值得关注的是消息能否从标题热度继续传导到真实订单、资金方向和后续政策动作。",
+      "bullish": "利多抓手先看《Typical energy bill forecas…》。这类消息通常会先影响风险偏好，再决定资金是否愿意追价，关键是后续有没有连续验证。",
+      "bearish": "利空压力来自《Typical energy bill forecas…》。它更像风险定价事件，短线会先打情绪和估值，真正要不要扩大影响，还得看第二波数据。",
+      "watch": "继续观察《Typical energy bill forecas…》。这条新闻现在还处在预期形成阶段，比起立刻下结论，更重要的是跟踪兑现节奏。",
+      "economistTake": "经济分析师视角下，全球宏观 目前呈现出“情绪偏暖、等待确认”的结构。领头事件是《Typical energy bill forec…》，但真正影响定价的不是单条标题本身，而是它能否沿着 看美元、利率路径和全球风险资产的再定价 这条链路继续扩散。如果接下来政策、订单或资金流没有接力，那今天的热度更可能停留在交易层面；如果连续出现验证，板块就有机会从情绪修复转向趋势定价。",
+      "stories": [
+        {
+          "index": 1,
+          "title": "Typical energy bill forecast to rise by £332 a year in July",
+          "summary": "这条新闻把市场焦点重新拉回到海外经济、利率、通胀与跨市场联动。《Typical energy bill forecast …》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 全球宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/cede1nn8wp5o?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-business",
+          "source": "BBC Business",
+          "publishedAt": "2026-03-20 20:08"
+        },
+        {
+          "index": 2,
+          "title": "How the Iran war may affect your money and bills",
+          "summary": "资金今天关注的核心变量之一是海外经济、利率、通胀与跨市场联动。《How the Iran war may affect y…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 全球宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/c2e4ygndjpwo?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-business",
+          "source": "BBC Business",
+          "publishedAt": "2026-03-20 20:06"
+        },
+        {
+          "index": 3,
+          "title": "IT failure leaves Hargreaves Lansdown clients unable to make transactions",
+          "summary": "从板块主线看，这条信息对应的是海外经济、利率、通胀与跨市场联动。《IT failure leaves Hargreaves …》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 全球宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/cx2reyjdyjzo?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-business",
+          "source": "BBC Business",
+          "publishedAt": "2026-03-20 19:57"
+        },
+        {
+          "index": 4,
+          "title": "Why are gas prices soaring and how could it affect you?",
+          "summary": "如果把它放回全天节奏里看，真正重要的是海外经济、利率、通胀与跨市场联动。《Why are gas prices soaring an…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 全球宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/cj6d66w0995o?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-business",
+          "source": "BBC Business",
+          "publishedAt": "2026-03-20 18:34"
+        },
+        {
+          "index": 5,
+          "title": "Warning UK borrowing rise makes energy bill help harder",
+          "summary": "这条新闻把市场焦点重新拉回到海外经济、利率、通胀与跨市场联动。《Warning UK borrowing rise mak…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 全球宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/cx23yn735jdo?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-business",
+          "source": "BBC Business",
+          "publishedAt": "2026-03-20 18:16"
+        },
+        {
+          "index": 6,
+          "title": "Trio charged over alleged plot to smuggle Nvidia chips from US to China",
+          "summary": "资金今天关注的核心变量之一是海外经济、利率、通胀与跨市场联动。《Trio charged over alleged plo…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 全球宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/cy41ly2d9wko?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-business",
+          "source": "BBC Business",
+          "publishedAt": "2026-03-20 12:26"
+        },
+        {
+          "index": 7,
+          "title": "US moves to soften capital rules: ‘Big banks can declare mission accomplished’",
+          "summary": "从板块主线看，这条信息对应的是海外经济、利率、通胀与跨市场联动。《US moves to soften capital ru…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 全球宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.theguardian.com/business/2026/mar/19/federal-reserve-bank-capital-requirements",
+          "sourceId": "guardian-business",
+          "source": "The Guardian Business",
+          "publishedAt": "2026-03-20 01:38"
+        },
+        {
+          "index": 8,
+          "title": "‘Doomsday scenario’: a visual guide to the oil and gas site attacks in the Middle East",
+          "summary": "如果把它放回全天节奏里看，真正重要的是海外经济、利率、通胀与跨市场联动。《‘Doomsday scenario’: a visual…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 全球宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.theguardian.com/world/ng-interactive/2026/mar/19/visual-guide-oil-and-gas-site-attacks-middle-east",
+          "sourceId": "guardian-business",
+          "source": "The Guardian Business",
+          "publishedAt": "2026-03-19 23:58"
+        },
+        {
+          "index": 9,
+          "title": "Oil and gas prices jump after Iran and Israel attack gasfields",
+          "summary": "这条新闻把市场焦点重新拉回到海外经济、利率、通胀与跨市场联动。《Oil and gas prices jump after…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 全球宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.theguardian.com/business/2026/mar/19/oil-prices-gas-prices-rise-iran-israel-donald-trump",
+          "sourceId": "guardian-business",
+          "source": "The Guardian Business",
+          "publishedAt": "2026-03-19 22:21"
+        },
+        {
+          "index": 10,
+          "title": "Europe’s biggest airlines say fuel price spike caused by Iran war will drive up fares",
+          "summary": "资金今天关注的核心变量之一是海外经济、利率、通胀与跨市场联动。《Europe’s biggest airlines say…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 全球宏观 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.theguardian.com/business/2026/mar/19/europe-biggest-airlines-say-fuel-price-spike-caused-by-iran-war-will-drive-up-fares",
+          "sourceId": "guardian-business",
+          "source": "The Guardian Business",
+          "publishedAt": "2026-03-19 21:04"
+        }
+      ],
+      "personaComments": [
+        {
+          "role": "宏观策略师",
+          "name": "周期里找锚",
+          "emotion": "继续观察",
+          "content": "《Typical energy bill forec…》先别急着站队，我会继续盯后续细节。对 政策节奏、流动性和预期差 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "外贸老板",
+          "name": "柜子还在海上",
+          "emotion": "继续观察",
+          "content": "这条《How the Iran war may affe…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "退休银行行长",
+          "name": "稳字当头",
+          "emotion": "继续观察",
+          "content": "先看后手。IT failure leaves Hargrea… 这类消息真正值钱的地方，在于它会不会把 全球宏观 的主线继续推下去。"
+        },
+        {
+          "role": "创业者",
+          "name": "现金流第一",
+          "emotion": "继续观察",
+          "content": "《Why are gas prices soarin…》先别急着站队，我会继续盯后续细节。对 增长空间、融资窗口和执行速度 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "新能源研究员",
+          "name": "电池边上的人",
+          "emotion": "继续观察",
+          "content": "这条《Warning UK borrowing rise…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "地产从业者",
+          "name": "案场观察员",
+          "emotion": "继续观察",
+          "content": "先看后手。Trio charged over alleged… 这类消息真正值钱的地方，在于它会不会把 全球宏观 的主线继续推下去。"
+        },
+        {
+          "role": "A股老股民",
+          "name": "老韭偏要抄底",
+          "emotion": "继续观察",
+          "content": "《US moves to soften capita…》先别急着站队，我会继续盯后续细节。对 板块轮动、情绪修复和筹码结构 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "港股交易员",
+          "name": "南向资金雷达",
+          "emotion": "继续观察",
+          "content": "这条《‘Doomsday scenario’: a vi…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "美股散户",
+          "name": "盘前不睡觉",
+          "emotion": "继续观察",
+          "content": "先看后手。Oil and gas prices jump a… 这类消息真正值钱的地方，在于它会不会把 全球宏观 的主线继续推下去。"
+        },
+        {
+          "role": "大厂产品经理",
+          "name": "需求池爆了",
+          "emotion": "继续观察",
+          "content": "《Europe’s biggest airlines…》先别急着站队，我会继续盯后续细节。对 用户增长、平台策略和商业化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "AI 工程师",
+          "name": "今晚还在调参",
+          "emotion": "继续观察",
+          "content": "这条《Typical energy bill forec…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "芯片销售",
+          "name": "先看交期",
+          "emotion": "继续观察",
+          "content": "先看后手。How the Iran war may affe… 这类消息真正值钱的地方，在于它会不会把 全球宏观 的主线继续推下去。"
+        },
+        {
+          "role": "大学生",
+          "name": "今天也在赶 ddl",
+          "emotion": "继续观察",
+          "content": "《IT failure leaves Hargrea…》先别急着站队，我会继续盯后续细节。对 就业机会、行业风口和体感变化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "宝妈",
+          "name": "先看生活成本",
+          "emotion": "继续观察",
+          "content": "这条《Why are gas prices soarin…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "出租车师傅",
+          "name": "路口见世面",
+          "emotion": "继续观察",
+          "content": "先看后手。Warning UK borrowing rise… 这类消息真正值钱的地方，在于它会不会把 全球宏观 的主线继续推下去。"
+        },
+        {
+          "role": "自媒体博主",
+          "name": "标题先起了",
+          "emotion": "继续观察",
+          "content": "《Trio charged over alleged…》先别急着站队，我会继续盯后续细节。对 传播性、话题度和平台情绪 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "律师",
+          "name": "先看合规边界",
+          "emotion": "继续观察",
+          "content": "这条《US moves to soften capita…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "医生",
+          "name": "先讲证据",
+          "emotion": "继续观察",
+          "content": "先看后手。‘Doomsday scenario’: a vi… 这类消息真正值钱的地方，在于它会不会把 全球宏观 的主线继续推下去。"
+        },
+        {
+          "role": "公务员",
+          "name": "按流程推进",
+          "emotion": "继续观察",
+          "content": "《Oil and gas prices jump a…》先别急着站队，我会继续盯后续细节。对 政策执行、地方协同和社会预期 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "制造业厂长",
+          "name": "工位灯还亮着",
+          "emotion": "继续观察",
+          "content": "这条《Europe’s biggest airlines…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "00后打工人",
+          "name": "别给我画饼",
+          "emotion": "继续观察",
+          "content": "先看后手。Typical energy bill forec… 这类消息真正值钱的地方，在于它会不会把 全球宏观 的主线继续推下去。"
+        },
+        {
+          "role": "海外留学生",
+          "name": "时差还没倒",
+          "emotion": "继续观察",
+          "content": "《How the Iran war may affe…》先别急着站队，我会继续盯后续细节。对 国际比较、全球舆论和跨市场联动 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "电商运营",
+          "name": "转化率说话",
+          "emotion": "继续观察",
+          "content": "这条《IT failure leaves Hargrea…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "喜剧吐槽号",
+          "name": "这也能上热搜",
+          "emotion": "继续观察",
+          "content": "先看后手。Why are gas prices soarin… 这类消息真正值钱的地方，在于它会不会把 全球宏观 的主线继续推下去。"
+        },
+        {
+          "role": "长线投资者",
+          "name": "只看五年",
+          "emotion": "继续观察",
+          "content": "《Warning UK borrowing rise…》先别急着站队，我会继续盯后续细节。对 护城河、现金流和长期复利 来说，节奏比态度更重要。"
+        }
+      ],
+      "sourcesUsed": [
+        {
+          "id": "bbc-business",
+          "label": "BBC Business"
+        },
+        {
+          "id": "guardian-business",
+          "label": "The Guardian Business"
+        }
+      ]
+    },
+    {
+      "id": "geopolitics",
+      "name": "地缘政治",
+      "description": "战争冲突、外交博弈和国际关系",
+      "lens": "看事件如何传导到能源、航运、汇率和市场风险偏好",
+      "lead": "地缘政治 今天的主线围绕 Hungary's Orbán a…、Mexican teen dies…、Norway's crown pr… 展开。从 看事件如何传导到能源、航运、汇率和市场风险偏好 的角度看，短线更值得关注的是消息能否从标题热度继续传导到真实订单、资金方向和后续政策动作。",
+      "bullish": "利多抓手先看《Hungary's Orbán accused of …》。这类消息通常会先影响风险偏好，再决定资金是否愿意追价，关键是后续有没有连续验证。",
+      "bearish": "利空压力来自《Hungary's Orbán accused of …》。它更像风险定价事件，短线会先打情绪和估值，真正要不要扩大影响，还得看第二波数据。",
+      "watch": "继续观察《Hungary's Orbán accused of …》。这条新闻现在还处在预期形成阶段，比起立刻下结论，更重要的是跟踪兑现节奏。",
+      "economistTake": "经济分析师视角下，地缘政治 目前呈现出“情绪偏暖、等待确认”的结构。领头事件是《Hungary's Orbán accused o…》，但真正影响定价的不是单条标题本身，而是它能否沿着 看事件如何传导到能源、航运、汇率和市场风险偏好 这条链路继续扩散。如果接下来政策、订单或资金流没有接力，那今天的热度更可能停留在交易层面；如果连续出现验证，板块就有机会从情绪修复转向趋势定价。",
+      "stories": [
+        {
+          "index": 1,
+          "title": "Hungary's Orbán accused of disloyalty and blackmail over Ukraine loan veto",
+          "summary": "这条新闻把市场焦点重新拉回到战争冲突、外交博弈和国际关系。《Hungary's Orbán accused of di…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 地缘政治 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/cq6jrvgqeejo?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-world",
+          "source": "BBC World",
+          "publishedAt": "2026-03-20 19:33"
+        },
+        {
+          "index": 2,
+          "title": "Mexican teen dies while being held in US immigration custody",
+          "summary": "资金今天关注的核心变量之一是战争冲突、外交博弈和国际关系。《Mexican teen dies while being…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 地缘政治 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/cp84n0kn902o?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-world",
+          "source": "BBC World",
+          "publishedAt": "2026-03-20 18:57"
+        },
+        {
+          "index": 3,
+          "title": "Norway's crown princess breaks silence on Epstein links: 'I was manipulated and deceived'",
+          "summary": "从板块主线看，这条信息对应的是战争冲突、外交博弈和国际关系。《Norway's crown princess break…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 地缘政治 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/cde5y63y3n7o?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-world",
+          "source": "BBC World",
+          "publishedAt": "2026-03-20 18:43"
+        },
+        {
+          "index": 4,
+          "title": "Trump makes Pearl Harbor remark in meeting with Japan's PM",
+          "summary": "如果把它放回全天节奏里看，真正重要的是战争冲突、外交博弈和国际关系。《Trump makes Pearl Harbor rema…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 地缘政治 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/c8dlpr074q3o?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-world",
+          "source": "BBC World",
+          "publishedAt": "2026-03-20 17:55"
+        },
+        {
+          "index": 5,
+          "title": "Nasa's Moon rocket Artemis rolls back to pad for possible April launch",
+          "summary": "这条新闻把市场焦点重新拉回到战争冲突、外交博弈和国际关系。《Nasa's Moon rocket Artemis ro…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 地缘政治 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/ckgrw045pg7o?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-world",
+          "source": "BBC World",
+          "publishedAt": "2026-03-20 14:01"
+        },
+        {
+          "index": 6,
+          "title": "BTS return from military service - but does their album live up to the hype?",
+          "summary": "资金今天关注的核心变量之一是战争冲突、外交博弈和国际关系。《BTS return from military serv…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 地缘政治 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/c070eg32dryo?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-world",
+          "source": "BBC World",
+          "publishedAt": "2026-03-20 12:04"
+        },
+        {
+          "index": 7,
+          "title": "Australia PM heckled at Sydney mosque Ramadan event",
+          "summary": "从板块主线看，这条信息对应的是战争冲突、外交博弈和国际关系。《Australia PM heckled at Sydne…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 地缘政治 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/cz90wy2190go?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-world",
+          "source": "BBC World",
+          "publishedAt": "2026-03-20 10:54"
+        },
+        {
+          "index": 8,
+          "title": "Bachelorette's new season pulled after Taylor Frankie Paul abuse allegations",
+          "summary": "如果把它放回全天节奏里看，真正重要的是战争冲突、外交博弈和国际关系。《Bachelorette's new season pul…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 地缘政治 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.bbc.com/news/articles/cp9vryml4d1o?at_medium=RSS&at_campaign=rss",
+          "sourceId": "bbc-world",
+          "source": "BBC World",
+          "publishedAt": "2026-03-20 09:41"
+        },
+        {
+          "index": 9,
+          "title": "French navy boards alleged Russian shadow fleet tanker in Mediterranean – Europe live",
+          "summary": "这条新闻把市场焦点重新拉回到战争冲突、外交博弈和国际关系。《French navy boards alleged Ru…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 地缘政治 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.theguardian.com/world/live/2026/mar/20/spain-tax-france-elections-pope-leo-eu-iran-war-energy-costs-europe-latest-news-updates",
+          "sourceId": "guardian-world",
+          "source": "The Guardian World",
+          "publishedAt": "2026-03-20 20:03"
+        },
+        {
+          "index": 10,
+          "title": "UK letting US use its bases is ‘participation in aggression’, Iran’s foreign minister tells Yvette Cooper – UK politics live",
+          "summary": "资金今天关注的核心变量之一是战争冲突、外交博弈和国际关系。《UK letting US use its bases i…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 地缘政治 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.theguardian.com/politics/live/2026/mar/20/reform-climate-targets-steve-reed-badenoch-assisted-dying-energy-bills-latest-news-updates",
+          "sourceId": "guardian-world",
+          "source": "The Guardian World",
+          "publishedAt": "2026-03-20 20:03"
+        }
+      ],
+      "personaComments": [
+        {
+          "role": "宏观策略师",
+          "name": "周期里找锚",
+          "emotion": "继续观察",
+          "content": "《Hungary's Orbán accused o…》先别急着站队，我会继续盯后续细节。对 政策节奏、流动性和预期差 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "外贸老板",
+          "name": "柜子还在海上",
+          "emotion": "继续观察",
+          "content": "这条《Mexican teen dies while b…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "退休银行行长",
+          "name": "稳字当头",
+          "emotion": "继续观察",
+          "content": "先看后手。Norway's crown princess b… 这类消息真正值钱的地方，在于它会不会把 地缘政治 的主线继续推下去。"
+        },
+        {
+          "role": "创业者",
+          "name": "现金流第一",
+          "emotion": "继续观察",
+          "content": "《Trump makes Pearl Harbor …》先别急着站队，我会继续盯后续细节。对 增长空间、融资窗口和执行速度 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "新能源研究员",
+          "name": "电池边上的人",
+          "emotion": "继续观察",
+          "content": "这条《Nasa's Moon rocket Artemi…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "地产从业者",
+          "name": "案场观察员",
+          "emotion": "继续观察",
+          "content": "先看后手。BTS return from military … 这类消息真正值钱的地方，在于它会不会把 地缘政治 的主线继续推下去。"
+        },
+        {
+          "role": "A股老股民",
+          "name": "老韭偏要抄底",
+          "emotion": "继续观察",
+          "content": "《Australia PM heckled at S…》先别急着站队，我会继续盯后续细节。对 板块轮动、情绪修复和筹码结构 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "港股交易员",
+          "name": "南向资金雷达",
+          "emotion": "继续观察",
+          "content": "这条《Bachelorette's new season…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "美股散户",
+          "name": "盘前不睡觉",
+          "emotion": "继续观察",
+          "content": "先看后手。French navy boards allege… 这类消息真正值钱的地方，在于它会不会把 地缘政治 的主线继续推下去。"
+        },
+        {
+          "role": "大厂产品经理",
+          "name": "需求池爆了",
+          "emotion": "继续观察",
+          "content": "《UK letting US use its bas…》先别急着站队，我会继续盯后续细节。对 用户增长、平台策略和商业化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "AI 工程师",
+          "name": "今晚还在调参",
+          "emotion": "继续观察",
+          "content": "这条《Hungary's Orbán accused o…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "芯片销售",
+          "name": "先看交期",
+          "emotion": "继续观察",
+          "content": "先看后手。Mexican teen dies while b… 这类消息真正值钱的地方，在于它会不会把 地缘政治 的主线继续推下去。"
+        },
+        {
+          "role": "大学生",
+          "name": "今天也在赶 ddl",
+          "emotion": "继续观察",
+          "content": "《Norway's crown princess b…》先别急着站队，我会继续盯后续细节。对 就业机会、行业风口和体感变化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "宝妈",
+          "name": "先看生活成本",
+          "emotion": "继续观察",
+          "content": "这条《Trump makes Pearl Harbor …》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "出租车师傅",
+          "name": "路口见世面",
+          "emotion": "继续观察",
+          "content": "先看后手。Nasa's Moon rocket Artemi… 这类消息真正值钱的地方，在于它会不会把 地缘政治 的主线继续推下去。"
+        },
+        {
+          "role": "自媒体博主",
+          "name": "标题先起了",
+          "emotion": "继续观察",
+          "content": "《BTS return from military …》先别急着站队，我会继续盯后续细节。对 传播性、话题度和平台情绪 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "律师",
+          "name": "先看合规边界",
+          "emotion": "继续观察",
+          "content": "这条《Australia PM heckled at S…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "医生",
+          "name": "先讲证据",
+          "emotion": "继续观察",
+          "content": "先看后手。Bachelorette's new season… 这类消息真正值钱的地方，在于它会不会把 地缘政治 的主线继续推下去。"
+        },
+        {
+          "role": "公务员",
+          "name": "按流程推进",
+          "emotion": "继续观察",
+          "content": "《French navy boards allege…》先别急着站队，我会继续盯后续细节。对 政策执行、地方协同和社会预期 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "制造业厂长",
+          "name": "工位灯还亮着",
+          "emotion": "继续观察",
+          "content": "这条《UK letting US use its bas…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "00后打工人",
+          "name": "别给我画饼",
+          "emotion": "继续观察",
+          "content": "先看后手。Hungary's Orbán accused o… 这类消息真正值钱的地方，在于它会不会把 地缘政治 的主线继续推下去。"
+        },
+        {
+          "role": "海外留学生",
+          "name": "时差还没倒",
+          "emotion": "继续观察",
+          "content": "《Mexican teen dies while b…》先别急着站队，我会继续盯后续细节。对 国际比较、全球舆论和跨市场联动 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "电商运营",
+          "name": "转化率说话",
+          "emotion": "继续观察",
+          "content": "这条《Norway's crown princess b…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "喜剧吐槽号",
+          "name": "这也能上热搜",
+          "emotion": "继续观察",
+          "content": "先看后手。Trump makes Pearl Harbor … 这类消息真正值钱的地方，在于它会不会把 地缘政治 的主线继续推下去。"
+        },
+        {
+          "role": "长线投资者",
+          "name": "只看五年",
+          "emotion": "继续观察",
+          "content": "《Nasa's Moon rocket Artemi…》先别急着站队，我会继续盯后续细节。对 护城河、现金流和长期复利 来说，节奏比态度更重要。"
+        }
+      ],
+      "sourcesUsed": [
+        {
+          "id": "bbc-world",
+          "label": "BBC World"
+        },
+        {
+          "id": "guardian-world",
+          "label": "The Guardian World"
+        }
+      ]
+    },
+    {
+      "id": "ai-models",
+      "name": "AI 大模型",
+      "description": "模型发布、Agent、应用落地和开发者生态",
+      "lens": "看模型能力、推理成本和商业化路径是否继续改善",
+      "lead": "AI 大模型 今天的主线围绕 The best AI inves…、These AI notetaki…、Jeff Bezos report… 展开。从 看模型能力、推理成本和商业化路径是否继续改善 的角度看，短线更值得关注的是消息能否从标题热度继续传导到真实订单、资金方向和后续政策动作。",
+      "bullish": "利多抓手先看《复宏汉霖：2025年实现营收66.666亿元，同比增长…》。这类消息通常会先影响风险偏好，再决定资金是否愿意追价，关键是后续有没有连续验证。",
+      "bearish": "利空压力来自《The best AI investment migh…》。它更像风险定价事件，短线会先打情绪和估值，真正要不要扩大影响，还得看第二波数据。",
+      "watch": "继续观察《The best AI investment migh…》。这条新闻现在还处在预期形成阶段，比起立刻下结论，更重要的是跟踪兑现节奏。",
+      "economistTake": "经济分析师视角下，AI 大模型 目前呈现出“情绪偏暖、等待确认”的结构。领头事件是《The best AI investment mi…》，但真正影响定价的不是单条标题本身，而是它能否沿着 看模型能力、推理成本和商业化路径是否继续改善 这条链路继续扩散。如果接下来政策、订单或资金流没有接力，那今天的热度更可能停留在交易层面；如果连续出现验证，板块就有机会从情绪修复转向趋势定价。",
+      "stories": [
+        {
+          "index": 1,
+          "title": "The best AI investment might be in energy tech",
+          "summary": "这条新闻把市场焦点重新拉回到模型发布、Agent、应用落地和开发者生态。《The best AI investment might …》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 AI 大模型 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://techcrunch.com/2026/03/20/the-best-ai-investment-might-be-in-energy-tech/",
+          "sourceId": "techcrunch-ai",
+          "source": "TechCrunch AI",
+          "publishedAt": "2026-03-20 20:00"
+        },
+        {
+          "index": 2,
+          "title": "These AI notetaking devices can help you record and transcribe your meetings",
+          "summary": "资金今天关注的核心变量之一是模型发布、Agent、应用落地和开发者生态。《These AI notetaking devices c…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 AI 大模型 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://techcrunch.com/2026/03/20/ai-notetaker-hardware-devices-pins-pendants-record-transcribe/",
+          "sourceId": "techcrunch-ai",
+          "source": "TechCrunch AI",
+          "publishedAt": "2026-03-20 19:31"
+        },
+        {
+          "index": 3,
+          "title": "Jeff Bezos reportedly wants $100 billion to buy and transform old manufacturing firms with AI",
+          "summary": "从板块主线看，这条信息对应的是模型发布、Agent、应用落地和开发者生态。《Jeff Bezos reportedly wants $…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 AI 大模型 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://techcrunch.com/2026/03/19/jeff-bezos-reportedly-wants-100-billion-to-buy-and-transform-old-manufacturing-firms-with-ai/",
+          "sourceId": "techcrunch-ai",
+          "source": "TechCrunch AI",
+          "publishedAt": "2026-03-20 06:09"
+        },
+        {
+          "index": 4,
+          "title": "Online bot traffic will exceed human traffic by 2027, Cloudflare CEO says",
+          "summary": "如果把它放回全天节奏里看，真正重要的是模型发布、Agent、应用落地和开发者生态。《Online bot traffic will excee…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 AI 大模型 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://techcrunch.com/2026/03/19/online-bot-traffic-will-exceed-human-traffic-by-2027-cloudflare-ceo-says/",
+          "sourceId": "techcrunch-ai",
+          "source": "TechCrunch AI",
+          "publishedAt": "2026-03-20 03:09"
+        },
+        {
+          "index": 5,
+          "title": "Meta rolls out new AI content enforcement systems while reducing reliance on third-party vendors",
+          "summary": "这条新闻把市场焦点重新拉回到模型发布、Agent、应用落地和开发者生态。《Meta rolls out new AI content…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 AI 大模型 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://techcrunch.com/2026/03/19/meta-rolls-out-new-ai-content-enforcement-systems-while-reducing-reliance-on-third-party-vendors/",
+          "sourceId": "techcrunch-ai",
+          "source": "TechCrunch AI",
+          "publishedAt": "2026-03-20 01:24"
+        },
+        {
+          "index": 6,
+          "title": "DoorDash launches a new ‘Tasks’ app that pays couriers to submit videos to train AI",
+          "summary": "资金今天关注的核心变量之一是模型发布、Agent、应用落地和开发者生态。《DoorDash launches a new ‘Task…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 AI 大模型 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://techcrunch.com/2026/03/19/doordash-launches-a-new-tasks-app-that-pays-couriers-to-submit-videos-to-train-ai/",
+          "sourceId": "techcrunch-ai",
+          "source": "TechCrunch AI",
+          "publishedAt": "2026-03-20 00:14"
+        },
+        {
+          "index": 7,
+          "title": "TechCrunch Startup Battlefield 200 nominations are still open",
+          "summary": "从板块主线看，这条信息对应的是模型发布、Agent、应用落地和开发者生态。《TechCrunch Startup Battlefiel…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 AI 大模型 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://techcrunch.com/2026/03/19/techcrunch-startup-battlefield-200-nominations-are-still-open/",
+          "sourceId": "techcrunch-ai",
+          "source": "TechCrunch AI",
+          "publishedAt": "2026-03-19 23:00"
+        },
+        {
+          "index": 8,
+          "title": "Amazon brings Alexa+ to the UK",
+          "summary": "如果把它放回全天节奏里看，真正重要的是模型发布、Agent、应用落地和开发者生态。《Amazon brings Alexa+ to the UK》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 AI 大模型 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://techcrunch.com/2026/03/19/amazon-brings-alexa-to-the-uk/",
+          "sourceId": "techcrunch-ai",
+          "source": "TechCrunch AI",
+          "publishedAt": "2026-03-19 20:27"
+        },
+        {
+          "index": 9,
+          "title": "深交所：对“ST 京蓝”异常交易相关投资者采取暂停交易等措施",
+          "summary": "这条新闻把市场焦点重新拉回到模型发布、Agent、应用落地和开发者生态。《深交所：对“ST 京蓝”异常交易相关投资者采取暂停交易等措施》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 AI 大模型 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.36kr.com/newsflashes/3731227662401536",
+          "sourceId": "36kr-quick",
+          "source": "36Kr 快讯",
+          "publishedAt": "2026-03-20 20:01"
+        },
+        {
+          "index": 10,
+          "title": "复宏汉霖：2025年实现营收66.666亿元，同比增长16.5%",
+          "summary": "资金今天关注的核心变量之一是模型发布、Agent、应用落地和开发者生态。《复宏汉霖：2025年实现营收66.666亿元，同比增长16…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利多，因为它容易改善 AI 大模型 的风险偏好，并给后续资金接力留下理由。",
+          "signal": "bullish",
+          "signalLabel": "利多",
+          "url": "https://www.36kr.com/newsflashes/3731224882446340",
+          "sourceId": "36kr-quick",
+          "source": "36Kr 快讯",
+          "publishedAt": "2026-03-20 19:58"
+        }
+      ],
+      "personaComments": [
+        {
+          "role": "宏观策略师",
+          "name": "周期里找锚",
+          "emotion": "继续观察",
+          "content": "《The best AI investment mi…》先别急着站队，我会继续盯后续细节。对 政策节奏、流动性和预期差 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "外贸老板",
+          "name": "柜子还在海上",
+          "emotion": "继续观察",
+          "content": "这条《These AI notetaking devic…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "退休银行行长",
+          "name": "稳字当头",
+          "emotion": "继续观察",
+          "content": "先看后手。Jeff Bezos reportedly wan… 这类消息真正值钱的地方，在于它会不会把 AI 大模型 的主线继续推下去。"
+        },
+        {
+          "role": "创业者",
+          "name": "现金流第一",
+          "emotion": "继续观察",
+          "content": "《Online bot traffic will e…》先别急着站队，我会继续盯后续细节。对 增长空间、融资窗口和执行速度 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "新能源研究员",
+          "name": "电池边上的人",
+          "emotion": "继续观察",
+          "content": "这条《Meta rolls out new AI con…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "地产从业者",
+          "name": "案场观察员",
+          "emotion": "继续观察",
+          "content": "先看后手。DoorDash launches a new ‘… 这类消息真正值钱的地方，在于它会不会把 AI 大模型 的主线继续推下去。"
+        },
+        {
+          "role": "A股老股民",
+          "name": "老韭偏要抄底",
+          "emotion": "继续观察",
+          "content": "《TechCrunch Startup Battle…》先别急着站队，我会继续盯后续细节。对 板块轮动、情绪修复和筹码结构 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "港股交易员",
+          "name": "南向资金雷达",
+          "emotion": "继续观察",
+          "content": "这条《Amazon brings Alexa+ to t…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "美股散户",
+          "name": "盘前不睡觉",
+          "emotion": "继续观察",
+          "content": "先看后手。深交所：对“ST 京蓝”异常交易相关投资者采取暂停… 这类消息真正值钱的地方，在于它会不会把 AI 大模型 的主线继续推下去。"
+        },
+        {
+          "role": "大厂产品经理",
+          "name": "需求池爆了",
+          "emotion": "偏乐观",
+          "content": "站在 大厂产品经理 的角度，这条《复宏汉霖：2025年实现营收66.666亿元，同比…》我先记一笔偏多。只要后面真的能兑现，用户增长、平台策略和商业化 这条线就还有想象空间。"
+        },
+        {
+          "role": "AI 工程师",
+          "name": "今晚还在调参",
+          "emotion": "继续观察",
+          "content": "这条《The best AI investment mi…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "芯片销售",
+          "name": "先看交期",
+          "emotion": "继续观察",
+          "content": "先看后手。These AI notetaking devic… 这类消息真正值钱的地方，在于它会不会把 AI 大模型 的主线继续推下去。"
+        },
+        {
+          "role": "大学生",
+          "name": "今天也在赶 ddl",
+          "emotion": "继续观察",
+          "content": "《Jeff Bezos reportedly wan…》先别急着站队，我会继续盯后续细节。对 就业机会、行业风口和体感变化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "宝妈",
+          "name": "先看生活成本",
+          "emotion": "继续观察",
+          "content": "这条《Online bot traffic will e…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "出租车师傅",
+          "name": "路口见世面",
+          "emotion": "继续观察",
+          "content": "先看后手。Meta rolls out new AI con… 这类消息真正值钱的地方，在于它会不会把 AI 大模型 的主线继续推下去。"
+        },
+        {
+          "role": "自媒体博主",
+          "name": "标题先起了",
+          "emotion": "继续观察",
+          "content": "《DoorDash launches a new ‘…》先别急着站队，我会继续盯后续细节。对 传播性、话题度和平台情绪 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "律师",
+          "name": "先看合规边界",
+          "emotion": "继续观察",
+          "content": "这条《TechCrunch Startup Battle…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "医生",
+          "name": "先讲证据",
+          "emotion": "继续观察",
+          "content": "先看后手。Amazon brings Alexa+ to t… 这类消息真正值钱的地方，在于它会不会把 AI 大模型 的主线继续推下去。"
+        },
+        {
+          "role": "公务员",
+          "name": "按流程推进",
+          "emotion": "继续观察",
+          "content": "《深交所：对“ST 京蓝”异常交易相关投资者采取暂停…》先别急着站队，我会继续盯后续细节。对 政策执行、地方协同和社会预期 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "制造业厂长",
+          "name": "工位灯还亮着",
+          "emotion": "偏乐观",
+          "content": "《复宏汉霖：2025年实现营收66.666亿元，同比…》这种消息最怕看标题就上头，但如果兑现速度跟上，成本、订单和设备开工率 这块会先受益。"
+        },
+        {
+          "role": "00后打工人",
+          "name": "别给我画饼",
+          "emotion": "继续观察",
+          "content": "先看后手。The best AI investment mi… 这类消息真正值钱的地方，在于它会不会把 AI 大模型 的主线继续推下去。"
+        },
+        {
+          "role": "海外留学生",
+          "name": "时差还没倒",
+          "emotion": "继续观察",
+          "content": "《These AI notetaking devic…》先别急着站队，我会继续盯后续细节。对 国际比较、全球舆论和跨市场联动 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "电商运营",
+          "name": "转化率说话",
+          "emotion": "继续观察",
+          "content": "这条《Jeff Bezos reportedly wan…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "喜剧吐槽号",
+          "name": "这也能上热搜",
+          "emotion": "继续观察",
+          "content": "先看后手。Online bot traffic will e… 这类消息真正值钱的地方，在于它会不会把 AI 大模型 的主线继续推下去。"
+        },
+        {
+          "role": "长线投资者",
+          "name": "只看五年",
+          "emotion": "继续观察",
+          "content": "《Meta rolls out new AI con…》先别急着站队，我会继续盯后续细节。对 护城河、现金流和长期复利 来说，节奏比态度更重要。"
+        }
+      ],
+      "sourcesUsed": [
+        {
+          "id": "techcrunch-ai",
+          "label": "TechCrunch AI"
+        },
+        {
+          "id": "36kr-quick",
+          "label": "36Kr 快讯"
+        }
+      ]
+    },
+    {
+      "id": "chips-devices",
+      "name": "芯片与硬件",
+      "description": "半导体、终端设备、智能汽车与算力基础设施",
+      "lens": "看供需缺口、交期、资本开支和产业链订单验证",
+      "lead": "芯片与硬件 今天的主线围绕 支付宝成为金标联盟生态单位成员，已…、黑鲨风神 Pro 笔记本散热器开启…、宇树科技：计划 3 年内发布通用人… 展开。从 看供需缺口、交期、资本开支和产业链订单验证 的角度看，短线更值得关注的是消息能否从标题热度继续传导到真实订单、资金方向和后续政策动作。",
+      "bullish": "利多抓手先看《宇树科技：计划 3 年内发布通用人形机器人具身基础模型》。这类消息通常会先影响风险偏好，再决定资金是否愿意追价，关键是后续有没有连续验证。",
+      "bearish": "利空压力来自《支付宝成为金标联盟生态单位成员，已有 26 款应用加入》。它更像风险定价事件，短线会先打情绪和估值，真正要不要扩大影响，还得看第二波数据。",
+      "watch": "继续观察《支付宝成为金标联盟生态单位成员，已有 26 款应用加入》。这条新闻现在还处在预期形成阶段，比起立刻下结论，更重要的是跟踪兑现节奏。",
+      "economistTake": "经济分析师视角下，芯片与硬件 目前呈现出“情绪偏暖、等待确认”的结构。领头事件是《支付宝成为金标联盟生态单位成员，已有 26 款应用…》，但真正影响定价的不是单条标题本身，而是它能否沿着 看供需缺口、交期、资本开支和产业链订单验证 这条链路继续扩散。如果接下来政策、订单或资金流没有接力，那今天的热度更可能停留在交易层面；如果连续出现验证，板块就有机会从情绪修复转向趋势定价。",
+      "stories": [
+        {
+          "index": 1,
+          "title": "支付宝成为金标联盟生态单位成员，已有 26 款应用加入",
+          "summary": "这条新闻把市场焦点重新拉回到半导体、终端设备、智能汽车与算力基础设施。《支付宝成为金标联盟生态单位成员，已有 26 款应用加入》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 芯片与硬件 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.ithome.com/0/931/140.htm",
+          "sourceId": "ithome",
+          "source": "IT之家",
+          "publishedAt": "2026-03-20 20:02"
+        },
+        {
+          "index": 2,
+          "title": "黑鲨风神 Pro 笔记本散热器开启新品预约：自带 1.68 英寸全彩小屏，到手价 399 元",
+          "summary": "资金今天关注的核心变量之一是半导体、终端设备、智能汽车与算力基础设施。《黑鲨风神 Pro 笔记本散热器开启新品预约：自带 1.68…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 芯片与硬件 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.ithome.com/0/931/139.htm",
+          "sourceId": "ithome",
+          "source": "IT之家",
+          "publishedAt": "2026-03-20 20:02"
+        },
+        {
+          "index": 3,
+          "title": "宇树科技：计划 3 年内发布通用人形机器人具身基础模型",
+          "summary": "从板块主线看，这条信息对应的是半导体、终端设备、智能汽车与算力基础设施。《宇树科技：计划 3 年内发布通用人形机器人具身基础模型》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利多，因为它容易改善 芯片与硬件 的风险偏好，并给后续资金接力留下理由。",
+          "signal": "bullish",
+          "signalLabel": "利多",
+          "url": "https://www.ithome.com/0/931/138.htm",
+          "sourceId": "ithome",
+          "source": "IT之家",
+          "publishedAt": "2026-03-20 19:48"
+        },
+        {
+          "index": 4,
+          "title": "荣耀MagicOS折叠屏 3 月更新上线：YOYO 拍照转文档，股票分屏盯盘",
+          "summary": "如果把它放回全天节奏里看，真正重要的是半导体、终端设备、智能汽车与算力基础设施。《荣耀MagicOS折叠屏 3 月更新上线：YOYO 拍照转…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利多，因为它容易改善 芯片与硬件 的风险偏好，并给后续资金接力留下理由。",
+          "signal": "bullish",
+          "signalLabel": "利多",
+          "url": "https://www.ithome.com/0/931/137.htm",
+          "sourceId": "ithome",
+          "source": "IT之家",
+          "publishedAt": "2026-03-20 19:47"
+        },
+        {
+          "index": 5,
+          "title": "黑鲨冰封制冷背夹 6 Pro 磁吸版开启新品预约：行业首创全彩屏、35W 功率，249 元",
+          "summary": "这条新闻把市场焦点重新拉回到半导体、终端设备、智能汽车与算力基础设施。《黑鲨冰封制冷背夹 6 Pro 磁吸版开启新品预约：行业首创…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 芯片与硬件 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.ithome.com/0/931/136.htm",
+          "sourceId": "ithome",
+          "source": "IT之家",
+          "publishedAt": "2026-03-20 19:39"
+        },
+        {
+          "index": 6,
+          "title": "别克至境 L7 推出全新晨晖米车色，3 年内单次车损超 30% 免费换新车",
+          "summary": "资金今天关注的核心变量之一是半导体、终端设备、智能汽车与算力基础设施。《别克至境 L7 推出全新晨晖米车色，3 年内单次车损超 3…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 芯片与硬件 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.ithome.com/0/931/135.htm",
+          "sourceId": "ithome",
+          "source": "IT之家",
+          "publishedAt": "2026-03-20 19:31"
+        },
+        {
+          "index": 7,
+          "title": "宁德时代、中国汽车工程学会参与制定，国内首个螺栓式换电系统互换标准发布",
+          "summary": "从板块主线看，这条信息对应的是半导体、终端设备、智能汽车与算力基础设施。《宁德时代、中国汽车工程学会参与制定，国内首个螺栓式换电系统…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利多，因为它容易改善 芯片与硬件 的风险偏好，并给后续资金接力留下理由。",
+          "signal": "bullish",
+          "signalLabel": "利多",
+          "url": "https://www.ithome.com/0/931/134.htm",
+          "sourceId": "ithome",
+          "source": "IT之家",
+          "publishedAt": "2026-03-20 19:25"
+        },
+        {
+          "index": 8,
+          "title": "我国牵头的两项交流电动机电容器国际标准立项",
+          "summary": "如果把它放回全天节奏里看，真正重要的是半导体、终端设备、智能汽车与算力基础设施。《我国牵头的两项交流电动机电容器国际标准立项》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 芯片与硬件 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.ithome.com/0/931/133.htm",
+          "sourceId": "ithome",
+          "source": "IT之家",
+          "publishedAt": "2026-03-20 19:19"
+        },
+        {
+          "index": 9,
+          "title": "8点1氪丨宝宝巴士推送低俗广告被罚30万；山姆客服回应给三文鱼加不可生食标签；360回应“安全龙虾”私钥泄露",
+          "summary": "这条新闻把市场焦点重新拉回到半导体、终端设备、智能汽车与算力基础设施。《8点1氪丨宝宝巴士推送低俗广告被罚30万；山姆客服回应给三…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 芯片与硬件 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://36kr.com/p/3727701336833157",
+          "sourceId": "36kr-renqi",
+          "source": "36Kr 人气榜",
+          "publishedAt": null
+        },
+        {
+          "index": 10,
+          "title": "GPT-5.4 mini+nano突袭，1/3价格养满血「龙虾」，OpenAI彻底杀疯",
+          "summary": "资金今天关注的核心变量之一是半导体、终端设备、智能汽车与算力基础设施。《GPT-5.4 mini+nano突袭，1/3价格养满血「…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 芯片与硬件 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://36kr.com/p/3727696735468423",
+          "sourceId": "36kr-renqi",
+          "source": "36Kr 人气榜",
+          "publishedAt": null
+        }
+      ],
+      "personaComments": [
+        {
+          "role": "宏观策略师",
+          "name": "周期里找锚",
+          "emotion": "继续观察",
+          "content": "《支付宝成为金标联盟生态单位成员，已有 26 款应用…》先别急着站队，我会继续盯后续细节。对 政策节奏、流动性和预期差 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "外贸老板",
+          "name": "柜子还在海上",
+          "emotion": "继续观察",
+          "content": "这条《黑鲨风神 Pro 笔记本散热器开启新品预约：自带 …》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "退休银行行长",
+          "name": "稳字当头",
+          "emotion": "偏乐观",
+          "content": "我更在意《宇树科技：计划 3 年内发布通用人形机器人具身基础…》后面的二阶影响。要是真往下传导，芯片与硬件 不是一天行情。"
+        },
+        {
+          "role": "创业者",
+          "name": "现金流第一",
+          "emotion": "偏乐观",
+          "content": "站在 创业者 的角度，这条《荣耀MagicOS折叠屏 3 月更新上线：YOYO…》我先记一笔偏多。只要后面真的能兑现，增长空间、融资窗口和执行速度 这条线就还有想象空间。"
+        },
+        {
+          "role": "新能源研究员",
+          "name": "电池边上的人",
+          "emotion": "继续观察",
+          "content": "这条《黑鲨冰封制冷背夹 6 Pro 磁吸版开启新品预约：…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "地产从业者",
+          "name": "案场观察员",
+          "emotion": "继续观察",
+          "content": "先看后手。别克至境 L7 推出全新晨晖米车色，3 年内单次车… 这类消息真正值钱的地方，在于它会不会把 芯片与硬件 的主线继续推下去。"
+        },
+        {
+          "role": "A股老股民",
+          "name": "老韭偏要抄底",
+          "emotion": "偏乐观",
+          "content": "站在 A股老股民 的角度，这条《宁德时代、中国汽车工程学会参与制定，国内首个螺栓式…》我先记一笔偏多。只要后面真的能兑现，板块轮动、情绪修复和筹码结构 这条线就还有想象空间。"
+        },
+        {
+          "role": "港股交易员",
+          "name": "南向资金雷达",
+          "emotion": "继续观察",
+          "content": "这条《我国牵头的两项交流电动机电容器国际标准立项》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "美股散户",
+          "name": "盘前不睡觉",
+          "emotion": "继续观察",
+          "content": "先看后手。8点1氪丨宝宝巴士推送低俗广告被罚30万；山姆客服… 这类消息真正值钱的地方，在于它会不会把 芯片与硬件 的主线继续推下去。"
+        },
+        {
+          "role": "大厂产品经理",
+          "name": "需求池爆了",
+          "emotion": "继续观察",
+          "content": "《GPT-5.4 mini+nano突袭，1/3价格…》先别急着站队，我会继续盯后续细节。对 用户增长、平台策略和商业化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "AI 工程师",
+          "name": "今晚还在调参",
+          "emotion": "继续观察",
+          "content": "这条《支付宝成为金标联盟生态单位成员，已有 26 款应用…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "芯片销售",
+          "name": "先看交期",
+          "emotion": "继续观察",
+          "content": "先看后手。黑鲨风神 Pro 笔记本散热器开启新品预约：自带 … 这类消息真正值钱的地方，在于它会不会把 芯片与硬件 的主线继续推下去。"
+        },
+        {
+          "role": "大学生",
+          "name": "今天也在赶 ddl",
+          "emotion": "偏乐观",
+          "content": "站在 大学生 的角度，这条《宇树科技：计划 3 年内发布通用人形机器人具身基础…》我先记一笔偏多。只要后面真的能兑现，就业机会、行业风口和体感变化 这条线就还有想象空间。"
+        },
+        {
+          "role": "宝妈",
+          "name": "先看生活成本",
+          "emotion": "偏乐观",
+          "content": "《荣耀MagicOS折叠屏 3 月更新上线：YOYO…》这种消息最怕看标题就上头，但如果兑现速度跟上，家庭消费、教育医疗和安全感 这块会先受益。"
+        },
+        {
+          "role": "出租车师傅",
+          "name": "路口见世面",
+          "emotion": "继续观察",
+          "content": "先看后手。黑鲨冰封制冷背夹 6 Pro 磁吸版开启新品预约：… 这类消息真正值钱的地方，在于它会不会把 芯片与硬件 的主线继续推下去。"
+        },
+        {
+          "role": "自媒体博主",
+          "name": "标题先起了",
+          "emotion": "继续观察",
+          "content": "《别克至境 L7 推出全新晨晖米车色，3 年内单次车…》先别急着站队，我会继续盯后续细节。对 传播性、话题度和平台情绪 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "律师",
+          "name": "先看合规边界",
+          "emotion": "偏乐观",
+          "content": "《宁德时代、中国汽车工程学会参与制定，国内首个螺栓式…》这种消息最怕看标题就上头，但如果兑现速度跟上，监管风险、规则变化和责任归属 这块会先受益。"
+        },
+        {
+          "role": "医生",
+          "name": "先讲证据",
+          "emotion": "继续观察",
+          "content": "先看后手。我国牵头的两项交流电动机电容器国际标准立项 这类消息真正值钱的地方，在于它会不会把 芯片与硬件 的主线继续推下去。"
+        },
+        {
+          "role": "公务员",
+          "name": "按流程推进",
+          "emotion": "继续观察",
+          "content": "《8点1氪丨宝宝巴士推送低俗广告被罚30万；山姆客服…》先别急着站队，我会继续盯后续细节。对 政策执行、地方协同和社会预期 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "制造业厂长",
+          "name": "工位灯还亮着",
+          "emotion": "继续观察",
+          "content": "这条《GPT-5.4 mini+nano突袭，1/3价格…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "00后打工人",
+          "name": "别给我画饼",
+          "emotion": "继续观察",
+          "content": "先看后手。支付宝成为金标联盟生态单位成员，已有 26 款应用… 这类消息真正值钱的地方，在于它会不会把 芯片与硬件 的主线继续推下去。"
+        },
+        {
+          "role": "海外留学生",
+          "name": "时差还没倒",
+          "emotion": "继续观察",
+          "content": "《黑鲨风神 Pro 笔记本散热器开启新品预约：自带 …》先别急着站队，我会继续盯后续细节。对 国际比较、全球舆论和跨市场联动 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "电商运营",
+          "name": "转化率说话",
+          "emotion": "偏乐观",
+          "content": "《宇树科技：计划 3 年内发布通用人形机器人具身基础…》这种消息最怕看标题就上头，但如果兑现速度跟上，流量成本、消费意愿和活动节奏 这块会先受益。"
+        },
+        {
+          "role": "喜剧吐槽号",
+          "name": "这也能上热搜",
+          "emotion": "偏乐观",
+          "content": "我更在意《荣耀MagicOS折叠屏 3 月更新上线：YOYO…》后面的二阶影响。要是真往下传导，芯片与硬件 不是一天行情。"
+        },
+        {
+          "role": "长线投资者",
+          "name": "只看五年",
+          "emotion": "继续观察",
+          "content": "《黑鲨冰封制冷背夹 6 Pro 磁吸版开启新品预约：…》先别急着站队，我会继续盯后续细节。对 护城河、现金流和长期复利 来说，节奏比态度更重要。"
+        }
+      ],
+      "sourcesUsed": [
+        {
+          "id": "ithome",
+          "label": "IT之家"
+        },
+        {
+          "id": "36kr-renqi",
+          "label": "36Kr 人气榜"
+        }
+      ]
+    },
+    {
+      "id": "energy-commodities",
+      "name": "能源与大宗",
+      "description": "原油、金属、煤炭、电力与商品链变化",
+      "lens": "看供应扰动、库存周期和价格信号对通胀的反馈",
+      "lead": "能源与大宗 今天的主线围绕 国际能源署署长比罗尔：政界人士和市…、正在直播、伊朗人试图进入英国核潜艇基地时被捕。 展开。从 看供应扰动、库存周期和价格信号对通胀的反馈 的角度看，短线更值得关注的是消息能否从标题热度继续传导到真实订单、资金方向和后续政策动作。",
+      "bullish": "利多抓手先看《FastBull专家顾问团系列采访 | Ronewa …》。这类消息通常会先影响风险偏好，再决定资金是否愿意追价，关键是后续有没有连续验证。",
+      "bearish": "利空压力来自《IEA负责人警告称，恢复来自海湾地区的油气供应可能需要…》。它更像风险定价事件，短线会先打情绪和估值，真正要不要扩大影响，还得看第二波数据。",
+      "watch": "继续观察《国际能源署署长比罗尔：政界人士和市场都低估了此次危机的…》。这条新闻现在还处在预期形成阶段，比起立刻下结论，更重要的是跟踪兑现节奏。",
+      "economistTake": "经济分析师视角下，能源与大宗 目前呈现出“情绪偏暖、等待确认”的结构。领头事件是《国际能源署署长比罗尔：政界人士和市场都低估了此次危…》，但真正影响定价的不是单条标题本身，而是它能否沿着 看供应扰动、库存周期和价格信号对通胀的反馈 这条链路继续扩散。如果接下来政策、订单或资金流没有接力，那今天的热度更可能停留在交易层面；如果连续出现验证，板块就有机会从情绪修复转向趋势定价。",
+      "stories": [
+        {
+          "index": 1,
+          "title": "国际能源署署长比罗尔：政界人士和市场都低估了此次危机的规模。",
+          "summary": "这条新闻把市场焦点重新拉回到原油、金属、煤炭、电力与商品链变化。《国际能源署署长比罗尔：政界人士和市场都低估了此次危机的规模。》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 能源与大宗 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://flash.jin10.com/detail/20260320200617311800",
+          "sourceId": "jin10",
+          "source": "金十数据",
+          "publishedAt": "2026-03-20 20:06"
+        },
+        {
+          "index": 2,
+          "title": "正在直播",
+          "summary": "资金今天关注的核心变量之一是原油、金属、煤炭、电力与商品链变化。《正在直播》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 能源与大宗 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://flash.jin10.com/detail/20260320200536476800",
+          "sourceId": "jin10",
+          "source": "金十数据",
+          "publishedAt": "2026-03-20 20:05"
+        },
+        {
+          "index": 3,
+          "title": "伊朗人试图进入英国核潜艇基地时被捕。",
+          "summary": "从板块主线看，这条信息对应的是原油、金属、煤炭、电力与商品链变化。《伊朗人试图进入英国核潜艇基地时被捕。》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 能源与大宗 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://flash.jin10.com/detail/20260320200504848800",
+          "sourceId": "jin10",
+          "source": "金十数据",
+          "publishedAt": "2026-03-20 20:05"
+        },
+        {
+          "index": 4,
+          "title": "IEA负责人警告称，恢复来自海湾地区的油气供应可能需要六个月时间。",
+          "summary": "如果把它放回全天节奏里看，真正重要的是原油、金属、煤炭、电力与商品链变化。《IEA负责人警告称，恢复来自海湾地区的油气供应可能需要六个…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利空，因为它会先压制预期和估值，市场往往会提前计入不确定性。",
+          "signal": "bearish",
+          "signalLabel": "利空",
+          "url": "https://flash.jin10.com/detail/20260320200453332800",
+          "sourceId": "jin10",
+          "source": "金十数据",
+          "publishedAt": "2026-03-20 20:04"
+        },
+        {
+          "index": 5,
+          "title": "英国首相发言人威尔斯：英国财政规则“不可谈判”。",
+          "summary": "这条新闻把市场焦点重新拉回到原油、金属、煤炭、电力与商品链变化。《英国首相发言人威尔斯：英国财政规则“不可谈判”。》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 能源与大宗 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://flash.jin10.com/detail/20260320200428302800",
+          "sourceId": "jin10",
+          "source": "金十数据",
+          "publishedAt": "2026-03-20 20:04"
+        },
+        {
+          "index": 6,
+          "title": "美联储理事鲍曼：现在说伊朗战争对美联储意味着什么还为时过早。",
+          "summary": "资金今天关注的核心变量之一是原油、金属、煤炭、电力与商品链变化。《美联储理事鲍曼：现在说伊朗战争对美联储意味着什么还为时过早。》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 能源与大宗 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://flash.jin10.com/detail/20260320200418848800",
+          "sourceId": "jin10",
+          "source": "金十数据",
+          "publishedAt": "2026-03-20 20:04"
+        },
+        {
+          "index": 7,
+          "title": "美联储理事鲍曼：将让美联储主席鲍威尔为自己发言。",
+          "summary": "从板块主线看，这条信息对应的是原油、金属、煤炭、电力与商品链变化。《美联储理事鲍曼：将让美联储主席鲍威尔为自己发言。》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 能源与大宗 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://flash.jin10.com/detail/20260320200406761800",
+          "sourceId": "jin10",
+          "source": "金十数据",
+          "publishedAt": "2026-03-20 20:04"
+        },
+        {
+          "index": 8,
+          "title": "先导基电：拟向特定对象发行A股股票募集资金不超过35.1亿元",
+          "summary": "如果把它放回全天节奏里看，真正重要的是原油、金属、煤炭、电力与商品链变化。《先导基电：拟向特定对象发行A股股票募集资金不超过35.1亿元》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 能源与大宗 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://flash.jin10.com/detail/20260320200400628800",
+          "sourceId": "jin10",
+          "source": "金十数据",
+          "publishedAt": "2026-03-20 20:04"
+        },
+        {
+          "index": 9,
+          "title": "独家揭秘！2026 FastBull全球黄金短线模拟交易大赛获奖选手背后的制胜之道",
+          "summary": "这条新闻把市场焦点重新拉回到原油、金属、煤炭、电力与商品链变化。《独家揭秘！2026 FastBull全球黄金短线模拟交易大…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 能源与大宗 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.fastbull.com/cn/news-detail/4371769_1",
+          "sourceId": "fastbull-news",
+          "source": "FastBull 头条",
+          "publishedAt": "2026-03-05 13:57"
+        },
+        {
+          "index": 10,
+          "title": "FastBull专家顾问团系列采访 | Ronewa Maungedzo：结构、耐心与可持续盈利的艺术",
+          "summary": "资金今天关注的核心变量之一是原油、金属、煤炭、电力与商品链变化。《FastBull专家顾问团系列采访 | Ronewa Ma…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利多，因为它容易改善 能源与大宗 的风险偏好，并给后续资金接力留下理由。",
+          "signal": "bullish",
+          "signalLabel": "利多",
+          "url": "https://www.fastbull.com/cn/news-detail/4363191_1",
+          "sourceId": "fastbull-news",
+          "source": "FastBull 头条",
+          "publishedAt": "2026-03-02 14:08"
+        }
+      ],
+      "personaComments": [
+        {
+          "role": "宏观策略师",
+          "name": "周期里找锚",
+          "emotion": "继续观察",
+          "content": "《国际能源署署长比罗尔：政界人士和市场都低估了此次危…》先别急着站队，我会继续盯后续细节。对 政策节奏、流动性和预期差 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "外贸老板",
+          "name": "柜子还在海上",
+          "emotion": "继续观察",
+          "content": "这条《正在直播》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "退休银行行长",
+          "name": "稳字当头",
+          "emotion": "继续观察",
+          "content": "先看后手。伊朗人试图进入英国核潜艇基地时被捕。 这类消息真正值钱的地方，在于它会不会把 能源与大宗 的主线继续推下去。"
+        },
+        {
+          "role": "创业者",
+          "name": "现金流第一",
+          "emotion": "偏谨慎",
+          "content": "《IEA负责人警告称，恢复来自海湾地区的油气供应可能…》这条我会先当风险项处理。标题热度是一回事，真正麻烦的是它会不会继续伤到 增长空间、融资窗口和执行速度。"
+        },
+        {
+          "role": "新能源研究员",
+          "name": "电池边上的人",
+          "emotion": "继续观察",
+          "content": "这条《英国首相发言人威尔斯：英国财政规则“不可谈判”。》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "地产从业者",
+          "name": "案场观察员",
+          "emotion": "继续观察",
+          "content": "先看后手。美联储理事鲍曼：现在说伊朗战争对美联储意味着什么还… 这类消息真正值钱的地方，在于它会不会把 能源与大宗 的主线继续推下去。"
+        },
+        {
+          "role": "A股老股民",
+          "name": "老韭偏要抄底",
+          "emotion": "继续观察",
+          "content": "《美联储理事鲍曼：将让美联储主席鲍威尔为自己发言。》先别急着站队，我会继续盯后续细节。对 板块轮动、情绪修复和筹码结构 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "港股交易员",
+          "name": "南向资金雷达",
+          "emotion": "继续观察",
+          "content": "这条《先导基电：拟向特定对象发行A股股票募集资金不超过3…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "美股散户",
+          "name": "盘前不睡觉",
+          "emotion": "继续观察",
+          "content": "先看后手。独家揭秘！2026 FastBull全球黄金短线模… 这类消息真正值钱的地方，在于它会不会把 能源与大宗 的主线继续推下去。"
+        },
+        {
+          "role": "大厂产品经理",
+          "name": "需求池爆了",
+          "emotion": "偏乐观",
+          "content": "站在 大厂产品经理 的角度，这条《FastBull专家顾问团系列采访 | Ronew…》我先记一笔偏多。只要后面真的能兑现，用户增长、平台策略和商业化 这条线就还有想象空间。"
+        },
+        {
+          "role": "AI 工程师",
+          "name": "今晚还在调参",
+          "emotion": "继续观察",
+          "content": "这条《国际能源署署长比罗尔：政界人士和市场都低估了此次危…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "芯片销售",
+          "name": "先看交期",
+          "emotion": "继续观察",
+          "content": "先看后手。正在直播 这类消息真正值钱的地方，在于它会不会把 能源与大宗 的主线继续推下去。"
+        },
+        {
+          "role": "大学生",
+          "name": "今天也在赶 ddl",
+          "emotion": "继续观察",
+          "content": "《伊朗人试图进入英国核潜艇基地时被捕。》先别急着站队，我会继续盯后续细节。对 就业机会、行业风口和体感变化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "宝妈",
+          "name": "先看生活成本",
+          "emotion": "偏谨慎",
+          "content": "别看现在评论区闹得凶，真正的压力在兑现层。IEA负责人警告称，恢复来自海湾地区的油气供应可能… 这种消息，最容易先打掉市场耐心。"
+        },
+        {
+          "role": "出租车师傅",
+          "name": "路口见世面",
+          "emotion": "继续观察",
+          "content": "先看后手。英国首相发言人威尔斯：英国财政规则“不可谈判”。 这类消息真正值钱的地方，在于它会不会把 能源与大宗 的主线继续推下去。"
+        },
+        {
+          "role": "自媒体博主",
+          "name": "标题先起了",
+          "emotion": "继续观察",
+          "content": "《美联储理事鲍曼：现在说伊朗战争对美联储意味着什么还…》先别急着站队，我会继续盯后续细节。对 传播性、话题度和平台情绪 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "律师",
+          "name": "先看合规边界",
+          "emotion": "继续观察",
+          "content": "这条《美联储理事鲍曼：将让美联储主席鲍威尔为自己发言。》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "医生",
+          "name": "先讲证据",
+          "emotion": "继续观察",
+          "content": "先看后手。先导基电：拟向特定对象发行A股股票募集资金不超过3… 这类消息真正值钱的地方，在于它会不会把 能源与大宗 的主线继续推下去。"
+        },
+        {
+          "role": "公务员",
+          "name": "按流程推进",
+          "emotion": "继续观察",
+          "content": "《独家揭秘！2026 FastBull全球黄金短线模…》先别急着站队，我会继续盯后续细节。对 政策执行、地方协同和社会预期 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "制造业厂长",
+          "name": "工位灯还亮着",
+          "emotion": "偏乐观",
+          "content": "《FastBull专家顾问团系列采访 | Ronew…》这种消息最怕看标题就上头，但如果兑现速度跟上，成本、订单和设备开工率 这块会先受益。"
+        },
+        {
+          "role": "00后打工人",
+          "name": "别给我画饼",
+          "emotion": "继续观察",
+          "content": "先看后手。国际能源署署长比罗尔：政界人士和市场都低估了此次危… 这类消息真正值钱的地方，在于它会不会把 能源与大宗 的主线继续推下去。"
+        },
+        {
+          "role": "海外留学生",
+          "name": "时差还没倒",
+          "emotion": "继续观察",
+          "content": "《正在直播》先别急着站队，我会继续盯后续细节。对 国际比较、全球舆论和跨市场联动 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "电商运营",
+          "name": "转化率说话",
+          "emotion": "继续观察",
+          "content": "这条《伊朗人试图进入英国核潜艇基地时被捕。》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "喜剧吐槽号",
+          "name": "这也能上热搜",
+          "emotion": "偏谨慎",
+          "content": "我对《IEA负责人警告称，恢复来自海湾地区的油气供应可能…》会偏谨慎。要是后面没有修复动作，能源与大宗 这条线就得重新估值。"
+        },
+        {
+          "role": "长线投资者",
+          "name": "只看五年",
+          "emotion": "继续观察",
+          "content": "《英国首相发言人威尔斯：英国财政规则“不可谈判”。》先别急着站队，我会继续盯后续细节。对 护城河、现金流和长期复利 来说，节奏比态度更重要。"
+        }
+      ],
+      "sourcesUsed": [
+        {
+          "id": "jin10",
+          "label": "金十数据"
+        },
+        {
+          "id": "fastbull-news",
+          "label": "FastBull 头条"
+        }
+      ]
+    },
+    {
+      "id": "crypto-web3",
+      "name": "加密与 Web3",
+      "description": "BTC、ETH、监管、交易所和链上创新",
+      "lens": "看流动性、监管态度和风险偏好是否重新抬升",
+      "lead": "加密与 Web3 今天的主线围绕 Coinbase launches…、Ripple survey fin…、South Korea tax a… 展开。从 看流动性、监管态度和风险偏好是否重新抬升 的角度看，短线更值得关注的是消息能否从标题热度继续传导到真实订单、资金方向和后续政策动作。",
+      "bullish": "利多抓手先看《Coinbase launches 24/7 stoc…》。这类消息通常会先影响风险偏好，再决定资金是否愿意追价，关键是后续有没有连续验证。",
+      "bearish": "利空压力来自《Coinbase launches 24/7 stoc…》。它更像风险定价事件，短线会先打情绪和估值，真正要不要扩大影响，还得看第二波数据。",
+      "watch": "继续观察《Coinbase launches 24/7 stoc…》。这条新闻现在还处在预期形成阶段，比起立刻下结论，更重要的是跟踪兑现节奏。",
+      "economistTake": "经济分析师视角下，加密与 Web3 目前呈现出“情绪偏暖、等待确认”的结构。领头事件是《Coinbase launches 24/7 st…》，但真正影响定价的不是单条标题本身，而是它能否沿着 看流动性、监管态度和风险偏好是否重新抬升 这条链路继续扩散。如果接下来政策、订单或资金流没有接力，那今天的热度更可能停留在交易层面；如果连续出现验证，板块就有机会从情绪修复转向趋势定价。",
+      "stories": [
+        {
+          "index": 1,
+          "title": "Coinbase launches 24/7 stock perps for non-US traders",
+          "summary": "这条新闻把市场焦点重新拉回到BTC、ETH、监管、交易所和链上创新。《Coinbase launches 24/7 stock …》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 加密与 Web3 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://cointelegraph.com/news/coinbase-expands-24-7-stock-derivatives-venue?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "sourceId": "cointelegraph",
+          "source": "Cointelegraph",
+          "publishedAt": "2026-03-20 19:57"
+        },
+        {
+          "index": 2,
+          "title": "Ripple survey finds 72% of finance leaders see digital assets as essential",
+          "summary": "资金今天关注的核心变量之一是BTC、ETH、监管、交易所和链上创新。《Ripple survey finds 72% of fi…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 加密与 Web3 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://cointelegraph.com/news/ripple-survey-72-finance-leaders-digital-assets-key?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "sourceId": "cointelegraph",
+          "source": "Cointelegraph",
+          "publishedAt": "2026-03-20 19:22"
+        },
+        {
+          "index": 3,
+          "title": "South Korea tax agency seeks private crypto custodian after security lapses",
+          "summary": "从板块主线看，这条信息对应的是BTC、ETH、监管、交易所和链上创新。《South Korea tax agency seeks …》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 加密与 Web3 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://cointelegraph.com/news/south-korea-tax-agency-private-crypto-custody-seed-phrase-leak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "sourceId": "cointelegraph",
+          "source": "Cointelegraph",
+          "publishedAt": "2026-03-20 18:47"
+        },
+        {
+          "index": 4,
+          "title": "Bitcoin vs gold shows potential bottom signals as BTC bulls defend $70K",
+          "summary": "如果把它放回全天节奏里看，真正重要的是BTC、ETH、监管、交易所和链上创新。《Bitcoin vs gold shows potenti…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 加密与 Web3 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://cointelegraph.com/news/bitcoin-vs-gold-flashes-multiple-bottom-signals-btc-bulls-defend-70k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "sourceId": "cointelegraph",
+          "source": "Cointelegraph",
+          "publishedAt": "2026-03-20 18:38"
+        },
+        {
+          "index": 5,
+          "title": "Quantum risk real, but not all crypto wallets equally vulnerable: Galaxy",
+          "summary": "这条新闻把市场焦点重新拉回到BTC、ETH、监管、交易所和链上创新。《Quantum risk real, but not al…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 加密与 Web3 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://cointelegraph.com/news/quantum-risk-bitcoin-wallets-not-all-vulnerable?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "sourceId": "cointelegraph",
+          "source": "Cointelegraph",
+          "publishedAt": "2026-03-20 14:27"
+        },
+        {
+          "index": 6,
+          "title": "Super Micro co-founder arrested over alleged $2.5B AI chip smuggling scheme",
+          "summary": "资金今天关注的核心变量之一是BTC、ETH、监管、交易所和链上创新。《Super Micro co-founder arrest…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 加密与 Web3 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://cointelegraph.com/news/super-micro-co-founder-arrested-in-2-5b-ai-chip-smuggling-scheme-to-china?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "sourceId": "cointelegraph",
+          "source": "Cointelegraph",
+          "publishedAt": "2026-03-20 14:03"
+        },
+        {
+          "index": 7,
+          "title": "Gemini sued over post-IPO strategy shift, declining stock price",
+          "summary": "从板块主线看，这条信息对应的是BTC、ETH、监管、交易所和链上创新。《Gemini sued over post-IPO str…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 加密与 Web3 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://cointelegraph.com/news/gemini-sued-over-post-ipo-strategy-shift-declining-stock-price?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "sourceId": "cointelegraph",
+          "source": "Cointelegraph",
+          "publishedAt": "2026-03-20 13:58"
+        },
+        {
+          "index": 8,
+          "title": "Appeals court denies Kalshi request to block Nevada enforcement action",
+          "summary": "如果把它放回全天节奏里看，真正重要的是BTC、ETH、监管、交易所和链上创新。《Appeals court denies Kalshi r…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 加密与 Web3 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://cointelegraph.com/news/appeals-court-denies-kalshi-s-bid-to-stave-off-ban-in-nevada?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "sourceId": "cointelegraph",
+          "source": "Cointelegraph",
+          "publishedAt": "2026-03-20 13:21"
+        },
+        {
+          "index": 9,
+          "title": "Apple iOS Malware Targets Crypto Apps on Unpatched iPhones: Google",
+          "summary": "这条新闻把市场焦点重新拉回到BTC、ETH、监管、交易所和链上创新。《Apple iOS Malware Targets Cry…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 加密与 Web3 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://decrypt.co/361888/apple-ios-malware-targets-crypto-apps-on-unpatched-iphones-google",
+          "sourceId": "decrypt",
+          "source": "Decrypt",
+          "publishedAt": "2026-03-20 19:38"
+        },
+        {
+          "index": 10,
+          "title": "Bitcoin Rallies to $71K as Bessent Mulls Lifting Some Iran Oil Sanctions",
+          "summary": "资金今天关注的核心变量之一是BTC、ETH、监管、交易所和链上创新。《Bitcoin Rallies to $71K as Be…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 加密与 Web3 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://decrypt.co/361879/bitcoin-rallies-to-71k-as-bessent-mulls-lifting-some-iran-oil-sanctions",
+          "sourceId": "decrypt",
+          "source": "Decrypt",
+          "publishedAt": "2026-03-20 17:55"
+        }
+      ],
+      "personaComments": [
+        {
+          "role": "宏观策略师",
+          "name": "周期里找锚",
+          "emotion": "继续观察",
+          "content": "《Coinbase launches 24/7 st…》先别急着站队，我会继续盯后续细节。对 政策节奏、流动性和预期差 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "外贸老板",
+          "name": "柜子还在海上",
+          "emotion": "继续观察",
+          "content": "这条《Ripple survey finds 72% o…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "退休银行行长",
+          "name": "稳字当头",
+          "emotion": "继续观察",
+          "content": "先看后手。South Korea tax agency se… 这类消息真正值钱的地方，在于它会不会把 加密与 Web3 的主线继续推下去。"
+        },
+        {
+          "role": "创业者",
+          "name": "现金流第一",
+          "emotion": "继续观察",
+          "content": "《Bitcoin vs gold shows pot…》先别急着站队，我会继续盯后续细节。对 增长空间、融资窗口和执行速度 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "新能源研究员",
+          "name": "电池边上的人",
+          "emotion": "继续观察",
+          "content": "这条《Quantum risk real, but no…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "地产从业者",
+          "name": "案场观察员",
+          "emotion": "继续观察",
+          "content": "先看后手。Super Micro co-founder ar… 这类消息真正值钱的地方，在于它会不会把 加密与 Web3 的主线继续推下去。"
+        },
+        {
+          "role": "A股老股民",
+          "name": "老韭偏要抄底",
+          "emotion": "继续观察",
+          "content": "《Gemini sued over post-IPO…》先别急着站队，我会继续盯后续细节。对 板块轮动、情绪修复和筹码结构 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "港股交易员",
+          "name": "南向资金雷达",
+          "emotion": "继续观察",
+          "content": "这条《Appeals court denies Kals…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "美股散户",
+          "name": "盘前不睡觉",
+          "emotion": "继续观察",
+          "content": "先看后手。Apple iOS Malware Targets… 这类消息真正值钱的地方，在于它会不会把 加密与 Web3 的主线继续推下去。"
+        },
+        {
+          "role": "大厂产品经理",
+          "name": "需求池爆了",
+          "emotion": "继续观察",
+          "content": "《Bitcoin Rallies to $71K a…》先别急着站队，我会继续盯后续细节。对 用户增长、平台策略和商业化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "AI 工程师",
+          "name": "今晚还在调参",
+          "emotion": "继续观察",
+          "content": "这条《Coinbase launches 24/7 st…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "芯片销售",
+          "name": "先看交期",
+          "emotion": "继续观察",
+          "content": "先看后手。Ripple survey finds 72% o… 这类消息真正值钱的地方，在于它会不会把 加密与 Web3 的主线继续推下去。"
+        },
+        {
+          "role": "大学生",
+          "name": "今天也在赶 ddl",
+          "emotion": "继续观察",
+          "content": "《South Korea tax agency se…》先别急着站队，我会继续盯后续细节。对 就业机会、行业风口和体感变化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "宝妈",
+          "name": "先看生活成本",
+          "emotion": "继续观察",
+          "content": "这条《Bitcoin vs gold shows pot…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "出租车师傅",
+          "name": "路口见世面",
+          "emotion": "继续观察",
+          "content": "先看后手。Quantum risk real, but no… 这类消息真正值钱的地方，在于它会不会把 加密与 Web3 的主线继续推下去。"
+        },
+        {
+          "role": "自媒体博主",
+          "name": "标题先起了",
+          "emotion": "继续观察",
+          "content": "《Super Micro co-founder ar…》先别急着站队，我会继续盯后续细节。对 传播性、话题度和平台情绪 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "律师",
+          "name": "先看合规边界",
+          "emotion": "继续观察",
+          "content": "这条《Gemini sued over post-IPO…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "医生",
+          "name": "先讲证据",
+          "emotion": "继续观察",
+          "content": "先看后手。Appeals court denies Kals… 这类消息真正值钱的地方，在于它会不会把 加密与 Web3 的主线继续推下去。"
+        },
+        {
+          "role": "公务员",
+          "name": "按流程推进",
+          "emotion": "继续观察",
+          "content": "《Apple iOS Malware Targets…》先别急着站队，我会继续盯后续细节。对 政策执行、地方协同和社会预期 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "制造业厂长",
+          "name": "工位灯还亮着",
+          "emotion": "继续观察",
+          "content": "这条《Bitcoin Rallies to $71K a…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "00后打工人",
+          "name": "别给我画饼",
+          "emotion": "继续观察",
+          "content": "先看后手。Coinbase launches 24/7 st… 这类消息真正值钱的地方，在于它会不会把 加密与 Web3 的主线继续推下去。"
+        },
+        {
+          "role": "海外留学生",
+          "name": "时差还没倒",
+          "emotion": "继续观察",
+          "content": "《Ripple survey finds 72% o…》先别急着站队，我会继续盯后续细节。对 国际比较、全球舆论和跨市场联动 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "电商运营",
+          "name": "转化率说话",
+          "emotion": "继续观察",
+          "content": "这条《South Korea tax agency se…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "喜剧吐槽号",
+          "name": "这也能上热搜",
+          "emotion": "继续观察",
+          "content": "先看后手。Bitcoin vs gold shows pot… 这类消息真正值钱的地方，在于它会不会把 加密与 Web3 的主线继续推下去。"
+        },
+        {
+          "role": "长线投资者",
+          "name": "只看五年",
+          "emotion": "继续观察",
+          "content": "《Quantum risk real, but no…》先别急着站队，我会继续盯后续细节。对 护城河、现金流和长期复利 来说，节奏比态度更重要。"
+        }
+      ],
+      "sourcesUsed": [
+        {
+          "id": "cointelegraph",
+          "label": "Cointelegraph"
+        },
+        {
+          "id": "decrypt",
+          "label": "Decrypt"
+        }
+      ]
+    },
+    {
+      "id": "industry-consumer",
+      "name": "产业与消费",
+      "description": "平台公司、品牌、消费趋势与产业事件",
+      "lens": "看订单修复、消费意愿与平台竞争格局变化",
+      "lead": "产业与消费 今天的主线围绕 直播丨第二艘国产大型邮轮“爱达·花…、王传福、王兴兴、何小鹏现场助阵！小…、重庆市委副书记、市长胡衡华任上被查 展开。从 看订单修复、消费意愿与平台竞争格局变化 的角度看，短线更值得关注的是消息能否从标题热度继续传导到真实订单、资金方向和后续政策动作。",
+      "bullish": "利多抓手先看《直播丨第二艘国产大型邮轮“爱达·花城号”在上海出坞！》。这类消息通常会先影响风险偏好，再决定资金是否愿意追价，关键是后续有没有连续验证。",
+      "bearish": "利空压力来自《“网推律所”乱象调查：“8000元接案后1000元转手…》。它更像风险定价事件，短线会先打情绪和估值，真正要不要扩大影响，还得看第二波数据。",
+      "watch": "继续观察《直播丨第二艘国产大型邮轮“爱达·花城号”在上海出坞！》。这条新闻现在还处在预期形成阶段，比起立刻下结论，更重要的是跟踪兑现节奏。",
+      "economistTake": "经济分析师视角下，产业与消费 目前呈现出“情绪更谨慎、等待确认”的结构。领头事件是《直播丨第二艘国产大型邮轮“爱达·花城号”在上海出坞！》，但真正影响定价的不是单条标题本身，而是它能否沿着 看订单修复、消费意愿与平台竞争格局变化 这条链路继续扩散。如果接下来政策、订单或资金流没有接力，那今天的热度更可能停留在交易层面；如果连续出现验证，板块就有机会从情绪修复转向趋势定价。",
+      "stories": [
+        {
+          "index": 1,
+          "title": "直播丨第二艘国产大型邮轮“爱达·花城号”在上海出坞！",
+          "summary": "这条新闻把市场焦点重新拉回到平台公司、品牌、消费趋势与产业事件。《直播丨第二艘国产大型邮轮“爱达·花城号”在上海出坞！》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 产业与消费 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32794841",
+          "sourceId": "thepaper",
+          "source": "澎湃新闻热榜",
+          "publishedAt": null
+        },
+        {
+          "index": 2,
+          "title": "王传福、王兴兴、何小鹏现场助阵！小米新SU7售价21.99万元起，雷军强调车门把手符合新国标",
+          "summary": "资金今天关注的核心变量之一是平台公司、品牌、消费趋势与产业事件。《王传福、王兴兴、何小鹏现场助阵！小米新SU7售价21.99…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 产业与消费 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32796782",
+          "sourceId": "thepaper",
+          "source": "澎湃新闻热榜",
+          "publishedAt": null
+        },
+        {
+          "index": 3,
+          "title": "重庆市委副书记、市长胡衡华任上被查",
+          "summary": "从板块主线看，这条信息对应的是平台公司、品牌、消费趋势与产业事件。《重庆市委副书记、市长胡衡华任上被查》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 产业与消费 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32800383",
+          "sourceId": "thepaper",
+          "source": "澎湃新闻热榜",
+          "publishedAt": null
+        },
+        {
+          "index": 4,
+          "title": "“网推律所”乱象调查：“8000元接案后1000元转手”，39招话术收割信任",
+          "summary": "如果把它放回全天节奏里看，真正重要的是平台公司、品牌、消费趋势与产业事件。《“网推律所”乱象调查：“8000元接案后1000元转手”，…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "偏利空，因为它会先压制预期和估值，市场往往会提前计入不确定性。",
+          "signal": "bearish",
+          "signalLabel": "利空",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32790700",
+          "sourceId": "thepaper",
+          "source": "澎湃新闻热榜",
+          "publishedAt": null
+        },
+        {
+          "index": 5,
+          "title": "欧阳奋强：快60岁时，才略微读懂了“贾宝玉”",
+          "summary": "这条新闻把市场焦点重新拉回到平台公司、品牌、消费趋势与产业事件。《欧阳奋强：快60岁时，才略微读懂了“贾宝玉”》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 产业与消费 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32789669",
+          "sourceId": "thepaper",
+          "source": "澎湃新闻热榜",
+          "publishedAt": null
+        },
+        {
+          "index": 6,
+          "title": "道路运输从业人员年龄上限今起放宽至63岁",
+          "summary": "资金今天关注的核心变量之一是平台公司、品牌、消费趋势与产业事件。《道路运输从业人员年龄上限今起放宽至63岁》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 产业与消费 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32799260",
+          "sourceId": "thepaper",
+          "source": "澎湃新闻热榜",
+          "publishedAt": null
+        },
+        {
+          "index": 7,
+          "title": "高铁上已开售卫生巾？实测部分车次可线上订购，多地相关部门回应不一",
+          "summary": "从板块主线看，这条信息对应的是平台公司、品牌、消费趋势与产业事件。《高铁上已开售卫生巾？实测部分车次可线上订购，多地相关部门回…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 产业与消费 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32796289",
+          "sourceId": "thepaper",
+          "source": "澎湃新闻热榜",
+          "publishedAt": null
+        },
+        {
+          "index": 8,
+          "title": "光伏卖断货、中国人高价买回国机票：古巴大停电的“至暗”时刻",
+          "summary": "如果把它放回全天节奏里看，真正重要的是平台公司、品牌、消费趋势与产业事件。《光伏卖断货、中国人高价买回国机票：古巴大停电的“至暗”时刻》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 产业与消费 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32796341",
+          "sourceId": "thepaper",
+          "source": "澎湃新闻热榜",
+          "publishedAt": null
+        },
+        {
+          "index": 9,
+          "title": "8点1氪丨宝宝巴士推送低俗广告被罚30万；山姆客服回应给三文鱼加不可生食标签；360回应“安全龙虾”私钥泄露",
+          "summary": "这条新闻把市场焦点重新拉回到平台公司、品牌、消费趋势与产业事件。《8点1氪丨宝宝巴士推送低俗广告被罚30万；山姆客服回应给三…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 产业与消费 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://36kr.com/p/3727701336833157",
+          "sourceId": "36kr-renqi",
+          "source": "36Kr 人气榜",
+          "publishedAt": null
+        },
+        {
+          "index": 10,
+          "title": "GPT-5.4 mini+nano突袭，1/3价格养满血「龙虾」，OpenAI彻底杀疯",
+          "summary": "资金今天关注的核心变量之一是平台公司、品牌、消费趋势与产业事件。《GPT-5.4 mini+nano突袭，1/3价格养满血「…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 产业与消费 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://36kr.com/p/3727696735468423",
+          "sourceId": "36kr-renqi",
+          "source": "36Kr 人气榜",
+          "publishedAt": null
+        }
+      ],
+      "personaComments": [
+        {
+          "role": "宏观策略师",
+          "name": "周期里找锚",
+          "emotion": "继续观察",
+          "content": "《直播丨第二艘国产大型邮轮“爱达·花城号”在上海出坞！》先别急着站队，我会继续盯后续细节。对 政策节奏、流动性和预期差 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "外贸老板",
+          "name": "柜子还在海上",
+          "emotion": "继续观察",
+          "content": "这条《王传福、王兴兴、何小鹏现场助阵！小米新SU7售价2…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "退休银行行长",
+          "name": "稳字当头",
+          "emotion": "继续观察",
+          "content": "先看后手。重庆市委副书记、市长胡衡华任上被查 这类消息真正值钱的地方，在于它会不会把 产业与消费 的主线继续推下去。"
+        },
+        {
+          "role": "创业者",
+          "name": "现金流第一",
+          "emotion": "偏谨慎",
+          "content": "《“网推律所”乱象调查：“8000元接案后1000元…》这条我会先当风险项处理。标题热度是一回事，真正麻烦的是它会不会继续伤到 增长空间、融资窗口和执行速度。"
+        },
+        {
+          "role": "新能源研究员",
+          "name": "电池边上的人",
+          "emotion": "继续观察",
+          "content": "这条《欧阳奋强：快60岁时，才略微读懂了“贾宝玉”》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "地产从业者",
+          "name": "案场观察员",
+          "emotion": "继续观察",
+          "content": "先看后手。道路运输从业人员年龄上限今起放宽至63岁 这类消息真正值钱的地方，在于它会不会把 产业与消费 的主线继续推下去。"
+        },
+        {
+          "role": "A股老股民",
+          "name": "老韭偏要抄底",
+          "emotion": "继续观察",
+          "content": "《高铁上已开售卫生巾？实测部分车次可线上订购，多地相…》先别急着站队，我会继续盯后续细节。对 板块轮动、情绪修复和筹码结构 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "港股交易员",
+          "name": "南向资金雷达",
+          "emotion": "继续观察",
+          "content": "这条《光伏卖断货、中国人高价买回国机票：古巴大停电的“至…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "美股散户",
+          "name": "盘前不睡觉",
+          "emotion": "继续观察",
+          "content": "先看后手。8点1氪丨宝宝巴士推送低俗广告被罚30万；山姆客服… 这类消息真正值钱的地方，在于它会不会把 产业与消费 的主线继续推下去。"
+        },
+        {
+          "role": "大厂产品经理",
+          "name": "需求池爆了",
+          "emotion": "继续观察",
+          "content": "《GPT-5.4 mini+nano突袭，1/3价格…》先别急着站队，我会继续盯后续细节。对 用户增长、平台策略和商业化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "AI 工程师",
+          "name": "今晚还在调参",
+          "emotion": "继续观察",
+          "content": "这条《直播丨第二艘国产大型邮轮“爱达·花城号”在上海出坞！》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "芯片销售",
+          "name": "先看交期",
+          "emotion": "继续观察",
+          "content": "先看后手。王传福、王兴兴、何小鹏现场助阵！小米新SU7售价2… 这类消息真正值钱的地方，在于它会不会把 产业与消费 的主线继续推下去。"
+        },
+        {
+          "role": "大学生",
+          "name": "今天也在赶 ddl",
+          "emotion": "继续观察",
+          "content": "《重庆市委副书记、市长胡衡华任上被查》先别急着站队，我会继续盯后续细节。对 就业机会、行业风口和体感变化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "宝妈",
+          "name": "先看生活成本",
+          "emotion": "偏谨慎",
+          "content": "别看现在评论区闹得凶，真正的压力在兑现层。“网推律所”乱象调查：“8000元接案后1000元… 这种消息，最容易先打掉市场耐心。"
+        },
+        {
+          "role": "出租车师傅",
+          "name": "路口见世面",
+          "emotion": "继续观察",
+          "content": "先看后手。欧阳奋强：快60岁时，才略微读懂了“贾宝玉” 这类消息真正值钱的地方，在于它会不会把 产业与消费 的主线继续推下去。"
+        },
+        {
+          "role": "自媒体博主",
+          "name": "标题先起了",
+          "emotion": "继续观察",
+          "content": "《道路运输从业人员年龄上限今起放宽至63岁》先别急着站队，我会继续盯后续细节。对 传播性、话题度和平台情绪 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "律师",
+          "name": "先看合规边界",
+          "emotion": "继续观察",
+          "content": "这条《高铁上已开售卫生巾？实测部分车次可线上订购，多地相…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "医生",
+          "name": "先讲证据",
+          "emotion": "继续观察",
+          "content": "先看后手。光伏卖断货、中国人高价买回国机票：古巴大停电的“至… 这类消息真正值钱的地方，在于它会不会把 产业与消费 的主线继续推下去。"
+        },
+        {
+          "role": "公务员",
+          "name": "按流程推进",
+          "emotion": "继续观察",
+          "content": "《8点1氪丨宝宝巴士推送低俗广告被罚30万；山姆客服…》先别急着站队，我会继续盯后续细节。对 政策执行、地方协同和社会预期 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "制造业厂长",
+          "name": "工位灯还亮着",
+          "emotion": "继续观察",
+          "content": "这条《GPT-5.4 mini+nano突袭，1/3价格…》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "00后打工人",
+          "name": "别给我画饼",
+          "emotion": "继续观察",
+          "content": "先看后手。直播丨第二艘国产大型邮轮“爱达·花城号”在上海出坞！ 这类消息真正值钱的地方，在于它会不会把 产业与消费 的主线继续推下去。"
+        },
+        {
+          "role": "海外留学生",
+          "name": "时差还没倒",
+          "emotion": "继续观察",
+          "content": "《王传福、王兴兴、何小鹏现场助阵！小米新SU7售价2…》先别急着站队，我会继续盯后续细节。对 国际比较、全球舆论和跨市场联动 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "电商运营",
+          "name": "转化率说话",
+          "emotion": "继续观察",
+          "content": "这条《重庆市委副书记、市长胡衡华任上被查》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "喜剧吐槽号",
+          "name": "这也能上热搜",
+          "emotion": "偏谨慎",
+          "content": "我对《“网推律所”乱象调查：“8000元接案后1000元…》会偏谨慎。要是后面没有修复动作，产业与消费 这条线就得重新估值。"
+        },
+        {
+          "role": "长线投资者",
+          "name": "只看五年",
+          "emotion": "继续观察",
+          "content": "《欧阳奋强：快60岁时，才略微读懂了“贾宝玉”》先别急着站队，我会继续盯后续细节。对 护城河、现金流和长期复利 来说，节奏比态度更重要。"
+        }
+      ],
+      "sourcesUsed": [
+        {
+          "id": "thepaper",
+          "label": "澎湃新闻热榜"
+        },
+        {
+          "id": "36kr-renqi",
+          "label": "36Kr 人气榜"
+        }
+      ]
+    },
+    {
+      "id": "social-trends",
+      "name": "社会热点",
+      "description": "热搜、民生、舆情和社交平台风向",
+      "lens": "看大众情绪、社会议题与平台传播结构的变化",
+      "lead": "社会热点 今天的主线围绕 释永信涉嫌4项罪名、奥恰洛夫说樊振东不参加世乒赛、二月二最硬核龙抬头 展开。从 看大众情绪、社会议题与平台传播结构的变化 的角度看，短线更值得关注的是消息能否从标题热度继续传导到真实订单、资金方向和后续政策动作。",
+      "bullish": "利多抓手先看《释永信涉嫌4项罪名》。这类消息通常会先影响风险偏好，再决定资金是否愿意追价，关键是后续有没有连续验证。",
+      "bearish": "利空压力来自《释永信涉嫌4项罪名》。它更像风险定价事件，短线会先打情绪和估值，真正要不要扩大影响，还得看第二波数据。",
+      "watch": "继续观察《释永信涉嫌4项罪名》。这条新闻现在还处在预期形成阶段，比起立刻下结论，更重要的是跟踪兑现节奏。",
+      "economistTake": "经济分析师视角下，社会热点 目前呈现出“情绪偏暖、等待确认”的结构。领头事件是《释永信涉嫌4项罪名》，但真正影响定价的不是单条标题本身，而是它能否沿着 看大众情绪、社会议题与平台传播结构的变化 这条链路继续扩散。如果接下来政策、订单或资金流没有接力，那今天的热度更可能停留在交易层面；如果连续出现验证，板块就有机会从情绪修复转向趋势定价。",
+      "stories": [
+        {
+          "index": 1,
+          "title": "释永信涉嫌4项罪名",
+          "summary": "这条新闻把市场焦点重新拉回到热搜、民生、舆情和社交平台风向。《释永信涉嫌4项罪名》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 社会热点 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://s.weibo.com/weibo?q=%23%E9%87%8A%E6%B0%B8%E4%BF%A1%E6%B6%89%E5%AB%8C4%E9%A1%B9%E7%BD%AA%E5%90%8D%23&t=31&band_rank=1&Refer=top",
+          "sourceId": "weibo",
+          "source": "微博热搜",
+          "publishedAt": null
+        },
+        {
+          "index": 2,
+          "title": "奥恰洛夫说樊振东不参加世乒赛",
+          "summary": "资金今天关注的核心变量之一是热搜、民生、舆情和社交平台风向。《奥恰洛夫说樊振东不参加世乒赛》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 社会热点 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://s.weibo.com/weibo?q=%23%E5%A5%A5%E6%81%B0%E6%B4%9B%E5%A4%AB%E8%AF%B4%E6%A8%8A%E6%8C%AF%E4%B8%9C%E4%B8%8D%E5%8F%82%E5%8A%A0%E4%B8%96%E4%B9%92%E8%B5%9B%23&t=31&band_rank=2&Refer=top",
+          "sourceId": "weibo",
+          "source": "微博热搜",
+          "publishedAt": null
+        },
+        {
+          "index": 3,
+          "title": "二月二最硬核龙抬头",
+          "summary": "从板块主线看，这条信息对应的是热搜、民生、舆情和社交平台风向。《二月二最硬核龙抬头》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 社会热点 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://s.weibo.com/weibo?q=%23%E4%BA%8C%E6%9C%88%E4%BA%8C%E6%9C%80%E7%A1%AC%E6%A0%B8%E9%BE%99%E6%8A%AC%E5%A4%B4%23&t=31&band_rank=3&Refer=top",
+          "sourceId": "weibo",
+          "source": "微博热搜",
+          "publishedAt": null
+        },
+        {
+          "index": 4,
+          "title": "薛之谦广州演唱会",
+          "summary": "如果把它放回全天节奏里看，真正重要的是热搜、民生、舆情和社交平台风向。《薛之谦广州演唱会》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 社会热点 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://s.weibo.com/weibo?q=%E8%96%9B%E4%B9%8B%E8%B0%A6%E5%B9%BF%E5%B7%9E%E6%BC%94%E5%94%B1%E4%BC%9A&t=31&band_rank=4&Refer=top",
+          "sourceId": "weibo",
+          "source": "微博热搜",
+          "publishedAt": null
+        },
+        {
+          "index": 5,
+          "title": "女子买8套老破小月收租2.1万",
+          "summary": "这条新闻把市场焦点重新拉回到热搜、民生、舆情和社交平台风向。《女子买8套老破小月收租2.1万》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 社会热点 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://s.weibo.com/weibo?q=%23%E5%A5%B3%E5%AD%90%E4%B9%B08%E5%A5%97%E8%80%81%E7%A0%B4%E5%B0%8F%E6%9C%88%E6%94%B6%E7%A7%9F2.1%E4%B8%87%23&t=31&band_rank=5&Refer=top",
+          "sourceId": "weibo",
+          "source": "微博热搜",
+          "publishedAt": null
+        },
+        {
+          "index": 6,
+          "title": "章子怡穿的比红毯还红",
+          "summary": "资金今天关注的核心变量之一是热搜、民生、舆情和社交平台风向。《章子怡穿的比红毯还红》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 社会热点 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://s.weibo.com/weibo?q=%23%E7%AB%A0%E5%AD%90%E6%80%A1%E7%A9%BF%E7%9A%84%E6%AF%94%E7%BA%A2%E6%AF%AF%E8%BF%98%E7%BA%A2%23&t=31&band_rank=6&Refer=top",
+          "sourceId": "weibo",
+          "source": "微博热搜",
+          "publishedAt": null
+        },
+        {
+          "index": 7,
+          "title": "伊朗伊斯兰革命卫队发言人身亡",
+          "summary": "从板块主线看，这条信息对应的是热搜、民生、舆情和社交平台风向。《伊朗伊斯兰革命卫队发言人身亡》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 社会热点 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://s.weibo.com/weibo?q=%23%E4%BC%8A%E6%9C%97%E4%BC%8A%E6%96%AF%E5%85%B0%E9%9D%A9%E5%91%BD%E5%8D%AB%E9%98%9F%E5%8F%91%E8%A8%80%E4%BA%BA%E8%BA%AB%E4%BA%A1%23&t=31&band_rank=7&Refer=top",
+          "sourceId": "weibo",
+          "source": "微博热搜",
+          "publishedAt": null
+        },
+        {
+          "index": 8,
+          "title": "打工人姿势病",
+          "summary": "如果把它放回全天节奏里看，真正重要的是热搜、民生、舆情和社交平台风向。《打工人姿势病》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 社会热点 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://s.weibo.com/weibo?q=%E6%89%93%E5%B7%A5%E4%BA%BA%E5%A7%BF%E5%8A%BF%E7%97%85&t=31&band_rank=8&Refer=top",
+          "sourceId": "weibo",
+          "source": "微博热搜",
+          "publishedAt": null
+        },
+        {
+          "index": 9,
+          "title": "椰树集团招标剥椰子机器人，要求每小时至少处理 360 个，完全去壳且损伤率≤ 1%，这标准能实现吗？",
+          "summary": "这条新闻把市场焦点重新拉回到热搜、民生、舆情和社交平台风向。《椰树集团招标剥椰子机器人，要求每小时至少处理 360 个，…》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 社会热点 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.zhihu.com/question/2017994120187097771",
+          "sourceId": "zhihu",
+          "source": "知乎热榜",
+          "publishedAt": null
+        },
+        {
+          "index": 10,
+          "title": "如何看待内存条价格崩了？",
+          "summary": "资金今天关注的核心变量之一是热搜、民生、舆情和社交平台风向。《如何看待内存条价格崩了？》更像一个高频信号，适合结合后续数据和资金反应一起判断。",
+          "reason": "更适合观察，因为它对 社会热点 的影响还需要更多数据或后续动作来确认。",
+          "signal": "watch",
+          "signalLabel": "继续观察",
+          "url": "https://www.zhihu.com/question/2017860793417356112",
+          "sourceId": "zhihu",
+          "source": "知乎热榜",
+          "publishedAt": null
+        }
+      ],
+      "personaComments": [
+        {
+          "role": "宏观策略师",
+          "name": "周期里找锚",
+          "emotion": "继续观察",
+          "content": "《释永信涉嫌4项罪名》先别急着站队，我会继续盯后续细节。对 政策节奏、流动性和预期差 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "外贸老板",
+          "name": "柜子还在海上",
+          "emotion": "继续观察",
+          "content": "这条《奥恰洛夫说樊振东不参加世乒赛》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "退休银行行长",
+          "name": "稳字当头",
+          "emotion": "继续观察",
+          "content": "先看后手。二月二最硬核龙抬头 这类消息真正值钱的地方，在于它会不会把 社会热点 的主线继续推下去。"
+        },
+        {
+          "role": "创业者",
+          "name": "现金流第一",
+          "emotion": "继续观察",
+          "content": "《薛之谦广州演唱会》先别急着站队，我会继续盯后续细节。对 增长空间、融资窗口和执行速度 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "新能源研究员",
+          "name": "电池边上的人",
+          "emotion": "继续观察",
+          "content": "这条《女子买8套老破小月收租2.1万》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "地产从业者",
+          "name": "案场观察员",
+          "emotion": "继续观察",
+          "content": "先看后手。章子怡穿的比红毯还红 这类消息真正值钱的地方，在于它会不会把 社会热点 的主线继续推下去。"
+        },
+        {
+          "role": "A股老股民",
+          "name": "老韭偏要抄底",
+          "emotion": "继续观察",
+          "content": "《伊朗伊斯兰革命卫队发言人身亡》先别急着站队，我会继续盯后续细节。对 板块轮动、情绪修复和筹码结构 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "港股交易员",
+          "name": "南向资金雷达",
+          "emotion": "继续观察",
+          "content": "这条《打工人姿势病》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "美股散户",
+          "name": "盘前不睡觉",
+          "emotion": "继续观察",
+          "content": "先看后手。椰树集团招标剥椰子机器人，要求每小时至少处理 36… 这类消息真正值钱的地方，在于它会不会把 社会热点 的主线继续推下去。"
+        },
+        {
+          "role": "大厂产品经理",
+          "name": "需求池爆了",
+          "emotion": "继续观察",
+          "content": "《如何看待内存条价格崩了？》先别急着站队，我会继续盯后续细节。对 用户增长、平台策略和商业化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "AI 工程师",
+          "name": "今晚还在调参",
+          "emotion": "继续观察",
+          "content": "这条《释永信涉嫌4项罪名》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "芯片销售",
+          "name": "先看交期",
+          "emotion": "继续观察",
+          "content": "先看后手。奥恰洛夫说樊振东不参加世乒赛 这类消息真正值钱的地方，在于它会不会把 社会热点 的主线继续推下去。"
+        },
+        {
+          "role": "大学生",
+          "name": "今天也在赶 ddl",
+          "emotion": "继续观察",
+          "content": "《二月二最硬核龙抬头》先别急着站队，我会继续盯后续细节。对 就业机会、行业风口和体感变化 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "宝妈",
+          "name": "先看生活成本",
+          "emotion": "继续观察",
+          "content": "这条《薛之谦广州演唱会》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "出租车师傅",
+          "name": "路口见世面",
+          "emotion": "继续观察",
+          "content": "先看后手。女子买8套老破小月收租2.1万 这类消息真正值钱的地方，在于它会不会把 社会热点 的主线继续推下去。"
+        },
+        {
+          "role": "自媒体博主",
+          "name": "标题先起了",
+          "emotion": "继续观察",
+          "content": "《章子怡穿的比红毯还红》先别急着站队，我会继续盯后续细节。对 传播性、话题度和平台情绪 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "律师",
+          "name": "先看合规边界",
+          "emotion": "继续观察",
+          "content": "这条《伊朗伊斯兰革命卫队发言人身亡》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "医生",
+          "name": "先讲证据",
+          "emotion": "继续观察",
+          "content": "先看后手。打工人姿势病 这类消息真正值钱的地方，在于它会不会把 社会热点 的主线继续推下去。"
+        },
+        {
+          "role": "公务员",
+          "name": "按流程推进",
+          "emotion": "继续观察",
+          "content": "《椰树集团招标剥椰子机器人，要求每小时至少处理 36…》先别急着站队，我会继续盯后续细节。对 政策执行、地方协同和社会预期 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "制造业厂长",
+          "name": "工位灯还亮着",
+          "emotion": "继续观察",
+          "content": "这条《如何看待内存条价格崩了？》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "00后打工人",
+          "name": "别给我画饼",
+          "emotion": "继续观察",
+          "content": "先看后手。释永信涉嫌4项罪名 这类消息真正值钱的地方，在于它会不会把 社会热点 的主线继续推下去。"
+        },
+        {
+          "role": "海外留学生",
+          "name": "时差还没倒",
+          "emotion": "继续观察",
+          "content": "《奥恰洛夫说樊振东不参加世乒赛》先别急着站队，我会继续盯后续细节。对 国际比较、全球舆论和跨市场联动 来说，节奏比态度更重要。"
+        },
+        {
+          "role": "电商运营",
+          "name": "转化率说话",
+          "emotion": "继续观察",
+          "content": "这条《二月二最硬核龙抬头》还在形成预期，先观察。很多时候不是新闻不重要，而是市场还没等到确认信号。"
+        },
+        {
+          "role": "喜剧吐槽号",
+          "name": "这也能上热搜",
+          "emotion": "继续观察",
+          "content": "先看后手。薛之谦广州演唱会 这类消息真正值钱的地方，在于它会不会把 社会热点 的主线继续推下去。"
+        },
+        {
+          "role": "长线投资者",
+          "name": "只看五年",
+          "emotion": "继续观察",
+          "content": "《女子买8套老破小月收租2.1万》先别急着站队，我会继续盯后续细节。对 护城河、现金流和长期复利 来说，节奏比态度更重要。"
+        }
+      ],
+      "sourcesUsed": [
+        {
+          "id": "weibo",
+          "label": "微博热搜"
+        },
+        {
+          "id": "zhihu",
+          "label": "知乎热榜"
+        }
+      ]
+    }
+  ],
+  "sourceRegistry": [
+    {
+      "id": "wallstreetcn-quick",
+      "label": "华尔街见闻快讯",
+      "kind": "newsnow",
+      "home": "https://wallstreetcn.com"
+    },
+    {
+      "id": "wallstreetcn-news",
+      "label": "华尔街见闻最新",
+      "kind": "newsnow",
+      "home": "https://wallstreetcn.com"
+    },
+    {
+      "id": "wallstreetcn-hot",
+      "label": "华尔街见闻热门",
+      "kind": "newsnow",
+      "home": "https://wallstreetcn.com"
+    },
+    {
+      "id": "cls-telegraph",
+      "label": "财联社电报",
+      "kind": "newsnow",
+      "home": "https://www.cls.cn"
+    },
+    {
+      "id": "cls-depth",
+      "label": "财联社深度",
+      "kind": "newsnow",
+      "home": "https://www.cls.cn"
+    },
+    {
+      "id": "cls-hot",
+      "label": "财联社热门",
+      "kind": "newsnow",
+      "home": "https://www.cls.cn"
+    },
+    {
+      "id": "mktnews-flash",
+      "label": "MKTNews 快讯",
+      "kind": "newsnow",
+      "home": "https://mktnews.net"
+    },
+    {
+      "id": "xueqiu-hotstock",
+      "label": "雪球热股",
+      "kind": "newsnow",
+      "home": "https://xueqiu.com"
+    },
+    {
+      "id": "gelonghui",
+      "label": "格隆汇事件",
+      "kind": "newsnow",
+      "home": "https://www.gelonghui.com"
+    },
+    {
+      "id": "fastbull-express",
+      "label": "FastBull 快讯",
+      "kind": "newsnow",
+      "home": "https://www.fastbull.cn"
+    },
+    {
+      "id": "fastbull-news",
+      "label": "FastBull 头条",
+      "kind": "newsnow",
+      "home": "https://www.fastbull.cn"
+    },
+    {
+      "id": "jin10",
+      "label": "金十数据",
+      "kind": "newsnow",
+      "home": "https://www.jin10.com"
+    },
+    {
+      "id": "36kr-quick",
+      "label": "36Kr 快讯",
+      "kind": "newsnow",
+      "home": "https://36kr.com"
+    },
+    {
+      "id": "36kr-renqi",
+      "label": "36Kr 人气榜",
+      "kind": "newsnow",
+      "home": "https://36kr.com"
+    },
+    {
+      "id": "ithome",
+      "label": "IT之家",
+      "kind": "newsnow",
+      "home": "https://www.ithome.com"
+    },
+    {
+      "id": "zaobao",
+      "label": "联合早报",
+      "kind": "newsnow",
+      "home": "https://www.zaobao.com"
+    },
+    {
+      "id": "sputniknewscn",
+      "label": "俄罗斯卫星通讯社中文网",
+      "kind": "newsnow",
+      "home": "https://sputniknews.cn"
+    },
+    {
+      "id": "cankaoxiaoxi",
+      "label": "参考消息",
+      "kind": "newsnow",
+      "home": "https://china.cankaoxiaoxi.com"
+    },
+    {
+      "id": "thepaper",
+      "label": "澎湃新闻热榜",
+      "kind": "newsnow",
+      "home": "https://www.thepaper.cn"
+    },
+    {
+      "id": "weibo",
+      "label": "微博热搜",
+      "kind": "newsnow",
+      "home": "https://weibo.com"
+    },
+    {
+      "id": "zhihu",
+      "label": "知乎热榜",
+      "kind": "newsnow",
+      "home": "https://www.zhihu.com"
+    },
+    {
+      "id": "toutiao",
+      "label": "今日头条",
+      "kind": "newsnow",
+      "home": "https://www.toutiao.com"
+    },
+    {
+      "id": "bilibili-hot-search",
+      "label": "B站热搜",
+      "kind": "newsnow",
+      "home": "https://www.bilibili.com"
+    },
+    {
+      "id": "hackernews",
+      "label": "Hacker News",
+      "kind": "newsnow",
+      "home": "https://news.ycombinator.com"
+    },
+    {
+      "id": "producthunt",
+      "label": "Product Hunt",
+      "kind": "newsnow",
+      "home": "https://www.producthunt.com"
+    },
+    {
+      "id": "github-trending-today",
+      "label": "GitHub Trending",
+      "kind": "newsnow",
+      "home": "https://github.com/trending"
+    },
+    {
+      "id": "bbc-world",
+      "label": "BBC World",
+      "kind": "rss",
+      "home": "https://www.bbc.com/news"
+    },
+    {
+      "id": "bbc-business",
+      "label": "BBC Business",
+      "kind": "rss",
+      "home": "https://www.bbc.com/news/business"
+    },
+    {
+      "id": "guardian-world",
+      "label": "The Guardian World",
+      "kind": "rss",
+      "home": "https://www.theguardian.com/world"
+    },
+    {
+      "id": "guardian-business",
+      "label": "The Guardian Business",
+      "kind": "rss",
+      "home": "https://www.theguardian.com/business"
+    },
+    {
+      "id": "cnbc-us-top",
+      "label": "CNBC US Top News",
+      "kind": "rss",
+      "home": "https://www.cnbc.com/world"
+    },
+    {
+      "id": "cnbc-business",
+      "label": "CNBC Business",
+      "kind": "rss",
+      "home": "https://www.cnbc.com/business"
+    },
+    {
+      "id": "cnbc-tech",
+      "label": "CNBC Tech",
+      "kind": "rss",
+      "home": "https://www.cnbc.com/technology"
+    },
+    {
+      "id": "techcrunch-ai",
+      "label": "TechCrunch AI",
+      "kind": "rss",
+      "home": "https://techcrunch.com/category/artificial-intelligence/"
+    },
+    {
+      "id": "cointelegraph",
+      "label": "Cointelegraph",
+      "kind": "rss",
+      "home": "https://cointelegraph.com"
+    },
+    {
+      "id": "decrypt",
+      "label": "Decrypt",
+      "kind": "rss",
+      "home": "https://decrypt.co"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>说明 / 部署 | Daily News Insight</title>
+    <meta
+      name="description"
+      content="Daily News Insight 的部署说明，包括 OpenAI Key、GitHub Actions 和 GitHub Pages 配置。"
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=IBM+Plex+Sans+SC:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/app.css" />
+  </head>
+  <body data-page="about">
+    <div class="app-shell">
+      <aside class="app-sidebar">
+        <div class="sidebar-brand">
+          <p class="eyebrow">Project Notes</p>
+          <h1>Daily News Insight</h1>
+          <p class="sidebar-copy">这里整理 Key、仓库、GitHub Actions 和 GitHub Pages 的接法。</p>
+        </div>
+
+        <nav class="page-nav" aria-label="站点菜单">
+          <a class="page-link" href="./index.html">
+            <span class="page-link-title">智能深度简报</span>
+            <span class="page-link-copy">回到摘要页查看十板块日报</span>
+          </a>
+          <a class="page-link" href="./monitor.html">
+            <span class="page-link-title">原始数据监控</span>
+            <span class="page-link-copy">检查原始抓取结果与 source 覆盖</span>
+          </a>
+          <a class="page-link is-active" href="./about.html">
+            <span class="page-link-title">说明 / 部署</span>
+            <span class="page-link-copy">OpenAI Key、GitHub 仓库与自动化部署</span>
+          </a>
+        </nav>
+      </aside>
+
+      <main class="app-main">
+        <div class="update-banner">建议先完成 GitHub 登录和仓库创建，再配置 Actions Secret，这样可以一次把自动更新也接好。</div>
+
+        <header class="main-header">
+          <div>
+            <p class="eyebrow">Setup Guide</p>
+            <h2 class="main-title">说明 / 部署</h2>
+          </div>
+        </header>
+
+        <section class="panel-card">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Architecture</p>
+              <h3>整体模式</h3>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p>这个站点采用“脚本定时生成 JSON，GitHub Pages 直接展示静态页面”的模式。</p>
+            <p>因此你不需要单独买服务器，也不需要维护数据库。内容更新全部由 GitHub Actions 完成。</p>
+          </div>
+        </section>
+
+        <section class="panel-card">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">OpenAI Key</p>
+              <h3>OpenAI Key 怎么接</h3>
+            </div>
+          </div>
+          <ol class="step-list">
+            <li>在 OpenAI 后台创建项目级 API Key，不要把 Key 写进仓库文件。</li>
+            <li>本地调试时用环境变量 `OPENAI_API_KEY`。</li>
+            <li>GitHub 上运行时，把同一个 Key 配到仓库的 Actions Secret 里。</li>
+            <li>可选再加一个 `OPENAI_MODEL`，默认当前项目会用 `gpt-5-mini`。</li>
+          </ol>
+        </section>
+
+        <section class="panel-card">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">GitHub</p>
+              <h3>GitHub Actions 和 Pages</h3>
+            </div>
+          </div>
+          <ol class="step-list">
+            <li>仓库里已有工作流文件 `.github/workflows/daily-digest.yml`。</li>
+            <li>Pages 选择 `main` 分支的 `docs` 目录。</li>
+            <li>Actions Secret 里至少配置 `OPENAI_API_KEY`。</li>
+            <li>手动触发一次工作流后，站点就会有第一版正式数据。</li>
+          </ol>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
