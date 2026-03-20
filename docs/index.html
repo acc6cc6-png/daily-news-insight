@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daily News Insight</title>
+    <title>小程的财经日报 · Zuko</title>
     <meta
       name="description"
-      content="每天自动汇总 10 个板块新闻，给出 AI 摘要、利多利空判断、经济分析师点评与 25 个角色评论。"
+      content="每日精选全球财经要闻，AI 深度解读，洞察市场脉搏，助你在信息洪流中把握先机。"
     />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,9 +22,9 @@
     <div class="app-shell">
       <aside class="app-sidebar">
         <div class="sidebar-brand">
-          <p class="eyebrow">AI Powered Briefing</p>
-          <h1>Daily News Insight</h1>
-          <p class="sidebar-copy">参考 daily-news-ai 的思路，升级成更适合十板块日报的静态站。</p>
+          <p class="eyebrow">AI 财经简报</p>
+          <h1>小程的财经日报</h1>
+          <p class="sidebar-copy">每日精选全球财经要闻，AI 深度解读，洞察市场脉搏，助你在信息洪流中把握先机。</p>
         </div>
 
         <nav class="page-nav" aria-label="站点菜单">
@@ -37,8 +37,8 @@
             <span class="page-link-copy">查看每个板块抓到的源站和标题原文</span>
           </a>
           <a class="page-link" href="./about.html">
-            <span class="page-link-title">说明 / 部署</span>
-            <span class="page-link-copy">如何接 Key、配置 GitHub Actions 与 Pages</span>
+            <span class="page-link-title">关于 · 联系</span>
+            <span class="page-link-copy">关于本站与联系方式</span>
           </a>
         </nav>
 
@@ -46,13 +46,17 @@
           <p class="sidebar-note-title">当前站点模式</p>
           <p class="sidebar-note-copy">静态页面只读 `docs/data`。内容由 GitHub Actions 定时生成并归档。</p>
         </section>
-      </aside>
 
+        <section class="sidebar-note" style="margin-top:auto;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.1);">
+          <p class="sidebar-note-title">联系作者 Zuko</p>
+          <p class="sidebar-note-copy">📧 3119268060@qq.com</p>
+          <p class="sidebar-note-copy">💬 微信：cfu800</p>
+        </section>
+      </aside>
       <main class="app-main">
         <div class="update-banner">
           每天 07:05 自动更新 AI 简报，历史版本保留在 GitHub 仓库里；未配置 Key 时会自动退回模板模式。
         </div>
-
         <header class="main-header">
           <div>
             <p class="eyebrow" id="hero-kicker">AI 全网简报</p>
@@ -64,9 +68,7 @@
             <div class="latest-pill" id="latest-indicator">Latest</div>
           </div>
         </header>
-
         <section class="tab-strip" id="category-tabs" aria-label="板块切换"></section>
-
         <section class="summary-card">
           <div class="section-head">
             <div>
@@ -93,7 +95,6 @@
             </div>
           </div>
         </section>
-
         <section class="signal-grid">
           <article class="signal-card bullish-card">
             <p class="signal-label">利多抓手</p>
@@ -108,7 +109,6 @@
             <p class="signal-copy" id="watch-copy"></p>
           </article>
         </section>
-
         <section class="analyst-card">
           <div class="section-head">
             <div>
@@ -119,7 +119,6 @@
           </div>
           <p class="analyst-copy" id="analyst-copy"></p>
         </section>
-
         <section class="content-grid">
           <article class="panel-card">
             <div class="section-head">
@@ -131,7 +130,6 @@
             </div>
             <div id="stories-list" class="stories-list"></div>
           </article>
-
           <article class="panel-card">
             <div class="section-head">
               <div>
@@ -143,7 +141,6 @@
             <div id="comments-list" class="comments-list"></div>
           </article>
         </section>
-
         <section class="panel-card">
           <div class="section-head">
             <div>
@@ -160,7 +157,6 @@
         </section>
       </main>
     </div>
-
     <div class="history-modal hidden" id="history-modal" aria-hidden="true">
       <div class="history-backdrop" id="history-close"></div>
       <div class="history-dialog">
