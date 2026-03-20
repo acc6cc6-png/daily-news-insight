@@ -1,8 +1,262 @@
 {
-  "generatedAt": "2026-03-20 21:25",
+  "generatedAt": "2026-03-20 23:25",
   "timezone": "Asia/Shanghai",
   "sourceCount": 36,
   "categories": [
+    {
+      "id": "focus-news",
+      "name": "重点新闻",
+      "description": "对经济金融有重大影响的长期焦点事件",
+      "sourceIds": [
+        "wallstreetcn-quick",
+        "cls-telegraph",
+        "bbc-world",
+        "guardian-world",
+        "zaobao"
+      ],
+      "items": [
+        {
+          "title": "俄称美以轰炸伊朗恩泽利港触及俄经济利益",
+          "url": "https://wallstreetcn.com/livenews/3074243",
+          "publishedAt": "2026-03-20 23:07",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 1,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "伊朗最高领袖新年致辞：在民族团结和国家安全的庇护下实现经济韧性",
+          "url": "https://wallstreetcn.com/livenews/3074242",
+          "publishedAt": "2026-03-20 23:04",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 2,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "科威特：炼油厂火情已经得到控制，没有人受伤。",
+          "url": "https://wallstreetcn.com/livenews/3074241",
+          "publishedAt": "2026-03-20 23:02",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 3,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "焦煤夜盘收涨约8.7%，LPT涨6.8%，焦炭涨4.8%。 棕榈油、豆一、低硫燃油夜盘则至多收跌0.29%，豆二、豆粕、菜粕至多跌0.70%。",
+          "url": "https://wallstreetcn.com/livenews/3074239",
+          "publishedAt": "2026-03-20 23:00",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 4,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "据知情人士透露，亿万富翁Batista洽谈拯救巴西钢铁巨头CSN旗下一个部门。（彭博）",
+          "url": "https://wallstreetcn.com/livenews/3074238",
+          "publishedAt": "2026-03-20 22:57",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 5,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "港交所文件显示，PT Merdeka Gold Resources Tbk - S向港交所提交上市申请书，联席保荐人为瑞银、中信证券。",
+          "url": "https://wallstreetcn.com/livenews/3074237",
+          "publishedAt": "2026-03-20 22:57",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 6,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "标普500指数跌幅扩大至1%，房地产板块跌1.45%，公用事业板块跌1.39%，科技板块跌1.14%，电信板块跌1.13%，能源板块涨1.17%。 道指跌284点跌幅0.62%，纳指跌1.3%，半导体指数跌1.85%，罗素2000指数跌1.29%。",
+          "url": "https://wallstreetcn.com/livenews/3074236",
+          "publishedAt": "2026-03-20 22:55",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 7,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "美国所有期限国债的收益率涨幅至少达到10个基点。",
+          "url": "https://wallstreetcn.com/livenews/3074234",
+          "publishedAt": "2026-03-20 22:48",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 8,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "中国工程机械工业协会：1至2月我国工程机械进出口贸易额110.72亿美元 同比增长31.4%",
+          "url": "https://www.cls.cn/detail/2320114",
+          "publishedAt": "2026-03-20 23:14",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 1,
+          "sourcePriority": 2,
+          "signal": "bullish"
+        },
+        {
+          "title": "财联社3月20日电，NBA已开始与投资银行就增设新球队事宜进行商谈。",
+          "url": "https://www.cls.cn/detail/2320113",
+          "publishedAt": "2026-03-20 23:13",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 2,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "俄称美以轰炸伊朗恩泽利港触及俄经济利益",
+          "url": "https://www.cls.cn/detail/2320112",
+          "publishedAt": "2026-03-20 23:07",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 3,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "伊朗最高领袖就伊朗新年发表贺词",
+          "url": "https://www.cls.cn/detail/2320111",
+          "publishedAt": "2026-03-20 23:04",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 4,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "国内商品期市夜盘收盘多数上涨 黑色系涨幅居前",
+          "url": "https://www.cls.cn/detail/2320109",
+          "publishedAt": "2026-03-20 23:00",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 5,
+          "sourcePriority": 2,
+          "signal": "bullish"
+        },
+        {
+          "title": "财联社3月20日电，科威特方面表示，炼油厂火灾已得到控制，无人员受伤。",
+          "url": "https://www.cls.cn/detail/2320108",
+          "publishedAt": "2026-03-20 22:57",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 6,
+          "sourcePriority": 2,
+          "signal": "bearish"
+        },
+        {
+          "title": "洲际油气：全资子公司NK石油公司与惠博普签订15.96亿元合同",
+          "url": "https://www.cls.cn/detail/2320107",
+          "publishedAt": "2026-03-20 22:56",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 7,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "财联社3月20日电，标普500指数跌幅扩大至1%。",
+          "url": "https://www.cls.cn/detail/2320106",
+          "publishedAt": "2026-03-20 22:55",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 8,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "Leading anti‑racism activist in Tunisia jailed for eight years",
+          "url": "https://www.bbc.com/news/articles/clyjg1x7r43o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-03-20 21:17",
+          "sourceId": "bbc-world",
+          "sourceLabel": "BBC World",
+          "sourceHome": "https://www.bbc.com/news",
+          "sourceType": "rss",
+          "rank": 4,
+          "sourcePriority": 3,
+          "signal": "watch"
+        },
+        {
+          "title": "I didn't know Epstein was a predator - Norway's crown princess",
+          "url": "https://www.bbc.com/news/videos/c78l5x0zl0wo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-03-20 20:38",
+          "sourceId": "bbc-world",
+          "sourceLabel": "BBC World",
+          "sourceHome": "https://www.bbc.com/news",
+          "sourceType": "rss",
+          "rank": 22,
+          "sourcePriority": 3,
+          "signal": "watch"
+        },
+        {
+          "title": "Hungary's Orbán accused of disloyalty and blackmail over Ukraine loan veto",
+          "url": "https://www.bbc.com/news/articles/cq6jrvgqeejo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-03-20 19:33",
+          "sourceId": "bbc-world",
+          "sourceLabel": "BBC World",
+          "sourceHome": "https://www.bbc.com/news",
+          "sourceType": "rss",
+          "rank": 5,
+          "sourcePriority": 3,
+          "signal": "watch"
+        },
+        {
+          "title": "Mexican teen dies while being held in US immigration custody",
+          "url": "https://www.bbc.com/news/articles/cp84n0kn902o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-03-20 18:57",
+          "sourceId": "bbc-world",
+          "sourceLabel": "BBC World",
+          "sourceHome": "https://www.bbc.com/news",
+          "sourceType": "rss",
+          "rank": 6,
+          "sourcePriority": 3,
+          "signal": "watch"
+        }
+      ]
+    },
     {
       "id": "china-macro",
       "name": "中国宏观",
@@ -16,21 +270,21 @@
       ],
       "items": [
         {
-          "title": "花旗：如果冲突在一两周内结束，且届时霍尔木兹海峡完全开放，荷兰天然气期货价格可能会跌至每兆瓦时40欧元。",
-          "url": "https://wallstreetcn.com/livenews/3074169",
-          "publishedAt": "2026-03-20 20:54",
+          "title": "俄称美以轰炸伊朗恩泽利港触及俄经济利益",
+          "url": "https://wallstreetcn.com/livenews/3074243",
+          "publishedAt": "2026-03-20 23:07",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
           "rank": 1,
           "sourcePriority": 1,
-          "signal": "bearish"
+          "signal": "watch"
         },
         {
-          "title": "韩国打算限制石油产品出口以应对供应紧急状况",
-          "url": "https://wallstreetcn.com/livenews/3074168",
-          "publishedAt": "2026-03-20 20:50",
+          "title": "伊朗最高领袖新年致辞：在民族团结和国家安全的庇护下实现经济韧性",
+          "url": "https://wallstreetcn.com/livenews/3074242",
+          "publishedAt": "2026-03-20 23:04",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -40,9 +294,9 @@
           "signal": "watch"
         },
         {
-          "title": "商务部部长王文涛会见苹果公司首席执行官蒂姆·库克",
-          "url": "https://wallstreetcn.com/livenews/3073951",
-          "publishedAt": "2026-03-20 20:40",
+          "title": "科威特：炼油厂火情已经得到控制，没有人受伤。",
+          "url": "https://wallstreetcn.com/livenews/3074241",
+          "publishedAt": "2026-03-20 23:02",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -52,81 +306,81 @@
           "signal": "watch"
         },
         {
-          "title": "【何小鹏：IRON人形机器人将于2026年底量产，月产能目标上千台】小鹏董事长、CEO何小鹏表示，全新一代的IRON机器人将会在2026年底量产。小鹏IRON搭载三颗图灵AI芯片，端侧的有效算力远高于行业里的机器人。当前，小鹏VLA2.0技术栈已经在机器人上成功跑通，结合小鹏机器人的全新第4代运动控制系统。小鹏机器人主攻商业、工业和家庭三大场景。IRON将首先支持在小鹏中国和海外的门店和园区落地服务、导览和导购等商业场景。今年一季度，小鹏在广州启动了人形机器人量产基地的建设。IRON今年底的月产能目标是上千台。",
-          "url": "https://wallstreetcn.com/livenews/3074165",
-          "publishedAt": "2026-03-20 20:40",
+          "title": "焦煤夜盘收涨约8.7%，LPT涨6.8%，焦炭涨4.8%。 棕榈油、豆一、低硫燃油夜盘则至多收跌0.29%，豆二、豆粕、菜粕至多跌0.70%。",
+          "url": "https://wallstreetcn.com/livenews/3074239",
+          "publishedAt": "2026-03-20 23:00",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
           "rank": 4,
           "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "据知情人士透露，亿万富翁Batista洽谈拯救巴西钢铁巨头CSN旗下一个部门。（彭博）",
+          "url": "https://wallstreetcn.com/livenews/3074238",
+          "publishedAt": "2026-03-20 22:57",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 5,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "港交所文件显示，PT Merdeka Gold Resources Tbk - S向港交所提交上市申请书，联席保荐人为瑞银、中信证券。",
+          "url": "https://wallstreetcn.com/livenews/3074237",
+          "publishedAt": "2026-03-20 22:57",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 6,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "标普500指数跌幅扩大至1%，房地产板块跌1.45%，公用事业板块跌1.39%，科技板块跌1.14%，电信板块跌1.13%，能源板块涨1.17%。 道指跌284点跌幅0.62%，纳指跌1.3%，半导体指数跌1.85%，罗素2000指数跌1.29%。",
+          "url": "https://wallstreetcn.com/livenews/3074236",
+          "publishedAt": "2026-03-20 22:55",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 7,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "美国所有期限国债的收益率涨幅至少达到10个基点。",
+          "url": "https://wallstreetcn.com/livenews/3074234",
+          "publishedAt": "2026-03-20 22:48",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 8,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "中国工程机械工业协会：1至2月我国工程机械进出口贸易额110.72亿美元 同比增长31.4%",
+          "url": "https://www.cls.cn/detail/2320114",
+          "publishedAt": "2026-03-20 23:14",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 1,
+          "sourcePriority": 2,
           "signal": "bullish"
         },
         {
-          "title": "美联储理事沃勒：如果就业疲软，将在今年晚些时候再次主张降息",
-          "url": "https://wallstreetcn.com/livenews/3074164",
-          "publishedAt": "2026-03-20 20:39",
-          "sourceId": "wallstreetcn-quick",
-          "sourceLabel": "华尔街见闻快讯",
-          "sourceHome": "https://wallstreetcn.com",
-          "sourceType": "newsnow",
-          "rank": 5,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "中国稀土集团：推动传统稀土制造向高端智造、绿色智造转型",
-          "url": "https://wallstreetcn.com/livenews/3074163",
-          "publishedAt": "2026-03-20 20:37",
-          "sourceId": "wallstreetcn-quick",
-          "sourceLabel": "华尔街见闻快讯",
-          "sourceHome": "https://wallstreetcn.com",
-          "sourceType": "newsnow",
-          "rank": 6,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "俄罗斯可能在5至7年内建成月球核电站",
-          "url": "https://wallstreetcn.com/livenews/3074161",
-          "publishedAt": "2026-03-20 20:34",
-          "sourceId": "wallstreetcn-quick",
-          "sourceLabel": "华尔街见闻快讯",
-          "sourceHome": "https://wallstreetcn.com",
-          "sourceType": "newsnow",
-          "rank": 7,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "凌激会见丹麦诺和诺德公司执行副总裁林意明",
-          "url": "https://wallstreetcn.com/livenews/3074160",
-          "publishedAt": "2026-03-20 20:33",
-          "sourceId": "wallstreetcn-quick",
-          "sourceLabel": "华尔街见闻快讯",
-          "sourceHome": "https://wallstreetcn.com",
-          "sourceType": "newsnow",
-          "rank": 8,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "财联社3月20日电，乌克兰总统泽连斯基表示，乌克兰将于周六与美国举行双边会晤，乌克兰寻求确定新的三方会议日期。",
-          "url": "https://www.cls.cn/detail/2319976",
-          "publishedAt": "2026-03-20 21:14",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 1,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "以军称伊朗“动员穷人组织”情报部门负责人已身亡",
-          "url": "https://www.cls.cn/detail/2319975",
-          "publishedAt": "2026-03-20 21:10",
+          "title": "财联社3月20日电，NBA已开始与投资银行就增设新球队事宜进行商谈。",
+          "url": "https://www.cls.cn/detail/2320113",
+          "publishedAt": "2026-03-20 23:13",
           "sourceId": "cls-telegraph",
           "sourceLabel": "财联社电报",
           "sourceHome": "https://www.cls.cn",
@@ -136,9 +390,9 @@
           "signal": "watch"
         },
         {
-          "title": "平安银行：2025年净利426.33亿元 不良率降至1.05%",
-          "url": "https://www.cls.cn/detail/2319974",
-          "publishedAt": "2026-03-20 21:10",
+          "title": "俄称美以轰炸伊朗恩泽利港触及俄经济利益",
+          "url": "https://www.cls.cn/detail/2320112",
+          "publishedAt": "2026-03-20 23:07",
           "sourceId": "cls-telegraph",
           "sourceLabel": "财联社电报",
           "sourceHome": "https://www.cls.cn",
@@ -148,9 +402,9 @@
           "signal": "watch"
         },
         {
-          "title": "财联社3月20日电，欧洲央行据悉询问银行伊朗战争对客户和业务的影响。",
-          "url": "https://www.cls.cn/detail/2319973",
-          "publishedAt": "2026-03-20 21:08",
+          "title": "伊朗最高领袖就伊朗新年发表贺词",
+          "url": "https://www.cls.cn/detail/2320111",
+          "publishedAt": "2026-03-20 23:04",
           "sourceId": "cls-telegraph",
           "sourceLabel": "财联社电报",
           "sourceHome": "https://www.cls.cn",
@@ -160,33 +414,33 @@
           "signal": "watch"
         },
         {
-          "title": "财联社3月20日电，波罗的海干散货指数跌0.05%，至2056点。",
-          "url": "https://www.cls.cn/detail/2319970",
-          "publishedAt": "2026-03-20 21:03",
+          "title": "国内商品期市夜盘收盘多数上涨 黑色系涨幅居前",
+          "url": "https://www.cls.cn/detail/2320109",
+          "publishedAt": "2026-03-20 23:00",
           "sourceId": "cls-telegraph",
           "sourceLabel": "财联社电报",
           "sourceHome": "https://www.cls.cn",
           "sourceType": "newsnow",
           "rank": 5,
           "sourcePriority": 2,
-          "signal": "watch"
+          "signal": "bullish"
         },
         {
-          "title": "财联社3月20日电，据报道，马斯克旗下的人工智能公司xAI将工程师派往客户现场，以期从OpenAI手中赢得业务。",
-          "url": "https://www.cls.cn/detail/2319967",
-          "publishedAt": "2026-03-20 21:01",
+          "title": "财联社3月20日电，科威特方面表示，炼油厂火灾已得到控制，无人员受伤。",
+          "url": "https://www.cls.cn/detail/2320108",
+          "publishedAt": "2026-03-20 22:57",
           "sourceId": "cls-telegraph",
           "sourceLabel": "财联社电报",
           "sourceHome": "https://www.cls.cn",
           "sourceType": "newsnow",
           "rank": 6,
           "sourcePriority": 2,
-          "signal": "watch"
+          "signal": "bearish"
         },
         {
-          "title": "财联社3月20日电，国内商品期货夜盘开盘涨跌不一，乙二醇涨5.65%，br橡胶涨3.11%，液化气涨2.9%，丙烯涨2.17%，甲醇涨2.11%。沪银涨1.4%，沪金涨1.28%。",
-          "url": "https://www.cls.cn/detail/2319966",
-          "publishedAt": "2026-03-20 21:00",
+          "title": "洲际油气：全资子公司NK石油公司与惠博普签订15.96亿元合同",
+          "url": "https://www.cls.cn/detail/2320107",
+          "publishedAt": "2026-03-20 22:56",
           "sourceId": "cls-telegraph",
           "sourceLabel": "财联社电报",
           "sourceHome": "https://www.cls.cn",
@@ -196,9 +450,9 @@
           "signal": "watch"
         },
         {
-          "title": "万科A：控股子公司SCPG16.54亿元银行贷款获准展期一年",
-          "url": "https://www.cls.cn/detail/2319965",
-          "publishedAt": "2026-03-20 20:58",
+          "title": "财联社3月20日电，标普500指数跌幅扩大至1%。",
+          "url": "https://www.cls.cn/detail/2320106",
+          "publishedAt": "2026-03-20 22:55",
           "sourceId": "cls-telegraph",
           "sourceLabel": "财联社电报",
           "sourceHome": "https://www.cls.cn",
@@ -208,9 +462,9 @@
           "signal": "watch"
         },
         {
-          "title": "SPOT SILVER FALLS BELOW $71/OZ, DOWN 2.51% INTRADAY",
-          "url": "https://mktnews.net/flashDetail.html?id=019d0b5f-aa45-7dd1-9ff2-fc78ee2e1338",
-          "publishedAt": "2026-03-20T13:11:52.000Z",
+          "title": "US JUSTICE DEPARTMENT SUES HARVARD UNIVERSITY FOR ANTISEMITISM",
+          "url": "https://mktnews.net/flashDetail.html?id=019d0bcf-5f75-7dd1-9ff5-827b4aeedd4b",
+          "publishedAt": "2026-03-20T15:13:52.000Z",
           "sourceId": "mktnews-flash",
           "sourceLabel": "MKTNews 快讯",
           "sourceHome": "https://mktnews.net",
@@ -220,9 +474,9 @@
           "signal": "watch"
         },
         {
-          "title": "ZELENSKIY: UKRAINE, US TO DISCUSS POST-WAR GUARANTEES, RECOVERY",
-          "url": "https://mktnews.net/flashDetail.html?id=019d0b5e-63a5-7dd1-9ff2-f4ecfa7ba03d",
-          "publishedAt": "2026-03-20T13:10:28.000Z",
+          "title": "EUROPEAN DEFENCE STOCKS INDEX FALLS 3.2% ON DAY, TURNS NEGATIVE FOR 2026 SO FAR",
+          "url": "https://mktnews.net/flashDetail.html?id=019d0bcc-0bab-7dd1-9ff5-7838bc10f418",
+          "publishedAt": "2026-03-20T15:10:14.000Z",
           "sourceId": "mktnews-flash",
           "sourceLabel": "MKTNews 快讯",
           "sourceHome": "https://mktnews.net",
@@ -232,9 +486,9 @@
           "signal": "watch"
         },
         {
-          "title": "ZELENSKIY: UKRAINE SEEKS TO SET DATE FOR NEW TRILATERAL MEETING",
-          "url": "https://mktnews.net/flashDetail.html?id=019d0b5d-e762-7dd1-9ff2-ebc5ec18212c",
-          "publishedAt": "2026-03-20T13:09:56.000Z",
+          "title": "S&P: CORNING OUTLOOK REVISED TO STABLE FROM NEGATIVE ON AI-DRIVEN OPTICAL DEM.<br/><br/>S&P REVISES CORNING OTLK TO STABLE FROM NEG, AFFIRMS RATING",
+          "url": "https://mktnews.net/flashDetail.html?id=019d0bcb-e6cc-7dd1-9ff5-730b5dff9923",
+          "publishedAt": "2026-03-20T15:10:05.000Z",
           "sourceId": "mktnews-flash",
           "sourceLabel": "MKTNews 快讯",
           "sourceHome": "https://mktnews.net",
@@ -244,9 +498,9 @@
           "signal": "watch"
         },
         {
-          "title": "ZELENSKIY: UKRAINE TO HAVE BILATERAL MEETING WITH US SATURDAY",
-          "url": "https://mktnews.net/flashDetail.html?id=019d0b5d-6cdc-7dd1-9ff2-e43207ddc6da",
-          "publishedAt": "2026-03-20T13:09:25.000Z",
+          "title": "IDF: IDENTIFIED MISSILES LAUNCHED FROM IRAN TOWARD ISRAEL",
+          "url": "https://mktnews.net/flashDetail.html?id=019d0bc9-a79c-7dd1-9ff5-69a9443cfa3d",
+          "publishedAt": "2026-03-20T15:07:38.000Z",
           "sourceId": "mktnews-flash",
           "sourceLabel": "MKTNews 快讯",
           "sourceHome": "https://mktnews.net",
@@ -330,8 +584,8 @@
           "signal": "watch"
         },
         {
-          "title": "阿里电话会：未来五年，云和AI年收入突破1000亿美元，MaaS将是阿里云最大收入产品",
-          "url": "https://wallstreetcn.com/articles/3767932",
+          "title": "胡塞武装称可能封锁曼德海峡！伊朗祭出新王牌；“福特”号航母被曝将撤离，革命卫队：反映出美以“绝望而屈辱”的真实处境",
+          "url": "https://wallstreetcn.com/articles/3767987",
           "publishedAt": null,
           "sourceId": "wallstreetcn-hot",
           "sourceLabel": "华尔街见闻热门",
@@ -339,11 +593,11 @@
           "sourceType": "newsnow",
           "rank": 6,
           "sourcePriority": 1,
-          "signal": "bullish"
+          "signal": "watch"
         },
         {
-          "title": "隔夜市场关键转折点！内塔尼亚胡：暂停空袭伊朗能源设施，战争或“比预期更早”结束",
-          "url": "https://wallstreetcn.com/articles/3767966",
+          "title": "美股期货跌幅扩大，报道：特朗普考虑占领或封锁伊朗哈尔克岛",
+          "url": "https://wallstreetcn.com/articles/3768006",
           "publishedAt": null,
           "sourceId": "wallstreetcn-hot",
           "sourceLabel": "华尔街见闻热门",
@@ -354,8 +608,8 @@
           "signal": "watch"
         },
         {
-          "title": "胡塞武装称可能封锁曼德海峡！伊朗祭出新王牌；“福特”号航母被曝将撤离，革命卫队：反映出美以“绝望而屈辱”的真实处境",
-          "url": "https://wallstreetcn.com/articles/3767987",
+          "title": "隔夜市场关键转折点！内塔尼亚胡：暂停空袭伊朗能源设施，战争或“比预期更早”结束",
+          "url": "https://wallstreetcn.com/articles/3767966",
           "publishedAt": null,
           "sourceId": "wallstreetcn-hot",
           "sourceLabel": "华尔街见闻热门",
@@ -378,8 +632,8 @@
           "signal": "watch"
         },
         {
-          "title": "马斯克“扫货”光伏设备 AI加速迈入太空领域？",
-          "url": "https://www.cls.cn/detail/2319626",
+          "title": "关于霍尔木兹海峡通行，伊朗表态",
+          "url": "https://www.cls.cn/detail/2319969",
           "publishedAt": null,
           "sourceId": "cls-hot",
           "sourceLabel": "财联社热门",
@@ -402,8 +656,8 @@
           "signal": "watch"
         },
         {
-          "title": "【每日收评】沪指午后跳水失守4000点，全市场连续两日超4700股收跌，新能源赛道逆势活跃",
-          "url": "https://www.cls.cn/detail/2319565",
+          "title": "马斯克“扫货”光伏设备 AI加速迈入太空领域？",
+          "url": "https://www.cls.cn/detail/2319626",
           "publishedAt": null,
           "sourceId": "cls-hot",
           "sourceLabel": "财联社热门",
@@ -414,8 +668,8 @@
           "signal": "watch"
         },
         {
-          "title": "一文读懂：油价再涨多少会触发全球经济衰退“红线”？",
-          "url": "https://www.cls.cn/detail/2319356",
+          "title": "【每日收评】沪指午后跳水失守4000点，全市场连续两日超4700股收跌，新能源赛道逆势活跃",
+          "url": "https://www.cls.cn/detail/2319565",
           "publishedAt": null,
           "sourceId": "cls-hot",
           "sourceLabel": "财联社热门",
@@ -426,8 +680,8 @@
           "signal": "watch"
         },
         {
-          "title": "盈米基金让基民慌乱了？未经同意赎回基民持仓，公司这样解释",
-          "url": "https://www.cls.cn/detail/2319657",
+          "title": "特朗普据称考虑占领或封锁哈尔克岛 以迫使伊朗重开霍尔木兹海峡",
+          "url": "https://www.cls.cn/detail/2320056",
           "publishedAt": null,
           "sourceId": "cls-hot",
           "sourceLabel": "财联社热门",
@@ -450,8 +704,8 @@
           "signal": "watch"
         },
         {
-          "title": "油价高位震荡 美股或连跌四周 逼近回调区间 | 今夜看点",
-          "url": "https://www.cls.cn/detail/2319906",
+          "title": "盈米基金让基民慌乱了？未经同意赎回基民持仓，公司这样解释",
+          "url": "https://www.cls.cn/detail/2319657",
           "publishedAt": null,
           "sourceId": "cls-hot",
           "sourceLabel": "财联社热门",
@@ -462,8 +716,8 @@
           "signal": "watch"
         },
         {
-          "title": "宁德时代",
-          "url": "https://xueqiu.com/s/03750",
+          "title": "超微电脑",
+          "url": "https://xueqiu.com/s/SMCI",
           "publishedAt": null,
           "sourceId": "xueqiu-hotstock",
           "sourceLabel": "雪球热股",
@@ -474,8 +728,8 @@
           "signal": "watch"
         },
         {
-          "title": "小米集团-W",
-          "url": "https://xueqiu.com/s/01810",
+          "title": "英伟达",
+          "url": "https://xueqiu.com/s/NVDA",
           "publishedAt": null,
           "sourceId": "xueqiu-hotstock",
           "sourceLabel": "雪球热股",
@@ -486,8 +740,8 @@
           "signal": "watch"
         },
         {
-          "title": "宁德时代",
-          "url": "https://xueqiu.com/s/SZ300750",
+          "title": "Lumentum控股",
+          "url": "https://xueqiu.com/s/LITE",
           "publishedAt": null,
           "sourceId": "xueqiu-hotstock",
           "sourceLabel": "雪球热股",
@@ -498,8 +752,8 @@
           "signal": "watch"
         },
         {
-          "title": "中矿资源",
-          "url": "https://xueqiu.com/s/SZ002738",
+          "title": "紫金矿业",
+          "url": "https://xueqiu.com/s/SH601899",
           "publishedAt": null,
           "sourceId": "xueqiu-hotstock",
           "sourceLabel": "雪球热股",
@@ -524,9 +778,9 @@
       ],
       "items": [
         {
-          "title": "Typical energy bill forecast to rise by £332 a year in July",
-          "url": "https://www.bbc.com/news/articles/cede1nn8wp5o?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-03-20 21:22",
+          "title": "Work from home and drive more slowly to save energy, global body urges",
+          "url": "https://www.bbc.com/news/articles/cvg4540d0g4o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-03-20 23:05",
           "sourceId": "bbc-business",
           "sourceLabel": "BBC Business",
           "sourceHome": "https://www.bbc.com/news/business",
@@ -536,14 +790,26 @@
           "signal": "watch"
         },
         {
-          "title": "Did you know you could transfer your ISA?",
-          "url": "https://www.bbc.com/news/videos/cdxdlzkwnkpo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-03-20 20:54",
+          "title": "UK borrowing costs hit highest level since 2008 financial crisis",
+          "url": "https://www.bbc.com/news/articles/cx23yn735jdo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-03-20 22:55",
           "sourceId": "bbc-business",
           "sourceLabel": "BBC Business",
           "sourceHome": "https://www.bbc.com/news/business",
           "sourceType": "rss",
-          "rank": 40,
+          "rank": 2,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "Typical energy bill forecast to rise by £332 a year in July",
+          "url": "https://www.bbc.com/news/articles/cede1nn8wp5o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-03-20 21:22",
+          "sourceId": "bbc-business",
+          "sourceLabel": "BBC Business",
+          "sourceHome": "https://www.bbc.com/news/business",
+          "sourceType": "rss",
+          "rank": 3,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -555,7 +821,7 @@
           "sourceLabel": "BBC Business",
           "sourceHome": "https://www.bbc.com/news/business",
           "sourceType": "rss",
-          "rank": 12,
+          "rank": 13,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -567,7 +833,7 @@
           "sourceLabel": "BBC Business",
           "sourceHome": "https://www.bbc.com/news/business",
           "sourceType": "rss",
-          "rank": 3,
+          "rank": 4,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -579,19 +845,7 @@
           "sourceLabel": "BBC Business",
           "sourceHome": "https://www.bbc.com/news/business",
           "sourceType": "rss",
-          "rank": 11,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "Warning UK borrowing rise makes energy bill help harder",
-          "url": "https://www.bbc.com/news/articles/cx23yn735jdo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-03-20 18:16",
-          "sourceId": "bbc-business",
-          "sourceLabel": "BBC Business",
-          "sourceHome": "https://www.bbc.com/news/business",
-          "sourceType": "rss",
-          "rank": 2,
+          "rank": 12,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -603,8 +857,20 @@
           "sourceLabel": "BBC Business",
           "sourceHome": "https://www.bbc.com/news/business",
           "sourceType": "rss",
-          "rank": 10,
+          "rank": 11,
           "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "CBS News begins new major round of layoffs: ‘This is really hard and really tough’",
+          "url": "https://www.theguardian.com/media/2026/mar/20/bari-weiss-cbs-news-layoffs",
+          "publishedAt": "2026-03-20 22:58",
+          "sourceId": "guardian-business",
+          "sourceLabel": "The Guardian Business",
+          "sourceHome": "https://www.theguardian.com/business",
+          "sourceType": "rss",
+          "rank": 2,
+          "sourcePriority": 2,
           "signal": "watch"
         },
         {
@@ -620,6 +886,18 @@
           "signal": "watch"
         },
         {
+          "title": "IRS glitch masked $51m in political donations, finance watchdog says",
+          "url": "https://www.theguardian.com/us-news/2026/mar/20/irs-error-political-donations",
+          "publishedAt": "2026-03-20 19:00",
+          "sourceId": "guardian-business",
+          "sourceLabel": "The Guardian Business",
+          "sourceHome": "https://www.theguardian.com/business",
+          "sourceType": "rss",
+          "rank": 3,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
           "title": "Fuel spikes, flight delays and storms threaten US spring break travel",
           "url": "https://www.theguardian.com/us-news/2026/mar/20/spring-break-flights-travel-iran-war",
           "publishedAt": "2026-03-20 19:00",
@@ -627,7 +905,7 @@
           "sourceLabel": "The Guardian Business",
           "sourceHome": "https://www.theguardian.com/business",
           "sourceType": "rss",
-          "rank": 2,
+          "rank": 4,
           "sourcePriority": 2,
           "signal": "watch"
         },
@@ -639,7 +917,7 @@
           "sourceLabel": "The Guardian Business",
           "sourceHome": "https://www.theguardian.com/business",
           "sourceType": "rss",
-          "rank": 4,
+          "rank": 6,
           "sourcePriority": 2,
           "signal": "watch"
         },
@@ -651,7 +929,7 @@
           "sourceLabel": "The Guardian Business",
           "sourceHome": "https://www.theguardian.com/business",
           "sourceType": "rss",
-          "rank": 3,
+          "rank": 5,
           "sourcePriority": 2,
           "signal": "watch"
         },
@@ -680,33 +958,33 @@
           "signal": "watch"
         },
         {
-          "title": "Inside China’s robotics revolution",
-          "url": "https://www.theguardian.com/technology/2026/mar/19/inside-chinas-robotics-revolution",
-          "publishedAt": "2026-03-19 13:01",
-          "sourceId": "guardian-business",
-          "sourceLabel": "The Guardian Business",
-          "sourceHome": "https://www.theguardian.com/business",
+          "title": "Inside Wealth: 'Marriage penalty' in Washington state's new millionaire tax stirs debate",
+          "url": "https://www.cnbc.com/2026/03/20/washington-millionaire-tax-marriage.html",
+          "publishedAt": "2026-03-20 23:10",
+          "sourceId": "cnbc-business",
+          "sourceLabel": "CNBC Business",
+          "sourceHome": "https://www.cnbc.com/business",
           "sourceType": "rss",
-          "rank": 5,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "Family sues US ski resort over five-year-old scalded by hot chocolate",
-          "url": "https://www.theguardian.com/us-news/2026/mar/18/us-ski-resort-five-year-old-hot-chocolate",
-          "publishedAt": "2026-03-19 06:56",
-          "sourceId": "guardian-business",
-          "sourceLabel": "The Guardian Business",
-          "sourceHome": "https://www.theguardian.com/business",
-          "sourceType": "rss",
-          "rank": 7,
-          "sourcePriority": 2,
+          "rank": 2,
+          "sourcePriority": 3,
           "signal": "watch"
         },
         {
           "title": "FedEx beats on top and bottom lines, raises guidance on strong performance",
           "url": "https://www.cnbc.com/2026/03/19/fedex-fdx-q3-2026-earnings.html",
-          "publishedAt": "2026-03-20 06:26",
+          "publishedAt": "2026-03-20 22:56",
+          "sourceId": "cnbc-business",
+          "sourceLabel": "CNBC Business",
+          "sourceHome": "https://www.cnbc.com/business",
+          "sourceType": "rss",
+          "rank": 3,
+          "sourcePriority": 3,
+          "signal": "watch"
+        },
+        {
+          "title": "Nexstar, Tegna merger closes after winning regulatory approval",
+          "url": "https://www.cnbc.com/2026/03/20/nexstar-tegna-merger-closes-after-winning-regulatory-approval-.html",
+          "publishedAt": "2026-03-20 22:51",
           "sourceId": "cnbc-business",
           "sourceLabel": "CNBC Business",
           "sourceHome": "https://www.cnbc.com/business",
@@ -723,7 +1001,7 @@
           "sourceLabel": "CNBC Business",
           "sourceHome": "https://www.cnbc.com/business",
           "sourceType": "rss",
-          "rank": 3,
+          "rank": 5,
           "sourcePriority": 3,
           "signal": "watch"
         },
@@ -735,31 +1013,7 @@
           "sourceLabel": "CNBC Business",
           "sourceHome": "https://www.cnbc.com/business",
           "sourceType": "rss",
-          "rank": 2,
-          "sourcePriority": 3,
-          "signal": "watch"
-        },
-        {
-          "title": "January new home sales plunge to the lowest pace since 2022",
-          "url": "https://www.cnbc.com/2026/03/19/january-new-home-sales.html",
-          "publishedAt": "2026-03-20 00:26",
-          "sourceId": "cnbc-business",
-          "sourceLabel": "CNBC Business",
-          "sourceHome": "https://www.cnbc.com/business",
-          "sourceType": "rss",
           "rank": 4,
-          "sourcePriority": 3,
-          "signal": "watch"
-        },
-        {
-          "title": "Major League Baseball names Polymarket exclusive prediction market partner",
-          "url": "https://www.cnbc.com/2026/03/19/mlb-polymarket-prediction-markets.html",
-          "publishedAt": "2026-03-19 22:47",
-          "sourceId": "cnbc-business",
-          "sourceLabel": "CNBC Business",
-          "sourceHome": "https://www.cnbc.com/business",
-          "sourceType": "rss",
-          "rank": 6,
           "sourcePriority": 3,
           "signal": "watch"
         }
@@ -778,6 +1032,18 @@
       ],
       "items": [
         {
+          "title": "Leading anti‑racism activist in Tunisia jailed for eight years",
+          "url": "https://www.bbc.com/news/articles/clyjg1x7r43o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-03-20 21:17",
+          "sourceId": "bbc-world",
+          "sourceLabel": "BBC World",
+          "sourceHome": "https://www.bbc.com/news",
+          "sourceType": "rss",
+          "rank": 4,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
           "title": "I didn't know Epstein was a predator - Norway's crown princess",
           "url": "https://www.bbc.com/news/videos/c78l5x0zl0wo?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-03-20 20:38",
@@ -785,7 +1051,7 @@
           "sourceLabel": "BBC World",
           "sourceHome": "https://www.bbc.com/news",
           "sourceType": "rss",
-          "rank": 21,
+          "rank": 22,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -797,7 +1063,7 @@
           "sourceLabel": "BBC World",
           "sourceHome": "https://www.bbc.com/news",
           "sourceType": "rss",
-          "rank": 3,
+          "rank": 5,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -814,7 +1080,7 @@
           "signal": "watch"
         },
         {
-          "title": "Norway's crown princess breaks silence on Epstein links: 'I was manipulated and deceived'",
+          "title": "Norway's crown princess breaks silence, claiming she was 'manipulated and deceived' by Epstein",
           "url": "https://www.bbc.com/news/articles/cde5y63y3n7o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-03-20 18:43",
           "sourceId": "bbc-world",
@@ -833,19 +1099,19 @@
           "sourceLabel": "BBC World",
           "sourceHome": "https://www.bbc.com/news",
           "sourceType": "rss",
-          "rank": 4,
+          "rank": 8,
           "sourcePriority": 1,
           "signal": "watch"
         },
         {
-          "title": "Nasa's Moon rocket Artemis rolls back to pad for possible April launch",
+          "title": "Nasa's Artemis Moon rocket rolls back to pad for possible April launch",
           "url": "https://www.bbc.com/news/articles/ckgrw045pg7o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-03-20 14:01",
           "sourceId": "bbc-world",
           "sourceLabel": "BBC World",
           "sourceHome": "https://www.bbc.com/news",
           "sourceType": "rss",
-          "rank": 14,
+          "rank": 15,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -857,74 +1123,14 @@
           "sourceLabel": "BBC World",
           "sourceHome": "https://www.bbc.com/news",
           "sourceType": "rss",
-          "rank": 5,
+          "rank": 3,
           "sourcePriority": 1,
           "signal": "watch"
         },
         {
-          "title": "Australia PM heckled at Sydney mosque Ramadan event",
-          "url": "https://www.bbc.com/news/articles/cz90wy2190go?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-03-20 10:54",
-          "sourceId": "bbc-world",
-          "sourceLabel": "BBC World",
-          "sourceHome": "https://www.bbc.com/news",
-          "sourceType": "rss",
-          "rank": 7,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "Labour claims extremist candidate revelations show Reform UK’s launch in Scotland has fallen apart – UK politics live",
-          "url": "https://www.theguardian.com/politics/live/2026/mar/20/reform-climate-targets-steve-reed-badenoch-assisted-dying-energy-bills-latest-news-updates",
-          "publishedAt": "2026-03-20 21:14",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 36,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "‘The saddest day for Muslim worshippers in Jerusalem’: al-Aqsa mosque closed at Eid",
-          "url": "https://www.theguardian.com/world/2026/mar/20/the-saddest-day-for-muslim-worshippers-in-jerusalem-al-aqsa-mosque-closed-at-eid",
-          "publishedAt": "2026-03-20 21:11",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 26,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "US considering occupying Kharg Island to force Iran to open Hormuz strait, say reports",
-          "url": "https://www.theguardian.com/world/2026/mar/20/us-considering-occupying-iran-kharg-island-hormuz-strait-trump",
-          "publishedAt": "2026-03-20 21:06",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 27,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "House of Lords has ‘signed its own death warrant’ by stalling assisted dying bill, says MP",
-          "url": "https://www.theguardian.com/society/2026/mar/20/house-of-lords-has-signed-its-own-death-warrant-by-stalling-assisted-dying-bill-says-mp",
-          "publishedAt": "2026-03-20 21:06",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 37,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "French navy boards alleged Russian shadow fleet tanker in Mediterranean – Europe live",
+          "title": "French navy boards alleged Russian shadow fleet tanker with assistance from UK and other allies – Europe live",
           "url": "https://www.theguardian.com/world/live/2026/mar/20/spain-tax-france-elections-pope-leo-eu-iran-war-energy-costs-europe-latest-news-updates",
-          "publishedAt": "2026-03-20 21:04",
+          "publishedAt": "2026-03-20 23:18",
           "sourceId": "guardian-world",
           "sourceLabel": "The Guardian World",
           "sourceHome": "https://www.theguardian.com/world",
@@ -934,9 +1140,81 @@
           "signal": "watch"
         },
         {
-          "title": "Two people arrested after trying to enter UK nuclear submarine base",
-          "url": "https://www.theguardian.com/uk-news/2026/mar/20/two-people-arrested-after-trying-to-enter-faslane-nuclear-base",
-          "publishedAt": "2026-03-20 21:04",
+          "title": "‘We need to think much bigger’: trade minister calls for greater ambition in UK-EU reset",
+          "url": "https://www.theguardian.com/politics/2026/mar/20/trade-minister-chris-bryant-uk-eu-reset-ambition",
+          "publishedAt": "2026-03-20 23:00",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 22,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "US considering occupying Kharg Island to force Iran to open Hormuz strait, say reports",
+          "url": "https://www.theguardian.com/world/2026/mar/20/us-considering-occupying-iran-kharg-island-hormuz-strait-trump",
+          "publishedAt": "2026-03-20 22:39",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 26,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "Labour dismisses Reform UK MSP candidates as ‘hopeless Tory rejects and oddballs’ as one is suspended – UK politics live",
+          "url": "https://www.theguardian.com/politics/live/2026/mar/20/reform-climate-targets-steve-reed-badenoch-assisted-dying-energy-bills-latest-news-updates",
+          "publishedAt": "2026-03-20 22:28",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 36,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "Reform UK suspends Scottish candidate less than a day after announcing him",
+          "url": "https://www.theguardian.com/politics/2026/mar/20/reform-uk-suspends-scottish-candidate-stuart-niven",
+          "publishedAt": "2026-03-20 22:24",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 37,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "Police planned to disperse Isaac Herzog protest in Sydney if crowd hit 6,000, encrypted messages suggest",
+          "url": "https://www.theguardian.com/australia-news/2026/mar/21/police-planned-to-disperse-herzog-protest-in-sydney-if-crowd-hit-6000-encrypted-messages-suggest",
+          "publishedAt": "2026-03-20 22:00",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 16,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "‘Yes to fields of wheat, no to fields of iron’: how the world’s greenest country soured on solar",
+          "url": "https://www.theguardian.com/world/2026/mar/20/solar-power-renewable-energy-denmark-backlash-national-elections",
+          "publishedAt": "2026-03-20 22:00",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 23,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "Dog digs up possible link to notorious 19th-century Devon murder case",
+          "url": "https://www.theguardian.com/uk-news/2026/mar/20/dog-19th-century-devon-murder-case-discovery",
+          "publishedAt": "2026-03-20 21:51",
           "sourceId": "guardian-world",
           "sourceLabel": "The Guardian World",
           "sourceHome": "https://www.theguardian.com/world",
@@ -946,33 +1224,9 @@
           "signal": "watch"
         },
         {
-          "title": "Father of killed US military member disputes Hegseth’s claim he said to ‘finish’ the job in Iran",
-          "url": "https://www.theguardian.com/us-news/2026/mar/20/iran-war-military-father-pete-hegseth",
-          "publishedAt": "2026-03-20 20:50",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 28,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "Household energy bills in Great Britain ‘could rise to almost £2,000 a year’ amid Iran war shock",
-          "url": "https://www.theguardian.com/money/2026/mar/20/household-energy-bills-in-great-britain-could-rise-iran-war-shock",
-          "publishedAt": "2026-03-20 20:50",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 39,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "民调：大多数美国人反对出兵伊朗 特朗普支持者仍力挺",
-          "url": "https://www.zaochenbao.com/news/politics/202603/2067346.html",
-          "publishedAt": "2026-03-20 20:31",
+          "title": "伊朗：革命卫队发言人因空袭死亡 导弹生产仍在继续",
+          "url": "https://www.zaochenbao.com/news/politics/202603/2067350.html",
+          "publishedAt": "2026-03-20 22:50",
           "sourceId": "zaobao",
           "sourceLabel": "联合早报",
           "sourceHome": "https://www.zaobao.com",
@@ -982,9 +1236,9 @@
           "signal": "watch"
         },
         {
-          "title": "消息：特朗普拟占领哈尔克岛 迫使伊朗开放霍尔木兹海峡",
-          "url": "https://www.zaochenbao.com/news/politics/202603/2067345.html",
-          "publishedAt": "2026-03-20 20:30",
+          "title": "中使馆：以色列称将加大对中国工人保护力度",
+          "url": "https://www.zaochenbao.com/news/china/202603/2067349.html",
+          "publishedAt": "2026-03-20 22:10",
           "sourceId": "zaobao",
           "sourceLabel": "联合早报",
           "sourceHome": "https://www.zaobao.com",
@@ -994,9 +1248,9 @@
           "signal": "watch"
         },
         {
-          "title": "就伊朗战事目标不一 美国以色列分歧加剧",
-          "url": "https://www.zaochenbao.com/news/politics/202603/2067344.html",
-          "publishedAt": "2026-03-20 20:30",
+          "title": "下午察：中国对伊朗“见死不救”？",
+          "url": "https://www.zaochenbao.com/news/china/202603/2067348.html",
+          "publishedAt": "2026-03-20 22:10",
           "sourceId": "zaobao",
           "sourceLabel": "联合早报",
           "sourceHome": "https://www.zaobao.com",
@@ -1006,9 +1260,9 @@
           "signal": "watch"
         },
         {
-          "title": "伊朗：首次击中F-35战斗机 打碎美军“傲慢”",
-          "url": "https://www.zaochenbao.com/news/politics/202603/2067343.html",
-          "publishedAt": "2026-03-20 20:30",
+          "title": "香港制定首份五年规划 立法会拟设六小组配合推进",
+          "url": "https://www.zaochenbao.com/news/hkMacao/202603/2067347.html",
+          "publishedAt": "2026-03-20 22:10",
           "sourceId": "zaobao",
           "sourceLabel": "联合早报",
           "sourceHome": "https://www.zaobao.com",
@@ -1130,7 +1384,7 @@
         {
           "title": "先导基电：拟定增募资不超35.1亿元，用于半导体光学部件研发及产业化项目等",
           "url": "https://www.36kr.com/newsflashes/3731280465707273",
-          "publishedAt": "2026-03-20 20:55",
+          "publishedAt": "2026-03-20 21:08",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1142,7 +1396,7 @@
         {
           "title": "德力股份：股东锦江集团拟减持不超3%公司股份",
           "url": "https://www.36kr.com/newsflashes/3731273731276806",
-          "publishedAt": "2026-03-20 20:48",
+          "publishedAt": "2026-03-20 21:08",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1154,7 +1408,7 @@
         {
           "title": "热门中概股美股盘前跌多涨少，小鹏汽车跌超3%",
           "url": "https://www.36kr.com/newsflashes/3731273217835268",
-          "publishedAt": "2026-03-20 20:47",
+          "publishedAt": "2026-03-20 21:08",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1166,7 +1420,7 @@
         {
           "title": "美股大型科技股盘前多数下跌，Arm涨超3%",
           "url": "https://www.36kr.com/newsflashes/3731271689126147",
-          "publishedAt": "2026-03-20 20:46",
+          "publishedAt": "2026-03-20 21:08",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1178,7 +1432,7 @@
         {
           "title": "*ST步森：控股股东将变更为延丰数字，股票下周一复牌",
           "url": "https://www.36kr.com/newsflashes/3731267743268867",
-          "publishedAt": "2026-03-20 20:42",
+          "publishedAt": "2026-03-20 21:08",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1190,7 +1444,7 @@
         {
           "title": "汤臣倍健：2025年归母净利润7.82亿元，同比增长19.81%",
           "url": "https://www.36kr.com/newsflashes/3731263773311233",
-          "publishedAt": "2026-03-20 20:38",
+          "publishedAt": "2026-03-20 21:08",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1202,7 +1456,7 @@
         {
           "title": "上海银行：2025年净利润241.93亿元，同比增长2.69%",
           "url": "https://www.36kr.com/newsflashes/3731263018074370",
-          "publishedAt": "2026-03-20 20:37",
+          "publishedAt": "2026-03-20 21:08",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1214,7 +1468,7 @@
         {
           "title": "MOVA AtomForm将赴美国硅谷发布首款智能12喷嘴3D打印机",
           "url": "https://www.36kr.com/newsflashes/3731262495506439",
-          "publishedAt": "2026-03-20 20:36",
+          "publishedAt": "2026-03-20 21:08",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1224,33 +1478,33 @@
           "signal": "bullish"
         },
         {
-          "title": "何小鹏：图灵芯片累计出货超 20 万片，今年全年目标出货近百万",
-          "url": "https://www.ithome.com/0/931/152.htm",
-          "publishedAt": "2026-03-20 20:59",
+          "title": "小米发布 NAS 用户影像管理需求调研问卷，或为新品做准备",
+          "url": "https://www.ithome.com/0/931/175.htm",
+          "publishedAt": "2026-03-20 23:00",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
           "sourceType": "newsnow",
           "rank": 1,
           "sourcePriority": 3,
-          "signal": "watch"
+          "signal": "bullish"
         },
         {
-          "title": "黑鲨春季新品发布，涵盖散热器、磁吸充电宝、耳夹式耳机等",
-          "url": "https://www.ithome.com/0/931/151.htm",
-          "publishedAt": "2026-03-20 20:54",
+          "title": "【IT之家开箱】小米 Xiaomi Book Pro 14「柔雾蓝」图赏：丝绒镁合金，1.08kg 超轻薄",
+          "url": "https://www.ithome.com/0/931/174.htm",
+          "publishedAt": "2026-03-20 22:54",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
           "sourceType": "newsnow",
           "rank": 2,
           "sourcePriority": 3,
-          "signal": "bullish"
+          "signal": "watch"
         },
         {
-          "title": "东风日产 NX8 汽车开启预售：东风日产 NX8 汽车开启预售：可选纯电 / 增城版，意向金 999 元可选纯电 / 增城版，意向金 999 元",
-          "url": "https://www.ithome.com/0/931/150.htm",
-          "publishedAt": "2026-03-20 20:53",
+          "title": "任天堂被曝将在欧洲推出可更换电池的 Switch 2，以遵循“维修权”政策",
+          "url": "https://www.ithome.com/0/931/173.htm",
+          "publishedAt": "2026-03-20 22:52",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1260,9 +1514,9 @@
           "signal": "watch"
         },
         {
-          "title": "电动 MINI COOPER PAUL SMITH 设计师款上市，限时 21.78 万元起",
-          "url": "https://www.ithome.com/0/931/149.htm",
-          "publishedAt": "2026-03-20 20:49",
+          "title": "【IT之家评测室】时隔四年，小米终于“悟”了？Xiaomi Book Pro 14 上手：颜值能打，性能不怂",
+          "url": "https://www.ithome.com/0/931/172.htm",
+          "publishedAt": "2026-03-20 22:48",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1286,33 +1540,33 @@
       ],
       "items": [
         {
-          "title": "何小鹏：图灵芯片累计出货超 20 万片，今年全年目标出货近百万",
-          "url": "https://www.ithome.com/0/931/152.htm",
-          "publishedAt": "2026-03-20 20:59",
+          "title": "小米发布 NAS 用户影像管理需求调研问卷，或为新品做准备",
+          "url": "https://www.ithome.com/0/931/175.htm",
+          "publishedAt": "2026-03-20 23:00",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
           "sourceType": "newsnow",
           "rank": 1,
           "sourcePriority": 1,
-          "signal": "watch"
+          "signal": "bullish"
         },
         {
-          "title": "黑鲨春季新品发布，涵盖散热器、磁吸充电宝、耳夹式耳机等",
-          "url": "https://www.ithome.com/0/931/151.htm",
-          "publishedAt": "2026-03-20 20:54",
+          "title": "【IT之家开箱】小米 Xiaomi Book Pro 14「柔雾蓝」图赏：丝绒镁合金，1.08kg 超轻薄",
+          "url": "https://www.ithome.com/0/931/174.htm",
+          "publishedAt": "2026-03-20 22:54",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
           "sourceType": "newsnow",
           "rank": 2,
           "sourcePriority": 1,
-          "signal": "bullish"
+          "signal": "watch"
         },
         {
-          "title": "东风日产 NX8 汽车开启预售：东风日产 NX8 汽车开启预售：可选纯电 / 增城版，意向金 999 元可选纯电 / 增城版，意向金 999 元",
-          "url": "https://www.ithome.com/0/931/150.htm",
-          "publishedAt": "2026-03-20 20:53",
+          "title": "任天堂被曝将在欧洲推出可更换电池的 Switch 2，以遵循“维修权”政策",
+          "url": "https://www.ithome.com/0/931/173.htm",
+          "publishedAt": "2026-03-20 22:52",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1322,9 +1576,9 @@
           "signal": "watch"
         },
         {
-          "title": "电动 MINI COOPER PAUL SMITH 设计师款上市，限时 21.78 万元起",
-          "url": "https://www.ithome.com/0/931/149.htm",
-          "publishedAt": "2026-03-20 20:49",
+          "title": "【IT之家评测室】时隔四年，小米终于“悟”了？Xiaomi Book Pro 14 上手：颜值能打，性能不怂",
+          "url": "https://www.ithome.com/0/931/172.htm",
+          "publishedAt": "2026-03-20 22:48",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1334,9 +1588,9 @@
           "signal": "watch"
         },
         {
-          "title": "小米 17T 系列手机现身新加坡 IMDA 认证，有望搭载天玑 8500/9500 芯片",
-          "url": "https://www.ithome.com/0/931/146.htm",
-          "publishedAt": "2026-03-20 20:29",
+          "title": "特斯拉再次推迟 FSD 欧洲审批日期，预计 4 月 10 日通过",
+          "url": "https://www.ithome.com/0/931/171.htm",
+          "publishedAt": "2026-03-20 22:46",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1346,21 +1600,21 @@
           "signal": "watch"
         },
         {
-          "title": "苹果 CEO 库克：中国对我们来说，依旧是最重要的伙伴",
-          "url": "https://www.ithome.com/0/931/145.htm",
-          "publishedAt": "2026-03-20 20:27",
+          "title": "华为 Watch GT Runner 2 智能手表开启新品预约，3 月 23 日国行发布",
+          "url": "https://www.ithome.com/0/931/170.htm",
+          "publishedAt": "2026-03-20 22:29",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
           "sourceType": "newsnow",
           "rank": 6,
           "sourcePriority": 1,
-          "signal": "watch"
+          "signal": "bullish"
         },
         {
-          "title": "乘联分会：3 月狭义乘用车零售预计 170.0 万辆，同比下降 12.4%",
-          "url": "https://www.ithome.com/0/931/144.htm",
-          "publishedAt": "2026-03-20 20:23",
+          "title": "何小鹏：小鹏汽车今年物理 AI 相关研发投入预计提升至 70 亿元",
+          "url": "https://www.ithome.com/0/931/169.htm",
+          "publishedAt": "2026-03-20 22:26",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1370,9 +1624,9 @@
           "signal": "watch"
         },
         {
-          "title": "未按要求落实整改，上海市通信管理局下架 10 款侵害用户权益行为 App（SDK）",
-          "url": "https://www.ithome.com/0/931/143.htm",
-          "publishedAt": "2026-03-20 20:15",
+          "title": "腾讯视频宠物 TV 频道开启试运营，专给猫、狗看",
+          "url": "https://www.ithome.com/0/931/168.htm",
+          "publishedAt": "2026-03-20 22:19",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1478,21 +1732,9 @@
           "signal": "watch"
         },
         {
-          "title": "Super Micro shares tank 25% after employees charged with smuggling Nvidia chips to China",
-          "url": "https://www.cnbc.com/2026/03/19/us-tech-execs-smuggled-nvidia-chips-to-china-prosecutors-say.html",
-          "publishedAt": "2026-03-20 21:13",
-          "sourceId": "cnbc-tech",
-          "sourceLabel": "CNBC Tech",
-          "sourceHome": "https://www.cnbc.com/technology",
-          "sourceType": "rss",
-          "rank": 7,
-          "sourcePriority": 3,
-          "signal": "watch"
-        },
-        {
-          "title": "The Dow's losing streak, fertilizer prices, Novo Nordisk's new Wegovy shot and more in Morning Squawk",
-          "url": "https://www.cnbc.com/2026/03/20/5-things-to-know-before-the-market-opens.html",
-          "publishedAt": "2026-03-20 20:30",
+          "title": "Tim Cook’s China visit reinforces country’s importance to Apple as global frictions rise",
+          "url": "https://www.cnbc.com/2026/03/20/tim-cooks-china-visit-reinforces-countrys-importance-to-apple-.html",
+          "publishedAt": "2026-03-20 23:12",
           "sourceId": "cnbc-tech",
           "sourceLabel": "CNBC Tech",
           "sourceHome": "https://www.cnbc.com/technology",
@@ -1502,9 +1744,21 @@
           "signal": "watch"
         },
         {
-          "title": "Who's most optimistic about AI — and who isn't, according to Anthropic",
-          "url": "https://www.cnbc.com/2026/03/20/anthropic-whos-most-optimistic-about-ai-and-who-isnt.html",
-          "publishedAt": "2026-03-20 18:15",
+          "title": "Super Micro shares tank 25% after employees charged with smuggling Nvidia chips to China",
+          "url": "https://www.cnbc.com/2026/03/19/us-tech-execs-smuggled-nvidia-chips-to-china-prosecutors-say.html",
+          "publishedAt": "2026-03-20 22:56",
+          "sourceId": "cnbc-tech",
+          "sourceLabel": "CNBC Tech",
+          "sourceHome": "https://www.cnbc.com/technology",
+          "sourceType": "rss",
+          "rank": 9,
+          "sourcePriority": 3,
+          "signal": "watch"
+        },
+        {
+          "title": "Trump admin unveils national AI policy framework to limit state power",
+          "url": "https://www.cnbc.com/2026/03/20/trump-ai-policy-framework.html",
+          "publishedAt": "2026-03-20 22:38",
           "sourceId": "cnbc-tech",
           "sourceLabel": "CNBC Tech",
           "sourceHome": "https://www.cnbc.com/technology",
@@ -1514,9 +1768,9 @@
           "signal": "watch"
         },
         {
-          "title": "Nvidia's Huang pitches AI tokens on top of salary as agents reshape how humans work",
-          "url": "https://www.cnbc.com/2026/03/20/nvidia-ai-agents-tokens-human-workers-engineer-jobs-unemployment-jensen-huang.html",
-          "publishedAt": "2026-03-20 15:57",
+          "title": "The Dow's losing streak, fertilizer prices, Novo Nordisk's new Wegovy shot and more in Morning Squawk",
+          "url": "https://www.cnbc.com/2026/03/20/5-things-to-know-before-the-market-opens.html",
+          "publishedAt": "2026-03-20 20:30",
           "sourceId": "cnbc-tech",
           "sourceLabel": "CNBC Tech",
           "sourceHome": "https://www.cnbc.com/technology",
@@ -1540,9 +1794,9 @@
       ],
       "items": [
         {
-          "title": "万科A：控股子公司SCPG16.54亿元银行贷款获准展期一年",
-          "url": "https://flash.jin10.com/detail/20260320210502049800",
-          "publishedAt": "2026-03-20 21:05",
+          "title": "摩根大通预计，拉斯拉凡液化天然气厂遇袭后，卡塔尔2026年名义GDP可能萎缩9%。",
+          "url": "https://flash.jin10.com/detail/20260320232340822800",
+          "publishedAt": "2026-03-20 23:23",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -1552,9 +1806,9 @@
           "signal": "watch"
         },
         {
-          "title": "VIP·9折解锁黄金异动雷达",
-          "url": "https://flash.jin10.com/detail/20260320210443181800",
-          "publishedAt": "2026-03-20 21:04",
+          "title": "古巴外交官员表示，古巴政治体制不容与美国进行谈判。",
+          "url": "https://flash.jin10.com/detail/20260320232225048800",
+          "publishedAt": "2026-03-20 23:22",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -1564,9 +1818,9 @@
           "signal": "watch"
         },
         {
-          "title": "<a href=\"https://www.jin10.com/activities/2026/3/gold_price_alert/index.html\" target=\"_blank\"><img src=\"https://img.jin10.com/misc/26/03/YmNMNlxCtc5SnkewUGgWf.jpg/lite\" height=\"120\" /></a>",
-          "url": "https://flash.jin10.com/detail/20260320210441753800",
-          "publishedAt": "2026-03-20 21:04",
+          "title": "韩国加入七国联合声明 谴责伊朗封锁霍尔木兹海峡",
+          "url": "https://flash.jin10.com/detail/20260320232125133800",
+          "publishedAt": "2026-03-20 23:21",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -1576,9 +1830,9 @@
           "signal": "watch"
         },
         {
-          "title": "波罗的海干散货指数跌0.05%，至2056点。",
-          "url": "https://flash.jin10.com/detail/20260320210341401800",
-          "publishedAt": "2026-03-20 21:03",
+          "title": "伊朗最高领袖穆杰塔巴：最近针对土耳其和阿曼的袭击“绝不是伊朗武装部队”或盟友所为。这些都是“假旗行动”，是伊朗的敌人用来“在邻国之间制造不和，这种情况也可能发生在其他国家”。",
+          "url": "https://flash.jin10.com/detail/20260320231618688800",
+          "publishedAt": "2026-03-20 23:16",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -1588,21 +1842,21 @@
           "signal": "watch"
         },
         {
-          "title": "美联储理事沃勒改变立场：油价居高数月或引发持久通胀",
-          "url": "https://flash.jin10.com/detail/20260320210308204800",
-          "publishedAt": "2026-03-20 21:03",
+          "title": "希腊央行表示，希腊经济预计将在2026年增长1.9%。",
+          "url": "https://flash.jin10.com/detail/20260320231223850800",
+          "publishedAt": "2026-03-20 23:12",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
           "sourceType": "newsnow",
           "rank": 5,
           "sourcePriority": 1,
-          "signal": "watch"
+          "signal": "bullish"
         },
         {
-          "title": "沪银主力合约日内涨超2.00%，现报17799.00元/千克。",
-          "url": "https://flash.jin10.com/detail/20260320210126740800",
-          "publishedAt": "2026-03-20 21:01",
+          "title": "伊朗最高领袖就伊朗新年发表贺词",
+          "url": "https://flash.jin10.com/detail/20260320230745725800",
+          "publishedAt": "2026-03-20 23:07",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -1612,9 +1866,9 @@
           "signal": "watch"
         },
         {
-          "title": "XAI派工程师前往客户现场，以从OpenAI手中抢夺业务。",
-          "url": "https://flash.jin10.com/detail/20260320210018195800",
-          "publishedAt": "2026-03-20 21:00",
+          "title": "以色列北部和南部响起警报声。",
+          "url": "https://flash.jin10.com/detail/20260320230650154800",
+          "publishedAt": "2026-03-20 23:06",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -1624,16 +1878,16 @@
           "signal": "watch"
         },
         {
-          "title": "夜盘开盘，国内期货主力合约涨跌不一，乙二醇涨超5%，丁二烯橡胶涨超3%，液化石油气（LPG）、丙烯、甲醇、塑料涨超2%。下跌方面，低硫燃料油（LU）跌超2%，菜粕跌近1%。",
-          "url": "https://flash.jin10.com/detail/20260320210002379800",
-          "publishedAt": "2026-03-20 21:00",
+          "title": "金十数据整理：欧盘美盘重要新闻汇总（2026-03-20）",
+          "url": "https://flash.jin10.com/detail/20260320230552091800",
+          "publishedAt": "2026-03-20 23:05",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
           "sourceType": "newsnow",
           "rank": 8,
           "sourcePriority": 1,
-          "signal": "bearish"
+          "signal": "watch"
         },
         {
           "title": "独家揭秘！2026 FastBull全球黄金短线模拟交易大赛获奖选手背后的制胜之道",
@@ -1732,9 +1986,9 @@
           "signal": "watch"
         },
         {
-          "title": "Cloudflare CEO预警：2027年AI机器人流量将超越人类，互联网正迎来历史性转折点",
-          "url": "https://wallstreetcn.com/articles/3768023",
-          "publishedAt": "2026-03-20 20:59",
+          "title": "加息预期飙升！交易员押注10月前美联储加息概率升至50%，美债收益率大涨",
+          "url": "https://wallstreetcn.com/articles/3768031",
+          "publishedAt": "2026-03-20 22:41",
           "sourceId": "wallstreetcn-news",
           "sourceLabel": "华尔街见闻最新",
           "sourceHome": "https://wallstreetcn.com",
@@ -1744,9 +1998,9 @@
           "signal": "watch"
         },
         {
-          "title": "美联储理事沃勒：如果就业疲软，将在今年晚些时候再次主张降息",
-          "url": "https://wallstreetcn.com/articles/3768024",
-          "publishedAt": "2026-03-20 20:44",
+          "title": "美国或向中东增派数千名士兵",
+          "url": "https://wallstreetcn.com/articles/3768030",
+          "publishedAt": "2026-03-20 22:29",
           "sourceId": "wallstreetcn-news",
           "sourceLabel": "华尔街见闻最新",
           "sourceHome": "https://wallstreetcn.com",
@@ -1756,28 +2010,28 @@
           "signal": "watch"
         },
         {
-          "title": "欧央行官员暗示4月加息：数据若走坏，行动在所难免",
-          "url": "https://wallstreetcn.com/articles/3768020",
-          "publishedAt": "2026-03-20 20:24",
+          "title": "紫金矿业2025年营收、净利润双双创新高，拟每10股派3.8元 | 财报见闻",
+          "url": "https://wallstreetcn.com/articles/3768029",
+          "publishedAt": "2026-03-20 21:58",
           "sourceId": "wallstreetcn-news",
           "sourceLabel": "华尔街见闻最新",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
           "rank": 3,
           "sourcePriority": 3,
-          "signal": "watch"
+          "signal": "bullish"
         },
         {
-          "title": "IEA：波斯湾油气供应恢复可能需要六个月，世界正面临史上最严重能源危机",
-          "url": "https://wallstreetcn.com/articles/3768021",
-          "publishedAt": "2026-03-20 20:10",
+          "title": "高盛警告：目前市场只是“不稳定的稳定”，信贷“蟑螂”比原油更可怕",
+          "url": "https://wallstreetcn.com/articles/3768022",
+          "publishedAt": "2026-03-20 21:51",
           "sourceId": "wallstreetcn-news",
           "sourceLabel": "华尔街见闻最新",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
           "rank": 4,
           "sourcePriority": 3,
-          "signal": "watch"
+          "signal": "bearish"
         }
       ]
     },
@@ -1794,6 +2048,66 @@
       ],
       "items": [
         {
+          "title": "Here’s what happened in crypto today",
+          "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-03-20 22:11",
+          "sourceId": "cointelegraph",
+          "sourceLabel": "Cointelegraph",
+          "sourceHome": "https://cointelegraph.com",
+          "sourceType": "rss",
+          "rank": 1,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "BitFuFu cuts self-mined Bitcoin in 2025, shifts focus to cloud mining",
+          "url": "https://cointelegraph.com/news/bitfufu-self-mined-bitcoin-down-cloud-mining-shift?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-03-20 22:03",
+          "sourceId": "cointelegraph",
+          "sourceLabel": "Cointelegraph",
+          "sourceHome": "https://cointelegraph.com",
+          "sourceType": "rss",
+          "rank": 2,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "Crypto part of Canada’s ‘core’ financial system, but risk concerns remain",
+          "url": "https://cointelegraph.com/news/crypto-canada-core-financial-risk-concerns-remain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-03-20 21:48",
+          "sourceId": "cointelegraph",
+          "sourceLabel": "Cointelegraph",
+          "sourceHome": "https://cointelegraph.com",
+          "sourceType": "rss",
+          "rank": 3,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "Bitcoin RSI signals potential bottom as analysts flag key setup",
+          "url": "https://cointelegraph.com/news/bitcoin-rsi-eyes-2022-repeat-analysis-time-to-pay-attention?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-03-20 21:43",
+          "sourceId": "cointelegraph",
+          "sourceLabel": "Cointelegraph",
+          "sourceHome": "https://cointelegraph.com",
+          "sourceType": "rss",
+          "rank": 4,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "Bitcoin whale holding $147M wakes after 13 years, makes tiny $56 transfer",
+          "url": "https://cointelegraph.com/news/dormant-bitcoin-wallet-wakes-up-after-13-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-03-20 21:40",
+          "sourceId": "cointelegraph",
+          "sourceLabel": "Cointelegraph",
+          "sourceHome": "https://cointelegraph.com",
+          "sourceType": "rss",
+          "rank": 5,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
           "title": "Stablecoin issuers and fintechs race to own payment rails",
           "url": "https://cointelegraph.com/news/crypto-fintech-race-stablecoin-settlement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-03-20 21:21",
@@ -1801,7 +2115,7 @@
           "sourceLabel": "Cointelegraph",
           "sourceHome": "https://cointelegraph.com",
           "sourceType": "rss",
-          "rank": 1,
+          "rank": 6,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -1813,7 +2127,7 @@
           "sourceLabel": "Cointelegraph",
           "sourceHome": "https://cointelegraph.com",
           "sourceType": "rss",
-          "rank": 2,
+          "rank": 7,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -1821,66 +2135,6 @@
           "title": "Coinbase launches 24/7 stock perps for non-US traders",
           "url": "https://cointelegraph.com/news/coinbase-expands-24-7-stock-derivatives-venue?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "publishedAt": "2026-03-20 19:57",
-          "sourceId": "cointelegraph",
-          "sourceLabel": "Cointelegraph",
-          "sourceHome": "https://cointelegraph.com",
-          "sourceType": "rss",
-          "rank": 3,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "Ripple survey finds 72% of finance leaders see digital assets as essential",
-          "url": "https://cointelegraph.com/news/ripple-survey-72-finance-leaders-digital-assets-key?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-03-20 19:22",
-          "sourceId": "cointelegraph",
-          "sourceLabel": "Cointelegraph",
-          "sourceHome": "https://cointelegraph.com",
-          "sourceType": "rss",
-          "rank": 4,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "South Korea tax agency seeks private crypto custodian after security lapses",
-          "url": "https://cointelegraph.com/news/south-korea-tax-agency-private-crypto-custody-seed-phrase-leak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-03-20 18:47",
-          "sourceId": "cointelegraph",
-          "sourceLabel": "Cointelegraph",
-          "sourceHome": "https://cointelegraph.com",
-          "sourceType": "rss",
-          "rank": 5,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "Bitcoin vs gold shows potential bottom signals as BTC bulls defend $70K",
-          "url": "https://cointelegraph.com/news/bitcoin-vs-gold-flashes-multiple-bottom-signals-btc-bulls-defend-70k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-03-20 18:38",
-          "sourceId": "cointelegraph",
-          "sourceLabel": "Cointelegraph",
-          "sourceHome": "https://cointelegraph.com",
-          "sourceType": "rss",
-          "rank": 6,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "Quantum risk real, but not all crypto wallets equally vulnerable: Galaxy",
-          "url": "https://cointelegraph.com/news/quantum-risk-bitcoin-wallets-not-all-vulnerable?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-03-20 14:27",
-          "sourceId": "cointelegraph",
-          "sourceLabel": "Cointelegraph",
-          "sourceHome": "https://cointelegraph.com",
-          "sourceType": "rss",
-          "rank": 7,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "Super Micro co-founder arrested over alleged $2.5B AI chip smuggling scheme",
-          "url": "https://cointelegraph.com/news/super-micro-co-founder-arrested-in-2-5b-ai-chip-smuggling-scheme-to-china?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-03-20 14:03",
           "sourceId": "cointelegraph",
           "sourceLabel": "Cointelegraph",
           "sourceHome": "https://cointelegraph.com",
@@ -1986,21 +2240,9 @@
           "signal": "watch"
         },
         {
-          "title": "Super Micro shares tank 25% after employees charged with smuggling Nvidia chips to China",
-          "url": "https://www.cnbc.com/2026/03/19/us-tech-execs-smuggled-nvidia-chips-to-china-prosecutors-say.html",
-          "publishedAt": "2026-03-20 21:13",
-          "sourceId": "cnbc-tech",
-          "sourceLabel": "CNBC Tech",
-          "sourceHome": "https://www.cnbc.com/technology",
-          "sourceType": "rss",
-          "rank": 7,
-          "sourcePriority": 3,
-          "signal": "watch"
-        },
-        {
-          "title": "The Dow's losing streak, fertilizer prices, Novo Nordisk's new Wegovy shot and more in Morning Squawk",
-          "url": "https://www.cnbc.com/2026/03/20/5-things-to-know-before-the-market-opens.html",
-          "publishedAt": "2026-03-20 20:30",
+          "title": "Tim Cook’s China visit reinforces country’s importance to Apple as global frictions rise",
+          "url": "https://www.cnbc.com/2026/03/20/tim-cooks-china-visit-reinforces-countrys-importance-to-apple-.html",
+          "publishedAt": "2026-03-20 23:12",
           "sourceId": "cnbc-tech",
           "sourceLabel": "CNBC Tech",
           "sourceHome": "https://www.cnbc.com/technology",
@@ -2010,9 +2252,21 @@
           "signal": "watch"
         },
         {
-          "title": "Who's most optimistic about AI — and who isn't, according to Anthropic",
-          "url": "https://www.cnbc.com/2026/03/20/anthropic-whos-most-optimistic-about-ai-and-who-isnt.html",
-          "publishedAt": "2026-03-20 18:15",
+          "title": "Super Micro shares tank 25% after employees charged with smuggling Nvidia chips to China",
+          "url": "https://www.cnbc.com/2026/03/19/us-tech-execs-smuggled-nvidia-chips-to-china-prosecutors-say.html",
+          "publishedAt": "2026-03-20 22:56",
+          "sourceId": "cnbc-tech",
+          "sourceLabel": "CNBC Tech",
+          "sourceHome": "https://www.cnbc.com/technology",
+          "sourceType": "rss",
+          "rank": 9,
+          "sourcePriority": 3,
+          "signal": "watch"
+        },
+        {
+          "title": "Trump admin unveils national AI policy framework to limit state power",
+          "url": "https://www.cnbc.com/2026/03/20/trump-ai-policy-framework.html",
+          "publishedAt": "2026-03-20 22:38",
           "sourceId": "cnbc-tech",
           "sourceLabel": "CNBC Tech",
           "sourceHome": "https://www.cnbc.com/technology",
@@ -2022,9 +2276,9 @@
           "signal": "watch"
         },
         {
-          "title": "Nvidia's Huang pitches AI tokens on top of salary as agents reshape how humans work",
-          "url": "https://www.cnbc.com/2026/03/20/nvidia-ai-agents-tokens-human-workers-engineer-jobs-unemployment-jensen-huang.html",
-          "publishedAt": "2026-03-20 15:57",
+          "title": "The Dow's losing streak, fertilizer prices, Novo Nordisk's new Wegovy shot and more in Morning Squawk",
+          "url": "https://www.cnbc.com/2026/03/20/5-things-to-know-before-the-market-opens.html",
+          "publishedAt": "2026-03-20 20:30",
           "sourceId": "cnbc-tech",
           "sourceLabel": "CNBC Tech",
           "sourceHome": "https://www.cnbc.com/technology",
@@ -2048,30 +2302,6 @@
       ],
       "items": [
         {
-          "title": "直播丨第二艘国产大型邮轮“爱达·花城号”在上海出坞！",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32794841",
-          "publishedAt": null,
-          "sourceId": "thepaper",
-          "sourceLabel": "澎湃新闻热榜",
-          "sourceHome": "https://www.thepaper.cn",
-          "sourceType": "newsnow",
-          "rank": 1,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "王传福、王兴兴、何小鹏现场助阵！小米新SU7售价21.99万元起，雷军强调车门把手符合新国标",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32796782",
-          "publishedAt": null,
-          "sourceId": "thepaper",
-          "sourceLabel": "澎湃新闻热榜",
-          "sourceHome": "https://www.thepaper.cn",
-          "sourceType": "newsnow",
-          "rank": 2,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
           "title": "重庆市委副书记、市长胡衡华任上被查",
           "url": "https://www.thepaper.cn/newsDetail_forward_32800383",
           "publishedAt": null,
@@ -2079,7 +2309,7 @@
           "sourceLabel": "澎湃新闻热榜",
           "sourceHome": "https://www.thepaper.cn",
           "sourceType": "newsnow",
-          "rank": 3,
+          "rank": 1,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -2091,9 +2321,21 @@
           "sourceLabel": "澎湃新闻热榜",
           "sourceHome": "https://www.thepaper.cn",
           "sourceType": "newsnow",
-          "rank": 4,
+          "rank": 2,
           "sourcePriority": 1,
           "signal": "bearish"
+        },
+        {
+          "title": "霍尔木兹海峡“锁喉”效应发酵，亚洲乙烯价格暴涨",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32796850",
+          "publishedAt": null,
+          "sourceId": "thepaper",
+          "sourceLabel": "澎湃新闻热榜",
+          "sourceHome": "https://www.thepaper.cn",
+          "sourceType": "newsnow",
+          "rank": 3,
+          "sourcePriority": 1,
+          "signal": "watch"
         },
         {
           "title": "欧阳奋强：快60岁时，才略微读懂了“贾宝玉”",
@@ -2103,7 +2345,7 @@
           "sourceLabel": "澎湃新闻热榜",
           "sourceHome": "https://www.thepaper.cn",
           "sourceType": "newsnow",
-          "rank": 5,
+          "rank": 4,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -2115,13 +2357,25 @@
           "sourceLabel": "澎湃新闻热榜",
           "sourceHome": "https://www.thepaper.cn",
           "sourceType": "newsnow",
+          "rank": 5,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "伊朗伊斯兰革命卫队发言人遇袭身亡",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32800768",
+          "publishedAt": null,
+          "sourceId": "thepaper",
+          "sourceLabel": "澎湃新闻热榜",
+          "sourceHome": "https://www.thepaper.cn",
+          "sourceType": "newsnow",
           "rank": 6,
           "sourcePriority": 1,
           "signal": "watch"
         },
         {
-          "title": "霍尔木兹海峡“锁喉”效应发酵，亚洲乙烯价格暴涨",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32796850",
+          "title": "市监总局回应央视“3·15”曝光“漂白鸡爪”等问题：深挖彻查、一查到底",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32800590",
           "publishedAt": null,
           "sourceId": "thepaper",
           "sourceLabel": "澎湃新闻热榜",
@@ -2132,8 +2386,8 @@
           "signal": "watch"
         },
         {
-          "title": "伊朗伊斯兰革命卫队发言人遇袭身亡",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32800768",
+          "title": "光伏卖断货、中国人高价买回国机票：古巴大停电的“至暗”时刻",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32796341",
           "publishedAt": null,
           "sourceId": "thepaper",
           "sourceLabel": "澎湃新闻热榜",
@@ -2240,9 +2494,33 @@
           "signal": "watch"
         },
         {
+          "title": "Inside Wealth: 'Marriage penalty' in Washington state's new millionaire tax stirs debate",
+          "url": "https://www.cnbc.com/2026/03/20/washington-millionaire-tax-marriage.html",
+          "publishedAt": "2026-03-20 23:10",
+          "sourceId": "cnbc-business",
+          "sourceLabel": "CNBC Business",
+          "sourceHome": "https://www.cnbc.com/business",
+          "sourceType": "rss",
+          "rank": 2,
+          "sourcePriority": 3,
+          "signal": "watch"
+        },
+        {
           "title": "FedEx beats on top and bottom lines, raises guidance on strong performance",
           "url": "https://www.cnbc.com/2026/03/19/fedex-fdx-q3-2026-earnings.html",
-          "publishedAt": "2026-03-20 06:26",
+          "publishedAt": "2026-03-20 22:56",
+          "sourceId": "cnbc-business",
+          "sourceLabel": "CNBC Business",
+          "sourceHome": "https://www.cnbc.com/business",
+          "sourceType": "rss",
+          "rank": 3,
+          "sourcePriority": 3,
+          "signal": "watch"
+        },
+        {
+          "title": "Nexstar, Tegna merger closes after winning regulatory approval",
+          "url": "https://www.cnbc.com/2026/03/20/nexstar-tegna-merger-closes-after-winning-regulatory-approval-.html",
+          "publishedAt": "2026-03-20 22:51",
           "sourceId": "cnbc-business",
           "sourceLabel": "CNBC Business",
           "sourceHome": "https://www.cnbc.com/business",
@@ -2259,31 +2537,7 @@
           "sourceLabel": "CNBC Business",
           "sourceHome": "https://www.cnbc.com/business",
           "sourceType": "rss",
-          "rank": 3,
-          "sourcePriority": 3,
-          "signal": "watch"
-        },
-        {
-          "title": "FDA approves higher dose version of weight loss drug Wegovy as Novo Nordisk tries to win back market share",
-          "url": "https://www.cnbc.com/2026/03/19/fda-approves-high-dose-version-of-novo-nordisks-obesity-drug-wegovy.html",
-          "publishedAt": "2026-03-20 01:48",
-          "sourceId": "cnbc-business",
-          "sourceLabel": "CNBC Business",
-          "sourceHome": "https://www.cnbc.com/business",
-          "sourceType": "rss",
-          "rank": 2,
-          "sourcePriority": 3,
-          "signal": "watch"
-        },
-        {
-          "title": "January new home sales plunge to the lowest pace since 2022",
-          "url": "https://www.cnbc.com/2026/03/19/january-new-home-sales.html",
-          "publishedAt": "2026-03-20 00:26",
-          "sourceId": "cnbc-business",
-          "sourceLabel": "CNBC Business",
-          "sourceHome": "https://www.cnbc.com/business",
-          "sourceType": "rss",
-          "rank": 4,
+          "rank": 5,
           "sourcePriority": 3,
           "signal": "watch"
         }
@@ -2314,8 +2568,8 @@
           "signal": "watch"
         },
         {
-          "title": "医院招聘法务硕士编外博士编内",
-          "url": "https://s.weibo.com/weibo?q=%23%E5%8C%BB%E9%99%A2%E6%8B%9B%E8%81%98%E6%B3%95%E5%8A%A1%E7%A1%95%E5%A3%AB%E7%BC%96%E5%A4%96%E5%8D%9A%E5%A3%AB%E7%BC%96%E5%86%85%23&t=31&band_rank=2&Refer=top",
+          "title": "日本网友评价高市早苗访美视频",
+          "url": "https://s.weibo.com/weibo?q=%23%E6%97%A5%E6%9C%AC%E7%BD%91%E5%8F%8B%E8%AF%84%E4%BB%B7%E9%AB%98%E5%B8%82%E6%97%A9%E8%8B%97%E8%AE%BF%E7%BE%8E%E8%A7%86%E9%A2%91%23&t=31&band_rank=2&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -2326,8 +2580,8 @@
           "signal": "watch"
         },
         {
-          "title": "释永信涉嫌4项罪名",
-          "url": "https://s.weibo.com/weibo?q=%23%E9%87%8A%E6%B0%B8%E4%BF%A1%E6%B6%89%E5%AB%8C4%E9%A1%B9%E7%BD%AA%E5%90%8D%23&t=31&band_rank=3&Refer=top",
+          "title": "沙某编造传播涉科大讯飞网络谣言被拘",
+          "url": "https://s.weibo.com/weibo?q=%23%E6%B2%99%E6%9F%90%E7%BC%96%E9%80%A0%E4%BC%A0%E6%92%AD%E6%B6%89%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E%E7%BD%91%E7%BB%9C%E8%B0%A3%E8%A8%80%E8%A2%AB%E6%8B%98%23&t=31&band_rank=3&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -2338,8 +2592,8 @@
           "signal": "watch"
         },
         {
-          "title": "周冬雨穿自己淘的裙子走红毯",
-          "url": "https://s.weibo.com/weibo?q=%23%E5%91%A8%E5%86%AC%E9%9B%A8%E7%A9%BF%E8%87%AA%E5%B7%B1%E6%B7%98%E7%9A%84%E8%A3%99%E5%AD%90%E8%B5%B0%E7%BA%A2%E6%AF%AF%23&t=31&band_rank=4&Refer=top",
+          "title": "章子怡脸咋了",
+          "url": "https://s.weibo.com/weibo?q=%E7%AB%A0%E5%AD%90%E6%80%A1%E8%84%B8%E5%92%8B%E4%BA%86&t=31&band_rank=4&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -2350,8 +2604,8 @@
           "signal": "watch"
         },
         {
-          "title": "奥恰洛夫说樊振东不参加世乒赛",
-          "url": "https://s.weibo.com/weibo?q=%23%E5%A5%A5%E6%81%B0%E6%B4%9B%E5%A4%AB%E8%AF%B4%E6%A8%8A%E6%8C%AF%E4%B8%9C%E4%B8%8D%E5%8F%82%E5%8A%A0%E4%B8%96%E4%B9%92%E8%B5%9B%23&t=31&band_rank=5&Refer=top",
+          "title": "母亲带女儿买鞋在店门口犹豫半小时",
+          "url": "https://s.weibo.com/weibo?q=%23%E6%AF%8D%E4%BA%B2%E5%B8%A6%E5%A5%B3%E5%84%BF%E4%B9%B0%E9%9E%8B%E5%9C%A8%E5%BA%97%E9%97%A8%E5%8F%A3%E7%8A%B9%E8%B1%AB%E5%8D%8A%E5%B0%8F%E6%97%B6%23&t=31&band_rank=5&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -2362,8 +2616,8 @@
           "signal": "watch"
         },
         {
-          "title": "薛之谦广州演唱会",
-          "url": "https://s.weibo.com/weibo?q=%E8%96%9B%E4%B9%8B%E8%B0%A6%E5%B9%BF%E5%B7%9E%E6%BC%94%E5%94%B1%E4%BC%9A&t=31&band_rank=6&Refer=top",
+          "title": "丁彦雨航退役",
+          "url": "https://s.weibo.com/weibo?q=%23%E4%B8%81%E5%BD%A6%E9%9B%A8%E8%88%AA%E9%80%80%E5%BD%B9%23&t=31&band_rank=6&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -2374,8 +2628,8 @@
           "signal": "watch"
         },
         {
-          "title": "谢征拒绝赐婚",
-          "url": "https://s.weibo.com/weibo?q=%23%E8%B0%A2%E5%BE%81%E6%8B%92%E7%BB%9D%E8%B5%90%E5%A9%9A%23&t=31&band_rank=7&Refer=top",
+          "title": "薛之谦广州演唱会",
+          "url": "https://s.weibo.com/weibo?q=%E8%96%9B%E4%B9%8B%E8%B0%A6%E5%B9%BF%E5%B7%9E%E6%BC%94%E5%94%B1%E4%BC%9A&t=31&band_rank=7&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -2386,8 +2640,8 @@
           "signal": "watch"
         },
         {
-          "title": "数读中国消费市场活力持续增强",
-          "url": "https://s.weibo.com/weibo?q=%23%E6%95%B0%E8%AF%BB%E4%B8%AD%E5%9B%BD%E6%B6%88%E8%B4%B9%E5%B8%82%E5%9C%BA%E6%B4%BB%E5%8A%9B%E6%8C%81%E7%BB%AD%E5%A2%9E%E5%BC%BA%23&t=31&band_rank=8&Refer=top",
+          "title": "小米汽车回应为何不公布大定数字",
+          "url": "https://s.weibo.com/weibo?q=%23%E5%B0%8F%E7%B1%B3%E6%B1%BD%E8%BD%A6%E5%9B%9E%E5%BA%94%E4%B8%BA%E4%BD%95%E4%B8%8D%E5%85%AC%E5%B8%83%E5%A4%A7%E5%AE%9A%E6%95%B0%E5%AD%97%23&t=31&band_rank=8&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -2410,8 +2664,8 @@
           "signal": "watch"
         },
         {
-          "title": "网友贷款抄底 8 套老破小，靠房租还贷还有额外收入，「以租养贷」叙事当下还流行吗？存在哪些风险？",
-          "url": "https://www.zhihu.com/question/2017293207398998517",
+          "title": "初三儿子哭着说课堂完全听不懂，想请一对一辅导，丈夫坚决反对，说课堂不听，补课就是浪费钱，我该怎么办？",
+          "url": "https://www.zhihu.com/question/1970998781324529762",
           "publishedAt": null,
           "sourceId": "zhihu",
           "sourceLabel": "知乎热榜",
@@ -2419,7 +2673,7 @@
           "sourceType": "newsnow",
           "rank": 2,
           "sourcePriority": 2,
-          "signal": "bearish"
+          "signal": "watch"
         },
         {
           "title": "弟弟出生时冻存的脐带血，15 年后成为再障哥哥的「救命血」，背后有哪些医学原理？",
@@ -2434,8 +2688,8 @@
           "signal": "watch"
         },
         {
-          "title": "蟑螂繁殖那么快，自己养来吃怎么样？",
-          "url": "https://www.zhihu.com/question/1974880735358887758",
+          "title": "为什么剧组之类的都吃盒饭，组个食堂不行吗？",
+          "url": "https://www.zhihu.com/question/434484007",
           "publishedAt": null,
           "sourceId": "zhihu",
           "sourceLabel": "知乎热榜",
@@ -2446,8 +2700,8 @@
           "signal": "watch"
         },
         {
-          "title": "初三儿子哭着说课堂完全听不懂，想请一对一辅导，丈夫坚决反对，说课堂不听，补课就是浪费钱。我该怎么办？",
-          "url": "https://www.zhihu.com/question/1970998781324529762",
+          "title": "吉林、安徽、江西、湖南等十余省市宣布生物地理不再计入中考总分，为什么是这两个科目？家长们怎么看？",
+          "url": "https://www.zhihu.com/question/2017546749061898708",
           "publishedAt": null,
           "sourceId": "zhihu",
           "sourceLabel": "知乎热榜",
@@ -2458,8 +2712,8 @@
           "signal": "watch"
         },
         {
-          "title": "美以袭击伊朗进入第 21 天，当前局势如何？哪些信息值得关注？",
-          "url": "https://www.zhihu.com/question/2018125516700426373",
+          "title": "网友贷款抄底 8 套老破小，靠房租还贷还有额外收入，「以租养贷」叙事当下还流行吗？存在哪些风险？",
+          "url": "https://www.zhihu.com/question/2017293207398998517",
           "publishedAt": null,
           "sourceId": "zhihu",
           "sourceLabel": "知乎热榜",
@@ -2467,11 +2721,11 @@
           "sourceType": "newsnow",
           "rank": 6,
           "sourcePriority": 2,
-          "signal": "watch"
+          "signal": "bearish"
         },
         {
-          "title": "网友发现汤碗里搅拌完的葱花自动排成了一列，为什么会这样？能用科学来解释吗？",
-          "url": "https://www.zhihu.com/question/2015097628501779896",
+          "title": "3 月 20 日沪指失守 4000 点，两市成交额 2.29 万亿，电力板块活跃，如何看待今日行情？",
+          "url": "https://www.zhihu.com/question/2018230164002185495",
           "publishedAt": null,
           "sourceId": "zhihu",
           "sourceLabel": "知乎热榜",
@@ -2506,8 +2760,8 @@
           "signal": "watch"
         },
         {
-          "title": "解放西上演现实版狼人杀",
-          "url": "https://search.bilibili.com/all?keyword=%E8%A7%A3%E6%94%BE%E8%A5%BF",
+          "title": "FaZe vs TYLOO BLAST公开赛",
+          "url": "https://search.bilibili.com/all?keyword=FaZe%20TYLOO",
           "publishedAt": null,
           "sourceId": "bilibili-hot-search",
           "sourceLabel": "B站热搜",
@@ -2530,8 +2784,8 @@
           "signal": "watch"
         },
         {
-          "title": "释永信被提起公诉",
-          "url": "https://search.bilibili.com/all?keyword=%E9%87%8A%E6%B0%B8%E4%BF%A1%E8%A2%AB%E6%8F%90%E8%B5%B7%E5%85%AC%E8%AF%89",
+          "title": "丁彦雨航官宣退役",
+          "url": "https://search.bilibili.com/all?keyword=%E4%B8%81%E5%BD%A6%E9%9B%A8%E8%88%AA%E5%AE%98%E5%AE%A3%E9%80%80%E5%BD%B9",
           "publishedAt": null,
           "sourceId": "bilibili-hot-search",
           "sourceLabel": "B站热搜",
