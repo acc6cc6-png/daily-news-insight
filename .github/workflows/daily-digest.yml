@@ -7,19 +7,30 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -38,3 +49,12 @@ jobs:
           git commit -m "chore: refresh daily digest" || exit 0
           git pull --rebase origin main
           git push
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
