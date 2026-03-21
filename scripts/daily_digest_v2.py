@@ -17,6 +17,8 @@ from urllib.error import HTTPError
 from urllib.parse import urljoin
 from urllib.request import Request, urlopen
 
+from miniapp_factory import build_miniapp_factory
+
 try:
     from openai import OpenAI
 except Exception:
@@ -248,6 +250,47 @@ HARD_DROP_KEYWORDS = (
     "异动雷达",
 )
 
+A_SHARE_OPEN_KEYWORDS = {
+    "a股": 24,
+    "港股": 22,
+    "中概": 18,
+    "美股": 20,
+    "纳指": 18,
+    "标普": 16,
+    "道指": 14,
+    "美债": 20,
+    "债市": 20,
+    "收益率": 18,
+    "人民币": 18,
+    "离岸人民币": 22,
+    "美元": 14,
+    "美联储": 20,
+    "加息": 18,
+    "降息": 18,
+    "cpi": 16,
+    "ppi": 14,
+    "非农": 16,
+    "中东": 16,
+    "伊朗": 16,
+    "以色列": 16,
+    "原油": 18,
+    "油价": 18,
+    "黄金": 18,
+    "金价": 16,
+    "社融": 18,
+    "pmi": 16,
+    "地产": 18,
+    "楼市": 16,
+    "券商": 12,
+    "玻璃": 14,
+    "纯碱": 14,
+    "碳酸锂": 14,
+    "工业硅": 12,
+    "稀土": 12,
+    "关税": 18,
+    "特朗普": 14,
+}
+
 FOCUS_PRIORITY_KEYWORDS = {
     "特朗普": 24,
     "trump": 24,
@@ -404,6 +447,10 @@ def main() -> int:
     write_json(LATEST_RAW_PATH, raw_snapshot)
 
     digest = build_digest(config, raw_by_source, now)
+    try:
+        digest["miniappFactory"] = build_miniapp_factory(config, raw_by_source, now, HISTORY_DIR)
+    except Exception as exc:  # noqa: BLE001
+        print(f"[miniapp-factory] failed -> {exc}")
     write_json(LATEST_DIGEST_PATH, digest)
     archive_digest(digest, now)
 
@@ -729,7 +776,11 @@ def remix_focus_category(categories: list[dict[str, Any]]) -> None:
             normalized = clean_text(story["title"]).lower()
             if any(keyword.lower() in normalized for keyword in HARD_DROP_KEYWORDS):
                 continue
-            if float(story.get("selectionScore", 0)) < 60 and float(story.get("marketPriority", 0)) < 40:
+            if (
+                float(story.get("selectionScore", 0)) < 60
+                and float(story.get("marketPriority", 0)) < 40
+                and float(story.get("aShareOpenScore", 0)) < 28
+            ):
                 continue
             dedupe_key = normalize_title(story["title"])
             if dedupe_key in seen:
@@ -866,9 +917,13 @@ def collect_category_items(
             enriched["signal"] = classify_signal(item["title"])
             enriched["relevanceScore"] = category_relevance_score(category, item["title"])
             enriched["marketPriority"] = market_priority_score(item["title"])
+            enriched["aShareOpenScore"] = a_share_open_score(item["title"])
             enriched["microPenalty"] = micro_story_penalty(category, item["title"])
             enriched["selectionScore"] = (
-                enriched["relevanceScore"] + enriched["marketPriority"] - enriched["microPenalty"]
+                enriched["relevanceScore"]
+                + enriched["marketPriority"]
+                + enriched["aShareOpenScore"]
+                - enriched["microPenalty"]
             )
             if should_drop_story(category, item["title"], enriched["selectionScore"]):
                 continue
@@ -923,6 +978,7 @@ def build_story_records(
                 "impactLabel": story_impact_label(impact_score),
                 "relevanceScore": item.get("relevanceScore", 0),
                 "marketPriority": item.get("marketPriority", 0),
+                "aShareOpenScore": item.get("aShareOpenScore", 0),
                 "selectionScore": item.get("selectionScore", 0),
                 "url": item["url"],
                 "sourceId": item["sourceId"],
@@ -950,6 +1006,8 @@ def rank_priority_stories(
 
     def priority_key(story: dict[str, Any]) -> tuple[float, int, str]:
         boost = float(story.get("selectionScore", story["impactScore"])) + float(story.get("marketPriority", 0)) * 0.3
+        if category["id"] in {"focus-news", "china-markets", "global-macro"}:
+            boost += float(story.get("aShareOpenScore", 0)) * 0.6
         if story.get("inWindow"):
             boost += 12
         match = ai_order.get(normalize_title(story["title"]))
@@ -1046,8 +1104,8 @@ def build_template_editorial(
     return {
         "lead": build_category_lead(category, all_stories, priority_stories, window_start, now),
         "cycleView": build_cycle_view(category, cycle_name, priority_stories),
-        "strategyTake": build_strategy_take(category, cycle_name),
-        "linkageIdeas": build_linkage_ideas(category, cycle_name),
+        "strategyTake": build_strategy_take(category, cycle_name, priority_stories),
+        "linkageIdeas": build_linkage_ideas(category, cycle_name, priority_stories),
         "bullish": build_signal_paragraph(category, first_story_by_signal(priority_stories, "bullish"), "bullish"),
         "bearish": build_signal_paragraph(category, first_story_by_signal(priority_stories, "bearish"), "bearish"),
         "watch": build_signal_paragraph(category, first_story_by_signal(priority_stories, "watch"), "watch"),
@@ -1266,6 +1324,48 @@ def build_category_lead(
     )
 
 
+def priority_titles_blob(priority_stories: list[dict[str, Any]], limit: int = 8) -> str:
+    return " ".join(clean_text(story["title"]).lower() for story in priority_stories[:limit])
+
+
+def detect_market_setup(category: dict[str, Any], priority_stories: list[dict[str, Any]]) -> str:
+    text = priority_titles_blob(priority_stories)
+    if any(keyword in text for keyword in ("社融", "降准", "降息", "财政", "专项债", "地产", "楼市", "宽信用", "pmi")):
+        return "domestic_policy"
+    if (
+        any(keyword in text for keyword in ("美债", "债市", "收益率", "美联储", "加息", "降息"))
+        and any(keyword in text for keyword in ("美股", "纳指", "标普", "黄金", "原油", "三大指数"))
+    ):
+        return "global_repricing"
+    if any(keyword in text for keyword in ("中东", "伊朗", "以色列", "油价", "原油", "霍尔木兹")):
+        return "commodity_shock"
+    if any(keyword in text for keyword in ("转涨", "修复", "反弹", "回暖", "缓和")):
+        return "risk_repair"
+    return "wait_confirm"
+
+
+def open_focus_variables(setup: str) -> str:
+    mapping = {
+        "global_repricing": "美债收益率、油价、黄金、美股期货和离岸人民币",
+        "commodity_shock": "原油、黄金、航运、化工期货和港股能源股",
+        "domestic_policy": "社融、地产销售、国债利率、券商与地产链",
+        "risk_repair": "港股、中概、北向资金、成交额和高贝塔板块",
+        "wait_confirm": "竞价强弱、成交额、北向资金和期货联动",
+    }
+    return mapping.get(setup, "竞价强弱、成交额、北向资金和期货联动")
+
+
+def setup_board_hint(setup: str) -> str:
+    mapping = {
+        "global_repricing": "油气、油运、煤化工、黄金、防御红利，以及受外盘拖累后可能分化的港股互联网与高估值成长",
+        "commodity_shock": "油运、油服、煤化工、贵金属和上游资源，谨慎对待高估值久期资产",
+        "domestic_policy": "券商、地产链、玻璃、纯碱、建材，以及宽信用最先受益的顺周期资产",
+        "risk_repair": "券商、港股互联网、中概、高贝塔成长和情绪修复最快的核心资产",
+        "wait_confirm": "先列强弱名单，再等真正放量的主线板块自己走出来",
+    }
+    return mapping.get(setup, "先列强弱名单，再等真正放量的主线板块自己走出来")
+
+
 def infer_cycle_name(priority_stories: list[dict[str, Any]]) -> str:
     bullish = sum(1 for story in priority_stories if story["signal"] == "bullish")
     bearish = sum(1 for story in priority_stories if story["signal"] == "bearish")
@@ -1415,8 +1515,9 @@ def source_item_sort_key(category: dict[str, Any], item: dict[str, Any], window_
     title = item.get("title", "")
     relevance_score = category_relevance_score(category, title)
     priority_score = market_priority_score(title)
+    open_score = a_share_open_score(title)
     return (
-        relevance_score + priority_score,
+        relevance_score + priority_score + open_score,
         1 if is_within_window(item.get("publishedAt"), window_start) else 0,
         item.get("publishedAt") or "",
         -(item.get("rank") or 9999),
@@ -1473,6 +1574,23 @@ def market_priority_score(title: str) -> int:
     if re.search(r"(最大|最深|最差|最猛).{0,6}(跌幅|跌|涨幅|波动)", normalized):
         score += 12
     return min(score, 80)
+
+
+def a_share_open_score(title: str) -> int:
+    normalized = clean_text(title).lower()
+    score = 0
+    for keyword, weight in A_SHARE_OPEN_KEYWORDS.items():
+        if keyword.lower() in normalized:
+            score += weight
+
+    groups = matched_priority_groups(normalized)
+    if "risk_assets" in groups and "global_rates" in groups:
+        score += 16
+    if "geopolitics" in groups and "commodities" in groups:
+        score += 14
+    if "china_macro" in groups and ("risk_assets" in groups or "commodities" in groups):
+        score += 14
+    return min(score, 70)
 
 
 def matched_priority_groups(normalized: str) -> set[str]:
@@ -1562,6 +1680,7 @@ def story_impact_score(
 
     score += max(0, int(item.get("relevanceScore") or 0))
     score += min(36, int(item.get("marketPriority") or 0))
+    score += min(24, int(item.get("aShareOpenScore") or 0))
     score -= min(24, int(item.get("microPenalty") or 0))
 
     if should_drop_story(category, item["title"], int(item.get("selectionScore") or 0)):
@@ -1641,18 +1760,27 @@ def archive_digest(digest: dict[str, Any], now: datetime) -> None:
     archive_path = HISTORY_DIR / date_part / time_part / "digest.json"
     write_json(archive_path, digest)
 
-    if HISTORY_INDEX_PATH.exists():
-        history_index = load_json(HISTORY_INDEX_PATH)
-    else:
-        history_index = []
-    entry = {
-        "id": f"{date_part}-{time_part}",
-        "label": f"{date_part} {time_part.replace('-', ':')}",
-        "path": f"data/history/{date_part}/{time_part}/digest.json",
-    }
-    history_index = [item for item in history_index if item["id"] != entry["id"]]
-    history_index.insert(0, entry)
-    write_json(HISTORY_INDEX_PATH, history_index[:120])
+    write_json(HISTORY_INDEX_PATH, rebuild_history_index()[:120])
+
+
+def rebuild_history_index() -> list[dict[str, str]]:
+    entries = []
+    for digest_path in HISTORY_DIR.glob("*/*/digest.json"):
+        date_part = digest_path.parent.parent.name
+        time_part = digest_path.parent.name
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date_part):
+            continue
+        if not re.fullmatch(r"\d{2}-\d{2}", time_part):
+            continue
+        entries.append(
+            {
+                "id": f"{date_part}-{time_part}",
+                "label": f"{date_part} {time_part.replace('-', ':')}",
+                "path": f"data/history/{date_part}/{time_part}/digest.json",
+            }
+        )
+    entries.sort(key=lambda item: item["id"], reverse=True)
+    return entries
 
 
 def market_window_start(now: datetime) -> datetime:
@@ -1804,6 +1932,166 @@ def child_text(node: ET.Element, child_name: str) -> str:
 
 def iso_clock(now: datetime) -> str:
     return now.strftime("%Y-%m-%d %H:%M")
+
+
+def build_cycle_view(category: dict[str, Any], cycle_name: str, priority_stories: list[dict[str, Any]]) -> str:
+    anchor = priority_stories[0]["title"] if priority_stories else "暂无主线"
+    setup = detect_market_setup(category, priority_stories)
+    if category["id"] == "focus-news":
+        setup_label = "海外利率与风险资产再定价" if setup == "global_repricing" else "事件驱动的开盘前窗口"
+        return (
+            f"{category['name']} 当前更像{setup_label}阶段。领头消息是《{shorten_title(anchor, 24)}》，"
+            f"A股开盘前先看 {open_focus_variables(setup)} 有没有继续同向，再判断外盘扰动是在压估值，还是已经传导到资源、汇率和风险偏好。"
+        )
+    if category["id"] == "china-markets":
+        return (
+            f"{category['name']} 当前更像先由外盘和情绪定方向、再由量能决定持续性的阶段。"
+            f"锚点是《{shorten_title(anchor, 24)}》，更重要的不是 headline 本身，而是竞价后成交额、北向和港股是否给出同向确认。"
+        )
+    if category["id"] == "global-macro":
+        setup_label = "利率抬升叠加地缘扰动" if setup == "global_repricing" else cycle_name
+        return (
+            f"{category['name']} 当前处在{setup_label}窗口。核心不是单条消息，而是《{shorten_title(anchor, 24)}》这类变量能否继续通过债、股、金、油共振扩散。"
+        )
+    if category["id"] == "china-macro":
+        return (
+            f"{category['name']} 当前更像在观察宽信用能否接住弱复苏。领头消息是《{shorten_title(anchor, 24)}》，"
+            "真正值得盯的是信用、销售和施工链条有没有跟上，而不是只看政策表态。"
+        )
+    return (
+        f"{category['name']} 当前更偏{cycle_name}阶段，领头 headline 是《{shorten_title(anchor, 24)}》。"
+        "现在更重要的是盯住它会不会继续扩散到价格、流动性和资金风格。"
+    )
+
+
+def build_strategy_take(category: dict[str, Any], cycle_name: str, priority_stories: list[dict[str, Any]]) -> str:
+    setup = detect_market_setup(category, priority_stories)
+    if category["id"] == "focus-news":
+        return (
+            f"如果把当前位置放在 {open_focus_variables(setup)} 主导的隔夜窗口里看，A股更适合先盯 {setup_board_hint(setup)}。"
+            "节奏上先看竞价和开盘前 30 分钟有没有量价、期货和港股共振；有确认，更适合按事件节奏分批参与。"
+            "如果只是 headline 带来的情绪跳空，而北向、成交额和相关期货没有接力，就更适合等二次确认，不适合机械定投。"
+        )
+    if category["id"] == "china-markets":
+        return (
+            f"中国市场这边更适合把隔夜消息翻译成板块强弱名单，优先看 {setup_board_hint(setup)}。"
+            "先分清是外盘拖动的风险偏好变化，还是国内资金自己愿意扩散；只有量能和主线一起放大，才值得把事件交易升级成趋势仓位。"
+        )
+    if category["id"] == "china-macro":
+        return (
+            "中国宏观这边不要把政策 headline 直接当成买点，更应该先判断当前是去杠杆尾声里的宽信用尝试，还是已经进入真正的需求接力。"
+            "如果看到社融、地产销售和施工链同时改善，更适合看券商、地产链、玻璃、纯碱、建材这些弹性环节；"
+            "如果只有表态没有数据，按事件波段看，不按长线定投看。"
+        )
+    if category["id"] == "global-macro":
+        return (
+            f"全球宏观现在更像{'软着陆预期摇摆叠加高利率重估' if setup == 'global_repricing' else '等待二次验证'}。"
+            "先盯美债收益率和美元，再看黄金、原油和美股期货是否跟着同向；对A股来说，重点不是预测所有变量，而是判断外盘冲击会先压高估值成长，还是先利多资源与防御。"
+        )
+    return (
+        f"策略上先把 {category['name']} 里的事件拆成 headline、传导链和验证条件三段。"
+        "只有验证连续出现，才值得提高参与强度；如果只是单条消息推动，更适合跟踪而不是直接重仓。"
+    )
+
+
+def build_linkage_ideas(category: dict[str, Any], cycle_name: str, priority_stories: list[dict[str, Any]]) -> list[str]:
+    setup = detect_market_setup(category, priority_stories)
+    if category["id"] == "focus-news" and setup == "global_repricing":
+        return [
+            "先把中东和油价 headline 拆成“供给扰动 -> 原油/化工期货 -> A股油运、油服、煤化工”的链条，别只停留在地缘叙事本身。",
+            "全球债市大跌先影响的是估值久期，A股开盘前更该盯港股互联网、高贝塔成长和中概映射，而不是把所有板块一刀切。",
+            "黄金大跌要先分清是流动性挤兑还是风险偏好回升；先看美元、美债收益率和商品是否共振，再判断黄金股、资源股和防御资产该防守还是回补。",
+        ]
+    if category["id"] == "china-macro":
+        return [
+            "如果地产政策从表态走向销售和按揭利率改善，A股不一定先买地产本身，更该盯券商、玻璃、纯碱、建材这些弹性更大的环节。",
+            "如果宽信用开始落到专项债和实物工作量，再看工程机械、有色和运输链条，通常比总量数据本身更早反映在价格上。",
+            "如果只有政策 headline 而社融、销售和价格没有跟上，就按事件波段看，不按长线定投看。",
+        ]
+    if category["id"] == "china-markets":
+        return [
+            "隔夜美债、黄金、原油的共振方向，往往先决定A股高估值成长和资源红利谁更占上风。",
+            "如果港股和中概先修复，再看券商和高贝塔成长有没有量能接力；没有接力，更多还是情绪反抽。",
+            "真正能把事件线做成趋势线的，不是标题数量，而是成交额、北向和相关期货有没有同步放大。",
+        ]
+    chains = CATEGORY_PLAYBOOK.get(category["id"], [])
+    if chains:
+        if cycle_name == "风险收缩":
+            return [chains[2], chains[0], chains[1]][:3]
+        return chains[:3]
+    return [
+        "先盯 headline 能否传导到订单、价格或资金，而不是只看情绪热度。",
+        "把板块拆成上游、中游、下游和配套环节，优先跟踪弹性更大的变量。",
+        "没有二次验证时，以跟踪和分批观察替代一次性重仓。",
+    ]
+
+
+def build_economist_take(category: dict[str, Any], priority_stories: list[dict[str, Any]], cycle_name: str) -> str:
+    anchor = priority_stories[0]["title"] if priority_stories else "暂无主线"
+    setup = detect_market_setup(category, priority_stories)
+    if category["id"] == "focus-news":
+        return (
+            f"如果把当前位置放在{'海外软着陆预期摇摆叠加再定价' if setup == 'global_repricing' else '事件驱动的资产重排'}框架里看，"
+            f"《{shorten_title(anchor, 26)}》真正重要的地方，不是 headline 本身，而是它会不会继续把美债、油、金、股和人民币拉进同一条定价链。"
+            "对读者来说，更有价值的不是马上站队，而是先判断A股明天会先交易资源、防御还是风险偏好修复，然后再决定是做事件节奏还是继续观望。"
+        )
+    if category["id"] == "china-macro":
+        return (
+            f"如果把{category['name']}放在弱复苏与宽信用博弈的阶段里看，领头事件《{shorten_title(anchor, 26)}》只有在社融、销售、价格和施工链条同步改善时，"
+            "才值得从政策交易升级成中期配置。更高弹性的映射往往不在 headline 表面，而在玻璃、纯碱、建材、券商这类二阶受益环节。"
+        )
+    if category["id"] == "global-macro":
+        return (
+            f"从全球定价看，《{shorten_title(anchor, 26)}》代表的是利率、风险偏好和大宗商品重新找平衡。"
+            "对A股更关键的是外盘压力最终传到估值还是传到成本，如果是前者，先影响高久期成长；如果是后者，先影响资源、化工和防御资产。"
+        )
+    return (
+        f"从定价逻辑看，{category['name']} 当前处在“{cycle_name}”阶段。领头事件是《{shorten_title(anchor, 26)}》，"
+        f"但市场真正定价的不是标题本身，而是它能否沿着 {category['lens']} 继续扩散。"
+    )
+
+
+def build_ai_prompt(
+    config: dict[str, Any],
+    category: dict[str, Any],
+    all_stories: list[dict[str, Any]],
+    window_start: datetime,
+    now: datetime,
+) -> str:
+    news_block = "\n".join(
+        f"{index}. [{story['source']}] {story['title']} (时间：{story.get('publishedAt') or '未标注'}；影响分：{story['impactScore']})"
+        for index, story in enumerate(all_stories[:FULL_STORY_LIMIT], start=1)
+    )
+    personas_block = "\n".join(
+        f"- 角色：{persona['role']}；网名：{persona['handle']}；关注：{persona['style']}"
+        for persona in config["personas"]
+    )
+    playbook = "\n".join(f"- {item}" for item in CATEGORY_PLAYBOOK.get(category["id"], []))
+    return f"""
+你是一名中文财经总编兼策略分析师，要为一个正式投研新闻站写单个板块的全天候简报。
+
+板块：{category['name']}
+板块描述：{category['description']}
+观察镜头：{category['lens']}
+分析窗口：{window_start.strftime("%Y-%m-%d %H:%M")} 到 {now.strftime("%Y-%m-%d %H:%M")}（Asia/Shanghai）
+
+原始新闻如下，只能基于这些标题做判断，不要虚构事实、数字、来源或个股代码：
+{news_block}
+
+写作要求：
+1. 不要出现“AI”“自动生成”等字样。
+2. 重点排序必须按影响力，而不是按时间顺序。
+3. cycleView 要先回答“现在更像什么周期/阶段”，并明确 A股开盘前最该先看的变量。
+4. strategyTake 必须像研究员备忘录，不直接喊单，要讲节奏、验证条件、适合先看哪些板块，以及更适合事件交易还是分批观察/定投。
+5. 可以借鉴投资联想法，把 headline 拆成“headline -> 传导链 -> 更高弹性的环节/变量”，但不要机械套用。
+6. linkageIdeas 写成三条专业提示，每条都要体现“headline -> 传导链 -> 更该盯的变量/环节”。
+
+这个板块的联想链参考：
+{playbook or '- 暂无固定链条，请根据标题自行提炼。'}
+
+必须使用以下 25 个角色与网名，各出现一次：
+{personas_block}
+""".strip()
 
 
 if __name__ == "__main__":
