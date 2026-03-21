@@ -469,6 +469,10 @@ a {
   content: "−";
 }
 
+.board-cluster[open] {
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .board-cluster-summary strong {
   display: block;
   color: #fff8ec;
@@ -552,11 +556,38 @@ a {
   font-size: 1.38rem;
 }
 
+.accordion-side {
+  display: grid;
+  gap: 10px;
+  justify-items: end;
+}
+
 .accordion-copy {
   margin: 0;
   max-width: 460px;
   color: var(--muted);
   line-height: 1.7;
+  text-align: right;
+}
+
+.accordion-chip-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.accordion-chip {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(20, 33, 43, 0.08);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink-soft);
+  font-size: 0.84rem;
+  font-weight: 700;
 }
 
 .accordion-content {
@@ -566,6 +597,20 @@ a {
 
 .accordion-card[open] > .accordion-content {
   animation: accordionReveal 180ms ease;
+}
+
+.accordion-card[open] > .accordion-summary .accordion-chip {
+  background: rgba(33, 95, 208, 0.08);
+  border-color: rgba(33, 95, 208, 0.12);
+}
+
+.accordion-card[open] > .accordion-summary::before {
+  content: "";
+  position: absolute;
+  inset: 12px auto 12px 10px;
+  width: 4px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #215fd0, #bb6f22);
 }
 
 .hero-card,
@@ -1282,6 +1327,18 @@ a {
   .accordion-summary {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .accordion-side {
+    justify-items: start;
+  }
+
+  .accordion-copy {
+    text-align: left;
+  }
+
+  .accordion-chip-row {
+    justify-content: flex-start;
   }
 }
 

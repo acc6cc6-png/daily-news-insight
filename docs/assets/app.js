@@ -52,7 +52,6 @@ async function bootstrap() {
 
     renderSiteChrome();
     renderSidebarBoards();
-    renderTabs();
     renderHistory();
     renderPage();
   } catch (error) {
@@ -123,7 +122,7 @@ function renderPage() {
   renderComments(category);
   renderSources(category);
   renderSidebarBoards();
-  renderTabs();
+  renderSectionSummaries(category);
   toggleLatestIndicator();
   syncSectionButtons();
 }
@@ -355,6 +354,41 @@ function renderSources(category) {
     .join("");
 }
 
+function renderSectionSummaries(category) {
+  const compass = state.digest?.tradeCompass;
+  const pulse = state.digest?.marketPulse;
+  const firstPriority = category.priorityStories?.[0];
+  const firstComment = category.personaComments?.[0];
+  const sourceKinds = new Set(
+    (category.sourcesUsed || [])
+      .map((source) => {
+        const full = state.digest?.sourceRegistry?.find((item) => item.id === source.id) ?? source;
+        return sourceKindLabel(full.kind);
+      })
+      .filter(Boolean),
+  );
+
+  setText("#summary-compass-bias", compass?.biasLabel || "等待确认");
+  setText("#summary-compass-watch", `${compass?.watchlist?.length || 0} 个观察项`);
+  setText("#summary-pulse-count", `${pulse?.highlights?.length || 0} 条主线`);
+  setText("#summary-pulse-window", state.digest?.edition?.windowLabel || "-");
+  setText("#summary-priority-count", `${category.priorityStories?.length || 0} 条重点`);
+  setText("#summary-priority-top", firstPriority ? shortenText(firstPriority.title, 18) : "等待排序");
+  setText("#summary-feed-count", `${category.allStories?.length || 0} 条动态`);
+  setText("#summary-feed-window", category.windowLabel || "-");
+  setText("#summary-overview-board", category.name || "-");
+  setText("#summary-overview-lens", shortenText(category.lens || "-", 16));
+  setText("#summary-comments-count", `${category.personaComments?.length || 0} 个角色`);
+  setText("#summary-comments-role", firstComment ? firstComment.role : "等待观点");
+  setText("#summary-sources-count", `${category.sourcesUsed?.length || 0} 个来源`);
+  setText("#summary-sources-mix", Array.from(sourceKinds).join(" / ") || "等待来源");
+
+  const compassBias = document.querySelector("#summary-compass-bias");
+  if (compassBias) {
+    compassBias.className = `accordion-chip ${signalClass(compass?.biasSignal || "watch")}`;
+  }
+}
+
 function renderSidebarBoards() {
   const container = document.querySelector("#sidebar-category-list");
   if (!container || !state.digest) {
@@ -423,36 +457,6 @@ function renderSidebarBoards() {
   });
 
   bindAccordionEvents(container);
-}
-
-function renderTabs() {
-  const container = document.querySelector("#category-tabs");
-  if (!container || !state.digest) {
-    return;
-  }
-
-  container.innerHTML = state.digest.categories
-    .map((category) => {
-      const active = category.id === state.activeCategoryId;
-      return `
-        <button
-          class="tab-button ${active ? "is-active" : ""}"
-          type="button"
-          data-category-id="${escapeHtml(category.id)}"
-        >
-          ${escapeHtml(category.name)}
-        </button>
-      `;
-    })
-    .join("");
-
-  container.querySelectorAll("[data-category-id]").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.activeCategoryId = button.getAttribute("data-category-id");
-      renderPage();
-      scrollToSection("section-top");
-    });
-  });
 }
 
 function renderHistory() {
@@ -649,4 +653,12 @@ function escapeHtml(value) {
 
 function escapeAttribute(value) {
   return escapeHtml(value);
+}
+
+function shortenText(value, limit) {
+  const text = String(value ?? "");
+  if (text.length <= limit) {
+    return text;
+  }
+  return `${text.slice(0, Math.max(0, limit - 1))}…`;
 }
