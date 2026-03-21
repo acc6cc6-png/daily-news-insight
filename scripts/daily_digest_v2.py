@@ -751,8 +751,7 @@ def build_digest(
 
     return {
         "site": {
-            "title": config["site"]["title"],
-            "subtitle": "十板块全天候新闻流与重点研判",
+            **config["site"],
         },
         "edition": {
             "generatedAt": iso_clock(now),

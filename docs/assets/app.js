@@ -22,6 +22,8 @@ async function bootstrap() {
     state.history = Array.isArray(history) ? history : [];
     state.activeCategoryId = digest.categories?.[0]?.id ?? null;
 
+    renderSiteChrome();
+    renderSidebarBoards();
     renderTabs();
     renderHistory();
     renderPage();
@@ -34,6 +36,13 @@ function bindChromeEvents() {
   document.querySelector("#history-open")?.addEventListener("click", () => toggleHistory(true));
   document.querySelector("#history-close")?.addEventListener("click", () => toggleHistory(false));
   document.querySelector("#history-close-button")?.addEventListener("click", () => toggleHistory(false));
+
+  document.querySelectorAll("[data-section-target]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const id = button.getAttribute("data-section-target");
+      scrollToSection(id);
+    });
+  });
 }
 
 async function fetchJson(url, fallback = null) {
@@ -51,10 +60,25 @@ async function fetchJson(url, fallback = null) {
   }
 }
 
+function renderSiteChrome() {
+  if (!state.digest) {
+    return;
+  }
+
+  const site = state.digest.site ?? {};
+  setText("#site-title", site.title || "小程AI的新闻日报");
+  setText("#site-subtitle", site.subtitle || "跨市场重点新闻与投研摘要");
+  setText("#contact-author", site.author || site.title || "小程AI");
+  setText("#contact-link", site.contact_label || "GitHub @acc6cc6-png");
+  setHref("#contact-link", site.contact_url || "https://github.com/acc6cc6-png");
+  setHref("#repo-link", site.repo_url || "https://github.com/acc6cc6-png/daily-news-insight");
+}
+
 function renderPage() {
   if (!state.digest) {
     return;
   }
+
   const category = getActiveCategory();
   if (!category) {
     return;
@@ -67,17 +91,28 @@ function renderPage() {
   renderFeeds(category);
   renderComments(category);
   renderSources(category);
+  renderSidebarBoards();
+  renderTabs();
   toggleLatestIndicator();
 }
 
 function renderHeader(category) {
   const edition = state.digest.edition;
-  setText("#hero-kicker", state.digest.site.subtitle);
+
+  setText("#hero-kicker", state.digest.site.subtitle || "跨市场重点新闻与投研摘要");
   setText("#hero-title", category.name);
   setText("#hero-lead", category.lead);
   setText("#generated-badge", `${edition.generatedAt} 更新`);
-  setText("#window-banner", `统计窗口：${edition.windowLabel} ｜ 当前聚焦 ${category.name}`);
+  setText("#window-banner", `统计窗口：${edition.windowLabel} · 当前聚焦 ${category.name}`);
   setText("#sidebar-window", edition.windowLabel);
+  setText("#metric-window", category.windowLabel);
+  setText("#metric-generated", edition.generatedAt);
+  setText("#metric-mode", modeLabel(edition.mode));
+  setText("#metric-category", category.name);
+  setText("#story-total", `${category.stats.allStoryCount} 条动态`);
+  setText("#priority-total", `${category.stats.priorityCount} 条重点`);
+
+  document.title = `${category.name} | ${state.digest.site.title || "小程AI的新闻日报"}`;
 }
 
 function renderPulse() {
@@ -113,13 +148,8 @@ function renderPulse() {
 function renderOverview(category) {
   setText("#cycle-view", category.cycleView);
   setText("#strategy-take", category.strategyTake);
-  setText("#metric-window", category.windowLabel);
-  setText("#metric-generated", state.digest.edition.generatedAt);
-  setText("#metric-mode", modeLabel(state.digest.edition.mode));
-  setText("#story-total", `${category.stats.allStoryCount} 条动态`);
-  setText("#priority-total", `${category.stats.priorityCount} 条重点`);
-  setText("#lens-copy", category.lens);
   setText("#analyst-copy", category.economistTake);
+  setText("#lens-copy", category.lens);
 
   const linkageList = document.querySelector("#linkage-list");
   if (linkageList) {
@@ -143,8 +173,8 @@ function renderSignals(category) {
 }
 
 function renderFeeds(category) {
-  renderStoryList("#all-stories-list", category.allStories, "full");
   renderStoryList("#priority-stories-list", category.priorityStories, "priority");
+  renderStoryList("#all-stories-list", category.allStories, "full");
 }
 
 function renderStoryList(selector, stories, layout) {
@@ -156,6 +186,11 @@ function renderStoryList(selector, stories, layout) {
   container.innerHTML = stories
     .map((story) => {
       const badge = layout === "priority" ? `#${story.priorityRank}` : `#${story.index}`;
+      const origin =
+        layout === "priority" && story.isSynthetic && story.sourceTitle
+          ? `<p class="story-origin">关联原始标题：${escapeHtml(story.sourceTitle)}</p>`
+          : "";
+
       return `
         <article class="story-card story-card--${layout}">
           <div class="story-header">
@@ -163,8 +198,9 @@ function renderStoryList(selector, stories, layout) {
             <span class="story-signal ${signalClass(story.signal)}">${escapeHtml(story.impactLabel || story.signalLabel)}</span>
           </div>
           <h4>${escapeHtml(story.title)}</h4>
-          <p>${escapeHtml(story.summary)}</p>
+          <p class="story-summary">${escapeHtml(story.summary)}</p>
           <p class="signal-copy">${escapeHtml(story.impactReason || story.reason)}</p>
+          ${origin}
           <div class="story-footer">
             <span class="story-source">${escapeHtml(story.source)}${story.publishedAt ? ` · ${escapeHtml(story.publishedAt)}` : ""}</span>
             <a class="story-link" href="${escapeAttribute(story.url)}" target="_blank" rel="noreferrer">原文</a>
@@ -219,6 +255,38 @@ function renderSources(category) {
     .join("");
 }
 
+function renderSidebarBoards() {
+  const container = document.querySelector("#sidebar-category-list");
+  if (!container || !state.digest) {
+    return;
+  }
+
+  container.innerHTML = state.digest.categories
+    .map((category) => {
+      const active = category.id === state.activeCategoryId;
+      return `
+        <button
+          class="board-button ${active ? "is-active" : ""}"
+          type="button"
+          data-category-id="${escapeHtml(category.id)}"
+        >
+          <span class="board-button-title">${escapeHtml(category.name)}</span>
+          <span class="board-button-copy">${escapeHtml(category.description)}</span>
+          <span class="board-button-meta">${category.stats.priorityCount} 条重点 · ${category.stats.allStoryCount} 条动态</span>
+        </button>
+      `;
+    })
+    .join("");
+
+  container.querySelectorAll("[data-category-id]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.activeCategoryId = button.getAttribute("data-category-id");
+      renderPage();
+      scrollToSection("section-top");
+    });
+  });
+}
+
 function renderTabs() {
   const container = document.querySelector("#category-tabs");
   if (!container || !state.digest) {
@@ -243,8 +311,8 @@ function renderTabs() {
   container.querySelectorAll("[data-category-id]").forEach((button) => {
     button.addEventListener("click", () => {
       state.activeCategoryId = button.getAttribute("data-category-id");
-      renderTabs();
       renderPage();
+      scrollToSection("section-top");
     });
   });
 }
@@ -277,6 +345,7 @@ function renderHistory() {
       const path = button.getAttribute("data-history-path");
       await loadEdition(path);
       toggleHistory(false);
+      scrollToSection("section-top");
     });
   });
 }
@@ -295,7 +364,7 @@ async function loadEdition(path) {
       state.activeCategoryId = digest.categories?.[0]?.id ?? null;
     }
 
-    renderTabs();
+    renderSiteChrome();
     renderPage();
   } catch (error) {
     renderFatalState(error);
@@ -323,18 +392,31 @@ function getActiveCategory() {
   return state.digest?.categories?.find((item) => item.id === state.activeCategoryId) ?? null;
 }
 
+function scrollToSection(id) {
+  if (!id) {
+    return;
+  }
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 function modeLabel(mode) {
   if (mode === "ai") {
-    return "正式版";
+    return "正式编写";
   }
   if (mode === "mixed") {
-    return "研究快照";
+    return "混合模式";
   }
-  return "快照版";
+  return "规则快照";
 }
 
 function sourceKindLabel(kind) {
-  return kind === "rss" ? "国际媒体" : kind === "newsnow" ? "中文聚合" : "来源";
+  if (kind === "rss") {
+    return "国际媒体";
+  }
+  if (kind === "newsnow") {
+    return "中文聚合";
+  }
+  return "来源";
 }
 
 function signalClass(signal) {
@@ -364,13 +446,20 @@ function setText(selector, value) {
   }
 }
 
+function setHref(selector, value) {
+  const node = document.querySelector(selector);
+  if (node) {
+    node.setAttribute("href", value ?? "#");
+  }
+}
+
 function renderFatalState(error) {
   console.error(error);
   setText("#hero-title", "页面加载失败");
   setText("#hero-lead", error?.message ?? "无法读取最新数据");
   setText("#window-banner", "请确认 docs/data/latest/digest.json 已经生成。");
   setText("#cycle-view", "如果这是 GitHub Pages，请检查 Actions 是否完成，或稍后刷新。");
-  setText("#strategy-take", "站点前端只读取静态 JSON；如果数据不存在，页面不会自行生成内容。");
+  setText("#strategy-take", "前端只读取静态 JSON；如果数据不存在，页面不会自动生成内容。");
 }
 
 function escapeHtml(value) {

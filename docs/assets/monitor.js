@@ -40,16 +40,16 @@ function renderMonitor(snapshot) {
           </div>
           <p class="monitor-copy">${escapeHtml(category.description)}</p>
           <div class="monitor-meta">
-            <span class="story-meta">${escapeHtml(category.sourceIds.join(", "))}</span>
+            <span class="story-source">${escapeHtml(category.sourceIds.join(", "))}</span>
           </div>
           <ol class="monitor-list">
             ${category.items
-              .slice(0, 20)
+              .slice(0, 24)
               .map(
                 (item) => `
                   <li class="monitor-item">
                     <a href="${escapeAttribute(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)}</a>
-                    <div class="story-meta">${escapeHtml(item.sourceLabel)}${item.publishedAt ? ` · ${escapeHtml(item.publishedAt)}` : ""}</div>
+                    <div class="story-source">${escapeHtml(item.sourceLabel)}${item.publishedAt ? ` · ${escapeHtml(item.publishedAt)}` : ""}</div>
                   </li>
                 `,
               )
@@ -70,7 +70,7 @@ function renderMonitorError(error) {
   if (container) {
     container.innerHTML = `
       <article class="monitor-card">
-        <h4>原始数据载入失败</h4>
+        <h4>原始数据读取失败</h4>
         <p>${escapeHtml(error?.message ?? "无法读取 raw 数据")}</p>
       </article>
     `;

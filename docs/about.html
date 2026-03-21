@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>部署说明 | Daily News Insight</title>
+    <title>关于本站 | 小程AI的新闻日报</title>
     <meta
       name="description"
-      content="了解 Daily News Insight 的抓取方式、更新节奏和 GitHub Pages 部署结构。"
+      content="了解小程AI的新闻日报的更新机制、部署方式、数据结构与作者联系。"
     />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,72 +21,94 @@
     <div class="app-shell">
       <aside class="app-sidebar">
         <div class="sidebar-brand">
-          <p class="eyebrow">Deployment Notes</p>
-          <h1>Daily News Insight</h1>
-          <p class="sidebar-copy">这是一套“抓取原始新闻 -> 生成静态 JSON -> GitHub Pages 发布”的静态部署方案。</p>
+          <p class="eyebrow">XIAOCHENG AI</p>
+          <h1>小程AI的新闻日报</h1>
+          <p class="sidebar-copy">这是一套“抓取原始新闻 -> 生成静态 JSON -> GitHub Pages 发布”的日报站点方案。</p>
         </div>
 
         <nav class="page-nav" aria-label="站点菜单">
           <a class="page-link" href="./index.html">
-            <span class="page-link-title">主简报</span>
-            <span class="page-link-copy">查看全量动态、重点排序与策略判断</span>
+            <span class="page-link-title">新闻日报</span>
+            <span class="page-link-copy">查看重点排序、全天动态、周期判断与多角色观察</span>
           </a>
           <a class="page-link" href="./monitor.html">
-            <span class="page-link-title">源数据监控</span>
-            <span class="page-link-copy">查看各板块抓到的原始标题与来源</span>
+            <span class="page-link-title">原始监控</span>
+            <span class="page-link-copy">排查抓取源、覆盖范围和原始标题质量</span>
           </a>
           <a class="page-link is-active" href="./about.html">
-            <span class="page-link-title">部署说明</span>
-            <span class="page-link-copy">更新频率、数据结构与发布路径</span>
+            <span class="page-link-title">关于本站</span>
+            <span class="page-link-copy">更新机制、部署方式、数据结构和作者联系</span>
           </a>
         </nav>
 
         <section class="sidebar-note">
-          <p class="sidebar-note-title">当前发布方式</p>
-          <p class="sidebar-note-copy">GitHub Actions 定时跑脚本，把生成结果写到 `docs/data`，然后 GitHub Pages 直接发布。</p>
+          <p class="sidebar-note-title">默认刷新节奏</p>
+          <p class="sidebar-note-copy">北京时间 07:05、12:30、17:05、21:35 自动更新，也支持 GitHub Actions 手动触发。</p>
+        </section>
+
+        <section class="contact-card">
+          <p class="eyebrow">Author</p>
+          <h2>小程AI</h2>
+          <a href="https://github.com/acc6cc6-png" target="_blank" rel="noreferrer">GitHub @acc6cc6-png</a>
+          <a href="https://github.com/acc6cc6-png/daily-news-insight" target="_blank" rel="noreferrer">项目仓库</a>
         </section>
       </aside>
 
       <main class="app-main about-layout">
-        <div class="update-banner">当前默认会在北京时间 07:05、12:30、17:05、21:35 自动刷新，也支持手动触发。</div>
+        <div class="update-banner">这个站点完全可以托管在 GitHub 免费服务上，前端只读取静态 JSON，不依赖自建后端。</div>
 
         <section class="summary-card">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Architecture</p>
-              <h3>站点结构</h3>
+              <p class="eyebrow">Positioning</p>
+              <h3>站点定位</h3>
             </div>
           </div>
           <div class="about-copy">
-            <p>站点前端是纯静态页面，首页只读取 `docs/data/latest/digest.json` 和历史快照，不依赖后端服务。</p>
-            <p>抓取层会聚合中文快讯源和国际 RSS 源，然后按板块做去重、全量汇总、重点排序、周期判断和联想链路整理。</p>
+            <p>站点的目标不是做“新闻列表搬运”，而是把从昨收后到现在的跨市场信息压缩成更像投研晨会的结构：全量动态、重点主线、周期判断、策略建议和联想链路。</p>
+            <p>其中“重点新闻”不再简单按时间排序，而是先做筛选、聚类和主线重写，尽量贴近市场实际定价顺序。</p>
           </div>
         </section>
 
         <section class="panel-card">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Update Flow</p>
+              <p class="eyebrow">Workflow</p>
               <h3>更新流程</h3>
             </div>
           </div>
           <ol class="step-list">
             <li>GitHub Actions 定时运行 `scripts/daily_digest_v2.py`。</li>
-            <li>脚本抓取原始新闻，生成 `docs/data/latest/digest.json` 与历史归档。</li>
-            <li>同一个 workflow 会把 `docs/` 打包并部署到 GitHub Pages。</li>
+            <li>脚本抓取新闻源，生成 `docs/data/latest/digest.json` 与原始快照。</li>
+            <li>同一个仓库直接通过 GitHub Pages 发布 `docs/` 目录。</li>
+            <li>前端页面只读 JSON，因此上线稳定、成本低，也方便回溯历史快照。</li>
           </ol>
         </section>
 
         <section class="panel-card">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Secrets</p>
-              <h3>密钥与本地运行</h3>
+              <p class="eyebrow">Deployment</p>
+              <h3>部署方式</h3>
             </div>
           </div>
           <div class="about-copy">
-            <p>如果仓库设置了 `OPENAI_API_KEY`，脚本会优先使用更正式的编辑层输出；如果没有，也能退回到规则模板模式继续生成页面。</p>
-            <p>本地运行时可以在仓库根目录的 `.env.local` 中放入密钥；公开仓库里不要提交这个文件。</p>
+            <p>你现在这套就是 GitHub 免费托管思路：代码放仓库，任务放 Actions，页面放 Pages。前端不暴露 API key，Key 只放在仓库 Secrets 或本地 `.env.local`。</p>
+            <p>如果后续要继续扩展，也可以加更多板块、更多新闻源，或者把重点排序算法继续往“A股开盘前最该看什么”这一套去收紧。</p>
+          </div>
+        </section>
+
+        <section class="panel-card">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Contact</p>
+              <h3>作者与联系</h3>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p>作者：小程AI</p>
+            <p>联系入口：<a href="https://github.com/acc6cc6-png" target="_blank" rel="noreferrer">GitHub @acc6cc6-png</a></p>
+            <p>项目仓库：<a href="https://github.com/acc6cc6-png/daily-news-insight" target="_blank" rel="noreferrer">daily-news-insight</a></p>
           </div>
         </section>
       </main>

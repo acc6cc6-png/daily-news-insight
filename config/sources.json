@@ -1,9 +1,13 @@
 {
   "site": {
-    "title": "Daily News Insight",
-    "subtitle": "十板块 AI 早报",
+    "title": "小程AI的新闻日报",
+    "subtitle": "跨市场重点新闻与投研摘要",
     "timezone": "Asia/Shanghai",
-    "edition_time": "07:05"
+    "edition_time": "07:05",
+    "author": "小程AI",
+    "contact_label": "GitHub @acc6cc6-png",
+    "contact_url": "https://github.com/acc6cc6-png",
+    "repo_url": "https://github.com/acc6cc6-png/daily-news-insight"
   },
   "persona_count": 25,
   "personas": [

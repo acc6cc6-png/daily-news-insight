@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>源数据监控 | Daily News Insight</title>
+    <title>原始监控 | 小程AI的新闻日报</title>
     <meta
       name="description"
-      content="查看 Daily News Insight 当前抓到的原始新闻标题、来源和板块分布。"
+      content="查看小程AI的新闻日报当前抓到的原始新闻标题、来源和板块覆盖情况。"
     />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,44 +22,52 @@
     <div class="app-shell">
       <aside class="app-sidebar">
         <div class="sidebar-brand">
-          <p class="eyebrow">Raw Feed Monitor</p>
-          <h1>Daily News Insight</h1>
-          <p class="sidebar-copy">这里展示每个板块抓到的原始标题，方便核对来源质量、覆盖范围和去重效果。</p>
+          <p class="eyebrow">RAW MONITOR</p>
+          <h1>小程AI的新闻日报</h1>
+          <p class="sidebar-copy">这里展示每个板块抓到的原始标题，方便判断新闻源是否跑偏，还是后续总结层需要继续优化。</p>
         </div>
 
         <nav class="page-nav" aria-label="站点菜单">
           <a class="page-link" href="./index.html">
-            <span class="page-link-title">主简报</span>
-            <span class="page-link-copy">回到全量动态、重点排序和策略判断页面</span>
+            <span class="page-link-title">新闻日报</span>
+            <span class="page-link-copy">回到重点排序、策略摘要和多角色观察页面</span>
           </a>
           <a class="page-link is-active" href="./monitor.html">
-            <span class="page-link-title">源数据监控</span>
-            <span class="page-link-copy">查看抓取结果、来源分布和原始标题</span>
+            <span class="page-link-title">原始监控</span>
+            <span class="page-link-copy">检查抓取结果、来源分布和原始标题样本</span>
           </a>
           <a class="page-link" href="./about.html">
-            <span class="page-link-title">部署说明</span>
-            <span class="page-link-copy">GitHub Actions、Pages 与更新方式说明</span>
+            <span class="page-link-title">关于本站</span>
+            <span class="page-link-copy">查看部署方式、更新节奏和作者联系</span>
           </a>
         </nav>
 
         <section class="sidebar-note">
           <p class="sidebar-note-title">怎么用</p>
-          <p class="sidebar-note-copy">
-            如果某个板块内容质量下降，先来这里看是抓取源的问题，还是后续总结层的问题。
-          </p>
+          <p class="sidebar-note-copy">如果某个板块的“重点新闻”看起来不对，先来这里看原始抓取是不是已经偏了，再决定是改新闻源还是改排序逻辑。</p>
+        </section>
+
+        <section class="contact-card">
+          <p class="eyebrow">Author</p>
+          <h2>小程AI</h2>
+          <a href="https://github.com/acc6cc6-png" target="_blank" rel="noreferrer">GitHub @acc6cc6-png</a>
+          <a href="https://github.com/acc6cc6-png/daily-news-insight" target="_blank" rel="noreferrer">项目仓库</a>
         </section>
       </aside>
 
       <main class="app-main">
-        <div class="update-banner">默认展示每个板块近 24 条原始动态，适合快速检查覆盖、时效和来源稳定性。</div>
+        <div class="update-banner">这里默认展示每个板块的部分原始标题，用来检查覆盖范围、时效性和源头质量。</div>
 
-        <header class="main-header">
-          <div>
-            <p class="eyebrow">Raw Snapshot</p>
-            <h2 class="main-title">源数据监控</h2>
-          </div>
-          <div class="header-actions">
-            <div class="status-pill" id="raw-generated">读取中…</div>
+        <header class="hero-card">
+          <div class="hero-grid">
+            <div class="hero-main">
+              <p class="eyebrow">Raw Snapshot</p>
+              <h2 class="main-title">原始数据监控</h2>
+              <p class="hero-lead">如果你觉得某个板块“抓到的重点不对”，这个页面就是最先要看的地方。</p>
+            </div>
+            <div class="hero-side">
+              <div class="hero-pill" id="raw-generated">正在读取</div>
+            </div>
           </div>
         </header>
 
@@ -69,7 +77,7 @@
               <p class="eyebrow">Categories</p>
               <h3>板块抓取概览</h3>
             </div>
-            <p class="section-hint">每个板块显示当前接入的 source id 和原始标题样本</p>
+            <p class="section-hint">每个板块展示当前接入的 source id 和原始标题样本</p>
           </div>
           <div class="monitor-grid" id="monitor-grid"></div>
         </section>
