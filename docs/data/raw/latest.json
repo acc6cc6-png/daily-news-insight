@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-21 14:09",
+  "generatedAt": "2026-03-21 17:33",
   "windowStart": "2026-03-20 15:00",
-  "windowLabel": "03-20 15:00 - 03-21 14:09",
+  "windowLabel": "03-20 15:00 - 03-21 17:33",
   "timezone": "Asia/Shanghai",
   "sourceCount": 36,
   "categories": [
@@ -17,13 +17,13 @@
         "zaobao"
       ],
       "windowStart": "2026-03-20 15:00",
-      "windowLabel": "03-20 15:00 - 03-21 14:09",
+      "windowLabel": "03-20 15:00 - 03-21 17:33",
       "itemCount": 24,
       "items": [
         {
-          "title": "我国科学家首次发现水稻多年生“长寿基因”",
-          "url": "https://wallstreetcn.com/livenews/3074412",
-          "publishedAt": "2026-03-21 13:41",
+          "title": "伊媒说美以袭击伊朗铀浓缩设施",
+          "url": "https://wallstreetcn.com/livenews/3074437",
+          "publishedAt": "2026-03-21 17:15",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -33,21 +33,45 @@
           "signal": "watch"
         },
         {
-          "title": "铝价飙升至四年来高位 中东冲突扰乱铝供应",
-          "url": "https://www.cls.cn/detail/2320293",
-          "publishedAt": "2026-03-21 13:40",
+          "title": "美以袭击伊朗纳坦兹核设施",
+          "url": "https://www.cls.cn/detail/2320348",
+          "publishedAt": "2026-03-21 17:14",
           "sourceId": "cls-telegraph",
           "sourceLabel": "财联社电报",
           "sourceHome": "https://www.cls.cn",
           "sourceType": "newsnow",
           "rank": 1,
           "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "伊拉克官员称，在伊朗冲突爆发前，巴士拉原油日产量为330万桶；受出口受阻影响，目前巴士拉原油日产量已降至90万桶。",
+          "url": "https://wallstreetcn.com/livenews/3074436",
+          "publishedAt": "2026-03-21 17:11",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 2,
+          "sourcePriority": 1,
           "signal": "bearish"
         },
         {
-          "title": "欧盟成员国被敦促降低天然气储存目标",
-          "url": "https://www.cls.cn/detail/2320291",
-          "publishedAt": "2026-03-21 13:35",
+          "title": "国家能源局：截至2月底全国电动汽车充电基础设施（枪）总数达到2101.万个，同比增长47.8%",
+          "url": "https://wallstreetcn.com/livenews/3074435",
+          "publishedAt": "2026-03-21 17:09",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 3,
+          "sourcePriority": 1,
+          "signal": "bullish"
+        },
+        {
+          "title": "伊朗武装部队称正在霍尔木兹海峡采取重大行动",
+          "url": "https://www.cls.cn/detail/2320346",
+          "publishedAt": "2026-03-21 17:05",
           "sourceId": "cls-telegraph",
           "sourceLabel": "财联社电报",
           "sourceHome": "https://www.cls.cn",
@@ -57,69 +81,9 @@
           "signal": "watch"
         },
         {
-          "title": "消息人士称美国正计划夺取伊朗“核储备”",
-          "url": "https://wallstreetcn.com/livenews/3074411",
-          "publishedAt": "2026-03-21 13:15",
-          "sourceId": "wallstreetcn-quick",
-          "sourceLabel": "华尔街见闻快讯",
-          "sourceHome": "https://wallstreetcn.com",
-          "sourceType": "newsnow",
-          "rank": 2,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "消息人士称美国正计划夺取伊朗“核储备”",
-          "url": "https://www.cls.cn/detail/2320290",
-          "publishedAt": "2026-03-21 13:11",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 3,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "库克回应OpenClaw带动Mac Mini大卖",
-          "url": "https://www.cls.cn/detail/2320285",
-          "publishedAt": "2026-03-21 13:03",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 4,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "美国载人绕月任务火箭和飞船重回发射台",
-          "url": "https://wallstreetcn.com/livenews/3074410",
-          "publishedAt": "2026-03-21 13:01",
-          "sourceId": "wallstreetcn-quick",
-          "sourceLabel": "华尔街见闻快讯",
-          "sourceHome": "https://wallstreetcn.com",
-          "sourceType": "newsnow",
-          "rank": 3,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "美国载人绕月任务火箭和飞船重回发射台",
-          "url": "https://www.cls.cn/detail/2320282",
-          "publishedAt": "2026-03-21 12:54",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 5,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "韩国称正与伊朗沟通，效仿日本做法",
-          "url": "https://wallstreetcn.com/livenews/3074409",
-          "publishedAt": "2026-03-21 12:52",
+          "title": "伊朗武装部队称正在霍尔木兹海峡采取重大行动",
+          "url": "https://wallstreetcn.com/livenews/3074434",
+          "publishedAt": "2026-03-21 17:05",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -129,45 +93,9 @@
           "signal": "watch"
         },
         {
-          "title": "一艘散货船在可追踪状态下进入波斯湾",
-          "url": "https://www.cls.cn/detail/2320281",
-          "publishedAt": "2026-03-21 12:43",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 6,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "韩国大田工厂火灾遇难人数升至11人",
-          "url": "https://www.cls.cn/detail/2320280",
-          "publishedAt": "2026-03-21 12:14",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 7,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "商务部部长王文涛会见礼来制药董事长兼首席执行官戴文睿",
-          "url": "https://www.cls.cn/detail/2320279",
-          "publishedAt": "2026-03-21 12:13",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 8,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "华为将发布首款风冷散热手机",
-          "url": "https://wallstreetcn.com/livenews/3074408",
-          "publishedAt": "2026-03-21 12:02",
+          "title": "协创数据：公司及下属企业均与超微电脑没有任何业务合作关系",
+          "url": "https://wallstreetcn.com/livenews/3074433",
+          "publishedAt": "2026-03-21 17:05",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -177,33 +105,9 @@
           "signal": "bullish"
         },
         {
-          "title": "中国石化建成全国最大车用LNG加注网络",
-          "url": "https://www.cls.cn/detail/2320278",
-          "publishedAt": "2026-03-21 12:00",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 9,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "本周全球主要股指普遍收跌 贵金属、能源走势两极分化",
-          "url": "https://www.cls.cn/detail/2320276",
-          "publishedAt": "2026-03-21 11:54",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 10,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "广州公安通报：“梅姨”落网",
-          "url": "https://wallstreetcn.com/livenews/3074407",
-          "publishedAt": "2026-03-21 11:42",
+          "title": "伊拉克国家安全局总部遭无人机袭击",
+          "url": "https://wallstreetcn.com/livenews/3074431",
+          "publishedAt": "2026-03-21 16:59",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -213,21 +117,9 @@
           "signal": "watch"
         },
         {
-          "title": "郑州拟出台8条楼市新政",
-          "url": "https://www.cls.cn/detail/2320272",
-          "publishedAt": "2026-03-21 11:35",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 11,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "以军称正在打击“伊朗政权目标”",
-          "url": "https://wallstreetcn.com/livenews/3074405",
-          "publishedAt": "2026-03-21 11:31",
+          "title": "上海飞深圳一航班起飞后遭遇鸟击，南航通报",
+          "url": "https://wallstreetcn.com/livenews/3074430",
+          "publishedAt": "2026-03-21 16:59",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -237,33 +129,105 @@
           "signal": "watch"
         },
         {
-          "title": "以军称正在打击“伊朗政权目标”",
-          "url": "https://www.cls.cn/detail/2320271",
-          "publishedAt": "2026-03-21 11:30",
+          "title": "协创数据：公司及下属企业与超微电脑无任何业务合作",
+          "url": "https://www.cls.cn/detail/2320345",
+          "publishedAt": "2026-03-21 16:56",
           "sourceId": "cls-telegraph",
           "sourceLabel": "财联社电报",
           "sourceHome": "https://www.cls.cn",
           "sourceType": "newsnow",
-          "rank": 12,
+          "rank": 3,
+          "sourcePriority": 2,
+          "signal": "bullish"
+        },
+        {
+          "title": "伊拉克国家安全局总部遭无人机袭击",
+          "url": "https://www.cls.cn/detail/2320343",
+          "publishedAt": "2026-03-21 16:54",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 4,
           "sourcePriority": 2,
           "signal": "watch"
         },
         {
-          "title": "郑州拟出台8条楼市新政",
-          "url": "https://wallstreetcn.com/livenews/3074404",
-          "publishedAt": "2026-03-21 11:23",
+          "title": "海关总署署长孙梅君会见联合国粮食及农业组织总干事屈冬玉",
+          "url": "https://www.cls.cn/detail/2320341",
+          "publishedAt": "2026-03-21 16:46",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 5,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "伊朗民众新年缅怀革命卫队发言人",
+          "url": "https://www.cls.cn/detail/2320340",
+          "publishedAt": "2026-03-21 16:39",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 6,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "第20次中韩海关合作会议在京召开",
+          "url": "https://wallstreetcn.com/livenews/3074429",
+          "publishedAt": "2026-03-21 16:36",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
           "rank": 8,
           "sourcePriority": 1,
+          "signal": "bullish"
+        },
+        {
+          "title": "健身App暴露航母位置 法国将“采取行动”",
+          "url": "https://www.cls.cn/detail/2320338",
+          "publishedAt": "2026-03-21 16:33",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 7,
+          "sourcePriority": 2,
           "signal": "watch"
         },
         {
-          "title": "陕西实施一揽子贷款贴息政策支持实体经济",
-          "url": "https://wallstreetcn.com/livenews/3074403",
-          "publishedAt": "2026-03-21 11:08",
+          "title": "我国自主研发的期刊评价体系正式发布",
+          "url": "https://www.cls.cn/detail/2320336",
+          "publishedAt": "2026-03-21 16:24",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 8,
+          "sourcePriority": 2,
+          "signal": "bullish"
+        },
+        {
+          "title": "多家纸企发布特种纸涨价函 数码转印纸调涨500元/吨",
+          "url": "https://www.cls.cn/detail/2320335",
+          "publishedAt": "2026-03-21 16:17",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 9,
+          "sourcePriority": 2,
+          "signal": "bullish"
+        },
+        {
+          "title": "我使馆确认韩国大田工厂火灾伤亡者中无中国公民",
+          "url": "https://wallstreetcn.com/livenews/3074428",
+          "publishedAt": "2026-03-21 16:15",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -273,9 +237,9 @@
           "signal": "watch"
         },
         {
-          "title": "Cursor承认新模型基于Kimi训练并致歉，Kimi发文祝贺",
-          "url": "https://wallstreetcn.com/livenews/3074402",
-          "publishedAt": "2026-03-21 10:53",
+          "title": "应对油价飙升，多家航司削减定期航班数量",
+          "url": "https://wallstreetcn.com/livenews/3074427",
+          "publishedAt": "2026-03-21 16:14",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -285,27 +249,63 @@
           "signal": "watch"
         },
         {
-          "title": "湖北证监局原党委书记、局长王广幼接受审查调查",
-          "url": "https://wallstreetcn.com/livenews/3074401",
-          "publishedAt": "2026-03-21 10:32",
+          "title": "美国土安全部停摆僵局持续",
+          "url": "https://www.cls.cn/detail/2320334",
+          "publishedAt": "2026-03-21 16:14",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 10,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "默茨说特朗普对他不太满意",
+          "url": "https://wallstreetcn.com/livenews/3074426",
+          "publishedAt": "2026-03-21 16:13",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
           "rank": 11,
           "sourcePriority": 1,
-          "signal": "bearish"
+          "signal": "watch"
         },
         {
-          "title": "中国核电自主研发的新一代“汉吾·HAN5”压力容器检查系统成功应用",
-          "url": "https://wallstreetcn.com/livenews/3074400",
-          "publishedAt": "2026-03-21 10:27",
+          "title": "伊朗外长说寻求彻底结束战争而非临时停火",
+          "url": "https://wallstreetcn.com/livenews/3074425",
+          "publishedAt": "2026-03-21 16:12",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
           "rank": 12,
           "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "伊朗外长说寻求彻底结束战争而非临时停火",
+          "url": "https://www.cls.cn/detail/2320333",
+          "publishedAt": "2026-03-21 16:11",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 11,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "2025年中国水产养殖产量约占全球的56%",
+          "url": "https://www.cls.cn/detail/2320325",
+          "publishedAt": "2026-03-21 16:05",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 12,
+          "sourcePriority": 2,
           "signal": "watch"
         }
       ]
@@ -322,13 +322,13 @@
         "bbc-business"
       ],
       "windowStart": "2026-03-20 15:00",
-      "windowLabel": "03-20 15:00 - 03-21 14:09",
+      "windowLabel": "03-20 15:00 - 03-21 17:33",
       "itemCount": 24,
       "items": [
         {
-          "title": "我国科学家首次发现水稻多年生“长寿基因”",
-          "url": "https://wallstreetcn.com/livenews/3074412",
-          "publishedAt": "2026-03-21 13:41",
+          "title": "伊媒说美以袭击伊朗铀浓缩设施",
+          "url": "https://wallstreetcn.com/livenews/3074437",
+          "publishedAt": "2026-03-21 17:15",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -338,21 +338,45 @@
           "signal": "watch"
         },
         {
-          "title": "铝价飙升至四年来高位 中东冲突扰乱铝供应",
-          "url": "https://www.cls.cn/detail/2320293",
-          "publishedAt": "2026-03-21 13:40",
+          "title": "美以袭击伊朗纳坦兹核设施",
+          "url": "https://www.cls.cn/detail/2320348",
+          "publishedAt": "2026-03-21 17:14",
           "sourceId": "cls-telegraph",
           "sourceLabel": "财联社电报",
           "sourceHome": "https://www.cls.cn",
           "sourceType": "newsnow",
           "rank": 1,
           "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "伊拉克官员称，在伊朗冲突爆发前，巴士拉原油日产量为330万桶；受出口受阻影响，目前巴士拉原油日产量已降至90万桶。",
+          "url": "https://wallstreetcn.com/livenews/3074436",
+          "publishedAt": "2026-03-21 17:11",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 2,
+          "sourcePriority": 1,
           "signal": "bearish"
         },
         {
-          "title": "欧盟成员国被敦促降低天然气储存目标",
-          "url": "https://www.cls.cn/detail/2320291",
-          "publishedAt": "2026-03-21 13:35",
+          "title": "国家能源局：截至2月底全国电动汽车充电基础设施（枪）总数达到2101.万个，同比增长47.8%",
+          "url": "https://wallstreetcn.com/livenews/3074435",
+          "publishedAt": "2026-03-21 17:09",
+          "sourceId": "wallstreetcn-quick",
+          "sourceLabel": "华尔街见闻快讯",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 3,
+          "sourcePriority": 1,
+          "signal": "bullish"
+        },
+        {
+          "title": "伊朗武装部队称正在霍尔木兹海峡采取重大行动",
+          "url": "https://www.cls.cn/detail/2320346",
+          "publishedAt": "2026-03-21 17:05",
           "sourceId": "cls-telegraph",
           "sourceLabel": "财联社电报",
           "sourceHome": "https://www.cls.cn",
@@ -362,69 +386,9 @@
           "signal": "watch"
         },
         {
-          "title": "消息人士称美国正计划夺取伊朗“核储备”",
-          "url": "https://wallstreetcn.com/livenews/3074411",
-          "publishedAt": "2026-03-21 13:15",
-          "sourceId": "wallstreetcn-quick",
-          "sourceLabel": "华尔街见闻快讯",
-          "sourceHome": "https://wallstreetcn.com",
-          "sourceType": "newsnow",
-          "rank": 2,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "消息人士称美国正计划夺取伊朗“核储备”",
-          "url": "https://www.cls.cn/detail/2320290",
-          "publishedAt": "2026-03-21 13:11",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 3,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "库克回应OpenClaw带动Mac Mini大卖",
-          "url": "https://www.cls.cn/detail/2320285",
-          "publishedAt": "2026-03-21 13:03",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 4,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "美国载人绕月任务火箭和飞船重回发射台",
-          "url": "https://wallstreetcn.com/livenews/3074410",
-          "publishedAt": "2026-03-21 13:01",
-          "sourceId": "wallstreetcn-quick",
-          "sourceLabel": "华尔街见闻快讯",
-          "sourceHome": "https://wallstreetcn.com",
-          "sourceType": "newsnow",
-          "rank": 3,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "美国载人绕月任务火箭和飞船重回发射台",
-          "url": "https://www.cls.cn/detail/2320282",
-          "publishedAt": "2026-03-21 12:54",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 5,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "韩国称正与伊朗沟通，效仿日本做法",
-          "url": "https://wallstreetcn.com/livenews/3074409",
-          "publishedAt": "2026-03-21 12:52",
+          "title": "伊朗武装部队称正在霍尔木兹海峡采取重大行动",
+          "url": "https://wallstreetcn.com/livenews/3074434",
+          "publishedAt": "2026-03-21 17:05",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -434,45 +398,9 @@
           "signal": "watch"
         },
         {
-          "title": "一艘散货船在可追踪状态下进入波斯湾",
-          "url": "https://www.cls.cn/detail/2320281",
-          "publishedAt": "2026-03-21 12:43",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 6,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "韩国大田工厂火灾遇难人数升至11人",
-          "url": "https://www.cls.cn/detail/2320280",
-          "publishedAt": "2026-03-21 12:14",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 7,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "商务部部长王文涛会见礼来制药董事长兼首席执行官戴文睿",
-          "url": "https://www.cls.cn/detail/2320279",
-          "publishedAt": "2026-03-21 12:13",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 8,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "华为将发布首款风冷散热手机",
-          "url": "https://wallstreetcn.com/livenews/3074408",
-          "publishedAt": "2026-03-21 12:02",
+          "title": "协创数据：公司及下属企业均与超微电脑没有任何业务合作关系",
+          "url": "https://wallstreetcn.com/livenews/3074433",
+          "publishedAt": "2026-03-21 17:05",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -482,33 +410,9 @@
           "signal": "bullish"
         },
         {
-          "title": "中国石化建成全国最大车用LNG加注网络",
-          "url": "https://www.cls.cn/detail/2320278",
-          "publishedAt": "2026-03-21 12:00",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 9,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "本周全球主要股指普遍收跌 贵金属、能源走势两极分化",
-          "url": "https://www.cls.cn/detail/2320276",
-          "publishedAt": "2026-03-21 11:54",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 10,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "广州公安通报：“梅姨”落网",
-          "url": "https://wallstreetcn.com/livenews/3074407",
-          "publishedAt": "2026-03-21 11:42",
+          "title": "伊拉克国家安全局总部遭无人机袭击",
+          "url": "https://wallstreetcn.com/livenews/3074431",
+          "publishedAt": "2026-03-21 16:59",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -518,21 +422,9 @@
           "signal": "watch"
         },
         {
-          "title": "郑州拟出台8条楼市新政",
-          "url": "https://www.cls.cn/detail/2320272",
-          "publishedAt": "2026-03-21 11:35",
-          "sourceId": "cls-telegraph",
-          "sourceLabel": "财联社电报",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 11,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "以军称正在打击“伊朗政权目标”",
-          "url": "https://wallstreetcn.com/livenews/3074405",
-          "publishedAt": "2026-03-21 11:31",
+          "title": "上海飞深圳一航班起飞后遭遇鸟击，南航通报",
+          "url": "https://wallstreetcn.com/livenews/3074430",
+          "publishedAt": "2026-03-21 16:59",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -542,33 +434,105 @@
           "signal": "watch"
         },
         {
-          "title": "以军称正在打击“伊朗政权目标”",
-          "url": "https://www.cls.cn/detail/2320271",
-          "publishedAt": "2026-03-21 11:30",
+          "title": "协创数据：公司及下属企业与超微电脑无任何业务合作",
+          "url": "https://www.cls.cn/detail/2320345",
+          "publishedAt": "2026-03-21 16:56",
           "sourceId": "cls-telegraph",
           "sourceLabel": "财联社电报",
           "sourceHome": "https://www.cls.cn",
           "sourceType": "newsnow",
-          "rank": 12,
+          "rank": 3,
+          "sourcePriority": 2,
+          "signal": "bullish"
+        },
+        {
+          "title": "伊拉克国家安全局总部遭无人机袭击",
+          "url": "https://www.cls.cn/detail/2320343",
+          "publishedAt": "2026-03-21 16:54",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 4,
           "sourcePriority": 2,
           "signal": "watch"
         },
         {
-          "title": "郑州拟出台8条楼市新政",
-          "url": "https://wallstreetcn.com/livenews/3074404",
-          "publishedAt": "2026-03-21 11:23",
+          "title": "海关总署署长孙梅君会见联合国粮食及农业组织总干事屈冬玉",
+          "url": "https://www.cls.cn/detail/2320341",
+          "publishedAt": "2026-03-21 16:46",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 5,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "伊朗民众新年缅怀革命卫队发言人",
+          "url": "https://www.cls.cn/detail/2320340",
+          "publishedAt": "2026-03-21 16:39",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 6,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "第20次中韩海关合作会议在京召开",
+          "url": "https://wallstreetcn.com/livenews/3074429",
+          "publishedAt": "2026-03-21 16:36",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
           "rank": 8,
           "sourcePriority": 1,
+          "signal": "bullish"
+        },
+        {
+          "title": "健身App暴露航母位置 法国将“采取行动”",
+          "url": "https://www.cls.cn/detail/2320338",
+          "publishedAt": "2026-03-21 16:33",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 7,
+          "sourcePriority": 2,
           "signal": "watch"
         },
         {
-          "title": "陕西实施一揽子贷款贴息政策支持实体经济",
-          "url": "https://wallstreetcn.com/livenews/3074403",
-          "publishedAt": "2026-03-21 11:08",
+          "title": "我国自主研发的期刊评价体系正式发布",
+          "url": "https://www.cls.cn/detail/2320336",
+          "publishedAt": "2026-03-21 16:24",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 8,
+          "sourcePriority": 2,
+          "signal": "bullish"
+        },
+        {
+          "title": "多家纸企发布特种纸涨价函 数码转印纸调涨500元/吨",
+          "url": "https://www.cls.cn/detail/2320335",
+          "publishedAt": "2026-03-21 16:17",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 9,
+          "sourcePriority": 2,
+          "signal": "bullish"
+        },
+        {
+          "title": "我使馆确认韩国大田工厂火灾伤亡者中无中国公民",
+          "url": "https://wallstreetcn.com/livenews/3074428",
+          "publishedAt": "2026-03-21 16:15",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -578,9 +542,9 @@
           "signal": "watch"
         },
         {
-          "title": "Cursor承认新模型基于Kimi训练并致歉，Kimi发文祝贺",
-          "url": "https://wallstreetcn.com/livenews/3074402",
-          "publishedAt": "2026-03-21 10:53",
+          "title": "应对油价飙升，多家航司削减定期航班数量",
+          "url": "https://wallstreetcn.com/livenews/3074427",
+          "publishedAt": "2026-03-21 16:14",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
@@ -590,27 +554,63 @@
           "signal": "watch"
         },
         {
-          "title": "湖北证监局原党委书记、局长王广幼接受审查调查",
-          "url": "https://wallstreetcn.com/livenews/3074401",
-          "publishedAt": "2026-03-21 10:32",
+          "title": "美国土安全部停摆僵局持续",
+          "url": "https://www.cls.cn/detail/2320334",
+          "publishedAt": "2026-03-21 16:14",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 10,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "默茨说特朗普对他不太满意",
+          "url": "https://wallstreetcn.com/livenews/3074426",
+          "publishedAt": "2026-03-21 16:13",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
           "rank": 11,
           "sourcePriority": 1,
-          "signal": "bearish"
+          "signal": "watch"
         },
         {
-          "title": "中国核电自主研发的新一代“汉吾·HAN5”压力容器检查系统成功应用",
-          "url": "https://wallstreetcn.com/livenews/3074400",
-          "publishedAt": "2026-03-21 10:27",
+          "title": "伊朗外长说寻求彻底结束战争而非临时停火",
+          "url": "https://wallstreetcn.com/livenews/3074425",
+          "publishedAt": "2026-03-21 16:12",
           "sourceId": "wallstreetcn-quick",
           "sourceLabel": "华尔街见闻快讯",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
           "rank": 12,
           "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "伊朗外长说寻求彻底结束战争而非临时停火",
+          "url": "https://www.cls.cn/detail/2320333",
+          "publishedAt": "2026-03-21 16:11",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 11,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "2025年中国水产养殖产量约占全球的56%",
+          "url": "https://www.cls.cn/detail/2320325",
+          "publishedAt": "2026-03-21 16:05",
+          "sourceId": "cls-telegraph",
+          "sourceLabel": "财联社电报",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 12,
+          "sourcePriority": 2,
           "signal": "watch"
         }
       ]
@@ -627,7 +627,7 @@
         "fastbull-express"
       ],
       "windowStart": "2026-03-20 15:00",
-      "windowLabel": "03-20 15:00 - 03-21 14:09",
+      "windowLabel": "03-20 15:00 - 03-21 17:33",
       "itemCount": 24,
       "items": [
         {
@@ -643,8 +643,8 @@
           "signal": "watch"
         },
         {
-          "title": "美股收盘：七巨头齐挫纳指收低2% 三大指数连跌四周",
-          "url": "https://www.cls.cn/detail/2320209",
+          "title": "美国发布伊朗石油30天制裁豁免令 贝森特：将向全球供油约1.4亿桶",
+          "url": "https://www.cls.cn/detail/2320263",
           "publishedAt": null,
           "sourceId": "cls-hot",
           "sourceLabel": "财联社热门",
@@ -652,7 +652,7 @@
           "sourceType": "newsnow",
           "rank": 1,
           "sourcePriority": 2,
-          "signal": "watch"
+          "signal": "bullish"
         },
         {
           "title": "紫金矿业",
@@ -667,6 +667,42 @@
           "signal": "watch"
         },
         {
+          "title": "周五从“升级到降级”，投资者“左右打脸”！特朗普夜间称“正逐步考虑减少对伊军事行动”，油价回落美股期货上涨",
+          "url": "https://wallstreetcn.com/articles/3768043",
+          "publishedAt": null,
+          "sourceId": "wallstreetcn-hot",
+          "sourceLabel": "华尔街见闻热门",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 2,
+          "sourcePriority": 1,
+          "signal": "bullish"
+        },
+        {
+          "title": "特朗普称正考虑逐步降级对伊朗的军事行动",
+          "url": "https://www.cls.cn/detail/2320213",
+          "publishedAt": null,
+          "sourceId": "cls-hot",
+          "sourceLabel": "财联社热门",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 2,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "中矿资源",
+          "url": "https://xueqiu.com/s/SZ002738",
+          "publishedAt": null,
+          "sourceId": "xueqiu-hotstock",
+          "sourceLabel": "雪球热股",
+          "sourceHome": "https://xueqiu.com",
+          "sourceType": "newsnow",
+          "rank": 2,
+          "sourcePriority": 3,
+          "signal": "watch"
+        },
+        {
           "title": "美国或向中东增派数千士兵，特朗普先称不想停火、后称考虑对伊军事行动逐步降级，伊朗威胁毁灭性打击美以“邪恶官员”",
           "url": "https://wallstreetcn.com/articles/3768030",
           "publishedAt": null,
@@ -674,7 +710,7 @@
           "sourceLabel": "华尔街见闻热门",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
-          "rank": 2,
+          "rank": 3,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -686,20 +722,8 @@
           "sourceLabel": "财联社热门",
           "sourceHome": "https://www.cls.cn",
           "sourceType": "newsnow",
-          "rank": 2,
+          "rank": 3,
           "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "英伟达",
-          "url": "https://xueqiu.com/s/NVDA",
-          "publishedAt": null,
-          "sourceId": "xueqiu-hotstock",
-          "sourceLabel": "雪球热股",
-          "sourceHome": "https://xueqiu.com",
-          "sourceType": "newsnow",
-          "rank": 2,
-          "sourcePriority": 3,
           "signal": "watch"
         },
         {
@@ -710,67 +734,19 @@
           "sourceLabel": "华尔街见闻热门",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
-          "rank": 3,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "特朗普称正考虑逐步降级对伊朗的军事行动",
-          "url": "https://www.cls.cn/detail/2320213",
-          "publishedAt": null,
-          "sourceId": "cls-hot",
-          "sourceLabel": "财联社热门",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 3,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "周五从“升级到降级”，投资者“左右打脸”！特朗普夜间称“正逐步考虑减少对伊军事行动”，油价回落美股期货上涨",
-          "url": "https://wallstreetcn.com/articles/3768043",
-          "publishedAt": null,
-          "sourceId": "wallstreetcn-hot",
-          "sourceLabel": "华尔街见闻热门",
-          "sourceHome": "https://wallstreetcn.com",
-          "sourceType": "newsnow",
           "rank": 4,
           "sourcePriority": 1,
-          "signal": "bullish"
+          "signal": "watch"
         },
         {
-          "title": "关于霍尔木兹海峡通行，伊朗表态",
-          "url": "https://www.cls.cn/detail/2319969",
+          "title": "美股收盘：七巨头齐挫纳指收低2% 三大指数连跌四周",
+          "url": "https://www.cls.cn/detail/2320209",
           "publishedAt": null,
           "sourceId": "cls-hot",
           "sourceLabel": "财联社热门",
           "sourceHome": "https://www.cls.cn",
           "sourceType": "newsnow",
           "rank": 4,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "绝望的贝森特！美国能动用的战略油储已所剩无几！",
-          "url": "https://wallstreetcn.com/articles/3767998",
-          "publishedAt": null,
-          "sourceId": "wallstreetcn-hot",
-          "sourceLabel": "华尔街见闻热门",
-          "sourceHome": "https://wallstreetcn.com",
-          "sourceType": "newsnow",
-          "rank": 5,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "特朗普据称考虑占领或封锁哈尔克岛 以迫使伊朗重开霍尔木兹海峡",
-          "url": "https://www.cls.cn/detail/2320056",
-          "publishedAt": null,
-          "sourceId": "cls-hot",
-          "sourceLabel": "财联社热门",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 5,
           "sourcePriority": 2,
           "signal": "watch"
         },
@@ -782,7 +758,7 @@
           "sourceLabel": "华尔街见闻热门",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
-          "rank": 6,
+          "rank": 5,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -794,33 +770,9 @@
           "sourceLabel": "财联社热门",
           "sourceHome": "https://www.cls.cn",
           "sourceType": "newsnow",
-          "rank": 6,
+          "rank": 5,
           "sourcePriority": 2,
           "signal": "watch"
-        },
-        {
-          "title": "沪指失守4000点，光伏、锂电走强，油气、化工回调、恒科指跌超2%，阿里跌6%、小米跌超8%",
-          "url": "https://wallstreetcn.com/articles/3767973",
-          "publishedAt": null,
-          "sourceId": "wallstreetcn-hot",
-          "sourceLabel": "华尔街见闻热门",
-          "sourceHome": "https://wallstreetcn.com",
-          "sourceType": "newsnow",
-          "rank": 7,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "美国发布伊朗石油30天制裁豁免令 贝森特：将向全球供油约1.4亿桶",
-          "url": "https://www.cls.cn/detail/2320263",
-          "publishedAt": null,
-          "sourceId": "cls-hot",
-          "sourceLabel": "财联社热门",
-          "sourceHome": "https://www.cls.cn",
-          "sourceType": "newsnow",
-          "rank": 7,
-          "sourcePriority": 2,
-          "signal": "bullish"
         },
         {
           "title": "宇树科技IPO获受理，美团为第二大股东，2025年度营收同比暴增335.4%，净利润增长204% | IPO见闻",
@@ -830,13 +782,61 @@
           "sourceLabel": "华尔街见闻热门",
           "sourceHome": "https://wallstreetcn.com",
           "sourceType": "newsnow",
-          "rank": 8,
+          "rank": 6,
           "sourcePriority": 1,
           "signal": "bullish"
         },
         {
-          "title": "特朗普称正考虑降级对伊行动 贵金属价格延续跌势 | 环球市场",
-          "url": "https://www.cls.cn/detail/2320222",
+          "title": "关于霍尔木兹海峡通行，伊朗表态",
+          "url": "https://www.cls.cn/detail/2319969",
+          "publishedAt": null,
+          "sourceId": "cls-hot",
+          "sourceLabel": "财联社热门",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 6,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "黄金暴跌一周！“1983年大抛售”再现，中东“卖金筹资”？",
+          "url": "https://wallstreetcn.com/articles/3768045",
+          "publishedAt": null,
+          "sourceId": "wallstreetcn-hot",
+          "sourceLabel": "华尔街见闻热门",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 7,
+          "sourcePriority": 1,
+          "signal": "bearish"
+        },
+        {
+          "title": "中小险企因偿付能力压力减仓？多位保险机构人士：个别正常调整影响小，不改增持趋势",
+          "url": "https://www.cls.cn/detail/2320288",
+          "publishedAt": null,
+          "sourceId": "cls-hot",
+          "sourceLabel": "财联社热门",
+          "sourceHome": "https://www.cls.cn",
+          "sourceType": "newsnow",
+          "rank": 7,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "华尔街见闻早餐FM-Radio | 2026年3月21日",
+          "url": "https://wallstreetcn.com/articles/3768042",
+          "publishedAt": null,
+          "sourceId": "wallstreetcn-hot",
+          "sourceLabel": "华尔街见闻热门",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 8,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "特朗普据称考虑占领或封锁哈尔克岛 以迫使伊朗重开霍尔木兹海峡",
+          "url": "https://www.cls.cn/detail/2320056",
           "publishedAt": null,
           "sourceId": "cls-hot",
           "sourceLabel": "财联社热门",
@@ -859,8 +859,8 @@
           "signal": "watch"
         },
         {
-          "title": "GTC大会的“隐形赢家”？PCB行业迎来扩产升级潮",
-          "url": "https://www.cls.cn/detail/2319597",
+          "title": "特朗普称正考虑降级对伊行动 贵金属价格延续跌势 | 环球市场",
+          "url": "https://www.cls.cn/detail/2320222",
           "publishedAt": null,
           "sourceId": "cls-hot",
           "sourceLabel": "财联社热门",
@@ -868,11 +868,11 @@
           "sourceType": "newsnow",
           "rank": 9,
           "sourcePriority": 2,
-          "signal": "bullish"
+          "signal": "watch"
         },
         {
-          "title": "华尔街见闻早餐FM-Radio | 2026年3月21日",
-          "url": "https://wallstreetcn.com/articles/3768042",
+          "title": "特朗普称考虑逐步减少对伊朗的军事行动，美股ETF盘后转涨",
+          "url": "https://wallstreetcn.com/articles/3768039",
           "publishedAt": null,
           "sourceId": "wallstreetcn-hot",
           "sourceLabel": "华尔街见闻热门",
@@ -883,8 +883,8 @@
           "signal": "watch"
         },
         {
-          "title": "5家券商接保荐业务罚单，密集程度罕见",
-          "url": "https://www.cls.cn/detail/2320242",
+          "title": "GTC大会的“隐形赢家”？PCB行业迎来扩产升级潮",
+          "url": "https://www.cls.cn/detail/2319597",
           "publishedAt": null,
           "sourceId": "cls-hot",
           "sourceLabel": "财联社热门",
@@ -892,11 +892,11 @@
           "sourceType": "newsnow",
           "rank": 10,
           "sourcePriority": 2,
-          "signal": "watch"
+          "signal": "bullish"
         },
         {
-          "title": "中方回应日美领导人涉华言论",
-          "url": "https://www.cls.cn/detail/2319916",
+          "title": "5家券商接保荐业务罚单，密集程度罕见",
+          "url": "https://www.cls.cn/detail/2320242",
           "publishedAt": null,
           "sourceId": "cls-hot",
           "sourceLabel": "财联社热门",
@@ -907,8 +907,8 @@
           "signal": "watch"
         },
         {
-          "title": "国家发展改革委、农业农村部召开生猪养殖企业座谈会",
-          "url": "https://www.cls.cn/detail/2319935",
+          "title": "中方回应日美领导人涉华言论",
+          "url": "https://www.cls.cn/detail/2319916",
           "publishedAt": null,
           "sourceId": "cls-hot",
           "sourceLabel": "财联社热门",
@@ -932,9 +932,33 @@
         "zaobao"
       ],
       "windowStart": "2026-03-20 15:00",
-      "windowLabel": "03-20 15:00 - 03-21 14:09",
+      "windowLabel": "03-20 15:00 - 03-21 17:33",
       "itemCount": 18,
       "items": [
+        {
+          "title": "Comic Relief helps fund free school uniform charity",
+          "url": "https://www.bbc.com/news/articles/cdrmle57mm8o?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-03-21 15:27",
+          "sourceId": "bbc-business",
+          "sourceLabel": "BBC Business",
+          "sourceHome": "https://www.bbc.com/news/business",
+          "sourceType": "rss",
+          "rank": 41,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "'Without food charity, we might not eat'",
+          "url": "https://www.bbc.com/news/articles/c2lrlnnqp7zo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-03-21 14:58",
+          "sourceId": "bbc-business",
+          "sourceLabel": "BBC Business",
+          "sourceHome": "https://www.bbc.com/news/business",
+          "sourceType": "rss",
+          "rank": 42,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
         {
           "title": "Home working, long leases and rise of parking apps - what went wrong for NCP",
           "url": "https://www.bbc.com/news/articles/cgl5rwgr5l2o?at_medium=RSS&at_campaign=rss",
@@ -1008,18 +1032,6 @@
           "signal": "watch"
         },
         {
-          "title": "'Marriage penalty' in Washington state's new millionaire tax stirs debate",
-          "url": "https://www.cnbc.com/2026/03/20/washington-millionaire-tax-marriage.html",
-          "publishedAt": "2026-03-20 23:36",
-          "sourceId": "cnbc-business",
-          "sourceLabel": "CNBC Business",
-          "sourceHome": "https://www.cnbc.com/business",
-          "sourceType": "rss",
-          "rank": 4,
-          "sourcePriority": 3,
-          "signal": "watch"
-        },
-        {
           "title": "Trump-backed television merger moves forward",
           "url": "https://www.bbc.com/news/articles/cx2dndp7z12o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-03-20 23:19",
@@ -1087,19 +1099,7 @@
           "sourceLabel": "BBC Business",
           "sourceHome": "https://www.bbc.com/news/business",
           "sourceType": "rss",
-          "rank": 42,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "How the Iran war may affect your money and bills",
-          "url": "https://www.bbc.com/news/articles/c2e4ygndjpwo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-03-20 20:06",
-          "sourceId": "bbc-business",
-          "sourceLabel": "BBC Business",
-          "sourceHome": "https://www.bbc.com/news/business",
-          "sourceType": "rss",
-          "rank": 15,
+          "rank": 44,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -1165,9 +1165,153 @@
         "cankaoxiaoxi"
       ],
       "windowStart": "2026-03-20 15:00",
-      "windowLabel": "03-20 15:00 - 03-21 14:09",
+      "windowLabel": "03-20 15:00 - 03-21 17:33",
       "itemCount": 24,
       "items": [
+        {
+          "title": "Iran reportedly fires missiles towards UK-US base on Diego Garcia",
+          "url": "https://www.theguardian.com/world/2026/mar/21/iran-reportedly-fires-missiles-towards-uk-us-base-on-diego-garcia",
+          "publishedAt": "2026-03-21 17:18",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 26,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "Middle East crisis live: Trump says US considering ‘winding down’ war; Iran reportedly fired missiles at Diego Garcia military base",
+          "url": "https://www.theguardian.com/world/live/2026/mar/21/middle-east-crisis-live-iran-war-trump-eases-oil-sanctions-israel-strikes",
+          "publishedAt": "2026-03-21 17:16",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 27,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "SA state election 2026: Labor confident, but first results show big swings to One Nation in regional South Australia",
+          "url": "https://www.theguardian.com/australia-news/2026/mar/21/sa-state-election-2026-results-labor-confident-but-all-eyes-on-one-nation-vote-as-polls-close-in-south-australia",
+          "publishedAt": "2026-03-21 17:01",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 16,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "Russian drone attack kills two in Ukraine ahead of talks in US, officials say",
+          "url": "https://www.bbc.com/news/articles/crl18nwjzzzo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-03-21 16:54",
+          "sourceId": "bbc-world",
+          "sourceLabel": "BBC World",
+          "sourceHome": "https://www.bbc.com/news",
+          "sourceType": "rss",
+          "rank": 2,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "Owners from Great Britain travelling to EU warned over pet passport ‘dodge’",
+          "url": "https://www.theguardian.com/lifeandstyle/2026/mar/21/pet-passport-dodge-travel-uk-eu-animal-health-certificate",
+          "publishedAt": "2026-03-21 16:00",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 21,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "‘This is the saddest moment’: families search for loved ones on Eid after Kabul hospital strike",
+          "url": "https://www.theguardian.com/world/2026/mar/21/kabul-hospital-strike-eid-pakistan-taliban-families-search-for-victims",
+          "publishedAt": "2026-03-21 16:00",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 31,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "Trump hints at wind down of war as US prepares to send more troops to Gulf",
+          "url": "https://www.theguardian.com/world/2026/mar/20/us-considering-occupying-iran-kharg-island-hormuz-strait-trump",
+          "publishedAt": "2026-03-21 15:44",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 28,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "BTS return from military service - but does their album live up to the hype?",
+          "url": "https://www.bbc.com/news/articles/c070eg32dryo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-03-21 15:04",
+          "sourceId": "bbc-world",
+          "sourceLabel": "BBC World",
+          "sourceHome": "https://www.bbc.com/news",
+          "sourceType": "rss",
+          "rank": 11,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "Department of Health retracts claim sunbeds are as dangerous as smoking",
+          "url": "https://www.theguardian.com/politics/2026/mar/21/department-of-health-retracts-claim-sunbeds-dangerous-as-smoking",
+          "publishedAt": "2026-03-21 15:00",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 36,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "More British teenagers stranded abroad as result of new rules on dual nationals",
+          "url": "https://www.theguardian.com/politics/2026/mar/21/british-teenagers-stranded-abroad-dual-national-rules-home-office-passports",
+          "publishedAt": "2026-03-21 15:00",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 37,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "BTS comeback concert: Seoul gets ready to host 260,000 fans",
+          "url": "https://www.bbc.com/news/articles/cge0dyjwezgo?at_medium=RSS&at_campaign=rss",
+          "publishedAt": "2026-03-21 14:59",
+          "sourceId": "bbc-world",
+          "sourceLabel": "BBC World",
+          "sourceHome": "https://www.bbc.com/news",
+          "sourceType": "rss",
+          "rank": 17,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "Rhoda Roberts, Indigenous cultural leader who introduced the term ‘welcome to country’, dies aged 66",
+          "url": "https://www.theguardian.com/australia-news/2026/mar/21/rhoda-roberts-indigenous-cultural-leader-who-introduced-the-term-welcome-to-country-dies-aged-66",
+          "publishedAt": "2026-03-21 14:26",
+          "sourceId": "guardian-world",
+          "sourceLabel": "The Guardian World",
+          "sourceHome": "https://www.theguardian.com/world",
+          "sourceType": "rss",
+          "rank": 17,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
         {
           "title": "Israel deliberately targeting medical facilities in south Lebanon, say health workers",
           "url": "https://www.theguardian.com/world/2026/mar/21/israel-targeting-medical-facilities-south-lebanon-health-workers",
@@ -1176,7 +1320,7 @@
           "sourceLabel": "The Guardian World",
           "sourceHome": "https://www.theguardian.com/world",
           "sourceType": "rss",
-          "rank": 26,
+          "rank": 29,
           "sourcePriority": 2,
           "signal": "watch"
         },
@@ -1188,7 +1332,7 @@
           "sourceLabel": "The Guardian World",
           "sourceHome": "https://www.theguardian.com/world",
           "sourceType": "rss",
-          "rank": 36,
+          "rank": 38,
           "sourcePriority": 2,
           "signal": "watch"
         },
@@ -1205,18 +1349,6 @@
           "signal": "watch"
         },
         {
-          "title": "Middle East crisis live: Trump considering ‘winding down’ war as US eases sanctions on Iranian oil; Israel launches retaliatory strikes",
-          "url": "https://www.theguardian.com/world/live/2026/mar/21/middle-east-crisis-live-iran-war-trump-eases-oil-sanctions-israel-strikes",
-          "publishedAt": "2026-03-21 13:47",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 27,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
           "title": "More than 230 people rescued as flash flooding hits Hawaii and fears dam could fail",
           "url": "https://www.theguardian.com/us-news/2026/mar/20/hawaii-oahu-flash-floods",
           "publishedAt": "2026-03-21 13:44",
@@ -1225,54 +1357,6 @@
           "sourceHome": "https://www.theguardian.com/world",
           "sourceType": "rss",
           "rank": 41,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "US lifts sanctions on Iranian oil at sea in bid to ease supply pressures",
-          "url": "https://www.theguardian.com/us-news/2026/mar/20/us-sanctions-iranian-oil",
-          "publishedAt": "2026-03-21 13:22",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 28,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "Death, power and paranoia: painting that shocked German society finally returns to Berlin",
-          "url": "https://www.theguardian.com/artanddesign/2026/mar/21/death-power-and-paranoia-painting-that-shocked-german-society-finally-returns-to-berlin",
-          "publishedAt": "2026-03-21 13:00",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 21,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "Iran’s willingness to escalate this high-stakes war is its greatest weapon",
-          "url": "https://www.theguardian.com/world/2026/mar/21/iran-war-conflict-middle-east-trump-israel",
-          "publishedAt": "2026-03-21 13:00",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 29,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "Donald Trump ‘very surprised’ Australia declined to send troops to strait of Hormuz amid fuel crisis",
-          "url": "https://www.theguardian.com/us-news/2026/mar/21/donald-trump-surprised-australia-strait-of-hormuz-fuel-prices",
-          "publishedAt": "2026-03-21 12:59",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 16,
           "sourcePriority": 2,
           "signal": "watch"
         },
@@ -1289,42 +1373,6 @@
           "signal": "watch"
         },
         {
-          "title": "Israel launches fresh strikes on Tehran and Beirut - as it happened",
-          "url": "https://www.theguardian.com/world/live/2026/mar/20/iran-war-live-updates-oil-prices-israel-netanyahu-ground-component-us-tensions-hormuz",
-          "publishedAt": "2026-03-21 11:40",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 30,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "Trump claims strict voter ID act should be ‘easy pass’ but says ‘we need Democrat votes’ – as it happened",
-          "url": "https://www.theguardian.com/us-news/live/2026/mar/20/trump-mandelson-starmer-supreme-court-iran-us-politics-latest-news-updates",
-          "publishedAt": "2026-03-21 10:00",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 42,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "Nicholas Brendon, Buffy the Vampire Slayer actor, dies at 54",
-          "url": "https://www.theguardian.com/tv-and-radio/2026/mar/20/nicholas-brendon-buffy-the-vampire-slayer-actor-dies",
-          "publishedAt": "2026-03-21 09:59",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 43,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
           "title": "Russia's school propaganda was highlighted by Oscar-winning film - but does it work?",
           "url": "https://www.bbc.com/news/articles/c7vq5g64y98o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-03-21 09:05",
@@ -1337,7 +1385,7 @@
           "signal": "watch"
         },
         {
-          "title": "Chuck Norris memes were undefeated for a generation of young fans",
+          "title": "Remember Chuck Norris memes but never watched his films? You're not alone",
           "url": "https://www.bbc.com/news/articles/c62541e29z9o?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-03-21 09:03",
           "sourceId": "bbc-world",
@@ -1356,20 +1404,8 @@
           "sourceLabel": "BBC World",
           "sourceHome": "https://www.bbc.com/news",
           "sourceType": "rss",
-          "rank": 5,
+          "rank": 4,
           "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "Musk responsible for Twitter investors’ stock dropping when he bought company, jury rules",
-          "url": "https://www.theguardian.com/technology/2026/mar/20/elon-musk-twitter-investors-lawsuit",
-          "publishedAt": "2026-03-21 08:54",
-          "sourceId": "guardian-world",
-          "sourceLabel": "The Guardian World",
-          "sourceHome": "https://www.theguardian.com/world",
-          "sourceType": "rss",
-          "rank": 44,
-          "sourcePriority": 2,
           "signal": "watch"
         },
         {
@@ -1385,18 +1421,6 @@
           "signal": "watch"
         },
         {
-          "title": "US lifts sanctions on some Iranian oil as gas prices soar",
-          "url": "https://www.bbc.com/news/articles/c9d415g55nno?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-03-21 07:52",
-          "sourceId": "bbc-world",
-          "sourceLabel": "BBC World",
-          "sourceHome": "https://www.bbc.com/news",
-          "sourceType": "rss",
-          "rank": 2,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
           "title": "Elon Musk misled Twitter investors, jury finds",
           "url": "https://www.bbc.com/news/articles/c62j3yl842eo?at_medium=RSS&at_campaign=rss",
           "publishedAt": "2026-03-21 07:44",
@@ -1404,19 +1428,7 @@
           "sourceLabel": "BBC World",
           "sourceHome": "https://www.bbc.com/news",
           "sourceType": "rss",
-          "rank": 6,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "BTS comeback concert: Seoul gets ready to host 260,000 fans",
-          "url": "https://www.bbc.com/news/articles/cge0dyjwezgo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-03-21 07:06",
-          "sourceId": "bbc-world",
-          "sourceLabel": "BBC World",
-          "sourceHome": "https://www.bbc.com/news",
-          "sourceType": "rss",
-          "rank": 17,
+          "rank": 5,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -1428,7 +1440,7 @@
           "sourceLabel": "BBC World",
           "sourceHome": "https://www.bbc.com/news",
           "sourceType": "rss",
-          "rank": 7,
+          "rank": 6,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -1441,18 +1453,6 @@
           "sourceHome": "https://www.bbc.com/news",
           "sourceType": "rss",
           "rank": 1,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "Ukraine-Hungary oil pipeline row threatens EU loan",
-          "url": "https://www.bbc.com/news/articles/cr71rkeg7xxo?at_medium=RSS&at_campaign=rss",
-          "publishedAt": "2026-03-21 04:16",
-          "sourceId": "bbc-world",
-          "sourceLabel": "BBC World",
-          "sourceHome": "https://www.bbc.com/news",
-          "sourceType": "rss",
-          "rank": 4,
           "sourcePriority": 1,
           "signal": "watch"
         }
@@ -1470,13 +1470,13 @@
         "producthunt"
       ],
       "windowStart": "2026-03-20 15:00",
-      "windowLabel": "03-20 15:00 - 03-21 14:09",
+      "windowLabel": "03-20 15:00 - 03-21 17:33",
       "itemCount": 20,
       "items": [
         {
-          "title": "网易云音乐接入OpenClaw",
-          "url": "https://www.36kr.com/newsflashes/3732204385501448",
-          "publishedAt": "2026-03-21 12:52",
+          "title": "阿尔凯默斯在印度推出司美格鲁肽注射液",
+          "url": "https://www.36kr.com/newsflashes/3732458470441217",
+          "publishedAt": "2026-03-21 16:53",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1486,9 +1486,9 @@
           "signal": "watch"
         },
         {
-          "title": "报告：影石全景相机及拇指相机全球市占双第一，增速强劲",
-          "url": "https://www.36kr.com/newsflashes/3732202908516610",
-          "publishedAt": "2026-03-21 12:50",
+          "title": "国家级电力人工智能中试基地迎首批企业，华为、中兴、百度等入驻",
+          "url": "https://www.36kr.com/newsflashes/3732458131783689",
+          "publishedAt": "2026-03-21 16:53",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1498,33 +1498,33 @@
           "signal": "watch"
         },
         {
-          "title": "机构：受零部件成本影响，电视和显示器面板价格上涨",
-          "url": "https://www.36kr.com/newsflashes/3732182190653449",
-          "publishedAt": "2026-03-21 12:50",
+          "title": "亚马逊正开发整合AI能力且与其语音助手Alexa同步的智能手机",
+          "url": "https://www.36kr.com/newsflashes/3732456438481157",
+          "publishedAt": "2026-03-21 16:51",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
           "sourceType": "newsnow",
           "rank": 3,
           "sourcePriority": 2,
-          "signal": "bullish"
+          "signal": "watch"
         },
         {
-          "title": "多家品牌金饰价格跌破1400元/克",
-          "url": "https://www.36kr.com/newsflashes/3732181565652998",
-          "publishedAt": "2026-03-21 12:50",
+          "title": "我国自主研发的期刊评价体系正式发布",
+          "url": "https://www.36kr.com/newsflashes/3732454808436740",
+          "publishedAt": "2026-03-21 16:49",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
           "sourceType": "newsnow",
           "rank": 4,
           "sourcePriority": 2,
-          "signal": "watch"
+          "signal": "bullish"
         },
         {
-          "title": "改革正式启动，哥伦比亚广播公司新闻部裁员6%",
-          "url": "https://www.36kr.com/newsflashes/3732029962912007",
-          "publishedAt": "2026-03-21 11:50",
+          "title": "欧洲央行管委Nagel：如有必要，可以迅速行动应对通胀风险",
+          "url": "https://www.36kr.com/newsflashes/3732454087786501",
+          "publishedAt": "2026-03-21 16:49",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1534,9 +1534,9 @@
           "signal": "bearish"
         },
         {
-          "title": "航司燃油费上涨预期走强，消费者开始提前“囤”机票",
-          "url": "https://www.36kr.com/newsflashes/3732029301309705",
-          "publishedAt": "2026-03-21 11:50",
+          "title": "华为将发布首款风冷散热手机",
+          "url": "https://www.36kr.com/newsflashes/3732452663804162",
+          "publishedAt": "2026-03-21 16:47",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1546,9 +1546,9 @@
           "signal": "bullish"
         },
         {
-          "title": "杭州新元素药业股份有限公司递表港交所",
-          "url": "https://www.36kr.com/newsflashes/3731988126121985",
-          "publishedAt": "2026-03-21 11:50",
+          "title": "我国电动汽车充电基础设施总数达2101.0万个",
+          "url": "https://www.36kr.com/newsflashes/3732449006502148",
+          "publishedAt": "2026-03-21 16:43",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1558,21 +1558,21 @@
           "signal": "watch"
         },
         {
-          "title": "Nexstar宣布完成对Tegna收购，八州总检察长起诉阻止合并",
-          "url": "https://www.36kr.com/newsflashes/3731987738624000",
-          "publishedAt": "2026-03-21 11:50",
+          "title": "LiblibAI发布AI视频创作平台LibTV",
+          "url": "https://www.36kr.com/newsflashes/3732441440665859",
+          "publishedAt": "2026-03-21 16:36",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
           "sourceType": "newsnow",
           "rank": 8,
           "sourcePriority": 2,
-          "signal": "bearish"
+          "signal": "bullish"
         },
         {
-          "title": "PT Merdeka Gold Resources Tbk-S递表港交所",
-          "url": "https://www.36kr.com/newsflashes/3731986439847944",
-          "publishedAt": "2026-03-21 10:50",
+          "title": "胖东来正与酒鬼酒洽谈600元新品",
+          "url": "https://www.36kr.com/newsflashes/3732411719794952",
+          "publishedAt": "2026-03-21 16:07",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1582,9 +1582,9 @@
           "signal": "watch"
         },
         {
-          "title": "软银计划在俄亥俄建设5000亿美元的巨型AI数据中心",
-          "url": "https://www.36kr.com/newsflashes/3731985496915974",
-          "publishedAt": "2026-03-21 10:50",
+          "title": "马斯克：Optimus+PV将是首个冯诺依曼探测器",
+          "url": "https://www.36kr.com/newsflashes/3732387328655360",
+          "publishedAt": "2026-03-21 16:07",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1594,9 +1594,9 @@
           "signal": "watch"
         },
         {
-          "title": "苹果CEO库克：新款Mac吸引了创纪录的首购客户",
-          "url": "https://www.36kr.com/newsflashes/3731984704897288",
-          "publishedAt": "2026-03-21 10:50",
+          "title": "雷军官宣：XiaomiMiMo首周限免开放",
+          "url": "https://www.36kr.com/newsflashes/3732341580841218",
+          "publishedAt": "2026-03-21 15:07",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1606,9 +1606,9 @@
           "signal": "watch"
         },
         {
-          "title": "华泰证券：油、气处理量下降导致硫磺供给缺口，多方面冲击化工及金属",
-          "url": "https://www.36kr.com/newsflashes/3731984117907713",
-          "publishedAt": "2026-03-21 09:50",
+          "title": "百度网盘GenFlow全新升级，融合OpenClaw，支持多人AI协作",
+          "url": "https://www.36kr.com/newsflashes/3732314690240769",
+          "publishedAt": "2026-03-21 15:07",
           "sourceId": "36kr-quick",
           "sourceLabel": "36Kr 快讯",
           "sourceHome": "https://36kr.com",
@@ -1727,25 +1727,25 @@
         "cls-depth"
       ],
       "windowStart": "2026-03-20 15:00",
-      "windowLabel": "03-20 15:00 - 03-21 14:09",
+      "windowLabel": "03-20 15:00 - 03-21 17:33",
       "itemCount": 24,
       "items": [
         {
-          "title": "广汽丰田铂智 7 上市发布会定档 3 月 29 日：搭载鸿蒙座舱、Momenta 智驾、小米车载生态，预售价 15.68 万元起",
-          "url": "https://www.ithome.com/0/931/259.htm",
-          "publishedAt": "2026-03-21 13:35",
+          "title": "广汽高域飞行汽车 GOVY AirCab 在广州海心沙首飞，年底量产交付",
+          "url": "https://www.ithome.com/0/931/305.htm",
+          "publishedAt": "2026-03-21 16:59",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
           "sourceType": "newsnow",
           "rank": 1,
           "sourcePriority": 1,
-          "signal": "bullish"
+          "signal": "watch"
         },
         {
-          "title": "彭博社：避开 Steam 75% 市场统治力，索尼 PS PC 游戏启动器恐胎死腹中",
-          "url": "https://www.ithome.com/0/931/257.htm",
-          "publishedAt": "2026-03-21 13:31",
+          "title": "马斯克 xAI 为抢夺客户祭出激进打法：直接派工程师上门部署",
+          "url": "https://www.ithome.com/0/931/304.htm",
+          "publishedAt": "2026-03-21 16:55",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1755,9 +1755,9 @@
           "signal": "watch"
         },
         {
-          "title": "库克回应 OpenClaw 带动 Mac mini 大卖：苹果十年前就已布局 AI 神经网络引擎",
-          "url": "https://www.ithome.com/0/931/255.htm",
-          "publishedAt": "2026-03-21 13:04",
+          "title": "南航通报：CZ3554 航班起飞后遭遇鸟击，已安全返航",
+          "url": "https://www.ithome.com/0/931/303.htm",
+          "publishedAt": "2026-03-21 16:51",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1767,9 +1767,9 @@
           "signal": "watch"
         },
         {
-          "title": "966.56 万吨！四川探明全球第二大在产稀土矿，“震撼性”伴生超大规模萤石、重晶石",
-          "url": "https://www.ithome.com/0/931/254.htm",
-          "publishedAt": "2026-03-21 13:04",
+          "title": "幸狐推出 Lume 系列开发板：全志 T153 芯片、双千兆以太网口，129 元起",
+          "url": "https://www.ithome.com/0/931/302.htm",
+          "publishedAt": "2026-03-21 16:48",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1779,21 +1779,21 @@
           "signal": "watch"
         },
         {
-          "title": "雷军就小米新一代 SU7 发布会“60+60 相当于 120km/h 撞墙”口误致歉，感谢网友指正",
-          "url": "https://www.ithome.com/0/931/253.htm",
-          "publishedAt": "2026-03-21 12:44",
+          "title": "MiniMax 平台将在高峰时段实施动态限流：M2.7 模型受欢迎程度超预期",
+          "url": "https://www.ithome.com/0/931/300.htm",
+          "publishedAt": "2026-03-21 16:29",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
           "sourceType": "newsnow",
           "rank": 5,
           "sourcePriority": 1,
-          "signal": "bullish"
+          "signal": "watch"
         },
         {
-          "title": "鸿蒙智行问界 M8 焕新升级：展车明日全国到店，新增瑞红、湛蓝双色",
-          "url": "https://www.ithome.com/0/931/251.htm",
-          "publishedAt": "2026-03-21 12:22",
+          "title": "吉利银河星耀 8 远航家预售开启，14.28 万-16.18 万元",
+          "url": "https://www.ithome.com/0/931/299.htm",
+          "publishedAt": "2026-03-21 16:28",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1803,9 +1803,9 @@
           "signal": "watch"
         },
         {
-          "title": "法拉第未来获纳斯达克 180 天合规宽限期，尽全力在不合股前提下恢复合规",
-          "url": "https://www.ithome.com/0/931/250.htm",
-          "publishedAt": "2026-03-21 12:21",
+          "title": "小米 MiMo 大模型联合 OpenClaw、OpenCode、KiloCode 等主流 Agent 框架，首周限免开放",
+          "url": "https://www.ithome.com/0/931/298.htm",
+          "publishedAt": "2026-03-21 16:27",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1815,9 +1815,9 @@
           "signal": "watch"
         },
         {
-          "title": "AI 算力卷向太空，英伟达黄仁勋称散热是最大挑战",
-          "url": "https://www.ithome.com/0/931/249.htm",
-          "publishedAt": "2026-03-21 12:14",
+          "title": "鸿蒙智行尚界 Z7/Z7T 车型 10 款车色亮相，多款轮毂可选",
+          "url": "https://www.ithome.com/0/931/297.htm",
+          "publishedAt": "2026-03-21 16:15",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1827,9 +1827,9 @@
           "signal": "watch"
         },
         {
-          "title": "Take-Two CEO 泽尔尼克：内存价格不会影响索尼 PS6、微软“Project Helix”主机上市进度",
-          "url": "https://www.ithome.com/0/931/248.htm",
-          "publishedAt": "2026-03-21 12:08",
+          "title": "一加 15T 核心参数汇总：6.32 英寸直屏、第五代骁龙 8 至尊版、7500mAh 电池等",
+          "url": "https://www.ithome.com/0/931/295.htm",
+          "publishedAt": "2026-03-21 16:05",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1839,21 +1839,21 @@
           "signal": "watch"
         },
         {
-          "title": "西北地区唯一三网接入，国家顶级域名（新疆）解析节点正式上线运行",
-          "url": "https://www.ithome.com/0/931/247.htm",
-          "publishedAt": "2026-03-21 12:00",
+          "title": "IDC 报告：2025 年全球手持智能相机出货量猛增 83%，大疆、影石、GoPro 前三",
+          "url": "https://www.ithome.com/0/931/294.htm",
+          "publishedAt": "2026-03-21 15:54",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
           "sourceType": "newsnow",
           "rank": 10,
           "sourcePriority": 1,
-          "signal": "bullish"
+          "signal": "watch"
         },
         {
-          "title": "月之暗面回应“Cursor 使用 Kimi K2.5 作为 AI 底座”事件，另外感谢马斯克发声",
-          "url": "https://www.ithome.com/0/931/246.htm",
-          "publishedAt": "2026-03-21 11:55",
+          "title": "国家级电力人工智能中试基地迎来华为、中兴、百度等首批企业，今年拟引入 30 家",
+          "url": "https://www.ithome.com/0/931/292.htm",
+          "publishedAt": "2026-03-21 15:50",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -1863,9 +1863,9 @@
           "signal": "watch"
         },
         {
-          "title": "《莎木 3 增强版》首个预告公布，Switch 2 版不采用钥匙卡",
-          "url": "https://www.ithome.com/0/931/244.htm",
-          "publishedAt": "2026-03-21 11:38",
+          "title": "索尼 APS-C 画幅旗舰 A6900 相机曝光：3300 万像素堆栈式传感器",
+          "url": "https://www.ithome.com/0/931/291.htm",
+          "publishedAt": "2026-03-21 15:41",
           "sourceId": "ithome",
           "sourceLabel": "IT之家",
           "sourceHome": "https://www.ithome.com",
@@ -2032,37 +2032,25 @@
         "cnbc-business"
       ],
       "windowStart": "2026-03-20 15:00",
-      "windowLabel": "03-20 15:00 - 03-21 14:09",
+      "windowLabel": "03-20 15:00 - 03-21 17:33",
       "itemCount": 13,
       "items": [
         {
-          "title": "美国驻联合国代表：对伊朗石油制裁的任何放松都将是“非常短暂的”，且持续时间有限。",
-          "url": "https://flash.jin10.com/detail/20260321134018308800",
-          "publishedAt": "2026-03-21 13:40",
+          "title": "纳坦兹铀浓缩设施遭袭后，附近居民暂未面临风险。",
+          "url": "https://flash.jin10.com/detail/20260321170832191800",
+          "publishedAt": "2026-03-21 17:08",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
           "sourceType": "newsnow",
           "rank": 1,
           "sourcePriority": 1,
-          "signal": "watch"
+          "signal": "bearish"
         },
         {
-          "title": "Cursor自研新模型反超 Opus 4.6，主打“价格打一折”，网友群嘲“Kimi 2.5套壳”，马斯克认证",
-          "url": "https://wallstreetcn.com/articles/3768054",
-          "publishedAt": "2026-03-21 13:33",
-          "sourceId": "wallstreetcn-news",
-          "sourceLabel": "华尔街见闻最新",
-          "sourceHome": "https://wallstreetcn.com",
-          "sourceType": "newsnow",
-          "rank": 1,
-          "sourcePriority": 3,
-          "signal": "watch"
-        },
-        {
-          "title": "英媒：欧盟成员国被敦促降低天然气储存目标",
-          "url": "https://flash.jin10.com/detail/20260321132650838800",
-          "publishedAt": "2026-03-21 13:26",
+          "title": "美以再次袭击伊朗纳坦兹铀浓缩设施。该设施目前未报告任何放射性物质泄漏。",
+          "url": "https://flash.jin10.com/detail/20260321170720971800",
+          "publishedAt": "2026-03-21 17:07",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -2072,9 +2060,9 @@
           "signal": "watch"
         },
         {
-          "title": "库克回应OpenClaw带动Mac Mini大卖",
-          "url": "https://flash.jin10.com/detail/20260321130856200800",
-          "publishedAt": "2026-03-21 13:08",
+          "title": "伊朗武装部队称正在霍尔木兹海峡采取重大行动",
+          "url": "https://flash.jin10.com/detail/20260321170533143800",
+          "publishedAt": "2026-03-21 17:05",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -2084,9 +2072,9 @@
           "signal": "watch"
         },
         {
-          "title": "据英国金融时报：欧盟能源专员Jorgensen表示，欧盟各成员国应将其天然气储存设施的注气目标降至容量的80%，比欧盟官方目标低10个百分点。",
-          "url": "https://flash.jin10.com/detail/20260321130746448800",
-          "publishedAt": "2026-03-21 13:07",
+          "title": "伊朗如何击中美军F-35战机？专家：摸清规律在重点区域进行伏击",
+          "url": "https://flash.jin10.com/detail/20260321170011542800",
+          "publishedAt": "2026-03-21 17:00",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -2096,9 +2084,9 @@
           "signal": "watch"
         },
         {
-          "title": "美国前国家反恐中心主任否认泄密指控",
-          "url": "https://flash.jin10.com/detail/20260321125720586800",
-          "publishedAt": "2026-03-21 12:57",
+          "title": "伊拉克国家安全局总部遭无人机袭击",
+          "url": "https://flash.jin10.com/detail/20260321165339855800",
+          "publishedAt": "2026-03-21 16:53",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -2108,9 +2096,9 @@
           "signal": "watch"
         },
         {
-          "title": "据伊朗媒体：布什尔伊朗革命卫队基地发生两次爆炸。",
-          "url": "https://flash.jin10.com/detail/20260321125641749800",
-          "publishedAt": "2026-03-21 12:56",
+          "title": "海关总署署长孙梅君会见联合国粮食及农业组织总干事屈冬玉",
+          "url": "https://flash.jin10.com/detail/20260321165100986800",
+          "publishedAt": "2026-03-21 16:51",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -2120,9 +2108,9 @@
           "signal": "watch"
         },
         {
-          "title": "伊朗伊斯兰革命卫队：第70波针对美国和以色列在海湾地区及其他地区利益的报复性打击已针对超过55个地点。",
-          "url": "https://flash.jin10.com/detail/20260321124750248800",
-          "publishedAt": "2026-03-21 12:47",
+          "title": "上海飞深圳一航班起飞后遭遇鸟击 南航通报",
+          "url": "https://flash.jin10.com/detail/20260321164906145800",
+          "publishedAt": "2026-03-21 16:49",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -2132,21 +2120,21 @@
           "signal": "watch"
         },
         {
-          "title": "一艘散货船在可追踪状态下进入波斯湾",
-          "url": "https://flash.jin10.com/detail/20260321123536649800",
-          "publishedAt": "2026-03-21 12:35",
+          "title": "全国首个省级开源鸿蒙适配中心落地广州黄埔",
+          "url": "https://flash.jin10.com/detail/20260321164749484800",
+          "publishedAt": "2026-03-21 16:47",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
           "sourceType": "newsnow",
           "rank": 8,
           "sourcePriority": 1,
-          "signal": "watch"
+          "signal": "bullish"
         },
         {
-          "title": "王文涛部长会见礼来制药董事长兼首席执行官戴文睿",
-          "url": "https://flash.jin10.com/detail/20260321121131557800",
-          "publishedAt": "2026-03-21 12:11",
+          "title": "以色列军方称，昨晚在黎巴嫩南部开展的空地协同作战行动中，击毙了四名真主党武装分子。",
+          "url": "https://flash.jin10.com/detail/20260321164515111800",
+          "publishedAt": "2026-03-21 16:45",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -2156,9 +2144,21 @@
           "signal": "watch"
         },
         {
-          "title": "中东疯抢美国狂砸，谁在操纵原油绞肉机？",
-          "url": "https://flash.jin10.com/detail/20260321120542333800",
-          "publishedAt": "2026-03-21 12:05",
+          "title": "这一次不一样！股市反应迟钝，央行迟早QE，而黄金难以对冲",
+          "url": "https://wallstreetcn.com/articles/3768062",
+          "publishedAt": "2026-03-21 16:41",
+          "sourceId": "wallstreetcn-news",
+          "sourceLabel": "华尔街见闻最新",
+          "sourceHome": "https://wallstreetcn.com",
+          "sourceType": "newsnow",
+          "rank": 1,
+          "sourcePriority": 3,
+          "signal": "watch"
+        },
+        {
+          "title": "美媒关注美国是否将购买伊朗石油",
+          "url": "https://flash.jin10.com/detail/20260321164149758800",
+          "publishedAt": "2026-03-21 16:41",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
@@ -2168,28 +2168,28 @@
           "signal": "watch"
         },
         {
-          "title": "华为将发布首款风冷散热手机",
-          "url": "https://flash.jin10.com/detail/20260321120325470800",
-          "publishedAt": "2026-03-21 12:03",
+          "title": "俄罗斯总统普京表示，俄罗斯仍是伊朗的“可靠伙伴”。",
+          "url": "https://flash.jin10.com/detail/20260321163216268800",
+          "publishedAt": "2026-03-21 16:32",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
           "sourceType": "newsnow",
           "rank": 11,
           "sourcePriority": 1,
-          "signal": "bullish"
+          "signal": "watch"
         },
         {
-          "title": "据Politico：联合国秘书长表示，他正与特朗普在加沙的和平委员会合作。",
-          "url": "https://flash.jin10.com/detail/20260321115027994800",
-          "publishedAt": "2026-03-21 11:50",
+          "title": "市场消息：无人机袭击了伊拉克巴格达情报总部。",
+          "url": "https://flash.jin10.com/detail/20260321162815593800",
+          "publishedAt": "2026-03-21 16:28",
           "sourceId": "jin10",
           "sourceLabel": "金十数据",
           "sourceHome": "https://www.jin10.com",
           "sourceType": "newsnow",
           "rank": 12,
           "sourcePriority": 1,
-          "signal": "bullish"
+          "signal": "watch"
         }
       ]
     },
@@ -2205,13 +2205,13 @@
         "techcrunch-ai"
       ],
       "windowStart": "2026-03-20 15:00",
-      "windowLabel": "03-20 15:00 - 03-21 14:09",
+      "windowLabel": "03-20 15:00 - 03-21 17:33",
       "itemCount": 24,
       "items": [
         {
-          "title": "Dormant BTC wallet wakes up after 14 years with 11,000x paper profit",
-          "url": "https://cointelegraph.com/news/bitcoin-wallet-with-2100-btc-wakes-up-after-14-years?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "publishedAt": "2026-03-21 12:55",
+          "title": "Early Ethereum whale rebuilding stack with $19.5M in ETH buys",
+          "url": "https://cointelegraph.com/news/ethereum-whale-thomasg-eth-buys-19-5m?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "publishedAt": "2026-03-21 17:22",
           "sourceId": "cointelegraph",
           "sourceLabel": "Cointelegraph",
           "sourceHome": "https://cointelegraph.com",
@@ -2510,7 +2510,7 @@
         "toutiao"
       ],
       "windowStart": "2026-03-20 15:00",
-      "windowLabel": "03-20 15:00 - 03-21 14:09",
+      "windowLabel": "03-20 15:00 - 03-21 17:33",
       "itemCount": 24,
       "items": [
         {
@@ -2538,8 +2538,8 @@
           "signal": "watch"
         },
         {
-          "title": "重庆市委副书记、市长胡衡华任上被查",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32800383",
+          "title": "广州公安通报：“梅姨”落网",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32805854",
           "publishedAt": null,
           "sourceId": "thepaper",
           "sourceLabel": "澎湃新闻热榜",
@@ -2562,8 +2562,8 @@
           "signal": "watch"
         },
         {
-          "title": "市监总局回应央视“3·15”曝光“漂白鸡爪”等问题：深挖彻查、一查到底",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32800590",
+          "title": "人形机器人出货全球第一！从宇树招股书看王兴兴的“技术野心”与“扩张蓝图”",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32802764",
           "publishedAt": null,
           "sourceId": "thepaper",
           "sourceLabel": "澎湃新闻热榜",
@@ -2586,8 +2586,8 @@
           "signal": "watch"
         },
         {
-          "title": "一图看懂｜美以伊打了三周，影响范围有多大？",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32800384",
+          "title": "对话｜海湾战事三周（上）：特朗普矛盾表态是策略，伊朗非对称作战奏效",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32802192",
           "publishedAt": null,
           "sourceId": "thepaper",
           "sourceLabel": "澎湃新闻热榜",
@@ -2610,8 +2610,8 @@
           "signal": "watch"
         },
         {
-          "title": "女子月经弄脏卧铺床单被要求赔偿180元？铁路部门回应",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32800617",
+          "title": "南部战区新闻发言人发表谈话",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32802754",
           "publishedAt": null,
           "sourceId": "thepaper",
           "sourceLabel": "澎湃新闻热榜",
@@ -2634,8 +2634,8 @@
           "signal": "watch"
         },
         {
-          "title": "广州公安通报：“梅姨”落网",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32805854",
+          "title": "美国批准临时交付和销售源自伊朗的石油",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32805006",
           "publishedAt": null,
           "sourceId": "thepaper",
           "sourceLabel": "澎湃新闻热榜",
@@ -2658,8 +2658,8 @@
           "signal": "watch"
         },
         {
-          "title": "内塔尼亚胡否认以色列将美国拖入战争：真有人觉得能指挥特朗普？",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32801066",
+          "title": "世界睡眠日｜为了让人睡好觉，医学有多拼？",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32733099",
           "publishedAt": null,
           "sourceId": "thepaper",
           "sourceLabel": "澎湃新闻热榜",
@@ -2682,8 +2682,8 @@
           "signal": "watch"
         },
         {
-          "title": "对话｜海湾战事三周（上）：特朗普矛盾表态是策略，伊朗非对称作战奏效",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32802192",
+          "title": "85岁原画师手绘“40岁”葫芦娃出圈，刷屏背后是终生守望",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32796573",
           "publishedAt": null,
           "sourceId": "thepaper",
           "sourceLabel": "澎湃新闻热榜",
@@ -2706,8 +2706,8 @@
           "signal": "watch"
         },
         {
-          "title": "人形机器人出货全球第一！从宇树招股书看王兴兴的“技术野心”与“扩张蓝图”",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32802764",
+          "title": "中青评论：买不到卫生巾只能站着？火车上的“月经焦虑”该解了",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32802319",
           "publishedAt": null,
           "sourceId": "thepaper",
           "sourceLabel": "澎湃新闻热榜",
@@ -2730,8 +2730,8 @@
           "signal": "watch"
         },
         {
-          "title": "南部战区新闻发言人发表谈话",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32802754",
+          "title": "中央网信办指导网站平台全面规范短视频内容标注工作",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32805641",
           "publishedAt": null,
           "sourceId": "thepaper",
           "sourceLabel": "澎湃新闻热榜",
@@ -2754,8 +2754,8 @@
           "signal": "watch"
         },
         {
-          "title": "美国批准临时交付和销售源自伊朗的石油",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32805006",
+          "title": "“梅姨”落网，她参与拐卖的9个孩子已找到、曾被质疑是否真有其人",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32806136",
           "publishedAt": null,
           "sourceId": "thepaper",
           "sourceLabel": "澎湃新闻热榜",
@@ -2778,8 +2778,8 @@
           "signal": "bullish"
         },
         {
-          "title": "85岁原画师手绘“40岁”葫芦娃出圈，刷屏背后是终生守望",
-          "url": "https://www.thepaper.cn/newsDetail_forward_32796573",
+          "title": "新闻1+1丨支持老年人再就业，“上海方案”影响几何",
+          "url": "https://www.thepaper.cn/newsDetail_forward_32804966",
           "publishedAt": null,
           "sourceId": "thepaper",
           "sourceLabel": "澎湃新闻热榜",
@@ -2815,7 +2815,7 @@
         "toutiao"
       ],
       "windowStart": "2026-03-20 15:00",
-      "windowLabel": "03-20 15:00 - 03-21 14:09",
+      "windowLabel": "03-20 15:00 - 03-21 17:33",
       "itemCount": 24,
       "items": [
         {
@@ -2843,38 +2843,14 @@
           "signal": "watch"
         },
         {
-          "title": "谢某某就是梅姨",
-          "url": "https://s.weibo.com/weibo?q=%23%E8%B0%A2%E6%9F%90%E6%9F%90%E5%B0%B1%E6%98%AF%E6%A2%85%E5%A7%A8%23&t=31&band_rank=2&Refer=top",
+          "title": "梅姨同居男友都看不到她的身份证",
+          "url": "https://s.weibo.com/weibo?q=%23%E6%A2%85%E5%A7%A8%E5%90%8C%E5%B1%85%E7%94%B7%E5%8F%8B%E9%83%BD%E7%9C%8B%E4%B8%8D%E5%88%B0%E5%A5%B9%E7%9A%84%E8%BA%AB%E4%BB%BD%E8%AF%81%23&t=31&band_rank=2&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
           "sourceHome": "https://weibo.com",
           "sourceType": "newsnow",
           "rank": 2,
-          "sourcePriority": 1,
-          "signal": "watch"
-        },
-        {
-          "title": "游客在壶口瀑布外拍视频称「门口要钱一人一百」被景区投诉，具体是什么情况？这算侵犯名誉权吗？",
-          "url": "https://www.zhihu.com/question/2017576614158890645",
-          "publishedAt": null,
-          "sourceId": "zhihu",
-          "sourceLabel": "知乎热榜",
-          "sourceHome": "https://www.zhihu.com",
-          "sourceType": "newsnow",
-          "rank": 2,
-          "sourcePriority": 2,
-          "signal": "watch"
-        },
-        {
-          "title": "清明小长假火车购票日历",
-          "url": "https://s.weibo.com/weibo?q=%23%E6%B8%85%E6%98%8E%E5%B0%8F%E9%95%BF%E5%81%87%E7%81%AB%E8%BD%A6%E8%B4%AD%E7%A5%A8%E6%97%A5%E5%8E%86%23&t=31&band_rank=3&Refer=top",
-          "publishedAt": null,
-          "sourceId": "weibo",
-          "sourceLabel": "微博热搜",
-          "sourceHome": "https://weibo.com",
-          "sourceType": "newsnow",
-          "rank": 3,
           "sourcePriority": 1,
           "signal": "watch"
         },
@@ -2886,13 +2862,37 @@
           "sourceLabel": "知乎热榜",
           "sourceHome": "https://www.zhihu.com",
           "sourceType": "newsnow",
+          "rank": 2,
+          "sourcePriority": 2,
+          "signal": "watch"
+        },
+        {
+          "title": "总会被一棵树的张力震撼到",
+          "url": "https://s.weibo.com/weibo?q=%23%E6%80%BB%E4%BC%9A%E8%A2%AB%E4%B8%80%E6%A3%B5%E6%A0%91%E7%9A%84%E5%BC%A0%E5%8A%9B%E9%9C%87%E6%92%BC%E5%88%B0%23&t=31&band_rank=3&Refer=top",
+          "publishedAt": null,
+          "sourceId": "weibo",
+          "sourceLabel": "微博热搜",
+          "sourceHome": "https://weibo.com",
+          "sourceType": "newsnow",
+          "rank": 3,
+          "sourcePriority": 1,
+          "signal": "watch"
+        },
+        {
+          "title": "山姆被曝冷鲜猪肉是数月前屠宰的，被投诉后食品追溯信息也消失，具体是怎么回事？冷鲜肉保质期一般是多久？",
+          "url": "https://www.zhihu.com/question/2018389157471285862",
+          "publishedAt": null,
+          "sourceId": "zhihu",
+          "sourceLabel": "知乎热榜",
+          "sourceHome": "https://www.zhihu.com",
+          "sourceType": "newsnow",
           "rank": 3,
           "sourcePriority": 2,
           "signal": "watch"
         },
         {
-          "title": "白象 土豆泥火鸡面",
-          "url": "https://s.weibo.com/weibo?q=%E7%99%BD%E8%B1%A1%20%E5%9C%9F%E8%B1%86%E6%B3%A5%E7%81%AB%E9%B8%A1%E9%9D%A2&t=31&band_rank=4&Refer=top",
+          "title": "梅姨同居男友说她不戴首饰",
+          "url": "https://s.weibo.com/weibo?q=%23%E6%A2%85%E5%A7%A8%E5%90%8C%E5%B1%85%E7%94%B7%E5%8F%8B%E8%AF%B4%E5%A5%B9%E4%B8%8D%E6%88%B4%E9%A6%96%E9%A5%B0%23&t=31&band_rank=4&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -2903,8 +2903,8 @@
           "signal": "watch"
         },
         {
-          "title": "捏住老虎的后颈肉，它会像猫咪一样乖巧顺从吗？",
-          "url": "https://www.zhihu.com/question/15554795453",
+          "title": "奥沙利文打出单杆 153 分，创造斯诺克历史单杆最高分，怎样评价他的表现？拿到这一分数有多难？",
+          "url": "https://www.zhihu.com/question/2018368824852838083",
           "publishedAt": null,
           "sourceId": "zhihu",
           "sourceLabel": "知乎热榜",
@@ -2915,8 +2915,8 @@
           "signal": "watch"
         },
         {
-          "title": "董事长病逝未成年女儿继承9亿股票",
-          "url": "https://s.weibo.com/weibo?q=%23%E8%91%A3%E4%BA%8B%E9%95%BF%E7%97%85%E9%80%9D%E6%9C%AA%E6%88%90%E5%B9%B4%E5%A5%B3%E5%84%BF%E7%BB%A7%E6%89%BF9%E4%BA%BF%E8%82%A1%E7%A5%A8%23&t=31&band_rank=5&Refer=top",
+          "title": "女子熬夜3个月突然开始对墙讲课",
+          "url": "https://s.weibo.com/weibo?q=%23%E5%A5%B3%E5%AD%90%E7%86%AC%E5%A4%9C3%E4%B8%AA%E6%9C%88%E7%AA%81%E7%84%B6%E5%BC%80%E5%A7%8B%E5%AF%B9%E5%A2%99%E8%AE%B2%E8%AF%BE%23&t=31&band_rank=5&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -2927,8 +2927,8 @@
           "signal": "watch"
         },
         {
-          "title": "靠人脉才能加上蛋糕商家微信号，有人专程「打飞的」吃糕，「主理人蛋糕」为啥能爆火？买它到底是在买什么？",
-          "url": "https://www.zhihu.com/question/2018260588451606734",
+          "title": "网传年轻时多运动老了会「死得干脆」，这个说法有科学依据吗？年轻时经常运动对老年生活有什么影响？",
+          "url": "https://www.zhihu.com/question/2017655222604883440",
           "publishedAt": null,
           "sourceId": "zhihu",
           "sourceLabel": "知乎热榜",
@@ -2939,8 +2939,8 @@
           "signal": "watch"
         },
         {
-          "title": "梅姨被逮杨妞花发声",
-          "url": "https://s.weibo.com/weibo?q=%23%E6%A2%85%E5%A7%A8%E8%A2%AB%E9%80%AE%E6%9D%A8%E5%A6%9E%E8%8A%B1%E5%8F%91%E5%A3%B0%23&t=31&band_rank=6&Refer=top",
+          "title": "90后男子为降血糖自制汤药身亡",
+          "url": "https://s.weibo.com/weibo?q=%2390%E5%90%8E%E7%94%B7%E5%AD%90%E4%B8%BA%E9%99%8D%E8%A1%80%E7%B3%96%E8%87%AA%E5%88%B6%E6%B1%A4%E8%8D%AF%E8%BA%AB%E4%BA%A1%23&t=31&band_rank=6&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -2963,8 +2963,8 @@
           "signal": "watch"
         },
         {
-          "title": "徐志胜自曝创业月亏12万",
-          "url": "https://s.weibo.com/weibo?q=%23%E5%BE%90%E5%BF%97%E8%83%9C%E8%87%AA%E6%9B%9D%E5%88%9B%E4%B8%9A%E6%9C%88%E4%BA%8F12%E4%B8%87%23&t=31&band_rank=7&Refer=top",
+          "title": "软软的水 脆脆的水",
+          "url": "https://s.weibo.com/weibo?q=%E8%BD%AF%E8%BD%AF%E7%9A%84%E6%B0%B4%20%E8%84%86%E8%84%86%E7%9A%84%E6%B0%B4&t=31&band_rank=7&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -2975,8 +2975,8 @@
           "signal": "watch"
         },
         {
-          "title": "网传年轻时多运动老了会「死得干脆」，这个说法有科学依据吗？年轻时经常运动对老年生活有什么影响？",
-          "url": "https://www.zhihu.com/question/2017655222604883440",
+          "title": "为何《士兵突击》的许三多从来没有浮躁，他能够耐得住在草原五班中慢慢提升自己？",
+          "url": "https://www.zhihu.com/question/6293078492",
           "publishedAt": null,
           "sourceId": "zhihu",
           "sourceLabel": "知乎热榜",
@@ -2987,8 +2987,8 @@
           "signal": "watch"
         },
         {
-          "title": "终于有人吐槽手语舞了",
-          "url": "https://s.weibo.com/weibo?q=%E7%BB%88%E4%BA%8E%E6%9C%89%E4%BA%BA%E5%90%90%E6%A7%BD%E6%89%8B%E8%AF%AD%E8%88%9E%E4%BA%86&t=31&band_rank=8&Refer=top",
+          "title": "美军核坟墓辐射量已超切尔诺贝利",
+          "url": "https://s.weibo.com/weibo?q=%23%E7%BE%8E%E5%86%9B%E6%A0%B8%E5%9D%9F%E5%A2%93%E8%BE%90%E5%B0%84%E9%87%8F%E5%B7%B2%E8%B6%85%E5%88%87%E5%B0%94%E8%AF%BA%E8%B4%9D%E5%88%A9%23&t=31&band_rank=8&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -3011,8 +3011,8 @@
           "signal": "watch"
         },
         {
-          "title": "章子怡采访刘烨憋笑",
-          "url": "https://s.weibo.com/weibo?q=%23%E7%AB%A0%E5%AD%90%E6%80%A1%E9%87%87%E8%AE%BF%E5%88%98%E7%83%A8%E6%86%8B%E7%AC%91%23&t=31&band_rank=9&Refer=top",
+          "title": "霸王茶姬口令",
+          "url": "https://s.weibo.com/weibo?q=%E9%9C%B8%E7%8E%8B%E8%8C%B6%E5%A7%AC%E5%8F%A3%E4%BB%A4&t=31&band_rank=9&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -3023,8 +3023,8 @@
           "signal": "watch"
         },
         {
-          "title": "山姆被曝冷鲜猪肉是数月前屠宰的，被投诉后食品追溯信息也消失，具体是怎么回事？冷鲜肉保质期一般是多久？",
-          "url": "https://www.zhihu.com/question/2018389157471285862",
+          "title": "网传《歌手 2026》拟邀歌手池，若属实，你猜测每个标签对应的都是谁？",
+          "url": "https://www.zhihu.com/question/2017916612582269780",
           "publishedAt": null,
           "sourceId": "zhihu",
           "sourceLabel": "知乎热榜",
@@ -3035,8 +3035,8 @@
           "signal": "watch"
         },
         {
-          "title": "95号油价或破10元",
-          "url": "https://s.weibo.com/weibo?q=%2395%E5%8F%B7%E6%B2%B9%E4%BB%B7%E6%88%96%E7%A0%B410%E5%85%83%23&t=31&band_rank=10&Refer=top",
+          "title": "谢征白吃醋了",
+          "url": "https://s.weibo.com/weibo?q=%23%E8%B0%A2%E5%BE%81%E7%99%BD%E5%90%83%E9%86%8B%E4%BA%86%23&t=31&band_rank=10&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -3059,8 +3059,8 @@
           "signal": "watch"
         },
         {
-          "title": "网友通过倪妮悄悄话分析出汤唯怀孕了",
-          "url": "https://s.weibo.com/weibo?q=%23%E7%BD%91%E5%8F%8B%E9%80%9A%E8%BF%87%E5%80%AA%E5%A6%AE%E6%82%84%E6%82%84%E8%AF%9D%E5%88%86%E6%9E%90%E5%87%BA%E6%B1%A4%E5%94%AF%E6%80%80%E5%AD%95%E4%BA%86%23&t=31&band_rank=11&Refer=top",
+          "title": "梅姨长相与公布画像相似度不高",
+          "url": "https://s.weibo.com/weibo?q=%23%E6%A2%85%E5%A7%A8%E9%95%BF%E7%9B%B8%E4%B8%8E%E5%85%AC%E5%B8%83%E7%94%BB%E5%83%8F%E7%9B%B8%E4%BC%BC%E5%BA%A6%E4%B8%8D%E9%AB%98%23&t=31&band_rank=11&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -3083,8 +3083,8 @@
           "signal": "watch"
         },
         {
-          "title": "15岁女生派出所办公室内遭猥亵",
-          "url": "https://s.weibo.com/weibo?q=%2315%E5%B2%81%E5%A5%B3%E7%94%9F%E6%B4%BE%E5%87%BA%E6%89%80%E5%8A%9E%E5%85%AC%E5%AE%A4%E5%86%85%E9%81%AD%E7%8C%A5%E4%BA%B5%23&t=31&band_rank=12&Refer=top",
+          "title": "张凌赫男大自拍",
+          "url": "https://s.weibo.com/weibo?q=%E5%BC%A0%E5%87%8C%E8%B5%AB%E7%94%B7%E5%A4%A7%E8%87%AA%E6%8B%8D&t=31&band_rank=12&Refer=top",
           "publishedAt": null,
           "sourceId": "weibo",
           "sourceLabel": "微博热搜",
@@ -3095,8 +3095,8 @@
           "signal": "watch"
         },
         {
-          "title": "如何看待 ICML 2026 因审稿人违规使用 AI 而一次性桌拒 497 篇论文？",
-          "url": "https://www.zhihu.com/question/2017816580403246847",
+          "title": "杭州西湖有老鼠下水和鱼「抢食」，游客调侃像是「秀泳技」，老鼠为啥会到水里觅食？它们的水性这么好吗？",
+          "url": "https://www.zhihu.com/question/2015063164530734312",
           "publishedAt": null,
           "sourceId": "zhihu",
           "sourceLabel": "知乎热榜",
