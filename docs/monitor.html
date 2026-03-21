@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>原始数据监控 | Daily News Insight</title>
+    <title>源数据监控 | Daily News Insight</title>
     <meta
       name="description"
-      content="查看 Daily News Insight 当前抓到的原始新闻数据、来源和板块分布。"
+      content="查看 Daily News Insight 当前抓到的原始新闻标题、来源和板块分布。"
     />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,40 +24,42 @@
         <div class="sidebar-brand">
           <p class="eyebrow">Raw Feed Monitor</p>
           <h1>Daily News Insight</h1>
-          <p class="sidebar-copy">这里展示每天抓到的原始标题，不经过 AI 二次总结，方便核对来源质量。</p>
+          <p class="sidebar-copy">这里展示每个板块抓到的原始标题，方便核对来源质量、覆盖范围和去重效果。</p>
         </div>
 
         <nav class="page-nav" aria-label="站点菜单">
           <a class="page-link" href="./index.html">
-            <span class="page-link-title">智能深度简报</span>
-            <span class="page-link-copy">回到摘要页查看提炼后的十板块日报</span>
+            <span class="page-link-title">主简报</span>
+            <span class="page-link-copy">回到全量动态、重点排序和策略判断页面</span>
           </a>
           <a class="page-link is-active" href="./monitor.html">
-            <span class="page-link-title">原始数据监控</span>
-            <span class="page-link-copy">抓取结果、源站分布、原始标题列表</span>
+            <span class="page-link-title">源数据监控</span>
+            <span class="page-link-copy">查看抓取结果、来源分布和原始标题</span>
           </a>
           <a class="page-link" href="./about.html">
-            <span class="page-link-title">说明 / 部署</span>
-            <span class="page-link-copy">GitHub Actions、Pages、Key 与仓库配置</span>
+            <span class="page-link-title">部署说明</span>
+            <span class="page-link-copy">GitHub Actions、Pages 与更新方式说明</span>
           </a>
         </nav>
 
         <section class="sidebar-note">
-          <p class="sidebar-note-title">监控用途</p>
-          <p class="sidebar-note-copy">如果某个板块质量下降，先来这里看是抓取源的问题，还是 AI 总结的问题。</p>
+          <p class="sidebar-note-title">怎么用</p>
+          <p class="sidebar-note-copy">
+            如果某个板块内容质量下降，先来这里看是抓取源的问题，还是后续总结层的问题。
+          </p>
         </section>
       </aside>
 
       <main class="app-main">
-        <div class="update-banner">原始标题默认展示每个板块前 20 条，适合快速检查信号覆盖、去重质量和来源稳定性。</div>
+        <div class="update-banner">默认展示每个板块近 24 条原始动态，适合快速检查覆盖、时效和来源稳定性。</div>
 
         <header class="main-header">
           <div>
             <p class="eyebrow">Raw Snapshot</p>
-            <h2 class="main-title">原始数据监控</h2>
+            <h2 class="main-title">源数据监控</h2>
           </div>
           <div class="header-actions">
-            <div class="status-pill" id="raw-generated">载入中...</div>
+            <div class="status-pill" id="raw-generated">读取中…</div>
           </div>
         </header>
 
@@ -67,7 +69,7 @@
               <p class="eyebrow">Categories</p>
               <h3>板块抓取概览</h3>
             </div>
-            <p class="section-hint">每个板块显示当前接入的 source id 和标题样本。</p>
+            <p class="section-hint">每个板块显示当前接入的 source id 和原始标题样本</p>
           </div>
           <div class="monitor-grid" id="monitor-grid"></div>
         </section>

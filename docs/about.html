@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>关于 · 小程的财经日报</title>
+    <title>部署说明 | Daily News Insight</title>
     <meta
       name="description"
-      content="关于小程的财经日报 · Zuko，以及联系方式。"
+      content="了解 Daily News Insight 的抓取方式、更新节奏和 GitHub Pages 部署结构。"
     />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,87 +21,74 @@
     <div class="app-shell">
       <aside class="app-sidebar">
         <div class="sidebar-brand">
-          <p class="eyebrow">AI 财经简报</p>
-          <h1>小程的财经日报</h1>
-          <p class="sidebar-copy">每日精选全球财经要闻，AI 深度解读，洞察市场脉搏，助你在信息洪流中把握先机。</p>
+          <p class="eyebrow">Deployment Notes</p>
+          <h1>Daily News Insight</h1>
+          <p class="sidebar-copy">这是一套“抓取原始新闻 -> 生成静态 JSON -> GitHub Pages 发布”的静态部署方案。</p>
         </div>
+
         <nav class="page-nav" aria-label="站点菜单">
           <a class="page-link" href="./index.html">
-            <span class="page-link-title">智能深度简报</span>
-            <span class="page-link-copy">摘要、利多利空、分析师观点、角色评论</span>
+            <span class="page-link-title">主简报</span>
+            <span class="page-link-copy">查看全量动态、重点排序与策略判断</span>
           </a>
           <a class="page-link" href="./monitor.html">
-            <span class="page-link-title">原始数据监控</span>
-            <span class="page-link-copy">查看每个板块抓到的源站和标题原文</span>
+            <span class="page-link-title">源数据监控</span>
+            <span class="page-link-copy">查看各板块抓到的原始标题与来源</span>
           </a>
           <a class="page-link is-active" href="./about.html">
-            <span class="page-link-title">关于 · 联系</span>
-            <span class="page-link-copy">关于本站与联系方式</span>
+            <span class="page-link-title">部署说明</span>
+            <span class="page-link-copy">更新频率、数据结构与发布路径</span>
           </a>
         </nav>
+
+        <section class="sidebar-note">
+          <p class="sidebar-note-title">当前发布方式</p>
+          <p class="sidebar-note-copy">GitHub Actions 定时跑脚本，把生成结果写到 `docs/data`，然后 GitHub Pages 直接发布。</p>
+        </section>
       </aside>
-      <main class="app-main">
-        <header class="main-header">
-          <div>
-            <p class="eyebrow">About</p>
-            <h2 class="main-title">关于本站</h2>
-          </div>
-        </header>
+
+      <main class="app-main about-layout">
+        <div class="update-banner">当前默认会在北京时间 07:05、12:30、17:05、21:35 自动刷新，也支持手动触发。</div>
 
         <section class="summary-card">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Concept</p>
-              <h3>创建初心</h3>
+              <p class="eyebrow">Architecture</p>
+              <h3>站点结构</h3>
             </div>
           </div>
-          <div class="summary-body">
-            <p class="summary-lead">每天的财经资讯如海浪滚滚，真正有价値的信息却一临即逝。小程的财经日报就是想解决这个问题——让 AI 替你过滤噪声，每天一份精准简报送到手中。没有广告，没有点击误导，只有真正有用的市场信号。</p>
+          <div class="about-copy">
+            <p>站点前端是纯静态页面，首页只读取 `docs/data/latest/digest.json` 和历史快照，不依赖后端服务。</p>
+            <p>抓取层会聚合中文快讯源和国际 RSS 源，然后按板块做去重、全量汇总、重点排序、周期判断和联想链路整理。</p>
           </div>
         </section>
 
-        <section class="signal-grid">
-          <article class="signal-card bullish-card">
-            <p class="signal-label">每日自动更新</p>
-            <p class="signal-copy">GitHub Actions 定时拉取全球财经新闻，每天 07:05 准时发布最新简报。</p>
-          </article>
-          <article class="signal-card watch-card">
-            <p class="signal-label">AI 深度解读</p>
-07:00 及 12:30          </article>
-          <article class="signal-card bearish-card">
-            <p class="signal-label">完全免费</p>
-            <p class="signal-copy">托管在 GitHub Pages，静态页面，永久免费，所有历史版本均可回溯查阅。</p>
-          </article>
-        </section>
-
-        <section class="analyst-card">
+        <section class="panel-card">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Contact</p>
-              <h3>联系作者</h3>
+              <p class="eyebrow">Update Flow</p>
+              <h3>更新流程</h3>
             </div>
           </div>
-          <div class="summary-body">
-            <p class="summary-lead">Hi，我是 Zuko，小程的财经日报的创建者。如果你对内容有任何想法、建议或关注意愿，欢迎随时联系我。</p>
-            <div class="summary-meta-grid">
-              <div class="metric-card">
-                <span class="metric-label">📧 邮符1</span>
-                <strong>3119268060@qq.com</strong>
-              </div>
-              <div class="metric-card">
-                <span class="metric-label">💬 微信</span>
-                <strong>cfu800</strong>
-              </div>
-              <div class="metric-card">
-                <span class="metric-label">📊 更新频率</span>
-              <strong>每天 07:00 及 12:30</strong>              </div>
-            </div>
-          </div>
+          <ol class="step-list">
+            <li>GitHub Actions 定时运行 `scripts/daily_digest_v2.py`。</li>
+            <li>脚本抓取原始新闻，生成 `docs/data/latest/digest.json` 与历史归档。</li>
+            <li>同一个 workflow 会把 `docs/` 打包并部署到 GitHub Pages。</li>
+          </ol>
         </section>
 
-        <footer style="text-align:center;padding:2rem;color:#888;font-size:0.85rem;">
-          &copy; 2026 小程的财经日报 · Zuko &nbsp;|&nbsp; 由 AI 驱动，每天更新
-        </footer>
+        <section class="panel-card">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Secrets</p>
+              <h3>密钥与本地运行</h3>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p>如果仓库设置了 `OPENAI_API_KEY`，脚本会优先使用更正式的编辑层输出；如果没有，也能退回到规则模板模式继续生成页面。</p>
+            <p>本地运行时可以在仓库根目录的 `.env.local` 中放入密钥；公开仓库里不要提交这个文件。</p>
+          </div>
+        </section>
       </main>
     </div>
   </body>

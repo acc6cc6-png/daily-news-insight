@@ -2,7 +2,6 @@ const state = {
   digest: null,
   history: [],
   activeCategoryId: null,
-  summaryCollapsed: false,
   usingLatest: true,
 };
 
@@ -25,26 +24,16 @@ async function bootstrap() {
 
     renderTabs();
     renderHistory();
-    renderCategory();
+    renderPage();
   } catch (error) {
     renderFatalState(error);
   }
 }
 
 function bindChromeEvents() {
-  const historyOpen = document.querySelector("#history-open");
-  const historyClose = document.querySelector("#history-close");
-  const historyCloseButton = document.querySelector("#history-close-button");
-  const summaryToggle = document.querySelector("#summary-toggle");
-
-  historyOpen?.addEventListener("click", () => toggleHistory(true));
-  historyClose?.addEventListener("click", () => toggleHistory(false));
-  historyCloseButton?.addEventListener("click", () => toggleHistory(false));
-
-  summaryToggle?.addEventListener("click", () => {
-    state.summaryCollapsed = !state.summaryCollapsed;
-    renderSummaryCollapse();
-  });
+  document.querySelector("#history-open")?.addEventListener("click", () => toggleHistory(true));
+  document.querySelector("#history-close")?.addEventListener("click", () => toggleHistory(false));
+  document.querySelector("#history-close-button")?.addEventListener("click", () => toggleHistory(false));
 }
 
 async function fetchJson(url, fallback = null) {
@@ -62,85 +51,127 @@ async function fetchJson(url, fallback = null) {
   }
 }
 
-function renderTabs() {
-  const container = document.querySelector("#category-tabs");
-  if (!container || !state.digest) {
+function renderPage() {
+  if (!state.digest) {
+    return;
+  }
+  const category = getActiveCategory();
+  if (!category) {
     return;
   }
 
-  container.innerHTML = state.digest.categories
-    .map((category) => {
-      const active = category.id === state.activeCategoryId;
-      return `
-        <button
-          class="tab-button ${active ? "is-active" : ""}"
-          type="button"
-          data-category-id="${escapeHtml(category.id)}"
-        >
-          ${escapeHtml(category.name)}
-        </button>
-      `;
-    })
-    .join("");
-
-  container.querySelectorAll("[data-category-id]").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.activeCategoryId = button.getAttribute("data-category-id");
-      renderTabs();
-      renderCategory();
-    });
-  });
+  renderHeader(category);
+  renderPulse();
+  renderOverview(category);
+  renderSignals(category);
+  renderFeeds(category);
+  renderComments(category);
+  renderSources(category);
+  toggleLatestIndicator();
 }
 
-function renderCategory() {
-  const category = getActiveCategory();
-  if (!category || !state.digest) {
-    return;
-  }
-
+function renderHeader(category) {
+  const edition = state.digest.edition;
   setText("#hero-kicker", state.digest.site.subtitle);
   setText("#hero-title", category.name);
   setText("#hero-lead", category.lead);
-  setText("#edition-summary", `${state.digest.edition.dateLabel} ${state.digest.edition.timeLabel} · ${modeLabel(state.digest.edition.mode)}`);
-  setText("#metric-generated", `${state.digest.edition.generatedAt} (${state.digest.edition.timezone})`);
-  setText("#metric-mode", modeLabel(state.digest.edition.mode));
-  setText("#metric-stories", `${category.stories.length} 条`);
-  setText("#bullish-copy", category.bullish);
-  setText("#bearish-copy", category.bearish);
-  setText("#watch-copy", category.watch);
-  setText("#lens-copy", category.lens);
-  setText("#analyst-copy", category.economistTake);
-  toggleLatestIndicator();
-  renderSummaryCollapse();
-  renderStories(category);
-  renderComments(category);
-  renderSources(category);
+  setText("#generated-badge", `${edition.generatedAt} 更新`);
+  setText("#window-banner", `统计窗口：${edition.windowLabel} ｜ 当前聚焦 ${category.name}`);
+  setText("#sidebar-window", edition.windowLabel);
 }
 
-function renderStories(category) {
-  const container = document.querySelector("#stories-list");
-  if (!container) {
+function renderPulse() {
+  const pulse = state.digest?.marketPulse;
+  const container = document.querySelector("#pulse-grid");
+  if (!pulse || !container) {
     return;
   }
 
-  container.innerHTML = category.stories
+  setText("#pulse-window", pulse.windowLabel);
+  setText("#pulse-headline", pulse.headline);
+
+  container.innerHTML = pulse.highlights
     .map(
       (story) => `
-        <article class="story-card">
-          <div class="story-header">
-            <span class="story-index">#${story.index}</span>
-            <span class="story-signal ${signalClass(story.signal)}">${escapeHtml(story.signalLabel)}</span>
+        <article class="pulse-item">
+          <div class="pulse-meta">
+            <span class="pulse-category">${escapeHtml(story.categoryName)}</span>
+            <span class="story-signal ${signalClass(story.signal)}">${escapeHtml(story.impactLabel)}</span>
           </div>
           <h4>${escapeHtml(story.title)}</h4>
-          <p>${escapeHtml(story.summary)}</p>
-          <p class="signal-copy">${escapeHtml(story.reason)}</p>
+          <p>${escapeHtml(story.impactReason)}</p>
           <div class="story-footer">
             <span class="story-source">${escapeHtml(story.source)}${story.publishedAt ? ` · ${escapeHtml(story.publishedAt)}` : ""}</span>
-            <a class="story-link" href="${escapeAttribute(story.url)}" target="_blank" rel="noreferrer">Read Source</a>
+            <a class="story-link" href="${escapeAttribute(story.url)}" target="_blank" rel="noreferrer">原文</a>
           </div>
         </article>
       `,
     )
+    .join("");
+}
+
+function renderOverview(category) {
+  setText("#cycle-view", category.cycleView);
+  setText("#strategy-take", category.strategyTake);
+  setText("#metric-window", category.windowLabel);
+  setText("#metric-generated", state.digest.edition.generatedAt);
+  setText("#metric-mode", modeLabel(state.digest.edition.mode));
+  setText("#story-total", `${category.stats.allStoryCount} 条动态`);
+  setText("#priority-total", `${category.stats.priorityCount} 条重点`);
+  setText("#lens-copy", category.lens);
+  setText("#analyst-copy", category.economistTake);
+
+  const linkageList = document.querySelector("#linkage-list");
+  if (linkageList) {
+    linkageList.innerHTML = category.linkageIdeas
+      .map(
+        (item, index) => `
+          <article class="linkage-item">
+            <span class="linkage-index">0${index + 1}</span>
+            <p>${escapeHtml(item)}</p>
+          </article>
+        `,
+      )
+      .join("");
+  }
+}
+
+function renderSignals(category) {
+  setText("#bullish-copy", category.bullish);
+  setText("#bearish-copy", category.bearish);
+  setText("#watch-copy", category.watch);
+}
+
+function renderFeeds(category) {
+  renderStoryList("#all-stories-list", category.allStories, "full");
+  renderStoryList("#priority-stories-list", category.priorityStories, "priority");
+}
+
+function renderStoryList(selector, stories, layout) {
+  const container = document.querySelector(selector);
+  if (!container) {
+    return;
+  }
+
+  container.innerHTML = stories
+    .map((story) => {
+      const badge = layout === "priority" ? `#${story.priorityRank}` : `#${story.index}`;
+      return `
+        <article class="story-card story-card--${layout}">
+          <div class="story-header">
+            <span class="story-index">${badge}</span>
+            <span class="story-signal ${signalClass(story.signal)}">${escapeHtml(story.impactLabel || story.signalLabel)}</span>
+          </div>
+          <h4>${escapeHtml(story.title)}</h4>
+          <p>${escapeHtml(story.summary)}</p>
+          <p class="signal-copy">${escapeHtml(story.impactReason || story.reason)}</p>
+          <div class="story-footer">
+            <span class="story-source">${escapeHtml(story.source)}${story.publishedAt ? ` · ${escapeHtml(story.publishedAt)}` : ""}</span>
+            <a class="story-link" href="${escapeAttribute(story.url)}" target="_blank" rel="noreferrer">原文</a>
+          </div>
+        </article>
+      `;
+    })
     .join("");
 }
 
@@ -161,7 +192,6 @@ function renderComments(category) {
               ${escapeHtml(comment.emotion)}
             </span>
           </div>
-          <h4>${escapeHtml(comment.role)}</h4>
           <p>${escapeHtml(comment.content)}</p>
         </article>
       `,
@@ -189,6 +219,36 @@ function renderSources(category) {
     .join("");
 }
 
+function renderTabs() {
+  const container = document.querySelector("#category-tabs");
+  if (!container || !state.digest) {
+    return;
+  }
+
+  container.innerHTML = state.digest.categories
+    .map((category) => {
+      const active = category.id === state.activeCategoryId;
+      return `
+        <button
+          class="tab-button ${active ? "is-active" : ""}"
+          type="button"
+          data-category-id="${escapeHtml(category.id)}"
+        >
+          ${escapeHtml(category.name)}
+        </button>
+      `;
+    })
+    .join("");
+
+  container.querySelectorAll("[data-category-id]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.activeCategoryId = button.getAttribute("data-category-id");
+      renderTabs();
+      renderPage();
+    });
+  });
+}
+
 function renderHistory() {
   const container = document.querySelector("#history-list");
   if (!container) {
@@ -196,12 +256,7 @@ function renderHistory() {
   }
 
   const items = [
-    {
-      id: "latest",
-      label: "最新版本",
-      path: "latest",
-      mode: "latest",
-    },
+    { id: "latest", label: "最新快照", path: "latest", mode: "latest" },
     ...state.history.map((item) => ({ ...item, mode: "history" })),
   ];
 
@@ -241,21 +296,10 @@ async function loadEdition(path) {
     }
 
     renderTabs();
-    renderCategory();
+    renderPage();
   } catch (error) {
     renderFatalState(error);
   }
-}
-
-function renderSummaryCollapse() {
-  const body = document.querySelector("#summary-body");
-  const toggle = document.querySelector("#summary-toggle");
-  if (!body || !toggle) {
-    return;
-  }
-
-  body.classList.toggle("is-collapsed", state.summaryCollapsed);
-  toggle.textContent = state.summaryCollapsed ? "展开" : "收起";
 }
 
 function toggleHistory(open) {
@@ -281,16 +325,16 @@ function getActiveCategory() {
 
 function modeLabel(mode) {
   if (mode === "ai") {
-    return "AI 正式版";
+    return "正式版";
   }
   if (mode === "mixed") {
-    return "AI + 模板混合";
+    return "研究快照";
   }
-  return "模板演示版";
+  return "快照版";
 }
 
 function sourceKindLabel(kind) {
-  return kind === "rss" ? "国际 RSS" : kind === "newsnow" ? "中文聚合" : "来源";
+  return kind === "rss" ? "国际媒体" : kind === "newsnow" ? "中文聚合" : "来源";
 }
 
 function signalClass(signal) {
@@ -304,7 +348,7 @@ function signalClass(signal) {
 }
 
 function normalizeEmotion(emotion) {
-  if (emotion.includes("乐观")) {
+  if (emotion.includes("积极") || emotion.includes("乐观")) {
     return "bullish";
   }
   if (emotion.includes("谨慎") || emotion.includes("担忧")) {
@@ -324,10 +368,9 @@ function renderFatalState(error) {
   console.error(error);
   setText("#hero-title", "页面加载失败");
   setText("#hero-lead", error?.message ?? "无法读取最新数据");
-  setText("#bullish-copy", "请确认 docs/data/latest/digest.json 已生成。");
-  setText("#bearish-copy", "如果是 GitHub Pages，请确认 Pages 的发布目录设置为 /docs。");
-  setText("#watch-copy", "你也可以先本地运行 python scripts/daily_digest.py 生成演示数据。");
-  setText("#analyst-copy", "当前页面只依赖静态 JSON，如果数据文件不存在，前端不会自行生成内容。");
+  setText("#window-banner", "请确认 docs/data/latest/digest.json 已经生成。");
+  setText("#cycle-view", "如果这是 GitHub Pages，请检查 Actions 是否完成，或稍后刷新。");
+  setText("#strategy-take", "站点前端只读取静态 JSON；如果数据不存在，页面不会自行生成内容。");
 }
 
 function escapeHtml(value) {

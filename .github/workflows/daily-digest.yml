@@ -2,8 +2,10 @@ name: Daily Digest
 
 on:
   schedule:
-    - cron: "0 23 * * *"  # 北京时间 每天 07:00
-    - cron: "30 4 * * *"  # 北京时间 每天 12:30
+    - cron: "5 23 * * *" # Asia/Shanghai 07:05
+    - cron: "30 4 * * *" # Asia/Shanghai 12:30
+    - cron: "5 9 * * *" # Asia/Shanghai 17:05
+    - cron: "35 13 * * *" # Asia/Shanghai 21:35
   workflow_dispatch:
 
 permissions:
@@ -40,7 +42,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
-        run: python scripts/daily_digest.py
+        run: python scripts/daily_digest_v2.py
 
       - name: Commit generated data
         run: |
