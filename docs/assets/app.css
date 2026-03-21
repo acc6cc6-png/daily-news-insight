@@ -179,6 +179,13 @@ a {
   padding: 16px 52px 16px 16px;
 }
 
+.sidebar-summary-main,
+.accordion-summary-main {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
 .sidebar-summary::after,
 .accordion-summary::after {
   content: "+";
@@ -197,10 +204,34 @@ a {
   content: "−";
 }
 
+.sidebar-accordion[open] > .sidebar-summary {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: linear-gradient(135deg, rgba(240, 191, 116, 0.08), rgba(255, 255, 255, 0.03));
+}
+
 .sidebar-summary h2 {
   margin: 6px 0 0;
   font-size: 1rem;
   color: #f4eee4;
+}
+
+.sidebar-index,
+.accordion-index {
+  min-width: 42px;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.sidebar-index {
+  color: #fff5de;
+  background: rgba(240, 191, 116, 0.14);
+  border: 1px solid rgba(240, 191, 116, 0.2);
 }
 
 .sidebar-summary-copy {
@@ -255,6 +286,10 @@ a {
   color: #f4eee4;
 }
 
+.board-button--compact {
+  padding: 12px 14px;
+}
+
 .board-button.is-active {
   background: linear-gradient(135deg, rgba(240, 192, 116, 0.24), rgba(52, 87, 121, 0.68));
   border-color: rgba(240, 192, 116, 0.34);
@@ -285,6 +320,11 @@ a {
   color: #f4eee4;
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.08);
+}
+
+.section-button.is-active {
+  background: linear-gradient(135deg, rgba(240, 191, 116, 0.24), rgba(52, 87, 121, 0.68));
+  border-color: rgba(240, 191, 116, 0.34);
 }
 
 .section-button--accent {
@@ -365,6 +405,95 @@ a {
   font-size: 0.86rem;
 }
 
+.board-current,
+.board-cluster {
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.board-current {
+  padding: 14px;
+  display: grid;
+  gap: 6px;
+}
+
+.board-current-label {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(244, 238, 228, 0.62);
+}
+
+.board-current strong {
+  color: #fff8ec;
+  font-size: 1rem;
+}
+
+.board-current p,
+.board-current span {
+  margin: 0;
+  color: rgba(244, 238, 228, 0.76);
+  line-height: 1.6;
+}
+
+.board-cluster-summary {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px 44px 14px 14px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.board-cluster-summary::-webkit-details-marker {
+  display: none;
+}
+
+.board-cluster-summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: rgba(244, 238, 228, 0.72);
+}
+
+.board-cluster[open] > .board-cluster-summary::after {
+  content: "−";
+}
+
+.board-cluster-summary strong {
+  display: block;
+  color: #fff8ec;
+  font-size: 0.96rem;
+}
+
+.board-cluster-summary p {
+  margin: 4px 0 0;
+  color: rgba(244, 238, 228, 0.7);
+  line-height: 1.55;
+  font-size: 0.84rem;
+}
+
+.board-cluster-meta {
+  white-space: nowrap;
+  color: rgba(244, 238, 228, 0.66);
+  font-size: 0.8rem;
+}
+
+.board-cluster-body {
+  display: grid;
+  gap: 10px;
+  padding: 0 14px 14px;
+}
+
 .app-main {
   display: grid;
   gap: 18px;
@@ -404,9 +533,17 @@ a {
 }
 
 .accordion-card[open] > .accordion-summary {
+  border-color: rgba(187, 111, 34, 0.22);
+  box-shadow: 0 24px 52px rgba(68, 46, 19, 0.14);
   background:
     radial-gradient(circle at top right, rgba(240, 191, 116, 0.14), transparent 22%),
     linear-gradient(180deg, rgba(255, 251, 246, 0.98), rgba(255, 248, 242, 0.9));
+}
+
+.accordion-index {
+  color: var(--blue);
+  background: rgba(33, 95, 208, 0.1);
+  border: 1px solid rgba(33, 95, 208, 0.14);
 }
 
 .accordion-summary h3 {
@@ -425,6 +562,10 @@ a {
 .accordion-content {
   display: grid;
   gap: 16px;
+}
+
+.accordion-card[open] > .accordion-content {
+  animation: accordionReveal 180ms ease;
 }
 
 .hero-card,
@@ -1090,6 +1231,17 @@ a {
 
 .ghost-button:hover {
   border-color: var(--line-strong);
+}
+
+@keyframes accordionReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 1420px) {

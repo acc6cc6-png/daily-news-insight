@@ -33,11 +33,14 @@
           </a>
         </section>
 
-        <details class="sidebar-accordion">
+        <details class="sidebar-accordion" data-accordion-group="sidebar">
           <summary class="sidebar-summary">
-            <div>
-              <p class="eyebrow">Site</p>
-              <h2>站点信息</h2>
+            <div class="sidebar-summary-main">
+              <span class="sidebar-index">01</span>
+              <div>
+                <p class="eyebrow">Site</p>
+                <h2>站点信息</h2>
+              </div>
             </div>
             <p class="sidebar-summary-copy">查看站名、说明和仓库入口</p>
           </summary>
@@ -53,11 +56,14 @@
           </div>
         </details>
 
-        <details class="sidebar-accordion">
+        <details class="sidebar-accordion" data-accordion-group="sidebar">
           <summary class="sidebar-summary">
-            <div>
-              <p class="eyebrow">Menu</p>
-              <h2>站点导航</h2>
+            <div class="sidebar-summary-main">
+              <span class="sidebar-index">02</span>
+              <div>
+                <p class="eyebrow">Menu</p>
+                <h2>站点导航</h2>
+              </div>
             </div>
             <p class="sidebar-summary-copy">日报、原始监控、关于本站</p>
           </summary>
@@ -79,24 +85,31 @@
           </div>
         </details>
 
-        <details class="sidebar-accordion" open>
+        <details class="sidebar-accordion" data-accordion-group="sidebar" open>
           <summary class="sidebar-summary">
-            <div>
-              <p class="eyebrow">Boards</p>
-              <h2>板块选择</h2>
+            <div class="sidebar-summary-main">
+              <span class="sidebar-index">03</span>
+              <div>
+                <p class="eyebrow">Boards</p>
+                <h2>板块选择</h2>
+              </div>
             </div>
             <p class="sidebar-summary-copy">点击切换当前板块</p>
           </summary>
           <div class="sidebar-accordion-body">
+            <div class="board-current" id="sidebar-current-board"></div>
             <div class="board-nav" id="sidebar-category-list"></div>
           </div>
         </details>
 
-        <details class="sidebar-accordion">
+        <details class="sidebar-accordion" data-accordion-group="sidebar">
           <summary class="sidebar-summary">
-            <div>
-              <p class="eyebrow">Actions</p>
-              <h2>页面功能</h2>
+            <div class="sidebar-summary-main">
+              <span class="sidebar-index">04</span>
+              <div>
+                <p class="eyebrow">Actions</p>
+                <h2>页面功能</h2>
+              </div>
             </div>
             <p class="sidebar-summary-copy">按模块快速展开内容</p>
           </summary>
@@ -152,9 +165,12 @@
 
         <details class="accordion-card" id="section-compass" data-accordion-group="main" open>
           <summary class="accordion-summary">
-            <div>
-              <p class="eyebrow">Trading Guide</p>
-              <h3>今日交易指北</h3>
+            <div class="accordion-summary-main">
+              <span class="accordion-index">01</span>
+              <div>
+                <p class="eyebrow">Trading Guide</p>
+                <h3>今日交易指北</h3>
+              </div>
             </div>
             <p class="accordion-copy">先看今天偏什么，再看偏多、承压和中性观察。</p>
           </summary>
@@ -231,9 +247,12 @@
 
         <details class="accordion-card" id="section-pulse" data-accordion-group="main">
           <summary class="accordion-summary">
-            <div>
-              <p class="eyebrow">Cross Market</p>
-              <h3>跨市场主线</h3>
+            <div class="accordion-summary-main">
+              <span class="accordion-index">02</span>
+              <div>
+                <p class="eyebrow">Cross Market</p>
+                <h3>跨市场主线</h3>
+              </div>
             </div>
             <p class="accordion-copy">把跨市场真正重要的几条主线先提出来。</p>
           </summary>
@@ -254,9 +273,12 @@
 
         <details class="accordion-card" id="section-priority" data-accordion-group="main">
           <summary class="accordion-summary">
-            <div>
-              <p class="eyebrow">Impact Rank</p>
-              <h3>重点影响排序</h3>
+            <div class="accordion-summary-main">
+              <span class="accordion-index">03</span>
+              <div>
+                <p class="eyebrow">Impact Rank</p>
+                <h3>重点影响排序</h3>
+              </div>
             </div>
             <p class="accordion-copy">按影响力排，不按时间排。</p>
           </summary>
@@ -276,9 +298,12 @@
 
         <details class="accordion-card" id="section-feed" data-accordion-group="main">
           <summary class="accordion-summary">
-            <div>
-              <p class="eyebrow">Full Feed</p>
-              <h3>全天全量动态</h3>
+            <div class="accordion-summary-main">
+              <span class="accordion-index">04</span>
+              <div>
+                <p class="eyebrow">Full Feed</p>
+                <h3>全天全量动态</h3>
+              </div>
             </div>
             <p class="accordion-copy">打开后再看完整动态，避免一进页面就被长列表淹没。</p>
           </summary>
@@ -298,9 +323,12 @@
 
         <details class="accordion-card" id="section-overview" data-accordion-group="main">
           <summary class="accordion-summary">
-            <div>
-              <p class="eyebrow">Board View</p>
-              <h3>板块策略</h3>
+            <div class="accordion-summary-main">
+              <span class="accordion-index">05</span>
+              <div>
+                <p class="eyebrow">Board View</p>
+                <h3>板块策略</h3>
+              </div>
             </div>
             <p class="accordion-copy">周期判断、策略建议、联想链路和定价逻辑。</p>
           </summary>
@@ -378,9 +406,12 @@
 
         <details class="accordion-card" id="section-comments" data-accordion-group="main">
           <summary class="accordion-summary">
-            <div>
-              <p class="eyebrow">Multi View</p>
-              <h3>多角色观察</h3>
+            <div class="accordion-summary-main">
+              <span class="accordion-index">06</span>
+              <div>
+                <p class="eyebrow">Multi View</p>
+                <h3>多角色观察</h3>
+              </div>
             </div>
             <p class="accordion-copy">同一批新闻换不同视角看，默认先收起来。</p>
           </summary>
@@ -400,9 +431,12 @@
 
         <details class="accordion-card" id="section-sources" data-accordion-group="main">
           <summary class="accordion-summary">
-            <div>
-              <p class="eyebrow">Sources</p>
-              <h3>来源与数据出口</h3>
+            <div class="accordion-summary-main">
+              <span class="accordion-index">07</span>
+              <div>
+                <p class="eyebrow">Sources</p>
+                <h3>来源与数据出口</h3>
+              </div>
             </div>
             <p class="accordion-copy">需要核对原始链路时再打开。</p>
           </summary>

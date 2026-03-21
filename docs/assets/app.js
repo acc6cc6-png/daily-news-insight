@@ -2,8 +2,36 @@ const state = {
   digest: null,
   history: [],
   activeCategoryId: null,
+  activeSectionId: "section-compass",
   usingLatest: true,
 };
+
+const BOARD_GROUPS = [
+  {
+    id: "macro",
+    name: "宏观与主线",
+    description: "重点新闻、国内外宏观与市场主线",
+    categories: ["focus-news", "china-macro", "china-markets", "global-macro", "geopolitics"],
+  },
+  {
+    id: "growth",
+    name: "科技与成长",
+    description: "AI、芯片和高成长叙事",
+    categories: ["ai-models", "chips-devices", "crypto-web3"],
+  },
+  {
+    id: "industry",
+    name: "产业与商品",
+    description: "能源、大宗和消费产业链",
+    categories: ["energy-commodities", "industry-consumer"],
+  },
+  {
+    id: "sentiment",
+    name: "社会与情绪",
+    description: "社会热点和大众情绪温度",
+    categories: ["social-trends"],
+  },
+];
 
 document.addEventListener("DOMContentLoaded", () => {
   void bootstrap();
@@ -97,6 +125,7 @@ function renderPage() {
   renderSidebarBoards();
   renderTabs();
   toggleLatestIndicator();
+  syncSectionButtons();
 }
 
 function renderHeader(category) {
@@ -332,22 +361,58 @@ function renderSidebarBoards() {
     return;
   }
 
-  container.innerHTML = state.digest.categories
-    .map((category) => {
-      const active = category.id === state.activeCategoryId;
-      return `
-        <button
-          class="board-button ${active ? "is-active" : ""}"
-          type="button"
-          data-category-id="${escapeHtml(category.id)}"
-        >
-          <span class="board-button-title">${escapeHtml(category.name)}</span>
-          <span class="board-button-copy">${escapeHtml(category.description)}</span>
-          <span class="board-button-meta">${category.stats.priorityCount} 条重点 · ${category.stats.allStoryCount} 条动态</span>
-        </button>
-      `;
-    })
-    .join("");
+  const activeCategory = getActiveCategory();
+  const currentBoard = document.querySelector("#sidebar-current-board");
+  if (currentBoard && activeCategory) {
+    currentBoard.innerHTML = `
+      <p class="board-current-label">当前板块</p>
+      <strong>${escapeHtml(activeCategory.name)}</strong>
+      <p>${escapeHtml(activeCategory.description)}</p>
+      <span>${activeCategory.stats.priorityCount} 条重点 · ${activeCategory.stats.allStoryCount} 条动态</span>
+    `;
+  }
+
+  container.innerHTML = BOARD_GROUPS.map((group) => {
+    const categories = group.categories
+      .map((id) => state.digest.categories.find((category) => category.id === id))
+      .filter(Boolean);
+
+    if (!categories.length) {
+      return "";
+    }
+
+    const open = categories.some((category) => category.id === state.activeCategoryId);
+    const buttons = categories
+      .map((category) => {
+        const active = category.id === state.activeCategoryId;
+        return `
+          <button
+            class="board-button board-button--compact ${active ? "is-active" : ""}"
+            type="button"
+            data-category-id="${escapeHtml(category.id)}"
+          >
+            <span class="board-button-title">${escapeHtml(category.name)}</span>
+            <span class="board-button-meta">${category.stats.priorityCount} 条重点 · ${category.stats.allStoryCount} 条动态</span>
+          </button>
+        `;
+      })
+      .join("");
+
+    return `
+      <details class="board-cluster" data-accordion-group="boards" ${open ? "open" : ""}>
+        <summary class="board-cluster-summary">
+          <div>
+            <strong>${escapeHtml(group.name)}</strong>
+            <p>${escapeHtml(group.description)}</p>
+          </div>
+          <span class="board-cluster-meta">${categories.length} 个板块</span>
+        </summary>
+        <div class="board-cluster-body">
+          ${buttons}
+        </div>
+      </details>
+    `;
+  }).join("");
 
   container.querySelectorAll("[data-category-id]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -356,6 +421,8 @@ function renderSidebarBoards() {
       scrollToSection("section-top");
     });
   });
+
+  bindAccordionEvents(container);
 }
 
 function renderTabs() {
@@ -459,19 +526,33 @@ function toggleLatestIndicator() {
   indicator.classList.toggle("hidden", !state.usingLatest);
 }
 
-function bindAccordionEvents() {
-  document.querySelectorAll("details[data-accordion-group]").forEach((detail) => {
+function bindAccordionEvents(root = document) {
+  root.querySelectorAll("details[data-accordion-group]").forEach((detail) => {
+    if (detail.dataset.bound === "true") {
+      return;
+    }
+    detail.dataset.bound = "true";
     detail.addEventListener("toggle", () => {
-      if (!detail.open) {
-        return;
-      }
       const group = detail.getAttribute("data-accordion-group");
-      document.querySelectorAll(`details[data-accordion-group="${group}"]`).forEach((peer) => {
-        if (peer !== detail) {
-          peer.open = false;
-        }
-      });
+      if (detail.open) {
+        document.querySelectorAll(`details[data-accordion-group="${group}"]`).forEach((peer) => {
+          if (peer !== detail) {
+            peer.open = false;
+          }
+        });
+      }
+      if (group === "main") {
+        syncSectionButtons();
+      }
     });
+  });
+}
+
+function syncSectionButtons() {
+  const openMain = document.querySelector('details[data-accordion-group="main"][open]');
+  state.activeSectionId = openMain?.id ?? null;
+  document.querySelectorAll("[data-section-target]").forEach((button) => {
+    button.classList.toggle("is-active", button.getAttribute("data-section-target") === state.activeSectionId);
   });
 }
 
@@ -491,6 +572,7 @@ function scrollToSection(id) {
     node.open = true;
   }
   node.scrollIntoView({ behavior: "smooth", block: "start" });
+  syncSectionButtons();
 }
 
 function modeLabel(mode) {
