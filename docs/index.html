@@ -21,64 +21,102 @@
   <body data-page="digest">
     <div class="app-shell">
       <aside class="app-sidebar">
-        <div class="sidebar-brand">
-          <p class="eyebrow">XIAOCHENG AI</p>
-          <h1 id="site-title">小程AI的新闻日报</h1>
-          <p class="sidebar-copy" id="site-subtitle">跨市场重点新闻与投研摘要</p>
-        </div>
-
-        <nav class="page-nav" aria-label="站点菜单">
-          <a class="page-link is-active" href="./index.html">
-            <span class="page-link-title">新闻日报</span>
-            <span class="page-link-copy">重点排序、全天动态、投研摘要与多角色观察</span>
-          </a>
-          <a class="page-link" href="./monitor.html">
-            <span class="page-link-title">原始监控</span>
-            <span class="page-link-copy">检查每个板块抓到了什么，定位源头质量问题</span>
-          </a>
-          <a class="page-link" href="./about.html">
-            <span class="page-link-title">关于本站</span>
-            <span class="page-link-copy">更新机制、部署方式、作者信息与项目说明</span>
-          </a>
-        </nav>
-
-        <section class="sidebar-panel">
-          <div class="sidebar-panel-head">
-            <p class="eyebrow">Boards</p>
-            <h2>板块选择</h2>
+        <section class="contact-card contact-card--top">
+          <p class="eyebrow">Author</p>
+          <h2 id="contact-author">乐毅</h2>
+          <div class="contact-method">
+            <span class="contact-label">微信</span>
+            <strong id="contact-wechat">cfu800</strong>
           </div>
-          <div class="board-nav" id="sidebar-category-list"></div>
+          <a class="contact-method contact-method--link" id="contact-email" href="mailto:3119268060@qq.com">
+            3119268060@qq.com
+          </a>
         </section>
 
-        <section class="sidebar-panel">
-          <div class="sidebar-panel-head">
-            <p class="eyebrow">Actions</p>
-            <h2>页面功能</h2>
+        <details class="sidebar-accordion">
+          <summary class="sidebar-summary">
+            <div>
+              <p class="eyebrow">Site</p>
+              <h2>站点信息</h2>
+            </div>
+            <p class="sidebar-summary-copy">查看站名、说明和仓库入口</p>
+          </summary>
+          <div class="sidebar-accordion-body">
+            <div class="sidebar-brand">
+              <p class="eyebrow">XIAOCHENG AI</p>
+              <h1 id="site-title">小程AI的新闻日报</h1>
+              <p class="sidebar-copy" id="site-subtitle">跨市场重点新闻与投研摘要</p>
+            </div>
+            <a id="repo-link" href="https://github.com/acc6cc6-png/daily-news-insight" target="_blank" rel="noreferrer">
+              查看项目仓库
+            </a>
           </div>
-          <div class="section-menu">
-            <button class="section-button" type="button" data-section-target="section-compass">交易指北</button>
-            <button class="section-button" type="button" data-section-target="section-priority">重点排序</button>
-            <button class="section-button" type="button" data-section-target="section-feed">全天动态</button>
-            <button class="section-button" type="button" data-section-target="section-overview">板块策略</button>
-            <button class="section-button" type="button" data-section-target="section-sources">来源说明</button>
-            <button class="section-button section-button--accent" id="history-open" type="button">历史快照</button>
+        </details>
+
+        <details class="sidebar-accordion">
+          <summary class="sidebar-summary">
+            <div>
+              <p class="eyebrow">Menu</p>
+              <h2>站点导航</h2>
+            </div>
+            <p class="sidebar-summary-copy">日报、原始监控、关于本站</p>
+          </summary>
+          <div class="sidebar-accordion-body">
+            <nav class="page-nav" aria-label="站点菜单">
+              <a class="page-link is-active" href="./index.html">
+                <span class="page-link-title">新闻日报</span>
+                <span class="page-link-copy">重点排序、全天动态、投研摘要与多角色观察</span>
+              </a>
+              <a class="page-link" href="./monitor.html">
+                <span class="page-link-title">原始监控</span>
+                <span class="page-link-copy">检查每个板块抓到了什么，定位源头质量问题</span>
+              </a>
+              <a class="page-link" href="./about.html">
+                <span class="page-link-title">关于本站</span>
+                <span class="page-link-copy">更新机制、部署方式、作者信息与项目说明</span>
+              </a>
+            </nav>
           </div>
-        </section>
+        </details>
+
+        <details class="sidebar-accordion" open>
+          <summary class="sidebar-summary">
+            <div>
+              <p class="eyebrow">Boards</p>
+              <h2>板块选择</h2>
+            </div>
+            <p class="sidebar-summary-copy">点击切换当前板块</p>
+          </summary>
+          <div class="sidebar-accordion-body">
+            <div class="board-nav" id="sidebar-category-list"></div>
+          </div>
+        </details>
+
+        <details class="sidebar-accordion">
+          <summary class="sidebar-summary">
+            <div>
+              <p class="eyebrow">Actions</p>
+              <h2>页面功能</h2>
+            </div>
+            <p class="sidebar-summary-copy">按模块快速展开内容</p>
+          </summary>
+          <div class="sidebar-accordion-body">
+            <div class="section-menu">
+              <button class="section-button" type="button" data-section-target="section-compass">交易指北</button>
+              <button class="section-button" type="button" data-section-target="section-pulse">跨市场主线</button>
+              <button class="section-button" type="button" data-section-target="section-priority">重点排序</button>
+              <button class="section-button" type="button" data-section-target="section-feed">全天动态</button>
+              <button class="section-button" type="button" data-section-target="section-overview">板块策略</button>
+              <button class="section-button" type="button" data-section-target="section-comments">多角色观察</button>
+              <button class="section-button" type="button" data-section-target="section-sources">来源说明</button>
+              <button class="section-button section-button--accent" id="history-open" type="button">历史快照</button>
+            </div>
+          </div>
+        </details>
 
         <section class="sidebar-note">
           <p class="sidebar-note-title">当前统计窗口</p>
           <p class="sidebar-note-copy" id="sidebar-window">正在读取最新快照</p>
-        </section>
-
-        <section class="contact-card">
-          <p class="eyebrow">Author</p>
-          <h2 id="contact-author">小程AI</h2>
-          <a id="contact-link" href="https://github.com/acc6cc6-png" target="_blank" rel="noreferrer">
-            GitHub @acc6cc6-png
-          </a>
-          <a id="repo-link" href="https://github.com/acc6cc6-png/daily-news-insight" target="_blank" rel="noreferrer">
-            查看项目仓库
-          </a>
         </section>
       </aside>
 
@@ -112,204 +150,279 @@
           </div>
         </header>
 
-        <section class="trade-dashboard" id="section-compass">
-          <div class="trade-dashboard-top">
-            <article class="trade-summary-card">
-              <div class="trade-summary-copy">
-                <p class="eyebrow">Trading Guide</p>
-                <div class="trade-bias-row">
-                  <span class="trade-bias" id="compass-bias">等待确认</span>
-                  <span class="trade-window" id="compass-window">-</span>
-                </div>
-                <h3 id="compass-title">今日交易指北</h3>
-                <p class="trade-summary-text" id="compass-summary"></p>
+        <details class="accordion-card" id="section-compass" data-accordion-group="main" open>
+          <summary class="accordion-summary">
+            <div>
+              <p class="eyebrow">Trading Guide</p>
+              <h3>今日交易指北</h3>
+            </div>
+            <p class="accordion-copy">先看今天偏什么，再看偏多、承压和中性观察。</p>
+          </summary>
+          <div class="accordion-content">
+            <div class="trade-dashboard">
+              <div class="trade-dashboard-top">
+                <article class="trade-summary-card">
+                  <div class="trade-summary-copy">
+                    <p class="eyebrow">Trading Guide</p>
+                    <div class="trade-bias-row">
+                      <span class="trade-bias" id="compass-bias">等待确认</span>
+                      <span class="trade-window" id="compass-window">-</span>
+                    </div>
+                    <h3 id="compass-title">今日交易指北</h3>
+                    <p class="trade-summary-text" id="compass-summary"></p>
+                  </div>
+
+                  <div class="trade-driver-panel">
+                    <span class="trade-block-label">主导变量</span>
+                    <div class="trade-driver-list" id="compass-drivers"></div>
+                  </div>
+                </article>
+
+                <article class="trade-side-card">
+                  <div class="section-head">
+                    <div>
+                      <p class="eyebrow">Open Checklist</p>
+                      <h3>盘前先盯什么</h3>
+                    </div>
+                    <p class="section-hint">先盯变量，再看板块，不直接从标题跳到结论</p>
+                  </div>
+                  <div class="trade-watchlist" id="compass-watchlist"></div>
+                  <div class="trade-playbook" id="compass-playbook"></div>
+                </article>
               </div>
 
-              <div class="trade-driver-panel">
-                <span class="trade-block-label">主导变量</span>
-                <div class="trade-driver-list" id="compass-drivers"></div>
-              </div>
-            </article>
+              <div class="trade-columns">
+                <article class="trade-column trade-column--bullish">
+                  <div class="trade-column-head">
+                    <div>
+                      <p class="eyebrow">Positive</p>
+                      <h3>偏多候选</h3>
+                    </div>
+                    <span class="trade-column-note">先看是否有量能接力</span>
+                  </div>
+                  <div class="trade-item-list" id="compass-leaders"></div>
+                </article>
 
-            <article class="trade-side-card">
-              <div class="section-head">
-                <div>
-                  <p class="eyebrow">Open Checklist</p>
-                  <h3>盘前先盯什么</h3>
-                </div>
-                <p class="section-hint">先盯变量，再看板块，不直接从标题跳到结论</p>
+                <article class="trade-column trade-column--bearish">
+                  <div class="trade-column-head">
+                    <div>
+                      <p class="eyebrow">Pressure</p>
+                      <h3>承压候选</h3>
+                    </div>
+                    <span class="trade-column-note">留意高开低走和兑现压力</span>
+                  </div>
+                  <div class="trade-item-list" id="compass-laggards"></div>
+                </article>
+
+                <article class="trade-column trade-column--stable">
+                  <div class="trade-column-head">
+                    <div>
+                      <p class="eyebrow">Neutral</p>
+                      <h3>中性观察</h3>
+                    </div>
+                    <span class="trade-column-note">更多拿来做对照组</span>
+                  </div>
+                  <div class="trade-item-list" id="compass-stable"></div>
+                </article>
               </div>
-              <div class="trade-watchlist" id="compass-watchlist"></div>
-              <div class="trade-playbook" id="compass-playbook"></div>
-            </article>
+            </div>
           </div>
+        </details>
 
-          <div class="trade-columns">
-            <article class="trade-column trade-column--bullish">
-              <div class="trade-column-head">
-                <div>
-                  <p class="eyebrow">Positive</p>
-                  <h3>偏多候选</h3>
-                </div>
-                <span class="trade-column-note">先看是否有量能接力</span>
-              </div>
-              <div class="trade-item-list" id="compass-leaders"></div>
-            </article>
-
-            <article class="trade-column trade-column--bearish">
-              <div class="trade-column-head">
-                <div>
-                  <p class="eyebrow">Pressure</p>
-                  <h3>承压候选</h3>
-                </div>
-                <span class="trade-column-note">留意高开低走和兑现压力</span>
-              </div>
-              <div class="trade-item-list" id="compass-laggards"></div>
-            </article>
-
-            <article class="trade-column trade-column--stable">
-              <div class="trade-column-head">
-                <div>
-                  <p class="eyebrow">Neutral</p>
-                  <h3>中性观察</h3>
-                </div>
-                <span class="trade-column-note">更多拿来做对照组</span>
-              </div>
-              <div class="trade-item-list" id="compass-stable"></div>
-            </article>
-          </div>
-        </section>
-
-        <section class="pulse-card" id="section-pulse">
-          <div class="section-head">
+        <details class="accordion-card" id="section-pulse" data-accordion-group="main">
+          <summary class="accordion-summary">
             <div>
               <p class="eyebrow">Cross Market</p>
               <h3>跨市场主线</h3>
             </div>
-            <p class="section-hint" id="pulse-window"></p>
-          </div>
-          <p class="pulse-copy" id="pulse-headline"></p>
-          <div class="pulse-grid" id="pulse-grid"></div>
-        </section>
-
-        <section class="feed-grid">
-          <article class="panel-card" id="section-priority">
-            <div class="section-head">
-              <div>
-                <p class="eyebrow">Impact Rank</p>
-                <h3>重点影响排序</h3>
-              </div>
-              <p class="section-hint">按影响力排序，不按发布时间排序</p>
-            </div>
-            <div class="stories-list stories-list--priority" id="priority-stories-list"></div>
-          </article>
-
-          <article class="panel-card" id="section-feed">
-            <div class="section-head">
-              <div>
-                <p class="eyebrow">Full Feed</p>
-                <h3>全天全量动态</h3>
-              </div>
-              <p class="section-hint">展示该板块从昨收后到现在抓到的全部动态</p>
-            </div>
-            <div class="stories-list stories-list--full" id="all-stories-list"></div>
-          </article>
-        </section>
-
-        <section class="overview-grid" id="section-overview">
-          <article class="summary-card">
-            <div class="section-head">
-              <div>
-                <p class="eyebrow">Board View</p>
-                <h3>主线与策略</h3>
-              </div>
-            </div>
-            <div class="summary-stack">
-              <div class="summary-block">
-                <span class="summary-label">周期判断</span>
-                <p id="cycle-view"></p>
-              </div>
-              <div class="summary-block">
-                <span class="summary-label">策略建议</span>
-                <p id="strategy-take"></p>
-              </div>
-              <div class="summary-meta-grid">
-                <div class="metric-card">
-                  <span class="metric-label">最新更新时间</span>
-                  <strong id="metric-generated">-</strong>
-                </div>
-                <div class="metric-card">
-                  <span class="metric-label">当前观察镜头</span>
-                  <strong id="lens-copy">-</strong>
-                </div>
-                <div class="metric-card">
-                  <span class="metric-label">当前板块</span>
-                  <strong id="metric-category">-</strong>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="panel-card panel-card--stack">
-            <div>
+            <p class="accordion-copy">把跨市场真正重要的几条主线先提出来。</p>
+          </summary>
+          <div class="accordion-content">
+            <section class="pulse-card">
               <div class="section-head">
                 <div>
-                  <p class="eyebrow">Linkage Map</p>
-                  <h3>联想链路</h3>
+                  <p class="eyebrow">Cross Market</p>
+                  <h3>跨市场主线</h3>
                 </div>
-                <p class="section-hint">把 headline 拆成价格、资金与行业传导链</p>
+                <p class="section-hint" id="pulse-window"></p>
               </div>
-              <div class="linkage-list" id="linkage-list"></div>
+              <p class="pulse-copy" id="pulse-headline"></p>
+              <div class="pulse-grid" id="pulse-grid"></div>
+            </section>
+          </div>
+        </details>
+
+        <details class="accordion-card" id="section-priority" data-accordion-group="main">
+          <summary class="accordion-summary">
+            <div>
+              <p class="eyebrow">Impact Rank</p>
+              <h3>重点影响排序</h3>
+            </div>
+            <p class="accordion-copy">按影响力排，不按时间排。</p>
+          </summary>
+          <div class="accordion-content">
+            <section class="panel-card">
+              <div class="section-head">
+                <div>
+                  <p class="eyebrow">Impact Rank</p>
+                  <h3>重点影响排序</h3>
+                </div>
+                <p class="section-hint">按影响力排序，不按发布时间排序</p>
+              </div>
+              <div class="stories-list stories-list--priority" id="priority-stories-list"></div>
+            </section>
+          </div>
+        </details>
+
+        <details class="accordion-card" id="section-feed" data-accordion-group="main">
+          <summary class="accordion-summary">
+            <div>
+              <p class="eyebrow">Full Feed</p>
+              <h3>全天全量动态</h3>
+            </div>
+            <p class="accordion-copy">打开后再看完整动态，避免一进页面就被长列表淹没。</p>
+          </summary>
+          <div class="accordion-content">
+            <section class="panel-card">
+              <div class="section-head">
+                <div>
+                  <p class="eyebrow">Full Feed</p>
+                  <h3>全天全量动态</h3>
+                </div>
+                <p class="section-hint">展示该板块从昨收后到现在抓到的全部动态</p>
+              </div>
+              <div class="stories-list stories-list--full" id="all-stories-list"></div>
+            </section>
+          </div>
+        </details>
+
+        <details class="accordion-card" id="section-overview" data-accordion-group="main">
+          <summary class="accordion-summary">
+            <div>
+              <p class="eyebrow">Board View</p>
+              <h3>板块策略</h3>
+            </div>
+            <p class="accordion-copy">周期判断、策略建议、联想链路和定价逻辑。</p>
+          </summary>
+          <div class="accordion-content">
+            <div class="overview-grid">
+              <article class="summary-card">
+                <div class="section-head">
+                  <div>
+                    <p class="eyebrow">Board View</p>
+                    <h3>主线与策略</h3>
+                  </div>
+                </div>
+                <div class="summary-stack">
+                  <div class="summary-block">
+                    <span class="summary-label">周期判断</span>
+                    <p id="cycle-view"></p>
+                  </div>
+                  <div class="summary-block">
+                    <span class="summary-label">策略建议</span>
+                    <p id="strategy-take"></p>
+                  </div>
+                  <div class="summary-meta-grid">
+                    <div class="metric-card">
+                      <span class="metric-label">最新更新时间</span>
+                      <strong id="metric-generated">-</strong>
+                    </div>
+                    <div class="metric-card">
+                      <span class="metric-label">当前观察镜头</span>
+                      <strong id="lens-copy">-</strong>
+                    </div>
+                    <div class="metric-card">
+                      <span class="metric-label">当前板块</span>
+                      <strong id="metric-category">-</strong>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="panel-card panel-card--stack">
+                <div>
+                  <div class="section-head">
+                    <div>
+                      <p class="eyebrow">Linkage Map</p>
+                      <h3>联想链路</h3>
+                    </div>
+                    <p class="section-hint">把 headline 拆成价格、资金与行业传导链</p>
+                  </div>
+                  <div class="linkage-list" id="linkage-list"></div>
+                </div>
+
+                <div class="insight-box">
+                  <p class="eyebrow">Pricing Logic</p>
+                  <h3>定价逻辑</h3>
+                  <p class="analyst-copy" id="analyst-copy"></p>
+                </div>
+              </article>
             </div>
 
-            <div class="insight-box">
-              <p class="eyebrow">Pricing Logic</p>
-              <h3>定价逻辑</h3>
-              <p class="analyst-copy" id="analyst-copy"></p>
+            <div class="signal-grid">
+              <article class="signal-card bullish-card">
+                <p class="signal-label">顺风线索</p>
+                <p class="signal-copy" id="bullish-copy"></p>
+              </article>
+              <article class="signal-card bearish-card">
+                <p class="signal-label">逆风线索</p>
+                <p class="signal-copy" id="bearish-copy"></p>
+              </article>
+              <article class="signal-card watch-card">
+                <p class="signal-label">继续观察</p>
+                <p class="signal-copy" id="watch-copy"></p>
+              </article>
             </div>
-          </article>
-        </section>
+          </div>
+        </details>
 
-        <section class="signal-grid">
-          <article class="signal-card bullish-card">
-            <p class="signal-label">顺风线索</p>
-            <p class="signal-copy" id="bullish-copy"></p>
-          </article>
-          <article class="signal-card bearish-card">
-            <p class="signal-label">逆风线索</p>
-            <p class="signal-copy" id="bearish-copy"></p>
-          </article>
-          <article class="signal-card watch-card">
-            <p class="signal-label">继续观察</p>
-            <p class="signal-copy" id="watch-copy"></p>
-          </article>
-        </section>
-
-        <section class="panel-card" id="section-comments">
-          <div class="section-head">
+        <details class="accordion-card" id="section-comments" data-accordion-group="main">
+          <summary class="accordion-summary">
             <div>
               <p class="eyebrow">Multi View</p>
               <h3>多角色观察</h3>
             </div>
-            <p class="section-hint">同一批新闻，换不同视角看，减少单一叙事</p>
+            <p class="accordion-copy">同一批新闻换不同视角看，默认先收起来。</p>
+          </summary>
+          <div class="accordion-content">
+            <section class="panel-card">
+              <div class="section-head">
+                <div>
+                  <p class="eyebrow">Multi View</p>
+                  <h3>多角色观察</h3>
+                </div>
+                <p class="section-hint">同一批新闻，换不同视角看，减少单一叙事</p>
+              </div>
+              <div class="comments-list" id="comments-list"></div>
+            </section>
           </div>
-          <div class="comments-list" id="comments-list"></div>
-        </section>
+        </details>
 
-        <section class="panel-card" id="section-sources">
-          <div class="section-head">
+        <details class="accordion-card" id="section-sources" data-accordion-group="main">
+          <summary class="accordion-summary">
             <div>
               <p class="eyebrow">Sources</p>
               <h3>来源与数据出口</h3>
             </div>
-            <p class="section-hint">中文聚合源与国际专业媒体并行，方便核对原始链路</p>
+            <p class="accordion-copy">需要核对原始链路时再打开。</p>
+          </summary>
+          <div class="accordion-content">
+            <section class="panel-card">
+              <div class="section-head">
+                <div>
+                  <p class="eyebrow">Sources</p>
+                  <h3>来源与数据出口</h3>
+                </div>
+                <p class="section-hint">中文聚合源与国际专业媒体并行，方便核对原始链路</p>
+              </div>
+              <div id="source-list" class="source-list"></div>
+              <div class="raw-links">
+                <a href="./data/latest/digest.json" target="_blank" rel="noreferrer">查看最新 digest.json</a>
+                <a href="./data/raw/latest.json" target="_blank" rel="noreferrer">查看原始 raw.json</a>
+              </div>
+            </section>
           </div>
-          <div id="source-list" class="source-list"></div>
-          <div class="raw-links">
-            <a href="./data/latest/digest.json" target="_blank" rel="noreferrer">查看最新 digest.json</a>
-            <a href="./data/raw/latest.json" target="_blank" rel="noreferrer">查看原始 raw.json</a>
-          </div>
-        </section>
+        </details>
       </main>
     </div>
 

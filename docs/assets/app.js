@@ -33,6 +33,7 @@ async function bootstrap() {
 }
 
 function bindChromeEvents() {
+  bindAccordionEvents();
   document.querySelector("#history-open")?.addEventListener("click", () => toggleHistory(true));
   document.querySelector("#history-close")?.addEventListener("click", () => toggleHistory(false));
   document.querySelector("#history-close-button")?.addEventListener("click", () => toggleHistory(false));
@@ -68,9 +69,10 @@ function renderSiteChrome() {
   const site = state.digest.site ?? {};
   setText("#site-title", site.title || "小程AI的新闻日报");
   setText("#site-subtitle", site.subtitle || "跨市场重点新闻与投研摘要");
-  setText("#contact-author", site.author || site.title || "小程AI");
-  setText("#contact-link", site.contact_label || "GitHub @acc6cc6-png");
-  setHref("#contact-link", site.contact_url || "https://github.com/acc6cc6-png");
+  setText("#contact-author", site.author || site.title || "乐毅");
+  setText("#contact-wechat", site.contact_wechat || "cfu800");
+  setText("#contact-email", site.contact_email || "3119268060@qq.com");
+  setHref("#contact-email", `mailto:${site.contact_email || "3119268060@qq.com"}`);
   setHref("#repo-link", site.repo_url || "https://github.com/acc6cc6-png/daily-news-insight");
 }
 
@@ -457,6 +459,22 @@ function toggleLatestIndicator() {
   indicator.classList.toggle("hidden", !state.usingLatest);
 }
 
+function bindAccordionEvents() {
+  document.querySelectorAll("details[data-accordion-group]").forEach((detail) => {
+    detail.addEventListener("toggle", () => {
+      if (!detail.open) {
+        return;
+      }
+      const group = detail.getAttribute("data-accordion-group");
+      document.querySelectorAll(`details[data-accordion-group="${group}"]`).forEach((peer) => {
+        if (peer !== detail) {
+          peer.open = false;
+        }
+      });
+    });
+  });
+}
+
 function getActiveCategory() {
   return state.digest?.categories?.find((item) => item.id === state.activeCategoryId) ?? null;
 }
@@ -465,7 +483,14 @@ function scrollToSection(id) {
   if (!id) {
     return;
   }
-  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const node = document.getElementById(id);
+  if (!node) {
+    return;
+  }
+  if (node.tagName === "DETAILS") {
+    node.open = true;
+  }
+  node.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function modeLabel(mode) {

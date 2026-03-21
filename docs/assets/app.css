@@ -99,8 +99,9 @@ a {
   top: 22px;
   height: calc(100vh - 44px);
   display: grid;
-  grid-template-rows: auto auto minmax(0, 1fr) auto auto;
+  align-content: start;
   gap: 16px;
+  overflow: auto;
   padding: 22px;
   border-radius: var(--radius-xl);
   color: #f4eee4;
@@ -148,6 +149,71 @@ a {
 .section-menu {
   display: grid;
   gap: 10px;
+}
+
+.sidebar-accordion {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.sidebar-accordion[open] {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.sidebar-summary,
+.accordion-summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.sidebar-summary::-webkit-details-marker,
+.accordion-summary::-webkit-details-marker {
+  display: none;
+}
+
+.sidebar-summary {
+  position: relative;
+  display: grid;
+  gap: 6px;
+  padding: 16px 52px 16px 16px;
+}
+
+.sidebar-summary::after,
+.accordion-summary::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  opacity: 0.72;
+}
+
+.sidebar-accordion[open] > .sidebar-summary::after,
+.accordion-card[open] > .accordion-summary::after {
+  content: "−";
+}
+
+.sidebar-summary h2 {
+  margin: 6px 0 0;
+  font-size: 1rem;
+  color: #f4eee4;
+}
+
+.sidebar-summary-copy {
+  margin: 0;
+  color: rgba(244, 238, 228, 0.72);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.sidebar-accordion-body {
+  display: grid;
+  gap: 14px;
+  padding: 0 16px 16px;
 }
 
 .page-link,
@@ -228,19 +294,6 @@ a {
   border-color: rgba(240, 191, 116, 0.28);
 }
 
-.sidebar-panel {
-  padding: 16px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
-}
-
-.sidebar-panel-head h2 {
-  margin: 6px 0 0;
-  font-size: 1rem;
-  color: #f4eee4;
-}
-
 .sidebar-note,
 .contact-card {
   padding: 16px;
@@ -267,6 +320,10 @@ a {
   gap: 8px;
 }
 
+.contact-card--top {
+  gap: 10px;
+}
+
 .contact-card h2 {
   margin: 0;
   color: #fff8ec;
@@ -279,6 +336,33 @@ a {
 
 .contact-card a:hover {
   text-decoration: underline;
+}
+
+.contact-method {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(240, 191, 116, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(244, 238, 228, 0.88);
+}
+
+.contact-method strong {
+  font-size: 1rem;
+  color: #fff8ec;
+}
+
+.contact-method--link {
+  justify-content: center;
+  font-weight: 700;
+}
+
+.contact-label {
+  color: rgba(244, 238, 228, 0.7);
+  font-size: 0.86rem;
 }
 
 .app-main {
@@ -299,6 +383,48 @@ a {
   font-weight: 700;
   background: linear-gradient(90deg, #173d92, #255abf, #2e70e0);
   box-shadow: var(--shadow);
+}
+
+.accordion-card {
+  display: grid;
+  gap: 12px;
+}
+
+.accordion-summary {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 22px 64px 22px 24px;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: linear-gradient(180deg, rgba(255, 251, 246, 0.98), rgba(255, 248, 242, 0.9));
+}
+
+.accordion-card[open] > .accordion-summary {
+  background:
+    radial-gradient(circle at top right, rgba(240, 191, 116, 0.14), transparent 22%),
+    linear-gradient(180deg, rgba(255, 251, 246, 0.98), rgba(255, 248, 242, 0.9));
+}
+
+.accordion-summary h3 {
+  margin: 6px 0 0;
+  font-family: "Noto Serif SC", serif;
+  font-size: 1.38rem;
+}
+
+.accordion-copy {
+  margin: 0;
+  max-width: 460px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.accordion-content {
+  display: grid;
+  gap: 16px;
 }
 
 .hero-card,
@@ -981,7 +1107,7 @@ a {
   .app-sidebar {
     position: static;
     height: auto;
-    grid-template-rows: auto;
+    overflow: visible;
   }
 
   .trade-dashboard-top,
@@ -994,12 +1120,16 @@ a {
   .trade-columns,
   .hero-grid,
   .overview-grid,
-  .feed-grid,
   .signal-grid,
   .summary-meta-grid,
   .monitor-grid,
   .comments-list {
     grid-template-columns: 1fr;
+  }
+
+  .accordion-summary {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 
@@ -1009,7 +1139,6 @@ a {
   }
 
   .hero-card,
-  .board-strip-card,
   .pulse-card,
   .summary-card,
   .panel-card,
@@ -1031,7 +1160,8 @@ a {
   }
 
   .section-head,
-  .monitor-title-row {
+  .monitor-title-row,
+  .accordion-summary {
     flex-direction: column;
     align-items: stretch;
   }
