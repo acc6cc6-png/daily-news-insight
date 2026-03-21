@@ -204,6 +204,194 @@ CATEGORY_PLAYBOOK = {
     ],
 }
 
+GENERAL_AVOID_KEYWORDS = (
+    "演唱会",
+    "明星",
+    "民宅",
+    "火葬场",
+    "长寿基因",
+    "学校",
+    "综艺",
+    "比赛",
+    "球员",
+    "粉丝",
+    "网红",
+    "直播间",
+    "恋情",
+    "婚礼",
+    "车祸",
+    "坠楼",
+    "模拟交易大赛",
+    "获奖名单",
+    "圆满收官",
+    "专家顾问团",
+    "系列采访",
+    "兴趣激增",
+    "生意火爆",
+    "经销店",
+    "9折",
+    "解锁",
+    "异动雷达",
+)
+
+HARD_DROP_KEYWORDS = (
+    "模拟交易大赛",
+    "获奖名单",
+    "圆满收官",
+    "专家顾问团",
+    "系列采访",
+    "兴趣激增",
+    "生意火爆",
+    "经销店",
+    "9折",
+    "解锁",
+    "异动雷达",
+)
+
+FOCUS_PRIORITY_KEYWORDS = {
+    "特朗普": 24,
+    "trump": 24,
+    "美股": 22,
+    "纳指": 22,
+    "纳斯达克": 22,
+    "nasdaq": 22,
+    "标普": 20,
+    "s&p": 20,
+    "道指": 18,
+    "dow": 18,
+    "黄金": 22,
+    "金价": 18,
+    "债市": 22,
+    "债券": 18,
+    "美债": 22,
+    "收益率": 14,
+    "原油": 22,
+    "油价": 22,
+    "中东": 22,
+    "伊朗": 22,
+    "以色列": 22,
+    "关税": 20,
+    "制裁": 20,
+    "美联储": 24,
+    "降息": 22,
+    "加息": 22,
+    "非农": 18,
+    "cpi": 18,
+    "ppi": 16,
+    "a股": 18,
+    "港股": 18,
+    "人民币": 14,
+    "社融": 18,
+    "pmi": 16,
+    "三大指数": 20,
+    "全球债市": 24,
+}
+
+CATEGORY_RULES = {
+    "focus-news": {
+        "must": (
+            "特朗普",
+            "中东",
+            "伊朗",
+            "以色列",
+            "美股",
+            "纳指",
+            "标普",
+            "道指",
+            "黄金",
+            "债市",
+            "美债",
+            "原油",
+            "油价",
+            "美联储",
+            "关税",
+            "制裁",
+            "a股",
+            "港股",
+        ),
+        "soft": ("社融", "pmi", "cpi", "ppi", "非农", "人民币", "通胀", "指数"),
+        "avoid": GENERAL_AVOID_KEYWORDS,
+    },
+    "china-macro": {
+        "must": ("国务院", "央行", "财政", "社融", "信贷", "房贷", "地产", "降息", "降准", "发改委", "pmi", "cpi", "ppi"),
+        "soft": ("政策", "财政部", "商务部", "刺激", "专项债", "国债", "贷款", "宽信用", "房地产"),
+        "avoid": GENERAL_AVOID_KEYWORDS + ("伊朗", "以色列", "原油", "载人绕月", "mac mini"),
+    },
+    "china-markets": {
+        "must": ("a股", "港股", "上证", "深成指", "创业板", "北向", "南向", "etf", "指数", "收盘", "沪深"),
+        "soft": ("纳指", "美股", "黄金", "原油", "市场", "成交额", "券商", "情绪", "中概"),
+        "avoid": GENERAL_AVOID_KEYWORDS,
+    },
+    "global-macro": {
+        "must": ("美股", "纳指", "标普", "道指", "美债", "债市", "收益率", "黄金", "原油", "美元", "美联储", "cpi", "ppi", "非农"),
+        "soft": ("欧洲央行", "日本央行", "通胀", "失业率", "房贷利率", "全球", "关税"),
+        "avoid": GENERAL_AVOID_KEYWORDS + ("停车", "app", "推特投资者"),
+    },
+    "geopolitics": {
+        "must": ("伊朗", "以色列", "中东", "俄", "乌", "关税", "制裁", "停火", "红海", "外交", "特朗普"),
+        "soft": ("原油", "航运", "北约", "军方", "总统", "国防", "谈判"),
+        "avoid": GENERAL_AVOID_KEYWORDS + ("火葬场", "民宅", "韩国工厂", "chuck norris"),
+    },
+}
+
+RELEVANCE_THRESHOLDS = {
+    "focus-news": 22,
+    "china-macro": 14,
+    "china-markets": 10,
+    "global-macro": 14,
+    "geopolitics": 14,
+}
+
+MARKET_PRIORITY_GROUPS = {
+    "geopolitics": ("中东", "伊朗", "以色列", "停火", "袭击", "空袭", "红海", "霍尔木兹", "俄乌", "制裁"),
+    "global_rates": ("美联储", "降息", "加息", "非农", "cpi", "ppi", "债市", "美债", "收益率", "通胀"),
+    "risk_assets": ("美股", "纳指", "纳斯达克", "标普", "道指", "a股", "港股", "中概", "三大指数"),
+    "commodities": ("黄金", "金价", "原油", "油价", "天然气", "铜价", "铝价"),
+    "china_macro": ("人民币", "社融", "pmi", "央行", "财政", "地产", "楼市", "关税"),
+}
+
+MARKET_INTENSITY_TERMS = (
+    "新高",
+    "新低",
+    "最大单周跌幅",
+    "最大周跌幅",
+    "最大跌幅",
+    "血洗",
+    "暴跌",
+    "重挫",
+    "飙升",
+    "急升",
+    "急跌",
+    "转机",
+    "升级",
+    "缓和",
+    "停火",
+)
+
+MICRO_STORY_PATTERNS = (
+    re.compile(r"[（(]\d{4,6}\.[A-Z]{2,4}[）)]", re.IGNORECASE),
+    re.compile(r"\b\d{6}\.(?:sh|sz)\b", re.IGNORECASE),
+    re.compile(r"\b\d{4,5}\.(?:hk)\b", re.IGNORECASE),
+)
+
+MICRO_STORY_TERMS = (
+    "归母净利润",
+    "拟派利",
+    "年度业绩",
+    "年度净利润",
+    "财务指标全面改善",
+    "担任第",
+    "职工董事",
+    "董事会",
+    "年度报告",
+    "获得受理",
+    "ipo获受理",
+    "签署合作",
+    "战略合作",
+    "发布首款",
+    "全面改善",
+)
+
 
 def main() -> int:
     load_local_env(ROOT / ".env.local")
@@ -472,6 +660,8 @@ def build_digest(
         modes.append(mode)
         time.sleep(0.35)
 
+    remix_focus_category(categories)
+
     source_registry = [
         {"id": source_id, "label": meta["label"], "kind": meta["type"], "home": meta["home"]}
         for source_id, meta in config["sources"].items()
@@ -519,6 +709,62 @@ def build_digest(
     }
 
 
+def remix_focus_category(categories: list[dict[str, Any]]) -> None:
+    focus_category = next((category for category in categories if category["id"] == "focus-news"), None)
+    if focus_category is None:
+        return
+
+    core_source_ids = {"china-markets", "global-macro", "energy-commodities"}
+    support_source_ids = {"geopolitics", "china-macro"}
+    pool: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for category in categories:
+        if category["id"] in core_source_ids:
+            source_stories = category.get("allStories", [])
+        elif category["id"] in support_source_ids:
+            source_stories = category.get("priorityStories", [])[:5]
+        else:
+            continue
+        for story in source_stories:
+            normalized = clean_text(story["title"]).lower()
+            if any(keyword.lower() in normalized for keyword in HARD_DROP_KEYWORDS):
+                continue
+            if float(story.get("selectionScore", 0)) < 60 and float(story.get("marketPriority", 0)) < 40:
+                continue
+            dedupe_key = normalize_title(story["title"])
+            if dedupe_key in seen:
+                continue
+            seen.add(dedupe_key)
+            pool.append(dict(story))
+
+    if len(pool) < PRIORITY_LIMIT * 2:
+        for story in focus_category.get("priorityStories", []):
+            dedupe_key = normalize_title(story["title"])
+            if dedupe_key in seen:
+                continue
+            seen.add(dedupe_key)
+            pool.append(dict(story))
+
+    if not pool:
+        return
+
+    pool.sort(
+        key=lambda story: (
+            1 if story.get("inWindow") else 0,
+            float(story.get("selectionScore", 0)),
+            float(story.get("marketPriority", 0)),
+            story.get("publishedAt") or "",
+        ),
+        reverse=True,
+    )
+    focus_category["allStories"] = pool[:FULL_STORY_LIMIT]
+    focus_category["priorityStories"] = rank_priority_stories({"id": "focus-news"}, focus_category["allStories"])
+    focus_category["stories"] = focus_category["priorityStories"]
+    focus_category["sourcesUsed"] = unique_sources_from_stories(focus_category["allStories"])
+    focus_category["stats"]["allStoryCount"] = len(focus_category["allStories"])
+    focus_category["stats"]["priorityCount"] = len(focus_category["priorityStories"])
+
+
 def build_category_digest(
     client: Any | None,
     config: dict[str, Any],
@@ -529,14 +775,14 @@ def build_category_digest(
 ) -> tuple[dict[str, Any], str]:
     prepared_items = items or [fallback_story_item(category)]
     all_stories = build_story_records(category, prepared_items, now, window_start)
-    priority_stories = rank_priority_stories(all_stories)
+    priority_stories = rank_priority_stories(category, all_stories)
     editorial = build_template_editorial(config, category, all_stories, priority_stories, now, window_start)
     mode = "template"
 
     if client is not None and items:
         try:
             ai_editorial = generate_ai_editorial(client, config, category, all_stories, window_start, now)
-            priority_stories = rank_priority_stories(all_stories, ai_editorial.get("priorityTitles"))
+            priority_stories = rank_priority_stories(category, all_stories, ai_editorial.get("priorityTitles"))
             editorial.update(
                 {
                     "lead": clean_text(ai_editorial["lead"]),
@@ -598,6 +844,8 @@ def collect_category_items(
     window_start = market_window_start(now)
     collected: list[dict[str, Any]] = []
     seen: set[str] = set()
+    threshold = RELEVANCE_THRESHOLDS.get(category["id"], 0)
+    per_source_limit = 24 if category["id"] == "focus-news" else PER_SOURCE_LIMIT
 
     for priority, source_id in enumerate(category["sources"], start=1):
         source_items = raw_by_source.get(source_id, [])
@@ -605,14 +853,10 @@ def collect_category_items(
             continue
         source_items = sorted(
             source_items,
-            key=lambda item: (
-                1 if is_within_window(item.get("publishedAt"), window_start) else 0,
-                item.get("publishedAt") or "",
-                -(item.get("rank") or 9999),
-            ),
+            key=lambda item: source_item_sort_key(category, item, window_start),
             reverse=True,
         )
-        for item in source_items[:PER_SOURCE_LIMIT]:
+        for item in source_items[:per_source_limit]:
             dedupe_key = normalize_dedupe_key(item["title"], item["url"])
             if dedupe_key in seen:
                 continue
@@ -620,22 +864,40 @@ def collect_category_items(
             enriched = dict(item)
             enriched["sourcePriority"] = priority
             enriched["signal"] = classify_signal(item["title"])
+            enriched["relevanceScore"] = category_relevance_score(category, item["title"])
+            enriched["marketPriority"] = market_priority_score(item["title"])
+            enriched["microPenalty"] = micro_story_penalty(category, item["title"])
+            enriched["selectionScore"] = (
+                enriched["relevanceScore"] + enriched["marketPriority"] - enriched["microPenalty"]
+            )
+            if should_drop_story(category, item["title"], enriched["selectionScore"]):
+                continue
             collected.append(enriched)
-            if len(collected) >= limit:
-                break
-        if len(collected) >= limit:
-            break
 
-    window_items = [item for item in collected if is_within_window(item.get("publishedAt"), window_start)]
-    timeless_items = [item for item in collected if item.get("publishedAt") is None]
-    if len(window_items) + len(timeless_items) >= max(8, limit // 3):
-        ranked = sorted(
-            window_items + timeless_items,
-            key=lambda item: (item.get("publishedAt") or "", -(item.get("rank") or 9999)),
-            reverse=True,
-        )
-        return ranked[:limit]
-    return collected[:limit]
+    preferred = [
+        item
+        for item in collected
+        if item["selectionScore"] >= threshold
+    ]
+    backups = [item for item in collected if item not in preferred]
+
+    ranked_preferred = sorted(preferred, key=lambda item: selection_sort_key(item, window_start), reverse=True)
+    ranked_backups = sorted(backups, key=lambda item: selection_sort_key(item, window_start), reverse=True)
+
+    chosen = ranked_preferred[:limit]
+    minimum_fill = min(limit, max(8, limit // 3))
+    if len(chosen) < minimum_fill:
+        for item in ranked_backups:
+            if item in chosen:
+                continue
+            if len(chosen) >= limit:
+                break
+            if item["selectionScore"] >= max(0, threshold - 8) or len(chosen) < minimum_fill:
+                chosen.append(item)
+
+    if not chosen:
+        chosen = ranked_backups[:limit]
+    return chosen[:limit]
 
 
 def build_story_records(
@@ -659,6 +921,9 @@ def build_story_records(
                 "signalLabel": signal_label(signal),
                 "impactScore": impact_score,
                 "impactLabel": story_impact_label(impact_score),
+                "relevanceScore": item.get("relevanceScore", 0),
+                "marketPriority": item.get("marketPriority", 0),
+                "selectionScore": item.get("selectionScore", 0),
                 "url": item["url"],
                 "sourceId": item["sourceId"],
                 "source": item["sourceLabel"],
@@ -674,6 +939,7 @@ def build_story_records(
 
 
 def rank_priority_stories(
+    category: dict[str, Any],
     all_stories: list[dict[str, Any]],
     ai_priority_titles: list[str] | None = None,
 ) -> list[dict[str, Any]]:
@@ -682,20 +948,90 @@ def rank_priority_stories(
         for position, title in enumerate(ai_priority_titles or [], start=1)
     }
 
-    def priority_key(story: dict[str, Any]) -> tuple[int, float, str]:
-        boost = float(story["impactScore"])
+    def priority_key(story: dict[str, Any]) -> tuple[float, int, str]:
+        boost = float(story.get("selectionScore", story["impactScore"])) + float(story.get("marketPriority", 0)) * 0.3
+        if story.get("inWindow"):
+            boost += 12
         match = ai_order.get(normalize_title(story["title"]))
         if match is not None:
             boost += max(0, 24 - match * 2)
-        return 1 if story.get("inWindow") else 0, boost, story.get("publishedAt") or ""
+        return boost, 1 if story.get("inWindow") else 0, story.get("publishedAt") or ""
 
-    ranked = sorted(all_stories, key=priority_key, reverse=True)[:PRIORITY_LIMIT]
+    ranked = sorted(all_stories, key=priority_key, reverse=True)
+    bucket_limits = priority_bucket_limits(category["id"])
+    bucket_counts: dict[str, int] = {}
     result = []
-    for index, story in enumerate(ranked, start=1):
+    for story in ranked:
+        bucket = priority_story_bucket(story["title"])
+        if bucket_counts.get(bucket, 0) >= bucket_limits.get(bucket, 2):
+            continue
+        bucket_counts[bucket] = bucket_counts.get(bucket, 0) + 1
         enriched = dict(story)
-        enriched["priorityRank"] = index
+        enriched["priorityRank"] = len(result) + 1
         result.append(enriched)
+        if len(result) >= PRIORITY_LIMIT:
+            break
+
+    if len(result) < PRIORITY_LIMIT:
+        seen_titles = {normalize_title(story["title"]) for story in result}
+        for story in ranked:
+            if normalize_title(story["title"]) in seen_titles:
+                continue
+            enriched = dict(story)
+            enriched["priorityRank"] = len(result) + 1
+            result.append(enriched)
+            if len(result) >= PRIORITY_LIMIT:
+                break
     return result
+
+
+def priority_story_bucket(title: str) -> str:
+    normalized = clean_text(title).lower()
+    if any(keyword in normalized for keyword in ("黄金", "金价")):
+        return "gold"
+    if any(keyword in normalized for keyword in ("债市", "美债", "收益率", "英债", "日债")):
+        return "bonds"
+    if any(keyword in normalized for keyword in ("原油", "油价", "天然气", "铜价", "铝价")):
+        return "energy"
+    if any(keyword in normalized for keyword in ("美股", "纳指", "纳斯达克", "标普", "道指", "a股", "港股", "中概", "三大指数", "etf")):
+        return "equities"
+    if any(keyword in normalized for keyword in ("美联储", "降息", "加息", "非农", "cpi", "ppi", "pmi", "社融", "央行", "人民币")):
+        return "policy"
+    if any(keyword in normalized for keyword in ("中东", "伊朗", "以色列", "停火", "袭击", "空袭", "霍尔木兹", "制裁", "特朗普")):
+        return "geopolitics"
+    return "other"
+
+
+def priority_bucket_limits(category_id: str) -> dict[str, int]:
+    if category_id == "focus-news":
+        return {
+            "gold": 2,
+            "bonds": 2,
+            "energy": 2,
+            "equities": 2,
+            "policy": 2,
+            "geopolitics": 2,
+            "other": 1,
+        }
+    if category_id == "global-macro":
+        return {
+            "gold": 2,
+            "bonds": 2,
+            "energy": 2,
+            "equities": 2,
+            "policy": 2,
+            "geopolitics": 1,
+            "other": 1,
+        }
+    return {
+        "gold": 2,
+        "bonds": 2,
+        "energy": 2,
+        "equities": 3,
+        "policy": 2,
+        "geopolitics": 2,
+        "other": 2,
+    }
 
 
 def build_template_editorial(
@@ -1065,6 +1401,127 @@ def build_template_comments(
     return comments
 
 
+def selection_sort_key(item: dict[str, Any], window_start: datetime) -> tuple[float, int, str, int, int]:
+    return (
+        float(item.get("selectionScore", 0)),
+        1 if is_within_window(item.get("publishedAt"), window_start) else 0,
+        item.get("publishedAt") or "",
+        -int(item.get("sourcePriority") or 99),
+        -int(item.get("rank") or 9999),
+    )
+
+
+def source_item_sort_key(category: dict[str, Any], item: dict[str, Any], window_start: datetime) -> tuple[int, int, str, int]:
+    title = item.get("title", "")
+    relevance_score = category_relevance_score(category, title)
+    priority_score = market_priority_score(title)
+    return (
+        relevance_score + priority_score,
+        1 if is_within_window(item.get("publishedAt"), window_start) else 0,
+        item.get("publishedAt") or "",
+        -(item.get("rank") or 9999),
+    )
+
+
+def category_relevance_score(category: dict[str, Any], title: str) -> int:
+    rules = CATEGORY_RULES.get(category["id"])
+    normalized = clean_text(title).lower()
+    if not rules:
+        return market_priority_score(title)
+
+    must_hits = sum(1 for keyword in rules.get("must", ()) if keyword.lower() in normalized)
+    soft_hits = sum(1 for keyword in rules.get("soft", ()) if keyword.lower() in normalized)
+    avoid_hits = sum(1 for keyword in rules.get("avoid", ()) if keyword.lower() in normalized)
+
+    score = must_hits * 12 + soft_hits * 6 - avoid_hits * 18
+
+    groups = matched_priority_groups(normalized)
+    if len(groups) >= 2:
+        score += 10 + (len(groups) - 2) * 4
+
+    priority_score = market_priority_score(title)
+    if category["id"] == "focus-news":
+        score += priority_score
+    elif (must_hits or soft_hits) and category["id"] in {"global-macro", "china-macro", "geopolitics"}:
+        score += min(28, priority_score)
+    elif (must_hits or soft_hits) and category["id"] == "china-markets":
+        score += min(18, priority_score)
+
+    if looks_like_micro_story(title) and category["id"] in {"focus-news", "china-macro", "global-macro", "geopolitics"}:
+        score -= 22
+    elif looks_like_micro_story(title) and category["id"] == "china-markets":
+        score -= 10
+    return score
+
+
+def market_priority_score(title: str) -> int:
+    normalized = clean_text(title).lower()
+    score = 0
+    for keyword, weight in FOCUS_PRIORITY_KEYWORDS.items():
+        if keyword.lower() in normalized:
+            score += weight
+
+    groups = matched_priority_groups(normalized)
+    if len(groups) >= 2:
+        score += 12 + (len(groups) - 2) * 6
+
+    intensity_hits = sum(1 for term in MARKET_INTENSITY_TERMS if term.lower() in normalized)
+    score += min(18, intensity_hits * 6)
+
+    if re.search(r"创.{0,8}年以来", normalized):
+        score += 12
+    if re.search(r"(最大|最深|最差|最猛).{0,6}(跌幅|跌|涨幅|波动)", normalized):
+        score += 12
+    return min(score, 80)
+
+
+def matched_priority_groups(normalized: str) -> set[str]:
+    return {
+        group_name
+        for group_name, keywords in MARKET_PRIORITY_GROUPS.items()
+        if any(keyword.lower() in normalized for keyword in keywords)
+    }
+
+
+def looks_like_micro_story(title: str) -> bool:
+    normalized = clean_text(title).lower()
+    if any(pattern.search(title) for pattern in MICRO_STORY_PATTERNS):
+        return True
+    return any(term.lower() in normalized for term in MICRO_STORY_TERMS)
+
+
+def micro_story_penalty(category: dict[str, Any], title: str) -> int:
+    if not looks_like_micro_story(title):
+        return 0
+    if category["id"] in {"focus-news", "china-macro", "global-macro", "geopolitics"}:
+        return 24
+    if category["id"] == "china-markets" and market_priority_score(title) < 12:
+        return 12
+    return 0
+
+
+def should_drop_story(category: dict[str, Any], title: str, selection_score: int) -> bool:
+    normalized = clean_text(title).lower()
+    rules = CATEGORY_RULES.get(category["id"], {})
+    if any(keyword.lower() in normalized for keyword in HARD_DROP_KEYWORDS):
+        return True
+    avoid_hits = sum(1 for keyword in rules.get("avoid", ()) if keyword.lower() in normalized)
+    must_hits = sum(1 for keyword in rules.get("must", ()) if keyword.lower() in normalized)
+    soft_hits = sum(1 for keyword in rules.get("soft", ()) if keyword.lower() in normalized)
+    groups = matched_priority_groups(normalized)
+
+    if avoid_hits and must_hits == 0 and selection_score < RELEVANCE_THRESHOLDS.get(category["id"], 0) + 8:
+        return True
+    if category["id"] in {"china-macro", "global-macro", "geopolitics", "china-markets"} and must_hits == 0 and soft_hits == 0:
+        return True
+    if category["id"] == "focus-news" and must_hits == 0 and soft_hits == 0 and not groups:
+        return True
+    if category["id"] in {"focus-news", "china-macro", "global-macro", "geopolitics"}:
+        if looks_like_micro_story(title) and market_priority_score(title) < 18:
+            return True
+    return False
+
+
 def story_impact_score(
     category: dict[str, Any],
     item: dict[str, Any],
@@ -1072,7 +1529,7 @@ def story_impact_score(
     window_start: datetime,
 ) -> int:
     title = clean_text(item["title"]).lower()
-    score = 20
+    score = 12
     if is_within_window(item.get("publishedAt"), window_start):
         score += 24
     elif item.get("publishedAt") is None:
@@ -1102,6 +1559,13 @@ def story_impact_score(
     for keyword, weight in CATEGORY_KEYWORDS.get(category["id"], {}).items():
         if keyword.lower() in title:
             score += weight
+
+    score += max(0, int(item.get("relevanceScore") or 0))
+    score += min(36, int(item.get("marketPriority") or 0))
+    score -= min(24, int(item.get("microPenalty") or 0))
+
+    if should_drop_story(category, item["title"], int(item.get("selectionScore") or 0)):
+        score -= 30
 
     signal = item.get("signal") or classify_signal(item["title"])
     score += {"bullish": 6, "bearish": 8, "watch": 3}[signal]
@@ -1277,7 +1741,9 @@ def story_time_sort_key(story: dict[str, Any]) -> tuple[int, str, int]:
 
 
 def normalize_dedupe_key(title: str, url: str) -> str:
-    return f"{normalize_title(title)}::{url.strip().lower()}"
+    normalized = normalize_title(title)
+    normalized = re.sub(r"^(快讯|突发|更新|最新)+", "", normalized)
+    return normalized or url.strip().lower()
 
 
 def normalize_title(title: str) -> str:
