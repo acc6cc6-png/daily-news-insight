@@ -85,10 +85,11 @@ function renderPage() {
   }
 
   renderHeader(category);
+  renderTradeCompass();
   renderPulse();
+  renderFeeds(category);
   renderOverview(category);
   renderSignals(category);
-  renderFeeds(category);
   renderComments(category);
   renderSources(category);
   renderSidebarBoards();
@@ -113,6 +114,43 @@ function renderHeader(category) {
   setText("#priority-total", `${category.stats.priorityCount} 条重点`);
 
   document.title = `${category.name} | ${state.digest.site.title || "小程AI的新闻日报"}`;
+}
+
+function renderTradeCompass() {
+  const compass = state.digest?.tradeCompass;
+  if (!compass) {
+    return;
+  }
+
+  const bias = document.querySelector("#compass-bias");
+  if (bias) {
+    bias.className = `trade-bias ${signalClass(compass.biasSignal || "watch")}`;
+    bias.textContent = compass.biasLabel || "等待确认";
+  }
+
+  setText("#compass-title", compass.title || "今日交易指北");
+  setText("#compass-summary", compass.summary || "");
+  setText("#compass-window", state.digest?.edition?.windowLabel || "");
+
+  renderChipList("#compass-drivers", compass.drivers, "trade-driver-chip");
+  renderChipList("#compass-watchlist", compass.watchlist, "watch-pill");
+  renderTradeItemList("#compass-leaders", compass.leaders);
+  renderTradeItemList("#compass-laggards", compass.laggards);
+  renderTradeItemList("#compass-stable", compass.stable);
+
+  const playbook = document.querySelector("#compass-playbook");
+  if (playbook) {
+    playbook.innerHTML = (compass.playbook || [])
+      .map(
+        (item, index) => `
+          <article class="trade-rule">
+            <span class="trade-rule-index">0${index + 1}</span>
+            <p>${escapeHtml(item)}</p>
+          </article>
+        `,
+      )
+      .join("");
+  }
 }
 
 function renderPulse() {
@@ -208,6 +246,37 @@ function renderStoryList(selector, stories, layout) {
         </article>
       `;
     })
+    .join("");
+}
+
+function renderChipList(selector, items, className) {
+  const container = document.querySelector(selector);
+  if (!container) {
+    return;
+  }
+
+  const values = Array.isArray(items) && items.length ? items : ["等待更多确认"];
+  container.innerHTML = values
+    .map((item) => `<span class="${className}">${escapeHtml(item)}</span>`)
+    .join("");
+}
+
+function renderTradeItemList(selector, items) {
+  const container = document.querySelector(selector);
+  if (!container) {
+    return;
+  }
+
+  const values = Array.isArray(items) && items.length ? items : [{ name: "等待更多确认", reason: "当前窗口还不足以给出更明确方向。" }];
+  container.innerHTML = values
+    .map(
+      (item) => `
+        <article class="trade-item">
+          <span class="trade-item-name">${escapeHtml(item.name)}</span>
+          <p class="trade-item-reason">${escapeHtml(item.reason)}</p>
+        </article>
+      `,
+    )
     .join("");
 }
 

@@ -56,11 +56,10 @@
             <h2>页面功能</h2>
           </div>
           <div class="section-menu">
-            <button class="section-button" type="button" data-section-target="section-pulse">全市场脉冲</button>
-            <button class="section-button" type="button" data-section-target="section-overview">主线与策略</button>
+            <button class="section-button" type="button" data-section-target="section-compass">交易指北</button>
             <button class="section-button" type="button" data-section-target="section-priority">重点排序</button>
             <button class="section-button" type="button" data-section-target="section-feed">全天动态</button>
-            <button class="section-button" type="button" data-section-target="section-comments">多角色观察</button>
+            <button class="section-button" type="button" data-section-target="section-overview">板块策略</button>
             <button class="section-button" type="button" data-section-target="section-sources">来源说明</button>
             <button class="section-button section-button--accent" id="history-open" type="button">历史快照</button>
           </div>
@@ -90,7 +89,7 @@
           <div class="hero-grid">
             <div class="hero-main">
               <p class="eyebrow" id="hero-kicker">跨市场重点新闻与投研摘要</p>
-              <h2 class="main-title" id="hero-title">重点新闻</h2>
+              <h2 class="main-title" id="hero-title">当前板块</h2>
               <p class="hero-lead" id="hero-lead"></p>
             </div>
             <div class="hero-side">
@@ -113,27 +112,108 @@
           </div>
         </header>
 
-        <section class="board-strip-card">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow">Quick Switch</p>
-              <h3>当前板块切换</h3>
-            </div>
-            <p class="section-hint">左侧是常驻导航，这里保留一排快速切换入口</p>
+        <section class="trade-dashboard" id="section-compass">
+          <div class="trade-dashboard-top">
+            <article class="trade-summary-card">
+              <div class="trade-summary-copy">
+                <p class="eyebrow">Trading Guide</p>
+                <div class="trade-bias-row">
+                  <span class="trade-bias" id="compass-bias">等待确认</span>
+                  <span class="trade-window" id="compass-window">-</span>
+                </div>
+                <h3 id="compass-title">今日交易指北</h3>
+                <p class="trade-summary-text" id="compass-summary"></p>
+              </div>
+
+              <div class="trade-driver-panel">
+                <span class="trade-block-label">主导变量</span>
+                <div class="trade-driver-list" id="compass-drivers"></div>
+              </div>
+            </article>
+
+            <article class="trade-side-card">
+              <div class="section-head">
+                <div>
+                  <p class="eyebrow">Open Checklist</p>
+                  <h3>盘前先盯什么</h3>
+                </div>
+                <p class="section-hint">先盯变量，再看板块，不直接从标题跳到结论</p>
+              </div>
+              <div class="trade-watchlist" id="compass-watchlist"></div>
+              <div class="trade-playbook" id="compass-playbook"></div>
+            </article>
           </div>
-          <div class="tab-strip" id="category-tabs" aria-label="板块切换"></div>
+
+          <div class="trade-columns">
+            <article class="trade-column trade-column--bullish">
+              <div class="trade-column-head">
+                <div>
+                  <p class="eyebrow">Positive</p>
+                  <h3>偏多候选</h3>
+                </div>
+                <span class="trade-column-note">先看是否有量能接力</span>
+              </div>
+              <div class="trade-item-list" id="compass-leaders"></div>
+            </article>
+
+            <article class="trade-column trade-column--bearish">
+              <div class="trade-column-head">
+                <div>
+                  <p class="eyebrow">Pressure</p>
+                  <h3>承压候选</h3>
+                </div>
+                <span class="trade-column-note">留意高开低走和兑现压力</span>
+              </div>
+              <div class="trade-item-list" id="compass-laggards"></div>
+            </article>
+
+            <article class="trade-column trade-column--stable">
+              <div class="trade-column-head">
+                <div>
+                  <p class="eyebrow">Neutral</p>
+                  <h3>中性观察</h3>
+                </div>
+                <span class="trade-column-note">更多拿来做对照组</span>
+              </div>
+              <div class="trade-item-list" id="compass-stable"></div>
+            </article>
+          </div>
         </section>
 
         <section class="pulse-card" id="section-pulse">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Market Pulse</p>
-              <h3>全市场重点脉冲</h3>
+              <p class="eyebrow">Cross Market</p>
+              <h3>跨市场主线</h3>
             </div>
             <p class="section-hint" id="pulse-window"></p>
           </div>
           <p class="pulse-copy" id="pulse-headline"></p>
           <div class="pulse-grid" id="pulse-grid"></div>
+        </section>
+
+        <section class="feed-grid">
+          <article class="panel-card" id="section-priority">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Impact Rank</p>
+                <h3>重点影响排序</h3>
+              </div>
+              <p class="section-hint">按影响力排序，不按发布时间排序</p>
+            </div>
+            <div class="stories-list stories-list--priority" id="priority-stories-list"></div>
+          </article>
+
+          <article class="panel-card" id="section-feed">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Full Feed</p>
+                <h3>全天全量动态</h3>
+              </div>
+              <p class="section-hint">展示该板块从昨收后到现在抓到的全部动态</p>
+            </div>
+            <div class="stories-list stories-list--full" id="all-stories-list"></div>
+          </article>
         </section>
 
         <section class="overview-grid" id="section-overview">
@@ -202,30 +282,6 @@
           <article class="signal-card watch-card">
             <p class="signal-label">继续观察</p>
             <p class="signal-copy" id="watch-copy"></p>
-          </article>
-        </section>
-
-        <section class="feed-grid">
-          <article class="panel-card" id="section-priority">
-            <div class="section-head">
-              <div>
-                <p class="eyebrow">Impact Rank</p>
-                <h3>重点影响排序</h3>
-              </div>
-              <p class="section-hint">按影响力排序，不按发布时间排序</p>
-            </div>
-            <div class="stories-list stories-list--priority" id="priority-stories-list"></div>
-          </article>
-
-          <article class="panel-card" id="section-feed">
-            <div class="section-head">
-              <div>
-                <p class="eyebrow">Full Feed</p>
-                <h3>全天全量动态</h3>
-              </div>
-              <p class="section-hint">展示该板块从昨收后到现在抓到的全部动态</p>
-            </div>
-            <div class="stories-list stories-list--full" id="all-stories-list"></div>
           </article>
         </section>
 

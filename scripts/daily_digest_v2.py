@@ -770,6 +770,7 @@ def build_digest(
             "personaCount": config["persona_count"],
         },
         "marketPulse": build_market_pulse(categories, window_start, now),
+        "tradeCompass": build_trade_compass(categories),
         "categories": categories,
         "sourceRegistry": source_registry,
     }
@@ -1315,13 +1316,21 @@ def build_market_pulse(categories: list[dict[str, Any]], window_start: datetime,
         ),
         reverse=True,
     )
-    highlights = highlights[:PULSE_LIMIT]
-    focus = "、".join(dict.fromkeys(item["categoryName"] for item in highlights[:4])) or "多板块"
+    deduped: list[dict[str, Any]] = []
+    seen_titles: set[str] = set()
+    for item in highlights:
+        dedupe_key = normalize_title(item["title"])
+        if dedupe_key in seen_titles:
+            continue
+        seen_titles.add(dedupe_key)
+        deduped.append(item)
+        if len(deduped) >= PULSE_LIMIT:
+            break
+
+    highlights = deduped
+    top_titles = "、".join(shorten_title(item["title"], 16) for item in highlights[:3]) or "暂无可确认主线"
     return {
-        "headline": (
-            f"从昨收后到现在，影响最大的消息主要集中在{focus}。"
-            "更值得关注的不是 headline 数量，而是它们能否继续传导到订单、价格、流动性和风险偏好。"
-        ),
+        "headline": f"盘前先看 {top_titles}。先判断这些变量会先压估值，还是先抬资源与防御。",
         "windowLabel": format_window_label(window_start, now),
         "highlights": highlights,
     }
@@ -1424,6 +1433,149 @@ def setup_board_hint(setup: str) -> str:
         "wait_confirm": "先列强弱名单，再等真正放量的主线板块自己走出来",
     }
     return mapping.get(setup, "先列强弱名单，再等真正放量的主线板块自己走出来")
+
+
+def trade_watch_variables(setup: str) -> list[str]:
+    mapping = {
+        "global_repricing": ["美债收益率", "离岸人民币", "油价", "美股期货"],
+        "commodity_shock": ["原油", "航运", "化工期货", "黄金"],
+        "domestic_policy": ["社融", "地产销售", "券商", "玻璃纯碱"],
+        "risk_repair": ["港股", "中概", "北向资金", "成交额"],
+        "wait_confirm": ["竞价强弱", "成交额", "北向资金", "期货联动"],
+    }
+    return mapping.get(setup, ["竞价强弱", "成交额", "北向资金", "期货联动"])
+
+
+def build_trade_compass(categories: list[dict[str, Any]]) -> dict[str, Any]:
+    focus = next((category for category in categories if category["id"] == "focus-news"), None)
+    if focus is None:
+        return {
+            "biasSignal": "watch",
+            "biasLabel": "等待确认",
+            "title": "今日交易指北",
+            "summary": "当前还没有足够的重点新闻，不适合给出明确的盘前方向。",
+            "drivers": ["重点新闻不足，先看竞价、成交额和期货联动"],
+            "watchlist": ["竞价", "成交额", "北向资金", "期货联动"],
+            "leaders": [],
+            "laggards": [],
+            "stable": [],
+            "playbook": [],
+        }
+
+    stories = focus.get("priorityStories", [])
+    setup = detect_market_setup({"id": "focus-news"}, stories)
+    drivers = [shorten_title(story["title"], 22) for story in stories[:3]]
+    driver_blob = "、".join(drivers) if drivers else "竞价、成交额和期货联动"
+
+    if setup == "domestic_policy":
+        bias_signal = "bullish"
+        bias_label = "偏顺周期"
+        summary = f"今天主导盘前定价的是 {driver_blob}。如果宽信用能从表态走向成交和信用数据修复，顺周期会更容易被资金确认。"
+        leaders = [
+            {"name": "券商", "reason": "政策与风险偏好修复时，券商通常先反映交易预期。"},
+            {"name": "地产链", "reason": "如果政策从表态走向成交修复，地产链弹性会更直接。"},
+            {"name": "玻璃/纯碱/建材", "reason": "这类二阶弹性品种更能体现投资联想法。"},
+        ]
+        laggards = [
+            {"name": "纯防御高股息", "reason": "若宽信用预期升温，纯防御相对收益会被分流。"},
+            {"name": "长久期资产", "reason": "若利率回升或风险偏好改善，长久期估值会承压。"},
+            {"name": "弱出口链", "reason": "如果内需主导，出口映射线短线优先级会下降。"},
+        ]
+        stable = [
+            {"name": "银行", "reason": "更多是承接板块，适合看节奏，不适合追情绪。"},
+            {"name": "公用事业", "reason": "波动相对可控，更适合当对照组。"},
+            {"name": "通信运营", "reason": "通常不抢情绪，但能观察防守资金是否撤出。"},
+        ]
+        playbook = [
+            "先看社融、地产销售和券商是否同向，不要只看政策标题。",
+            "如果只有情绪跳空，没有量能接力，更适合按事件波段而不是趋势看。",
+            "如果玻璃、纯碱、建材同步走强，说明投资联想链已经开始扩散。",
+        ]
+    elif setup == "risk_repair":
+        bias_signal = "bullish"
+        bias_label = "偏修复"
+        summary = f"今天更像风险偏好修复窗口，盘前锚点在 {driver_blob}。重点不是消息有多热，而是高贝塔板块有没有量能跟上。"
+        leaders = [
+            {"name": "港股互联网", "reason": "风险修复时，最先受益的是久期更长的科技与平台资产。"},
+            {"name": "券商", "reason": "成交放大与风险偏好回升，通常会先映射到券商。"},
+            {"name": "高贝塔成长", "reason": "如果竞价和港股同向，成长板块更容易先走修复。"},
+        ]
+        laggards = [
+            {"name": "纯防御", "reason": "如果风险偏好回暖，纯防御的相对吸引力会回落。"},
+            {"name": "避险贵金属", "reason": "修复窗口里，避险需求通常会边际降温。"},
+            {"name": "高油价受益链", "reason": "如果地缘风险缓和，原油映射线可能先回吐。"},
+        ]
+        stable = [
+            {"name": "银行", "reason": "更多承担情绪锚，不一定会成为领涨主线。"},
+            {"name": "公用事业", "reason": "更多用来判断资金是否真的从防守切换出去。"},
+            {"name": "电信运营", "reason": "适合做市场风险偏好的对照板块。"},
+        ]
+        playbook = [
+            "先看港股、中概和北向是否同步修复，再决定是否提高参与强度。",
+            "如果只是消息刺激，没有成交额接力，更像反抽，不像主线切换。",
+            "修复日优先看高弹性板块，但仓位节奏要比标题强度更重要。",
+        ]
+    elif setup == "commodity_shock":
+        bias_signal = "watch"
+        bias_label = "偏资源"
+        summary = f"今天更像商品与地缘驱动窗口，盘前核心是 {driver_blob}。先看原油链和化工链是否把冲击真正传导成价格。"
+        leaders = [
+            {"name": "油气/油运", "reason": "地缘与供给扰动最先映射在原油与运输链。"},
+            {"name": "煤化工/化工原料", "reason": "商品冲击常常先扩散到化工价差和上游原料。"},
+            {"name": "军工/防御", "reason": "如果地缘风险升级，防御与军工更容易先被资金点火。"},
+        ]
+        laggards = [
+            {"name": "航空与高耗能中游", "reason": "油价上行或供应扰动时，这类板块成本压力更大。"},
+            {"name": "高估值成长", "reason": "资源冲击日，资金通常不会先去高久期资产。"},
+            {"name": "平台经济", "reason": "情绪和外盘承压时，平台方向容易被压估值。"},
+        ]
+        stable = [
+            {"name": "银行", "reason": "更多承担承接角色，不一定跟着冲击放大波动。"},
+            {"name": "公用事业", "reason": "适合判断防守资金有没有明显流入。"},
+            {"name": "高股息央企", "reason": "资源与防御并重时，通常表现更稳。"},
+        ]
+        playbook = [
+            "先看原油、运价和化工期货，再决定资源链是真突破还是消息脉冲。",
+            "如果地缘风险很快降温，资源链更适合快节奏，不适合盲目追高。",
+            "如果油价冲高回落而港股科技修复，说明市场开始从冲击走向风险修复。",
+        ]
+    else:
+        bias_signal = "bearish"
+        bias_label = "偏防守"
+        summary = f"今天最能改写盘前定价的是 {driver_blob}。A股先按防守和资源承接来理解，再看成长和港股有没有修复确认。"
+        leaders = [
+            {"name": "油气/油运", "reason": "地缘与供给线没有完全退出，资源链仍容易先承接波动。"},
+            {"name": "煤化工/化工原料", "reason": "油价与商品链扰动时，上游弹性通常大于中下游。"},
+            {"name": "高股息防御", "reason": "全球利率上行时，资金更偏好现金流稳定和低估值。"},
+        ]
+        laggards = [
+            {"name": "高估值成长", "reason": "利率抬升与外盘承压，先压制长久期估值。"},
+            {"name": "港股互联网/中概映射", "reason": "美股科技与风险偏好走弱时，这条线更容易被拖累。"},
+            {"name": "贵金属", "reason": "如果黄金继续回撤，贵金属链条短线会先承压。"},
+        ]
+        stable = [
+            {"name": "银行", "reason": "更多是防守承接，不一定最强，但相对更稳。"},
+            {"name": "公用事业", "reason": "适合观察风险偏好是否真的恶化。"},
+            {"name": "高股息央企", "reason": "在不确定窗口里通常承担稳定器角色。"},
+        ]
+        playbook = [
+            "先看美债收益率、离岸人民币、油价和美股期货，不要只看标题强弱。",
+            "如果竞价与港股、期货没有同向确认，优先等二次确认，不追消息跳空。",
+            "如果资源链领涨而成长继续承压，说明市场仍在交易防守而不是修复。",
+        ]
+
+    return {
+        "biasSignal": bias_signal,
+        "biasLabel": bias_label,
+        "title": "今日交易指北",
+        "summary": summary,
+        "drivers": drivers or ["重点新闻不足，先看竞价、成交额和期货联动"],
+        "watchlist": trade_watch_variables(setup),
+        "leaders": leaders,
+        "laggards": laggards,
+        "stable": stable,
+        "playbook": playbook,
+    }
 
 
 def infer_cycle_name(priority_stories: list[dict[str, Any]]) -> str:
