@@ -263,6 +263,8 @@ function renderHomePage() {
   });
 
   return `
+    <div class="page-stack page-stack--home">
+    ${renderMobileShellBar({ includeCategories: true })}
     ${hero}
 
     <section class="dashboard-grid">
@@ -319,6 +321,7 @@ function renderHomePage() {
         ${renderModuleCards(activeCategory, focusCategory)}
       </div>
     </section>
+    </div>
   `;
 }
 
@@ -326,6 +329,8 @@ function renderTradePage() {
   const compass = state.digest.tradeCompass ?? {};
 
   return `
+    <div class="page-stack page-stack--trade">
+    ${renderMobileShellBar({ includeCategories: false })}
     ${renderHero({
       kicker: "Trading Guide",
       title: compass.title || "今日交易指北",
@@ -367,6 +372,7 @@ function renderTradePage() {
       ${renderTradeColumn("承压候选", "bearish", compass.laggards)}
       ${renderTradeColumn("中性观察", "watch", compass.stable)}
     </section>
+    </div>
   `;
 }
 
@@ -375,6 +381,8 @@ function renderPulsePage() {
   const highlights = pulse.highlights || [];
 
   return `
+    <div class="page-stack page-stack--pulse">
+    ${renderMobileShellBar({ includeCategories: false })}
     ${renderHero({
       kicker: "Cross Market",
       title: "跨市场主线",
@@ -399,6 +407,7 @@ function renderPulsePage() {
         ${highlights.map(renderPulseCard).join("") || renderEmptyCard("暂时还没有跨市场主线。")}
       </div>
     </section>
+    </div>
   `;
 }
 
@@ -406,6 +415,8 @@ function renderPriorityPage() {
   const category = getActiveCategory();
 
   return `
+    <div class="page-stack page-stack--priority">
+    ${renderMobileShellBar({ includeCategories: true })}
     ${renderCategoryHero("重点影响排序", category, category?.lead || "重点区只保留按影响力排序的内容。")}
     ${renderCategoryTabs("priority", category?.id)}
 
@@ -421,6 +432,7 @@ function renderPriorityPage() {
         ${(category?.priorityStories || []).map((story) => renderStoryCard(story, "priority")).join("") || renderEmptyCard("当前板块还没有重点排序内容。")}
       </div>
     </section>
+    </div>
   `;
 }
 
@@ -428,6 +440,8 @@ function renderFeedPage() {
   const category = getActiveCategory();
 
   return `
+    <div class="page-stack page-stack--feed">
+    ${renderMobileShellBar({ includeCategories: true })}
     ${renderCategoryHero("全天全量动态", category, "完整时间流只放在这一页，首页不再堆满全部内容。")}
     ${renderCategoryTabs("feed", category?.id)}
 
@@ -443,6 +457,7 @@ function renderFeedPage() {
         ${(category?.allStories || []).map(renderFeedRow).join("") || renderEmptyCard("当前板块还没有全天动态。")}
       </div>
     </section>
+    </div>
   `;
 }
 
@@ -450,6 +465,8 @@ function renderBoardsPage() {
   const category = getActiveCategory();
 
   return `
+    <div class="page-stack page-stack--boards">
+    ${renderMobileShellBar({ includeCategories: true })}
     ${renderCategoryHero("板块策略", category, category?.cycleView || "把当前板块的周期判断和策略建议单独放在这一页。")}
     ${renderCategoryTabs("boards", category?.id)}
 
@@ -496,6 +513,7 @@ function renderBoardsPage() {
         </div>
       </article>
     </section>
+    </div>
   `;
 }
 
@@ -504,6 +522,8 @@ function renderCommentsPage() {
   const comments = category?.personaComments || [];
 
   return `
+    <div class="page-stack page-stack--comments">
+    ${renderMobileShellBar({ includeCategories: true })}
     ${renderCategoryHero("多角色观察", category, "同一批新闻，用不同角色去看，避免只剩下一种表达口径。")}
     ${renderCategoryTabs("comments", category?.id)}
 
@@ -519,6 +539,7 @@ function renderCommentsPage() {
         ${comments.map(renderCommentCard).join("") || renderEmptyCard("当前板块还没有角色评论。")}
       </div>
     </section>
+    </div>
   `;
 }
 
@@ -527,6 +548,8 @@ function renderSourcesPage() {
   const sources = category?.sourcesUsed || [];
 
   return `
+    <div class="page-stack page-stack--sources">
+    ${renderMobileShellBar({ includeCategories: true })}
     ${renderCategoryHero("来源与数据出口", category, "核对来源、原文和 JSON 出口都放到一个单独页面里。")}
     ${renderCategoryTabs("sources", category?.id)}
 
@@ -549,6 +572,7 @@ function renderSourcesPage() {
         </div>
       </article>
     </section>
+    </div>
   `;
 }
 
@@ -556,6 +580,8 @@ function renderMonitorPage() {
   const snapshot = state.rawSnapshot;
 
   return `
+    <div class="page-stack page-stack--monitor">
+    ${renderMobileShellBar({ includeCategories: false })}
     ${renderHero({
       kicker: "Raw Monitor",
       title: "原始监控",
@@ -580,6 +606,7 @@ function renderMonitorPage() {
         ${(snapshot?.categories || []).map(renderMonitorCard).join("") || renderEmptyCard("当前还没有原始抓取结果。")}
       </div>
     </section>
+    </div>
   `;
 }
 
@@ -587,6 +614,8 @@ function renderAboutPage() {
   const site = state.digest.site ?? {};
 
   return `
+    <div class="page-stack page-stack--about">
+    ${renderMobileShellBar({ includeCategories: false })}
     ${renderHero({
       kicker: "About",
       title: "关于本站",
@@ -639,6 +668,7 @@ function renderAboutPage() {
         </a>
       </div>
     </section>
+    </div>
   `;
 }
 
@@ -655,6 +685,65 @@ function renderHero({ kicker, title, description, metrics }) {
           ${(metrics || []).map(renderMetricCard).join("")}
         </div>
       </div>
+    </section>
+  `;
+}
+
+function renderMobileShellBar({ includeCategories }) {
+  const category = getActiveCategory();
+  const siteTitle = state.digest?.site?.title || "小程AI的新闻日报";
+  const pageLabel = pageName(state.pageId);
+  const quickPages = ["home", "trade", "pulse", "priority", "feed", "boards"];
+
+  return `
+    <section class="mobile-shellbar">
+      <div class="mobile-shellbar-head">
+        <div>
+          <p class="eyebrow">手机快览</p>
+          <h2>${escapeHtml(pageLabel)}</h2>
+        </div>
+        <div class="mobile-shellbar-status">
+          <span>${escapeHtml(siteTitle)}</span>
+          <strong>${escapeHtml(state.digest?.edition?.windowLabel || "-")}</strong>
+        </div>
+      </div>
+
+      <div class="mobile-shellbar-scroll">
+        ${quickPages
+          .map((pageId) => {
+            const active = pageId === state.pageId ? " is-active" : "";
+            return `
+              <a class="mobile-pill${active}" href="${escapeAttribute(buildPageHref(pageId, category?.id))}">
+                ${escapeHtml(pageName(pageId))}
+              </a>
+            `;
+          })
+          .join("")}
+      </div>
+
+      ${
+        includeCategories
+          ? `
+            <div class="mobile-shellbar-scroll mobile-shellbar-scroll--boards">
+              ${(state.digest?.categories || [])
+                .map((item) => {
+                  const active = item.id === state.activeCategoryId ? " is-active" : "";
+                  return `
+                    <a class="mobile-board-pill${active}" href="${escapeAttribute(buildPageHref(state.pageId, item.id))}">
+                      ${escapeHtml(item.name)}
+                    </a>
+                  `;
+                })
+                .join("")}
+            </div>
+          `
+          : `
+            <div class="mobile-shellbar-note">
+              <span>当前更新时间</span>
+              <strong>${escapeHtml(state.digest?.edition?.generatedAt || "-")}</strong>
+            </div>
+          `
+      }
     </section>
   `;
 }
