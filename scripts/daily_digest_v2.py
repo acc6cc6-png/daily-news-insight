@@ -918,6 +918,7 @@ def collect_category_items(
     limit: int,
 ) -> list[dict[str, Any]]:
     window_start = market_window_start(now)
+    strict_intraday = is_intraday_digest_window(window_start, now)
     collected: list[dict[str, Any]] = []
     seen: set[str] = set()
     threshold = RELEVANCE_THRESHOLDS.get(category["id"], 0)
@@ -955,6 +956,42 @@ def collect_category_items(
             if should_drop_story(category, item["title"], enriched["selectionScore"]):
                 continue
             collected.append(enriched)
+
+    if strict_intraday:
+        preferred = [
+            item
+            for item in collected
+            if item["selectionScore"] >= threshold and item_window_phase(item, window_start) == 3
+        ]
+        secondary = [
+            item
+            for item in collected
+            if item["selectionScore"] >= threshold and item_window_phase(item, window_start) == 2
+        ]
+        consumed_ids = {id(item) for item in preferred}
+        consumed_ids.update(id(item) for item in secondary)
+        backups = [item for item in collected if id(item) not in consumed_ids]
+
+        ranked_preferred = sorted(preferred, key=lambda item: selection_sort_key(item, window_start), reverse=True)
+        ranked_secondary = sorted(secondary, key=lambda item: selection_sort_key(item, window_start), reverse=True)
+        ranked_backups = sorted(backups, key=lambda item: intraday_fill_sort_key(item, window_start), reverse=True)
+
+        chosen = ranked_preferred[:limit]
+        minimum_fill = min(limit, max(8, limit // 3))
+        for pool in (ranked_secondary, ranked_backups):
+            if len(chosen) >= limit:
+                break
+            for item in pool:
+                if item in chosen:
+                    continue
+                if len(chosen) >= limit:
+                    break
+                if item["selectionScore"] >= max(0, threshold - 8) or len(chosen) < minimum_fill:
+                    chosen.append(item)
+
+        if not chosen:
+            chosen = (ranked_preferred + ranked_secondary + ranked_backups)[:limit]
+        return chosen[:limit]
 
     preferred = [
         item
@@ -1038,6 +1075,10 @@ def rank_priority_stories(
             boost += float(story.get("aShareOpenScore", 0)) * 0.6
         if story.get("inWindow"):
             boost += 12
+        elif story.get("publishedAt"):
+            boost -= 10
+        else:
+            boost += 2
         match = ai_order.get(normalize_title(story["title"]))
         if match is not None:
             boost += max(0, 24 - match * 2)
@@ -1736,6 +1777,25 @@ def source_item_sort_key(category: dict[str, Any], item: dict[str, Any], window_
     )
 
 
+def item_window_phase(item: dict[str, Any], window_start: datetime) -> int:
+    published_at = item.get("publishedAt")
+    if is_within_window(published_at, window_start):
+        return 3
+    if published_at:
+        return 1
+    return 2
+
+
+def intraday_fill_sort_key(item: dict[str, Any], window_start: datetime) -> tuple[int, float, str, int, int]:
+    return (
+        item_window_phase(item, window_start),
+        float(item.get("selectionScore", 0)),
+        item.get("publishedAt") or "",
+        -int(item.get("sourcePriority") or 99),
+        -int(item.get("rank") or 9999),
+    )
+
+
 def category_relevance_score(category: dict[str, Any], title: str) -> int:
     rules = CATEGORY_RULES.get(category["id"])
     normalized = clean_text(title).lower()
@@ -1960,9 +2020,9 @@ def build_impact_reason(
 ) -> str:
     lens_focus = shorten_title(category["lens"], 18)
     if is_within_window(item.get("publishedAt"), window_start):
-        window_copy = "位于昨收后的主窗口"
+        window_copy = "位于当前统计窗口"
     else:
-        window_copy = "不在主窗口但仍有跟踪价值"
+        window_copy = "不在当前统计窗口但仍有跟踪价值"
     if impact_score >= 82:
         return f"{window_copy}，而且直接触及 {lens_focus} 这条定价链，因此被列入高权重重点。"
     if impact_score >= 64:
@@ -2008,13 +2068,44 @@ def rebuild_history_index() -> list[dict[str, str]]:
     return entries
 
 
-def market_window_start(now: datetime) -> datetime:
+def previous_trading_close(now: datetime) -> datetime:
     anchor = now.replace(hour=15, minute=0, second=0, microsecond=0)
     if now < anchor:
         anchor -= timedelta(days=1)
     while anchor.weekday() >= 5:
         anchor -= timedelta(days=1)
     return anchor
+
+
+def intraday_window_anchor(now: datetime, hour: int, minute: int) -> datetime:
+    return now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+
+
+def market_window_start(now: datetime) -> datetime:
+    schedule_cron = (os.environ.get("DIGEST_SCHEDULE_CRON") or "").strip()
+    scheduled_window_starts = {
+        "5 23 * * *": previous_trading_close(now),
+        "30 4 * * *": intraday_window_anchor(now, 7, 0),
+        "5 9 * * *": intraday_window_anchor(now, 12, 30),
+        "35 13 * * *": intraday_window_anchor(now, 17, 5),
+    }
+    if schedule_cron in scheduled_window_starts:
+        return scheduled_window_starts[schedule_cron]
+
+    morning = intraday_window_anchor(now, 7, 0)
+    midday = intraday_window_anchor(now, 12, 30)
+    afternoon = intraday_window_anchor(now, 17, 5)
+    if now < morning:
+        return previous_trading_close(now)
+    if now < midday:
+        return morning
+    if now < afternoon:
+        return midday
+    return afternoon
+
+
+def is_intraday_digest_window(window_start: datetime, now: datetime) -> bool:
+    return window_start.date() == now.date() and window_start >= intraday_window_anchor(now, 7, 0)
 
 
 def format_window_label(start: datetime, now: datetime) -> str:

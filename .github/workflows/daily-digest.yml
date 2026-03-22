@@ -42,6 +42,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+          DIGEST_SCHEDULE_CRON: ${{ github.event.schedule }}
         run: python scripts/daily_digest_v2.py
 
       - name: Commit generated data
