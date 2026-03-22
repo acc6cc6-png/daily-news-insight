@@ -2,10 +2,17 @@ name: Daily Digest
 
 on:
   schedule:
-    - cron: "5 23 * * *" # Asia/Shanghai 07:05
-    - cron: "30 4 * * *" # Asia/Shanghai 12:30
-    - cron: "5 9 * * *" # Asia/Shanghai 17:05
-    - cron: "35 13 * * *" # Asia/Shanghai 21:35
+    - cron: "0 23 * * 0-4" # Asia/Shanghai Mon-Fri 07:00
+    - cron: "30 4 * * 1-5" # Asia/Shanghai Mon-Fri 12:30
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/daily-digest.yml"
+      - "config/**"
+      - "docs/*.html"
+      - "docs/assets/**"
+      - "scripts/daily_digest_v2.py"
   workflow_dispatch:
 
 permissions:

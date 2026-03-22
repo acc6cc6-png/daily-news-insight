@@ -2084,24 +2084,16 @@ def intraday_window_anchor(now: datetime, hour: int, minute: int) -> datetime:
 def market_window_start(now: datetime) -> datetime:
     schedule_cron = (os.environ.get("DIGEST_SCHEDULE_CRON") or "").strip()
     scheduled_window_starts = {
-        "5 23 * * *": previous_trading_close(now),
-        "30 4 * * *": intraday_window_anchor(now, 7, 0),
-        "5 9 * * *": intraday_window_anchor(now, 12, 30),
-        "35 13 * * *": intraday_window_anchor(now, 17, 5),
+        "0 23 * * 0-4": previous_trading_close(now),
+        "30 4 * * 1-5": intraday_window_anchor(now, 7, 0),
     }
     if schedule_cron in scheduled_window_starts:
         return scheduled_window_starts[schedule_cron]
 
     morning = intraday_window_anchor(now, 7, 0)
-    midday = intraday_window_anchor(now, 12, 30)
-    afternoon = intraday_window_anchor(now, 17, 5)
     if now < morning:
         return previous_trading_close(now)
-    if now < midday:
-        return morning
-    if now < afternoon:
-        return midday
-    return afternoon
+    return morning
 
 
 def is_intraday_digest_window(window_start: datetime, now: datetime) -> bool:
